@@ -18,10 +18,18 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-
-    }
+     public function index(Request $request) {
+         //查询用户信息
+         $users = DB::table("user")
+                 ->where("uname", "LIKE", "%" . $request->get("keyword") . "%")
+                 ->orWhere("nickname", "LIKE", "%" . $request->get("keyword") . "%")
+                 ->orderBy("uid", "DESC")
+                 ->paginate(8);
+         //获取搜索条件
+         $keyword = $request->get("keyword");
+         //显示模板
+         return view("admin.user.index", ["users" => $users, "keyword" => $keyword]);
+     }
 
     /**
      * Show the form for creating a new resource.

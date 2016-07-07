@@ -2,104 +2,53 @@
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding am-padding-bottom-0">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">个人资料</strong> / <small>Personal information</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">添加用户</strong> / <small>Create a user </small></div>
     </div>
-
     <hr/>
-
     <div class="am-g">
       <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
-        <div class="am-panel am-panel-default">
-          <div class="am-panel-bd">
-            <div class="am-g">
-              <div class="am-u-md-4">
-                <img class="am-img-circle am-img-thumbnail" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/200/h/200/q/80" alt=""/>
-              </div>
-              <div class="am-u-md-8">
-                <p>你可以使用<a href="#">gravatar.com</a>提供的头像或者使用本地上传头像。 </p>
-                <form class="am-form">
-                  <div class="am-form-group">
-                    <input type="file" id="user-pic">
-                    <p class="am-form-help">请选择要上传的文件...</p>
-                    <button type="button" class="am-btn am-btn-primary am-btn-xs">保存</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="am-panel am-panel-default">
-          <div class="am-panel-bd">
-            <div class="user-info">
-              <p>等级信息</p>
-              <div class="am-progress am-progress-sm">
-                <div class="am-progress-bar" style="width: 60%"></div>
-              </div>
-              <p class="user-info-order">当前等级：<strong>LV8</strong> 活跃天数：<strong>587</strong> 距离下一级别：<strong>160</strong></p>
-            </div>
-            <div class="user-info">
-              <p>信用信息</p>
-              <div class="am-progress am-progress-sm">
-                <div class="am-progress-bar am-progress-bar-success" style="width: 80%"></div>
-              </div>
-              <p class="user-info-order">信用等级：正常当前 信用积分：<strong>80</strong></p>
-            </div>
-          </div>
-        </div>
-
       </div>
-
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-        <form class="am-form am-form-horizontal">
+        <form  method="post" action="/Admin/user/store" class="am-form am-form-horizontal">
+          <input type="hidden" name="_token" value="{{csrf_token()}}" />
           <div class="am-form-group">
-            <label for="user-name" class="am-u-sm-3 am-form-label">姓名 / Name</label>
+            <label for="user-name" class="am-u-sm-3 am-form-label">账号/UserName</label>
             <div class="am-u-sm-9">
-              <input type="text" id="user-name" placeholder="姓名 / Name">
-              <small>输入你的名字，让我们记住你。</small>
+              <input type="text" id="user-name" name="uname" placeholder="账号/UserName">
             </div>
           </div>
 
           <div class="am-form-group">
-            <label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>
+            <label for="password" class="am-u-sm-3 am-form-label">密码/password</label>
             <div class="am-u-sm-9">
-              <input type="email" id="user-email" placeholder="输入你的电子邮件 / Email">
-              <small>邮箱你懂得...</small>
+              <input type="password" name="password" placeholder="输入你的密码/password">
             </div>
           </div>
 
           <div class="am-form-group">
-            <label for="user-phone" class="am-u-sm-3 am-form-label">电话 / Telephone</label>
+            <label for="repassword" class="am-u-sm-3 am-form-label">确认密码</label>
             <div class="am-u-sm-9">
-              <input type="tel" id="user-phone" placeholder="输入你的电话号码 / Telephone">
+              <input type="password" name="repassword" placeholder="确认你的密码 / repassword">
             </div>
           </div>
 
           <div class="am-form-group">
-            <label for="user-QQ" class="am-u-sm-3 am-form-label">QQ</label>
+            <label for="sex" class="am-u-sm-3 am-form-label">性别</label>
             <div class="am-u-sm-9">
-              <input type="number" pattern="[0-9]*" id="user-QQ" placeholder="输入你的QQ号码">
+            <input type="radio" name="sex" value="男" checked id="male" /><label for="male">男</lable>、
+            </label><input type="radio" name="sex" value="女" />女<label for="female">
             </div>
           </div>
 
           <div class="am-form-group">
-            <label for="user-weibo" class="am-u-sm-3 am-form-label">微博 / Twitter</label>
+            <label for="nickname" class="am-u-sm-3 am-form-label">昵称</label>
             <div class="am-u-sm-9">
-              <input type="text" id="user-weibo" placeholder="输入你的微博 / Twitter">
+              <input type="text" name="nickname" placeholder="输入你的昵称/nickname">
             </div>
           </div>
-
-          <div class="am-form-group">
-            <label for="user-intro" class="am-u-sm-3 am-form-label">简介 / Intro</label>
-            <div class="am-u-sm-9">
-              <textarea class="" rows="5" id="user-intro" placeholder="输入个人简介"></textarea>
-              <small>250字以内写出你的一生...</small>
-            </div>
-          </div>
-
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
-              <button type="button" class="am-btn am-btn-primary">保存修改</button>
+              <button type="button" class="am-btn am-btn-primary">保存</button>
             </div>
           </div>
         </form>
