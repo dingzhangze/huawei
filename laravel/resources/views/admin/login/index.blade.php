@@ -10,6 +10,11 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="alternate icon" type="image/png" href="{{url('images/admin/favicon.png')}}">
   <link rel="stylesheet" href="{{asset('/css/admin/amazeui.min.css')}}"/>
+  <!--引入wbox弹出层插件-->
+  <script type="text/javascript" src="{{ asset('/plugins/wbox/jquery1.4.2.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('/plugins/wbox/mapapi.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('/plugins/wbox/wbox.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ asset('plugins/wbox/wbox/wbox.css') }}" />
   <style>
     .header {
       text-align: center;
@@ -52,12 +57,13 @@
       <table>
       <br />
       <div class="am-cf">
-        <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fr">
+        <input type="submit" id="btn" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fr">
       </div>
     </form>
     <hr>
     <p>© 2016 LAMP兄弟连, AK47小组版权所有.</p>
   </div>
 </div>
+	<script src="{{ url('/js/admin/login_index.js') }}"></script>
 </body>
 </html>
