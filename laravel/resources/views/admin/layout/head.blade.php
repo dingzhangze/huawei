@@ -1,12 +1,14 @@
 <!doctype html>
 <html class="no-js fixed-layout">
 <head>
+<!--   <script src="{{ asset('/js/jquery-1.8.3.min') }}" type="text/javascript"></script>-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Amaze UI Admin index Examples</title>
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="icon" type="image/png" href="{{asset('/images/admin/favicon.png')}}">
@@ -14,6 +16,9 @@
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
   <link rel="stylesheet" href="{{asset('/css/admin/amazeui.min.css')}}"/>
   <link rel="stylesheet" href="{{asset('/css/admin/admin.css')}}">
+  <script src="/plugins/uploadify/jquery-1.8.3.min.js" type="text/javascript"></script>
+  
+  
 </head>
 <body>
 <!--[if lte IE 9]>

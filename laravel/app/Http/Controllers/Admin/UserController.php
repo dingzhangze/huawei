@@ -150,4 +150,29 @@ class UserController extends Controller
            return redirect("/tips")->with(["info"=>"操作失败","url" => "/Admin/user"]);  
          }
     }
+    
+    public function avartar(Request $request)
+    {
+        if (!$request->hasFile("Filedata")) {
+            return response()->json(["status" => 0, "info" => "没有文件提交"]);
+        }
+
+        //接受文件并转存
+        $file = $request->file("Filedata");
+        //重组文件名
+        $suffix = $file->getClientOriginalExtension();
+        $rename = date("YmdHis") . rand(1000, 9999) . "." . $suffix; //201607011620341234.JPG
+        //转存文件
+        $file->move("./uploads/avartar", $rename);
+
+        //将存储的文件信息 写入数据库
+        DB::table("user")->where("uid", $request->get("uid"))->update(["avartar" => "/uploads/avartar/" . $rename]);
+
+        $data = Session::pull("userData");
+        $data->avartar = "/uploads/avartar/" . $rename;
+        Session::put("userData", $data);
+
+        //返回结果
+        return response()->json(array("status" => 1, "info" => "/uploads/avartar/" . $rename));
+    }
 }

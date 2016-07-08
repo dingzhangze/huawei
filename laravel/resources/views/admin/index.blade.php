@@ -1,17 +1,38 @@
 @include("admin.layout.head")
 <!-- content start -->
+<!--<script src="{{ asset('/plugins/uploadify/jquery.uploadify.min.js')}}"></script>-->
+<script src="/plugins/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="{{asset('/plugins/uploadify/uploadify.css')}}" />
+<link rel="stylesheet" href="/css/admin/index-a.css">
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding">
       <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页</strong> / <small>一些常用模块</small></div>
     </div>
 
-    <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
-      <li><a href="#" class="am-text-success"><span class="am-icon-btn am-icon-file-text"></span><br/>新增页面<br/>2300</a></li>
-      <li><a href="#" class="am-text-warning"><span class="am-icon-btn am-icon-briefcase"></span><br/>成交订单<br/>308</a></li>
-      <li><a href="#" class="am-text-danger"><span class="am-icon-btn am-icon-recycle"></span><br/>昨日访问<br/>80082</a></li>
-      <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br/>在线用户<br/>3000</a></li>
-    </ul>
+      <div>
+     <div id="o1">
+      <div id="tx1">
+        <div id="tx2"><img src="{{Session::get('userData')->avartar}}" width="142px" height="142px" id="im"></div>
+      </div>
+      <div id="xx">
+        <span class="mz"><h2>{{Session::get("userData")->uname}}</h2></span><br>
+        <form name="fm">
+	<input type="hidden" name="_token" value="{{csrf_token()}}" />
+	<input type="hidden" name="uid" value="{{Session::get("userData")->uid}}" /><br>
+	<input type="file" name="avartar" id="avartar" multiple="true" />
+        </form>
+        <script src="{{asset('/js/admin/index.js')}}"></script>
+      </div>
+    </div>
+    <div id="o2">
+      <ul> 
+          <li>昵    称：{{Session::get("userData")->nickname}}</li>
+          <li>性    别：{{Session::get("userData")->sex}}</li>
+          <li>创建时间：{{Session::get("userData")->createtime}}</li>
+      </ul>
+    </div>
+    </div>
 
     <div class="am-g">
       <div class="am-u-sm-12">

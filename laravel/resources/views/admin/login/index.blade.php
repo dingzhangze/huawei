@@ -28,7 +28,7 @@
       font-size: 14px;
     }
     body{
-    	background: #fff url(../../images/admin/1.jpg) 50% 0 no-repeat;}
+    	background: #fff url(../../images/admin/1.jpg) 50% 0 no-repeat;
     }
   </style>
 </head>
