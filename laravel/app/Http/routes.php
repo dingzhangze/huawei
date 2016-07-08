@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//消息提示
+Route::get("/tips", function () {
+    return view("errors.tips");
+});
+
 //后台首页
 Route::get('/Admin',"Admin\IndexController@index");
 //后台登陆
