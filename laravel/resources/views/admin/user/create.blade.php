@@ -46,6 +46,18 @@
               <input type="text" name="nickname" placeholder="输入你的昵称/nickname">
             </div>
           </div>
+           <div class="am-form-group">
+            <label for="nickname" class="am-u-sm-3 am-form-label">分组</label>
+            <div class="am-u-sm-9">
+                <select name="group_id"> 
+                    @foreach ($groups as $group)
+                       
+            
+                        <option value="{{$group->id}}">{{$group->title}}</option>
+                    @endforeach
+                </select>
+            </div>
+          </div>
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
               <input type="submit" class="am-btn am-btn-primary" value="添加">

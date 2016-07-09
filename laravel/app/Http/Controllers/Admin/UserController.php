@@ -20,15 +20,25 @@ class UserController extends Controller
      */
      public function index(Request $request) {
          //查询用户信息
-         $users = DB::table("user")
-                 ->where("uname", "LIKE", "%" . $request->get("keyword") . "%")
-                 ->orWhere("nickname", "LIKE", "%" . $request->get("keyword") . "%")
-                 ->orderBy("uid", "DESC")
+         $users = DB::table("admin_user")
+                 ->leftJoin("admin_auth_group_access","admin_user.uid","=", "admin_auth_group_access.uid")
+                 ->where("admin_user.uname", "LIKE", "%" . $request->get("keyword") . "%")
+                 ->orWhere("admin_user.nickname", "LIKE", "%" . $request->get("keyword") . "%")
+                 ->orderBy("admin_user.uid", "DESC")
                  ->paginate(8);
+         
+//           
+//             foreach($users as $user)
+//		{
+//			var_dump($user);
+//		}
          //获取搜索条件
          $keyword = $request->get("keyword");
+           //查询所有的分组
+        $groups = DB::table("admin_auth_group")->get();
+        //dd($groups);
          //显示模板
-         return view("admin.user.index", ["users" => $users, "keyword" => $keyword]);
+         return view("admin.user.index", ["users" => $users, "keyword" => $keyword, "groups" => $groups]);
      }
 
     /**
@@ -37,7 +47,9 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function create(Request $request) {
-         return view("admin.user.create");
+         //查询所有的分组
+          $groups = DB::table("admin_auth_group")->get();
+         return view("admin.user.create",compact("groups"));
      }
 
 
@@ -65,16 +77,33 @@ class UserController extends Controller
             "nickname.required" => "昵称不能为空"
         ]);
         //提取出数据并重组
-        $data = $request->except("_token","repassword");
+        $data = $request->except("_token","repassword","group_id");
         $data["password"] = Hash::make($data["password"]);
           $data["createtime"] = date("Y-m-d H:i:s");
         //执行数据创建
-        if (FALSE !== DB::table("user")->insertGetId($data)) {
+        if (FALSE !== $insertID =  DB::table("admin_user")->insertGetId($data)) {
+            //将新增用户 添加到对应的分组里面
+            DB::table("admin_auth_group_access")->insert(["uid" => $insertID, "group_id" => $request->get("group_id")]);
             return redirect("/Admin/user");
         }else {
             return back()->with(["info" => "添加用户失败"]);
         }
     }
+    
+     /**
+     * AJAX请求过来 修改用户对应分组的功能
+     * @param   \Illuminate\Http\Request $request    object    请求对象
+     */
+      public function setGroup(Request $request)
+      {
+        if (false !== DB::table("admin_auth_group_access")->where("uid", $request->get("uid"))->update(["group_id" => $request->get("group_id")]))
+        {
+            return response()->json(["status" => 1, "info" => "修改分组成功"]);
+        }else
+        {
+            return response()->json(["status" => 0, "info" => "修改分组失败"]); 
+        }
+      }     
 
     /**
      * Display the specified resource.
@@ -96,9 +125,12 @@ class UserController extends Controller
     public function edit($id)
     {
         //查询该用户的记录
-        $userRec  = DB::table("user")->where("uid",$id)->first();
+        $userRec  = DB::table("admin_user")->leftJoin("admin_auth_group_access","admin_user.uid","=","admin_auth_group_access.uid")->where("admin_user.uid",$id)->first();
+         //  dd($userRec);
+         //查询所有的分组
+         $groups = DB::table("admin_auth_group")->get();
         //显示模板
-        return view("admin.user.edit",compact("userRec"));
+        return view("admin.user.edit",["userRec" => $userRec, "groups" => $groups]);
         
     }
 
@@ -122,7 +154,7 @@ class UserController extends Controller
             "nickname.required" => "昵称不能为空"
         ]);
         //修改用户的数据
-        $data = $request->except("_token","_method","repassword");
+        $data = $request->except("_token","_method","repassword","group_id");
         $data["createtime"] = date("Y-m-d H:i:s");
         //对密码重新构造
         if(!empty($data["password"])) {
@@ -130,7 +162,9 @@ class UserController extends Controller
         }else {
             unset($data["password"]);
         }
-        if (false != $affectedRows  = DB::table("user")->where("uid",$id )->update($data)) {
+        if (false != $affectedRows  = DB::table("admin_user")->where("uid",$id )->update($data)) {
+          //修改对应的分组
+            DB::table("admin_auth_group_access")->where("uid",$id)->update(["group_id" => $request->get("group_id")]);
             return redirect("/Admin/user");
         }
     }
@@ -144,7 +178,9 @@ class UserController extends Controller
     public function destroy($id)
     {
         //删除该用户记录
-        if (false !== DB::table("user")->where("uid",$id )->delete()) {
+        if (false !== DB::table("admin_user")->where("uid",$id )->delete()) {
+            //删除用户对应分组
+            DB::table("admin_auth_group_access")->where("uid",$id)->delete();
             return redirect("/tips")->with(["info"=>"操作成功","url" => "/Admin/user"]);
          }else {
            return redirect("/tips")->with(["info"=>"操作失败","url" => "/Admin/user"]);  

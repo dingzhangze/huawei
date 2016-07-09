@@ -47,6 +47,20 @@
               <input type="text" name="nickname" value="{{$userRec->nickname}}"  placeholder="输入你的昵称/nickname">
             </div>
           </div>
+            <div class="am-form-group">
+            <label for="nickname" class="am-u-sm-3 am-form-label">分组</label>
+            <div class="am-u-sm-9">
+                <select name="group_id">
+                    @foreach ($groups as $group)
+                       @if ($userRec->group_id == $group->id)
+                        <option value="{{$group->id}}" selected>{{$group->title}}</option>
+                        @else
+                        <option value="{{$group->id}}">{{$group->title}}</option>
+                        @endif
+                    @endforeach
+                </select>
+            </div>
+          </div>
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
               <input type="submit" class="am-btn am-btn-primary" value="修改">

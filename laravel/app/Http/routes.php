@@ -33,5 +33,9 @@ Route::post("/Admin/user/avartar", "Admin\UserController@avartar");
 Route::resource("/Admin/user", "Admin\UserController");
 Route::match(["get", "post"], "Admin/user", "Admin\UserController@index");
 Route::post("/Admin/user/store", "Admin\UserController@store");
-
+ Route::post("/Admin/user/setGroup", "Admin\UserController@setGroup");
 Route::get("/Admin/user/delete/{id}", "Admin\UserController@destroy");
+//分组模块
+Route::resource("/Admin/group", "Admin\GroupController");
+Route::post("/Admin/group/setRule", "Admin\GroupController@setRule");
+Route::get("/Admin/group/delete/{id}", "Admin\GroupController@destroy");

@@ -16,7 +16,7 @@
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="{{asset('/js/admin/jquery.min.js')}}"></script>
+<!--<script src="{{asset('/js/admin/jquery.min.js')}}"></script>-->
 <!--<![endif]-->
 <script src="{{asset('/js/admin/amazeui.min.js')}}"></script>
 <script src="{{asset('/js/admin/app.js')}}"></script>
