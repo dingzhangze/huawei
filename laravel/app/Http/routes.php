@@ -35,3 +35,9 @@ Route::match(["get", "post"], "Admin/user", "Admin\UserController@index");
 Route::post("/Admin/user/store", "Admin\UserController@store");
 
 Route::get("/Admin/user/delete/{id}", "Admin\UserController@destroy");
+
+
+//权限管理的处理
+Route::resource("/Admin/rule","Admin\RuleController");
+Route::post("/Admin/Rule/multi", "Admin\RuleController@multi");
+Route::get("/Admin/rule/show/{id}", "Admin\RuleController@show");
