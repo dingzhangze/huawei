@@ -70,7 +70,7 @@ class RuleController extends Controller
         //dd($data);
      //   验证数据
         $this->validate($request, [
-            "name" => "required|unique:rule",
+            "name" => "required|unique:admin_auth_rule",
             "title" => "required"
         ]);
         if (false !== DB::table("admin_auth_rule")->insert($data))

@@ -26,7 +26,7 @@
         });
         </script>
 
-  <script src="/plugins/uploadify/jquery-1.8.3.min.js" type="text/javascript"></script>
+
   
   
 
@@ -73,11 +73,13 @@
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-file"></span> 用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
             <li><a href="{{url('/Admin/user')}}" class="am-cf"><span class="am-icon-check"></span> 用户列表</a></li>
+             <li><a href="{{url('/Home/user')}}" class="am-cf"><span class="am-icon-th"></span> 会员列表</a></li>
             <li><a href="{{ url("/Admin/user/create") }}"><span class="am-icon-puzzle-piece"></span> 添加用户</a></li>
             <li><a href="{{url('/Admin/group')}}"><span class="am-icon-th"></span> 分组列表<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
             <li><a href="{{url('/Admin/group/create')}}"><span class="am-icon-calendar"></span> 添加分组</a></li>
            <li><a href="{{ url("/Admin/rule") }}"><span class="am-icon-bug"></span>权限列表</a></li>
              <li><a href="{{url('/Admin/rule/create')}}"><span class="am-icon-bug"></span>添加权限</a></li>
+                <li><a href="{{url('/Home/user')}}" class="am-cf"><span class="am-icon-th"></span> 会员列表</a></li>
           </ul>
         </li>
 		<li class="admin-parent">

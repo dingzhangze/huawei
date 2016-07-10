@@ -63,7 +63,7 @@ class UserController extends Controller
     {
         //执行数据验证
         $this->validate($request, [
-            "uname" => "required|unique:user",
+            "uname" => "required|unique:admin_user",
             "password" => "required|between:6, 15",
            "repassword" => "required|same:password",
             "nickname" => "required"
