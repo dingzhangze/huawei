@@ -41,7 +41,7 @@ class LoginController extends Controller
     ]);
 
     //真实性验证
-    $userRec=DB::table("user")->where("uname",$data["uname"])->first();
+    $userRec=DB::table("admin_user")->where("uname",$data["uname"])->first();
     if(empty($userRec))
     {
       $request->flash();
@@ -77,12 +77,11 @@ class LoginController extends Controller
   		$builder->output();
   	}
 
-  //退出登录
-  public function logout()
-  {
-    //销毁Session
-     Session::put("userData", $userRec);
-                        Session::save();
-            return redirect("/Admin");
-  }
-}
+    //退出登陆
+    public function logout()
+    {
+      //销毁session
+      Session::forget("userData");
+      return redirect("/Admin");
+    }
+    }

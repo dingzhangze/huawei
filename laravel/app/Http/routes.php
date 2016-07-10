@@ -14,7 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+//前台注册
+Route::get('/register',"home\LoginController@create");
+Route::post("/register","home\LoginController@store");
+//前台登陆
+Route::get('/login',"home\LoginController@index");
+Route::post('/login',"home\LoginController@logTodo");
 //消息提示
 Route::get("/tips", function () {
     return view("errors.tips");

@@ -8,7 +8,7 @@
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="icon" type="image/png" href="{{asset('/images/admin/favicon.png')}}">
@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="{{asset('/css/admin/amazeui.min.css')}}"/>
   <link rel="stylesheet" href="{{asset('/css/admin/admin.css')}}">
   <script src="/plugins/uploadify/jquery-1.8.3.min.js" type="text/javascript"></script>
-  
-  
+
+
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -44,7 +44,7 @@
         <ul class="am-dropdown-content">
           <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
           <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+          <li><a href="{{url('/Admin/login/logout')}}"><span class="am-icon-power-off"></span> 退出</a></li>
         </ul>
       </li>
       <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
