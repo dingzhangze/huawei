@@ -17,7 +17,7 @@ class RuleController extends Controller
     public function index()
     {
         //查找所有权限
-        $rules=DB::table("auth_rule")->get();
+        $rules=DB::table("admin_auth_rule")->get();
         //模板中显示
         return view("admin.rule.index",compact("rules"));
 //        return($rules);
@@ -42,7 +42,7 @@ class RuleController extends Controller
                break;
            case "删除选中项":
                
-               $result=DB::table("auth_rule")->whereIn("id",$request->get("rules"))->delete();
+               $result=DB::table("admin_auth_rule")->whereIn("id",$request->get("rules"))->delete();
            default;
         }
         return back();
@@ -73,7 +73,7 @@ class RuleController extends Controller
             "name" => "required|unique:rule",
             "title" => "required"
         ]);
-        if (false !== DB::table("auth_rule")->insert($data))
+        if (false !== DB::table("admin_auth_rule")->insert($data))
         {
             return back();
         }
@@ -88,7 +88,7 @@ class RuleController extends Controller
     public function show($id)
     {
         //查找信息
-        $rule = DB::table("auth_rule")->where("id", $id)->first();
+        $rule = DB::table("admin_auth_rule")->where("id", $id)->first();
 //        dd($rule);
         return view("admin.rule.show", compact("rule"));
     }
@@ -115,7 +115,7 @@ class RuleController extends Controller
     {
          $data = $request->except("_token", "_method");
         //修改该权限信息
-        DB::table("auth_rule")->where("id", $id)->update($data);
+        DB::table("admin_auth_rule")->where("id", $id)->update($data);
         //返回上一页
         echo "<script>";
             echo "parent.location.href='/Admin/rule';";
