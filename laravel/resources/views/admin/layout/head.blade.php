@@ -1,14 +1,12 @@
 <!doctype html>
 <html class="no-js fixed-layout">
 <head>
-<!--   <script src="{{ asset('/js/jquery-1.8.3.min') }}" type="text/javascript"></script>-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Amaze UI Admin index Examples</title>
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="icon" type="image/png" href="{{asset('/images/admin/favicon.png')}}">
@@ -16,7 +14,7 @@
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
   <link rel="stylesheet" href="{{asset('/css/admin/amazeui.min.css')}}"/>
   <link rel="stylesheet" href="{{asset('/css/admin/admin.css')}}">
-<<<<<<< HEAD
+
   <script src="{{ asset('/js/jquery-1.8.3.min.js') }}" type="text/javascript"></script>
 
    <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -27,11 +25,11 @@
             }
         });
         </script>
-=======
+
   <script src="/plugins/uploadify/jquery-1.8.3.min.js" type="text/javascript"></script>
   
   
->>>>>>> 3cd1dfd1dc001a5ce5990b9b7f1aaf57e8a13c19
+
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -79,6 +77,37 @@
             <li><a href="{{url('/Admin/group')}}"><span class="am-icon-th"></span> 分组列表<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
             <li><a href="{{url('/Admin/group/create')}}"><span class="am-icon-calendar"></span> 添加分组</a></li>
             <li><a href="admin-404.html"><span class="am-icon-bug"></span> 404</a></li>
+          </ul>
+        </li>
+		<li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-file"></span> 用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+            <li><a href="{{url('/Admin/user')}}" class="am-cf"><span class="am-icon-check"></span> 用户列表</a></li>
+            <li><a href="{{ url("/Admin/user/create") }}"><span class="am-icon-puzzle-piece"></span> 添加用户</a></li>
+            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> 相册页面<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
+            <li><a href="admin-log.html"><span class="am-icon-calendar"></span> 系统日志</a></li>
+            <li><a href="admin-404.html"><span class="am-icon-bug"></span> 404</a></li>
+          </ul>
+        </li>
+		<li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-file"></span> 用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+            <li><a href="{{url('/Admin/user')}}" class="am-cf"><span class="am-icon-check"></span> 用户列表</a></li>
+            <li><a href="{{ url("/Admin/user/create") }}"><span class="am-icon-puzzle-piece"></span> 添加用户</a></li>
+            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> 相册页面<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
+            <li><a href="admin-log.html"><span class="am-icon-calendar"></span> 系统日志</a></li>
+            <li><a href="admin-404.html"><span class="am-icon-bug"></span> 404</a></li>
+          </ul>
+        </li>
+		<li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 用户管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
+            <li><a href="{{url('/Admin/user')}}" class="am-cf"><span class="am-icon-check"></span> 用户列表</a></li>
+            <li><a href="{{ url("/Admin/user/create") }}"><span class="am-icon-puzzle-piece"></span> 添加用户</a></li>
+            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> 相册页面<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
+            <li><a href=""><span class="am-icon-calendar"></span>添加分组</a></li>
+            <li><a href="{{ url("/Admin/rule") }}"><span class="am-icon-bug"></span>权限列表</a></li>
+             <li><a href="{{url('/Admin/rule/create')}}"><span class="am-icon-bug"></span>添加权限</a></li>
           </ul>
         </li>
 		<li class="admin-parent">
