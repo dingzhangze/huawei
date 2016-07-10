@@ -1,6 +1,7 @@
 @include("admin.layout.head")
-<link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
 
+<link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
+ 
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding">
@@ -20,21 +21,22 @@
         <table class="am-table am-table-bd am-table-striped admin-content-table">
           <thead>
           <tr>
-            <th>ID</th><th>账号</th><th>性别</th><th>昵称</th><th>权限管理</th><th>创建时间</th><th>操作</th>
+            <th>UID</th><th>账号</th><th>性别</th><th>昵称</th><th>权限管理</th><th>创建时间</th><th>操作</th>
           </tr>
           </thead>
           <tbody>
               @foreach($users as $user) 
           <tr><td>{{$user->uid}}</td><td>{{$user->uname}}</td><td>{{$user->sex}}</td> <td><span class="am-badge am-badge-success">{{$user->nickname}}</span></td>
             <td>
-              <div class="am-dropdown" data-am-dropdown>
-                <button class="am-btn am-btn-default am-btn-xs am-dropdown-toggle" data-am-dropdown-toggle><span class="am-icon-cog"></span> <span class="am-icon-caret-down"></span></button>
-                <ul class="am-dropdown-content">
-                  <li><a href="#">管理员</a></li>
-                  <li><a href="#">一般用户</a></li>
-                  <li><a href="#">超级用户</a></li>
-                </ul>
-              </div>
+                    <select name="group_id" uid="{{$user->uid}}">
+                        @foreach($groups as $group)
+                            @if ($user->group_id == $group->id)
+                                <option value="{{$group->id}}" selected>{{$group->title}}</option>
+                            @else
+                                <option value="{{$group->id}}">{{$group->title}}</option>
+                            @endif
+                        @endforeach
+                    </select>
             </td>
             <td>{{$user->createtime}}</td>
             <td><a href="{{url('/Admin/user/'.$user->uid.'/edit')}}">修改</a>  <a href="{{url('/Admin/user/delete/'.$user->uid)}}">删除</a></td>
@@ -48,6 +50,7 @@
 </p>
       </div>
     </div>
-
-
-@include("admin.layout.foot")
+  
+ <script src="/js/admin/user_index.js"></script>
+     
+ @include("admin.layout.foot")
