@@ -6,7 +6,7 @@
 
 $(function() {
    $("table.am-table  input:checkbox").click(function () {
-      //    alert($(this).val());
+//        alert($(this).val());
       //发送ajax请求 给该分组添加或者删除权限
       $.ajax({
             type : "post",

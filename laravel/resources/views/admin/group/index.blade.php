@@ -5,7 +5,7 @@
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">角色管理</strong>  <small></small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">分组列表</strong>  <small></small></div>
  
     </div>
 

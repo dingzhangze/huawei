@@ -3,11 +3,12 @@
 <!--<script src="{{ asset('/plugins/uploadify/jquery.uploadify.min.js')}}"></script>-->
 <script src="/plugins/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
 <link type="text/css" rel="stylesheet" href="{{asset('/plugins/uploadify/uploadify.css')}}" />
+<link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
 <link rel="stylesheet" href="/css/admin/index-a.css">
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页</strong> / <small>一些常用模块</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页</strong>  <small></small></div>
     </div>
 
       <div>
