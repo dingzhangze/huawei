@@ -70,12 +70,16 @@ class RuleController extends Controller
         //dd($data);
      //   验证数据
         $this->validate($request, [
-            "name" => "required|unique:rule",
+            "name" => "required|unique:admin_auth_rule",
             "title" => "required"
+        ],[
+            "name.required" => "权限不能为空！",
+            "name.unique"=>"权限重复！",
+            "title.required"=>"权限名不能为空！"
         ]);
         if (false !== DB::table("admin_auth_rule")->insert($data))
         {
-            return back();
+           return redirect("/tips")->with(["info" => "添加权限成功！", "url" => "/Admin/rule"]);
         }
     }
 

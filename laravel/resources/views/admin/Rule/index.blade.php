@@ -6,7 +6,7 @@
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户首页</strong>  <small></small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">权限列表</strong>  <small></small></div>
     </div>
       
     <div class="am-g">

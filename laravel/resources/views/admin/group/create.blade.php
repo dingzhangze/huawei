@@ -1,4 +1,5 @@
 @include("admin.layout.head")
+<link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding am-padding-bottom-0">
@@ -14,7 +15,7 @@
           <div class="am-form-group">
             <label for="user-name" class="am-u-sm-3 am-form-label">名称</label>
             <div class="am-u-sm-9">
-              <input type="text" id="title" name="title" value="">
+                <input type="text" id="title" name="title" value="">
             </div>
           </div>
 

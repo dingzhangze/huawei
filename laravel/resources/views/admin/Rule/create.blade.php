@@ -1,8 +1,9 @@
 @include("admin.layout.head")
+<link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding am-padding-bottom-0">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">添加用户</strong> / <small>Create a user </small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">添加权限</strong> / <small>Create a user </small></div>
     </div>
     <hr/>
     <div class="am-g">
