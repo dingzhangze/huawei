@@ -81,7 +81,8 @@ class LoginController extends Controller
   public function logout()
   {
     //销毁Session
-    Session::forget("userData");
-    return redirect("/Admin");
+     Session::put("userData", $userRec);
+                        Session::save();
+            return redirect("/Admin");
   }
 }
