@@ -38,7 +38,7 @@ Route::post("/Admin/user/avartar", "Admin\UserController@avartar");
 Route::resource("/Admin/user", "Admin\UserController");
 Route::match(["get", "post"], "Admin/user", "Admin\UserController@index");
 Route::post("/Admin/user/store", "Admin\UserController@store");
- Route::post("/Admin/user/setGroup", "Admin\UserController@setGroup");
+Route::post("/Admin/user/setGroup", "Admin\UserController@setGroup");
 Route::get("/Admin/user/delete/{id}", "Admin\UserController@destroy");
 
 //分组模块
@@ -46,9 +46,13 @@ Route::resource("/Admin/group", "Admin\GroupController");
 Route::post("/Admin/group/setRule", "Admin\GroupController@setRule");
 Route::get("/Admin/group/delete/{id}", "Admin\GroupController@destroy");
 
-
-
 //权限管理的处理
 Route::resource("/Admin/rule","Admin\RuleController");
 Route::post("/Admin/Rule/multi", "Admin\RuleController@multi");
 Route::get("/Admin/rule/show/{id}", "Admin\RuleController@show");
+
+//分类模块
+Route::resource("/Admin/category", "Admin\CategoryController");
+Route::get("/Admin/category/setIsNav/isNav/{isNav}/cid/{cid}", "Admin\CategoryController@setIsNav");
+Route::get("/Admin/category/child/{cid}", "Admin\CategoryController@create");
+Route::get("/Admin/category/delete/{cid}", "Admin\CategoryController@destroy");
