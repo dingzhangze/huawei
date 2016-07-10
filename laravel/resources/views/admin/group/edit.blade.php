@@ -1,4 +1,5 @@
 @include("admin.layout.head")
+<link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding am-padding-bottom-0">

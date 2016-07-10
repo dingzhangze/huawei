@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>Login Page | Amaze UI Example</title>
+  <title>Login Hua Wei</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -35,8 +35,8 @@
 <body>
 <div class="header">
   <div class="am-g">
-    <h1>Web ide</h1>
-    <p>Integrated Development Environment<br/>代码编辑，代码生成，界面设计，调试，编译</p>
+    <h1>HUAWEI</h1>
+    <p>Welcome to the backstage management system<br/>欢迎登陆后台管理系统</p>
   </div>
   <hr />
 </div>

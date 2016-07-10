@@ -63,7 +63,7 @@ class UserController extends Controller
     {
         //执行数据验证
         $this->validate($request, [
-            "uname" => "required|unique:user",
+            "uname" => "required|unique:admin_user",
             "password" => "required|between:6, 15",
            "repassword" => "required|same:password",
             "nickname" => "required"
@@ -80,6 +80,7 @@ class UserController extends Controller
         $data = $request->except("_token","repassword","group_id");
         $data["password"] = Hash::make($data["password"]);
           $data["createtime"] = date("Y-m-d H:i:s");
+      //    dd($data);
         //执行数据创建
         if (FALSE !== $insertID =  DB::table("admin_user")->insertGetId($data)) {
             //将新增用户 添加到对应的分组里面
@@ -202,7 +203,7 @@ class UserController extends Controller
         $file->move("./uploads/avartar", $rename);
 
         //将存储的文件信息 写入数据库
-        DB::table("user")->where("uid", $request->get("uid"))->update(["avartar" => "/uploads/avartar/" . $rename]);
+        DB::table("admin_user")->where("uid", $request->get("uid"))->update(["avartar" => "/uploads/avartar/" . $rename]);
 
         $data = Session::pull("userData");
         $data->avartar = "/uploads/avartar/" . $rename;

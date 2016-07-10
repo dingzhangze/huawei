@@ -34,6 +34,8 @@ Route::post("/Admin/login/logTodo", "Admin\LoginController@logTodo");
 Route::get("/Admin/login/captcha/{tmp}", "Admin\LoginController@captcha");
 Route::get("/Admin/login/logout", "Admin\LoginController@logout");
 Route::post("/Admin/user/avartar", "Admin\UserController@avartar");
+//前台会员模块
+ Route::resource("/Home/user","Home\UserController");
 //用户模块
 Route::resource("/Admin/user", "Admin\UserController");
 Route::match(["get", "post"], "Admin/user", "Admin\UserController@index");

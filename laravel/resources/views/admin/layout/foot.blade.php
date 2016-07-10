@@ -1,6 +1,6 @@
 <footer class="admin-content-footer">
   <hr>
-  <p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
+  <p class="" >© 兄弟连 PHP143期  AK47三人组 2016</p>
 </footer>
 </div>
 <!-- content end -->
