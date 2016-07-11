@@ -32,7 +32,7 @@ class HUserController extends Controller
 
 
          //显示模板
-         return view("home.user.index", ["users" => $users, "keyword" => $keyword]);
+         return view("admin.Huser.index", ["users" => $users, "keyword" => $keyword]);
     }
 
     /**
