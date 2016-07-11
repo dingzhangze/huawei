@@ -76,9 +76,9 @@
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
             <li><a href="{{url('/Admin/user')}}" class="am-cf"><span class="am-icon-check"></span> 用户列表</a></li>
 
-             <li><a href="{{url('/Home/user')}}" class="am-cf"><span class="am-icon-th"></span> 会员列表</a></li>
+             <li><a href="{{url('/Admin/Huser')}}" class="am-cf"><span class="am-icon-th"></span> 会员列表</a></li>
             <li><a href="{{ url("/Admin/user/create") }}"><span class="am-icon-puzzle-piece"></span> 添加用户</a></li>
-            <li><a href="{{url('/Admin/group')}}"><span class="am-icon-th"></span> 分组列表<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
+            <li><a href="{{url('/Admin/group')}}"><span class="am-icon-th"></span> 分组列表</a></li>
             <li><a href="{{url('/Admin/group/create')}}"><span class="am-icon-calendar"></span> 添加分组</a></li>
            <li><a href="{{ url("/Admin/rule") }}"><span class="am-icon-bug"></span>权限列表</a></li>
              <li><a href="{{url('/Admin/rule/create')}}"><span class="am-icon-bug"></span>添加权限</a></li>
@@ -92,34 +92,34 @@
             <li><a href="{{ url('/Admin/category/create') }}"><span class="am-icon-puzzle-piece"></span> 添加根类</a></li>
           </ul>
         </li>
-		
-		
+
+
 		<li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-file"></span> 商品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav2">
             <li><a href="" class="am-cf"><span class="am-icon-th"></span> 商品列表</a></li>
             <li><a href=""><span class="am-icon-puzzle-piece"></span> 添加商品</a></li>
-            
+
           </ul>
         </li>
 		<li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 订单管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav3">
             <li><a href="" class="am-cf"><span class="am-icon-th"></span> 订单列表</a></li>
-          
+
           </ul>
         </li>
-	
+
 		<li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-file"></span> 广告管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
             <li><a href="" class="am-cf"><span class="am-icon-th"></span> 广告列表</a></li>
             <li><a href=""><span class="am-icon-puzzle-piece"></span> 添加广告</a></li>
-            
+
           </ul>
-        </li>	
-		
-    
+        </li>
+
+
       </ul>
 
       <div class="am-panel am-panel-default admin-sidebar-panel">

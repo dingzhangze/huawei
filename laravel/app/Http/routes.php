@@ -12,7 +12,7 @@
 */
 //前台首页
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 //前台注册
 Route::get('/register',"home\LoginController@create");
@@ -35,7 +35,7 @@ Route::get("/Admin/login/captcha/{tmp}", "Admin\LoginController@captcha");
 Route::get("/Admin/login/logout", "Admin\LoginController@logout");
 Route::post("/Admin/user/avartar", "Admin\UserController@avartar");
 //前台会员模块
- Route::resource("/Home/user","Home\UserController");
+ Route::resource("/Admin/Huser","Admin\HUserController");
 //用户模块
 Route::resource("/Admin/user", "Admin\UserController");
 Route::match(["get", "post"], "Admin/user", "Admin\UserController@index");

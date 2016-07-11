@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Home;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
@@ -11,7 +11,7 @@ use DB,
     Validator,
     Hash;
 
-class UserController extends Controller
+class HUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,9 +28,9 @@ class UserController extends Controller
                  ->paginate(8);
           //获取搜索条件
             $keyword = $request->get("keyword");
-        
-    
-        
+
+
+
          //显示模板
          return view("home.user.index", ["users" => $users, "keyword" => $keyword]);
     }

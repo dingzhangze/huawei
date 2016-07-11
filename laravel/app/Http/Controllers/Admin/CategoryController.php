@@ -18,7 +18,7 @@ class CategoryController extends Controller
     public function index()
     {
       //查找所有的分类
-      $categories = DB::table("admin_category")->orderByRaw("CONCAT_WS(',', path, cid)")->get();
+      $categories = DB::table("admin_category")->orderByRaw("CONCAT_WS(',', path, cid)")->paginate(10);
       //重组数据值 在类名前缀一个缩进
       foreach ($categories as $key => $cate) {
           $categories[$key]->cname = "||" . str_repeat("=", substr_count($cate->path, ",") * 10) . $cate->cname;
