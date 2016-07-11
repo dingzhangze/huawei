@@ -32,8 +32,8 @@
          
             <td>{{$user->email}}</td>
             <td>{{$user->Type}}</td><td>{{$user->createtime}}</td>
-            <td><input type="radio" name="state" value="{{$user->state}}" checked/> 启用
-        <input type="radio" name="state" value="{{$user->state}}"  />禁用</td>
+            <td><input type="radio" name="state_{{$user->id}}" value="1" @if($user->state == 1) checked @endif/> 启用
+        <input type="radio" name="state_{{$user->id}}" value="0" @if($user->state == 0) checked @endif />禁用</td>
           </tr>
           @endforeach
         
