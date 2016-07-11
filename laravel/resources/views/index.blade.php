@@ -684,7 +684,7 @@
 <div class="hot-board">
 	<!--ads start-->
 	<div style="width: 100%; height: 448px;" class="ec-slider" id="index_slider">
-	<img class="qwe" src="folder/1.jpg" height="448px" style="margin-left:-300px; position: absolute;
+	<img class="qwe" src="images/folder/1.jpg" height="448px" style="margin-left:-300px; position: absolute;
 "/>
 	<div class="ec-slider-nav-1">
 	<span onclick="slider.flag = 0;" >1</span>
@@ -706,7 +706,7 @@
 					setInterval(slider.nextFrame, 3000);
 				},
 				nextFrame :function () {
-					document.getElementsByClassName("qwe")[0].src = "folder/" + slider.arr[slider.flag%slider.arr.length];
+					document.getElementsByClassName("qwe")[0].src = "imagese/folder/" + slider.arr[slider.flag%slider.arr.length];
 					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span"); 
 					for (var i = 0; i < lis.length; i++) {
 						if (i == slider.flag%slider.arr.length) {
