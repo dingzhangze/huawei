@@ -683,7 +683,49 @@
 <!-- 20130904-热门板-start -->
 <div class="hot-board">
 	<!--ads start-->
-	<div style="width: 100%; height: 448px;" class="ec-slider" id="index_slider"><ul style="width: 100%; height: 448px;" class="ec-slider-list"><li class="ec-slider-item" style="background: rgb(241, 244, 247) url(&quot;http://res.vmallres.com/pimages//sale/2016-07/20160705155237587.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; position: absolute; display: none;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/notice-731" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第1帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(241, 244, 247) url(&quot;http://res.vmallres.com/pimages//sale/2016-06/20160629175426301.png&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/product/3325.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第2帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(244, 244, 244) url(&quot;http://res.vmallres.com/pimages//sale/2016-06/20160624103900907.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; display: none; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/product/186517099.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第3帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(162, 123, 95) url(&quot;http://res.vmallres.com/pimages//sale/2016-06/2016060313053034.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; display: none; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/product/2647.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第4帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(241, 244, 247) url(&quot;http://res.vmallres.com/pimages//sale/2016-07/20160705155252756.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; display: none; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/product/3451.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第5帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(219, 33, 33) url(&quot;http://res.vmallres.com/pimages//sale/2016-06/20160617113305986.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; display: none; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/product/2634.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第6帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(219, 33, 33) url(&quot;http://res.vmallres.com/pimages//sale/2016-07/20160701091447748.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; display: none; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/product/2322.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第7帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li><li class="ec-slider-item" style="background: rgb(245, 245, 245) url(&quot;http://res.vmallres.com/pimages//sale/2016-07/20160705155305242.jpg&quot;) no-repeat scroll 50% 0px; width: 100%; height: 448px; display: none; position: absolute;"><div style="width:100%;" class="ec-slider-item-img"><a style="width:100%;height:448px;display:block;" href="http://www.vmall.com/www.vmall.com/product/641202729.html" target="_blank" onclick="_paq.push(['trackLink','主站PC首焦第8帧', 'link', ' ']);ec.code.addAnalytics({hicloud:true});"></a></div></li></ul><div class="ec-slider-nav-1"><span class="">1</span><span class="current">2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div><a style="display: none;" class="button-slider-prev" href="javascript:;"></a><a style="display: none;" class="button-slider-next" href="javascript:;"></a></div><ul></ul><ul></ul>
+	<div style="width: 100%; height: 448px;" class="ec-slider" id="index_slider">
+	<img class="qwe" src="folder/1.jpg" height="448px" style="margin-left:-300px; position: absolute;
+"/>
+	<div class="ec-slider-nav-1">
+	<span onclick="slider.flag = 0;" >1</span>
+	<span onclick="slider.flag = 1;" >2</span>
+	<span onclick="slider.flag = 2;" >3</span>
+	<span onclick="slider.flag = 3;" >4</span>
+	<span onclick="slider.flag = 4;" >5</span>
+	<span onclick="slider.flag = 5;" >6</span>
+	<span onclick="slider.flag = 6;" >7</span>
+	<span onclick="slider.flag = 7;" >8</span>
+	<span onclick="slider.flag = 8;" >9</span>
+	<span onclick="slider.flag = 9;" >10</span>
+	</div>
+	<script>
+			var slider = {
+				arr : ['1.jpg', '2.jpg', '3.jpg', '4.png', '5.jpg', '6.jpg', '7.jpg', '8.jpg','9.jpg', '10.jpg'],
+				flag : 0,
+				start : function () {
+					setInterval(slider.nextFrame, 3000);
+				},
+				nextFrame :function () {
+					document.getElementsByClassName("qwe")[0].src = "folder/" + slider.arr[slider.flag%slider.arr.length];
+					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span"); 
+					for (var i = 0; i < lis.length; i++) {
+						if (i == slider.flag%slider.arr.length) {
+							lis[i].style.backgroundColor = "#cf2b33"; 
+							
+						} else {
+							lis[i].style.backgroundColor = ""; 
+							
+						}
+					}
+					slider.flag++;
+				}
+			};
+			
+			slider.start();
+		</script>
+                <a style="display: none;" class="button-slider-prev" href="javascript:;"></a>
+                <a style="display: none;" class="button-slider-next" href="javascript:;"></a>
+                </div><ul></ul><ul></ul>
 	<!--ads end-->
 </div><!-- 20130904-热门板-end -->
 <div class="hr-20"></div>
