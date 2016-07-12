@@ -714,25 +714,27 @@
 				},
 				nextFrame :function () {
 					document.getElementsByClassName("qwe")[0].src = "images/folder/" + slider.arr[slider.flag%slider.arr.length];
-					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span"); 
+
+					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span");
+
 					for (var i = 0; i < lis.length; i++) {
 						if (i == slider.flag%slider.arr.length) {
-							lis[i].style.backgroundColor = "#cf2b33"; 
-							
+							lis[i].style.backgroundColor = "#cf2b33";
+
 						} else {
-							lis[i].style.backgroundColor = ""; 
-							
+							lis[i].style.backgroundColor = "";
+
 						}
 					}
 					slider.flag++;
 				}
 			};
-			
+
 			slider.start();
 		</script>
                 <a style="display: none;" class="button-slider-prev" href="javascript:;"></a>
                 <a style="display: none;" class="button-slider-next" href="javascript:;"></a>
-                
+
 	<!--ads end-->
 </div><!-- 20130904-热门板-end -->
 <div class="hr-20"></div>
@@ -912,24 +914,24 @@
 				},
 				nextFrame1 :function () {
 					document.getElementsByClassName("lunbo")[0].src = "images/folder/" + sliders.arr[sliders.flag%sliders.arr.length];
-					var lis = document.getElementsByClassName("ec-slider-nav")[0].getElementsByTagName("span"); 
+					var lis = document.getElementsByClassName("ec-slider-nav")[0].getElementsByTagName("span");
 					for (var i = 0; i < lis.length; i++) {
 						if (i == sliders.flag%sliders.arr.length) {
 							lis[i].style.class="current";
-							
+
 						} else {
 							lis[i].style.class="";
-							
+
 						}
 					}
 					sliders.flag++;
 				}
 			};
-			
+
 			sliders.start();
 		</script>
                         <a style="display: none;" class="button-slider-prev" href="javascript:;"></a>
-   
+
 	</div><!-- 20130903-ad-1000*160-end -->
 </div>
 <div class="hr-20"></div>
@@ -2188,6 +2190,7 @@
 			</dd>
 		</dl>
 </div>
+<<<<<<< HEAD
 
 <!--服务-end -->
 
