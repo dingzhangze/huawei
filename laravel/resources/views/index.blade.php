@@ -389,21 +389,22 @@
 <!-- 20130904-频道-优惠-start -->
 <div class="channel-favorable">
 	<ul class="channel-pro-list" id="main-sale-list">
-
-		<li id="channel-pro-favorable-1" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="859934072">
+            
+                   @foreach($phs as $ph)
+		<li id="channel-pro-favorable-{{rand(1,4)}}" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="859934072">
 			<div class="channel-pro-panels">
 				<div class="pro-info">
-					<div class="p-img"><a href="http://www.vmall.com/product/186517099.html" title="荣耀V8" target="_blank"><img src="{{url('/images/home/1467688781721.png')}}" alt="荣耀V8"></a></div>
-					<div class="p-name"><a href="http://www.vmall.com/product/186517099.html" title="荣耀V8" target="_blank">
-					荣耀V8</a></div>
+					<div class="p-img"><a href="" title="{{$ph->name}}" target="_blank"><img src="{{$ph->im}}" alt="荣耀V8"></a></div>
+					<div class="p-name"><a href="http://www.vmall.com/product/186517099.html" title="{{$ph->name}}" target="_blank">
+					{{$ph->name}}</a></div>
 					<div class="p-shining">
-						<div class="p-slogan">如有异见，不如一见！</div>
-						<div class="p-promotions">爆款热卖中！诚邀尊享</div>
+						<div class="p-slogan"></div>
+						<div class="p-promotions"></div>
 					</div>
 					<div class="p-price">
-					<em>¥</em><span>2299</span></div>
+					<em>¥</em><span>{{$ph->price}}</span></div>
 					<div class="p-button">
-					<a href="http://www.vmall.com/product/186517099.html" target="_blank" class="channel-button">立即抢购</a>
+					<a href="" target="_blank" class="channel-button">立即抢购</a>
 					</div>
 					<div class="p-countdown hide">
 						<span class="p-time"></span>
@@ -413,78 +414,8 @@
 				</div>
 			</div>
 		</li>
-
-		<li id="channel-pro-favorable-2" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="8259">
-			<div class="channel-pro-panels">
-				<div class="pro-info">
-					<div class="p-img"><a href="http://www.vmall.com/product/3325.html" title="HUAWEI P9" target="_blank"><img src="{{url('/images/home/1466652763762.png')}}" alt="HUAWEI P9"></a></div>
-					<div class="p-name"><a href="http://www.vmall.com/product/3325.html" title="HUAWEI P9" target="_blank">
-					HUAWEI P9</a></div>
-					<div class="p-shining">
-						<div class="p-slogan">华为|徕卡联合设计</div>
-						<div class="p-promotions">陶瓷白限量发售 火爆热卖</div>
-					</div>
-					<div class="p-price">
-					<em>¥</em><span>3688</span></div>
-					<div class="p-button">
-					<a href="http://www.vmall.com/product/3325.html" target="_blank" class="channel-button">立即抢购</a>
-					</div>
-					<div class="p-countdown hide">
-						<span class="p-time"></span>
-						<span class="p-quantity" style="display:none"></span>
-					</div>
-					<i class="p-tag"><img src="{{url('/images/home/1460242398600.png')}}" alt=""></i>
-				</div>
-			</div>
-		</li>
-
-		<li id="channel-pro-favorable-3" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="418934910">
-			<div class="channel-pro-panels">
-				<div class="pro-info">
-					<div class="p-img"><a href="http://www.vmall.com/product/2519.html" title="荣耀畅玩5X" target="_blank"><img src="{{url('/images/home/1467693146049.png')}}" alt="荣耀畅玩5X"></a></div>
-					<div class="p-name"><a href="http://www.vmall.com/product/2519.html" title="荣耀畅玩5X" target="_blank">
-					荣耀畅玩5X</a></div>
-					<div class="p-shining">
-						<div class="p-slogan">金属机身，指纹识别</div>
-						<div class="p-promotions">全网通版限量赠贴膜&amp;引擎耳机plus</div>
-					</div>
-					<div class="p-price">
-					<em>¥</em><span>999</span></div>
-					<div class="p-button">
-					<a href="http://www.vmall.com/product/2519.html" target="_blank" class="channel-button">立即抢购</a>
-					</div>
-					<div class="p-countdown hide">
-						<span class="p-time"></span>
-						<span class="p-quantity" style="display:none"></span>
-					</div>
-					<i class="p-tag"><img src="{{url('/images/home/1460242398600.png')}}" alt=""></i>
-				</div>
-			</div>
-		</li>
-
-		<li id="channel-pro-favorable-4" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="67053624">
-			<div class="channel-pro-panels">
-				<div class="pro-info">
-					<div class="p-img"><a href="http://www.vmall.com/product/3451.html" title="荣耀畅玩5C" target="_blank"><img src="{{url('/images/home/1467693389663.png')}}" alt="荣耀畅玩5C"></a></div>
-					<div class="p-name"><a href="http://www.vmall.com/product/3451.html" title="荣耀畅玩5C" target="_blank">
-					荣耀畅玩5C</a></div>
-					<div class="p-shining">
-						<div class="p-slogan">16纳米芯，真芯长续航</div>
-						<div class="p-promotions">配件套餐，更享优惠</div>
-					</div>
-					<div class="p-price">
-					<em>¥</em><span>1099</span></div>
-					<div class="p-button">
-					<a href="http://www.vmall.com/product/3451.html" target="_blank" class="channel-button">立即抢购</a>
-					</div>
-					<div class="p-countdown hide">
-						<span class="p-time"></span>
-						<span class="p-quantity" style="display:none"></span>
-					</div>
-					<i class="p-tag"><img src="{{url('/images/home/1460244941377.png')}}" alt=""></i>
-				</div>
-			</div>
-		</li>
+                    @endforeach
+		
 	</ul>
 </div><!-- 20130904-频道-优惠-end -->	</div>
 	<div class="fr u-4-1">
@@ -601,17 +532,17 @@
 					<li id="channel-pro-1-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2172.html#6146,75" title="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1465716048947.png')}}" style="" alt="">
+								<div class="p-img"><a href="http://www.vmall.com/product/2172.html#6146,75" title="{{$rexiao[0]->name}}" target="_blank" rel="nofollow">
+												<img src="{{$rexiao[0]->im}}" style="" alt="">
 								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/2172.html#6146,75" title="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）" target="_blank">
-								荣耀7增强版
+								<div class="p-name"><a href="http://www.vmall.com/product/2172.html#6146,75" title="{{$rexiao[0]->name}}" target="_blank">
+								{{$rexiao[0]->name}}
 								</a></div>
 								<div class="p-shining">
 									<div class="p-slogan">智灵键，创新语音控制</div>
 									<div class="p-promotions">原价1799元 直降200元！</div>
 								</div>
-								<div class="p-price"><em>¥</em><span>1599</span></div>
+								<div class="p-price"><em>¥</em><span>{{$rexiao[0]->price}}</span></div>
 								<div class="p-button"><a href="http://www.vmall.com/product/2172.html#551485,75" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
 									<i class="p-tag">
 													<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）">
@@ -663,19 +594,21 @@
 					<li id="channel-pro-2-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/414244322.html#950613386,42" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1467045847762.png')}}" style="" alt="">
+								<div class="p-img"><a href="" title="{{$rexiao[1]->name}}" target="_blank" rel="nofollow">
+												<img src="{{$rexiao[1]->im}}" style="" alt="">
 								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/414244322.html#950613386,42" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">
-								荣耀畅玩手环 A1
+								<div class="p-name"><a href="" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">
+								{{$rexiao[1]->name}}
 								</a></div>
 								<div class="p-shining">
 									<div class="p-slogan">精致随行，百搭外观，轻巧佩戴。</div>
 									<div class="p-promotions"></div>
 								</div>
-								<div class="p-price"><em>¥</em><span>129</span></div>
-								<div class="p-button"><a href="http://www.vmall.com/product/414244322.html#551507,42" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
-
+								<div class="p-price"><em>¥</em><span>{{$rexiao[1]->price}}</span></div>
+								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+                                                                            <i class="p-tag">
+										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）">
+                                                                            </i>
 							</div>
 						</div>
 					</li>
@@ -724,19 +657,21 @@
 					<li id="channel-pro-3-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/965498680.html#469912173,241" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res2.vmallres.com/pimages//frontLocation/content/516951/1465722092817.png" alt="">
+								<div class="p-img"><a href="" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank" rel="nofollow">
+												<img src="{{$rexiao[2]->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/965498680.html#469912173,241" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank">
-								HUAWEI MateBook
+								<div class="p-name"><a href="" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank">
+								{{$rexiao[2]->name}}
 								</a></div>
 								<div class="p-shining">
 									<div class="p-slogan">二合一笔记本电脑</div>
 									<div class="p-promotions"></div>
 								</div>
-								<div class="p-price"><em>¥</em><span>4988</span></div>
-								<div class="p-button"><a href="http://www.vmall.com/product/965498680.html#551511,241" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
-
+								<div class="p-price"><em>¥</em><span>{{$rexiao[2]->price}}</span></div>
+								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+                                                                            <i class="p-tag">
+										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金">
+                                                                            </i>
 							</div>
 						</div>
 					</li>
@@ -750,7 +685,7 @@
 								<div class="p-name">
 								<a href="" title="{{$p->name}}" target="_blank">
 								{{$p->name}}
-									<span class="p-slogan">灵活输入，自由书写</span>
+									<span class="p-slogan"></span>
 
 								</a></div>
 								<div class="p-price"><em>¥</em><span>{{$p->price}}</span></div>
@@ -783,21 +718,21 @@
 					<li id="channel-pro-4-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3053.html#7219,45" title="荣耀路由Pro 大户型穿墙1200Mbps智能AC有线无线双千兆旗舰路由器（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/53/1452561675294.png" alt="">
+								<div class="p-img"><a href="" title="" target="_blank" rel="nofollow">
+												<img src="{{$rexiao[3]->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/3053.html#7219,45" title="荣耀路由Pro 大户型穿墙1200Mbps智能AC有线无线双千兆旗舰路由器（白色）" target="_blank">
-								荣耀路由Pro
+								<div class="p-name"><a href="" title="" target="_blank">
+								{{$rexiao[3]->name}}
 								</a></div>
 								<div class="p-shining">
-									<div class="p-slogan">有线无线双千兆，大户型覆盖，上网、视频、游戏就是快！</div>
-									<div class="p-promotions">HiLink智能家居扩展一步到位。</div>
+									<div class="p-slogan">创新子母路由，信号覆盖无忧！双WIFI覆盖，穿墙稳定，Hilink智能家居，网络安全无线路由器</div>
+									<div class="p-promotions"></div>
 								</div>
-								<div class="p-price"><em>¥</em><span>328</span></div>
-								<div class="p-button"><a href="http://www.vmall.com/product/3053.html#551417,45" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
-									<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res3.vmallres.com/pimages//tag/35/1460242398600.png" alt="荣耀路由Pro 大户型穿墙1200Mbps智能AC有线无线双千兆旗舰路由器（白色）">
-									</i>
+								<div class="p-price"><em>¥</em><span>{{$rexiao[3]->price}}</span></div>
+								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+									 <i class="p-tag">
+										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="">
+                                                                            </i>
 
 							</div>
 						</div>
@@ -848,21 +783,21 @@
 					<li id="channel-pro-5-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/259735704.html#708016845,0" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank" rel="nofollow">
-												<img src="%./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/520633/1466691797201.png" alt="">
+								<div class="p-img"><a href="" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank" rel="nofollow">
+												<img src="{{$rexiao[4]->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/259735704.html#708016845,0" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank">
-								荣耀 移动电源 10000mAh
+								<div class="p-name"><a href="" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank">
+								{{$rexiao[4]->name}}
 								</a></div>
 								<div class="p-shining">
 									<div class="p-slogan">普通版、快充版双项选择，129元起</div>
 									<div class="p-promotions"></div>
 								</div>
-								<div class="p-price"><em>¥</em><span>169</span></div>
-								<div class="p-button"><a href="http://www.vmall.com/product/259735704.html#551521,0" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
-									<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/14/1446369334983.png" alt="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）">
-									</i>
+								<div class="p-price"><em>¥</em><span>{{$rexiao[4]->price}}</span></div>
+								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+									 <i class="p-tag">
+										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）">
+                                                                            </i>
 
 							</div>
 						</div>
