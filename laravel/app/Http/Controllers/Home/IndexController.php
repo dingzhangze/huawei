@@ -17,6 +17,7 @@ class IndexController extends Controller
      */
     public function index(Request $request)
     {
+        //首页导航
         $firstNav=DB::table("admin_category")->where("pid","=","0")->get();
         $nav=Db::table("admin_category")->get();
 //        foreach($firstNav as $fn){
@@ -26,7 +27,16 @@ class IndexController extends Controller
 //       
 ////        dd($firstNav);
 //          dd($subclass);
-        return view("index",["firstNav" => $firstNav,"nav" => $nav]);
+      
+       //首页商品类别
+       $phones = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","1")->take(10)->get();
+       $pban = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","2")->take(10)->get();
+       $pc = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","5")->orderBy("gid","desc")->take(2)->get();
+        $zns = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","6")->take(6)->get();
+        $pjs = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","7")->take(14)->get();
+     //  dd($pjs);
+       
+        return view("index",["firstNav" => $firstNav,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs]);
         
         
     }

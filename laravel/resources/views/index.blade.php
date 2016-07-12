@@ -620,187 +620,25 @@
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-1-2" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2647.html#6035,76" title="华为 HUAWEI Mate 8 3GB+32GB版 移动定制（月光银）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1461278083688.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2647.html#6035,76" title="华为 HUAWEI Mate 8 3GB+32GB版 移动定制（月光银）" target="_blank">
-								HUAWEI Mate 8
-									<span class="p-slogan">梅西版周一、三、五10:08限量销售</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>2699</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-3" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/641202729.html#755939196,77" title="荣耀畅玩5A 双卡双待 移动版 智能手机（白色）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1467693232997.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/641202729.html#755939196,77" title="荣耀畅玩5A 双卡双待 移动版 智能手机（白色）" target="_blank">
-								荣耀畅玩5A
-									<span class="p-slogan">7月12日10:08震撼发售</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>699</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1446369334983.png')}}" alt="荣耀畅玩5A 双卡双待 移动版 智能手机（白色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-4" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3419.html#8559,76" title="HUAWEI P9 Plus 4GB+64GB 全网通版（陶瓷白）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1466672790985.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3419.html#8559,76" title="HUAWEI P9 Plus 4GB+64GB 全网通版（陶瓷白）" target="_blank">
-								HUAWEI P9 Plus
-									<span class="p-slogan">5.5英寸+3400mAh电池</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>3988</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460246367953_002.png')}}" alt="HUAWEI P9 Plus 4GB+64GB 全网通版（陶瓷白）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-5" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3427.html#8607,81" title="HUAWEI G9 青春版 全网通版 16GB ROM（白色）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1463447506002.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3427.html#8607,81" title="HUAWEI G9 青春版 全网通版 16GB ROM（白色）" target="_blank">
-								HUAWEI G9 青春版
-									<span class="p-slogan">限量赠送保护壳</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>1699</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460246367953_002.png')}}" alt="HUAWEI G9 青春版 全网通版 16GB ROM（白色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-6" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2324.html#7827,75" title="荣耀7i 双卡双待 全网通版 3GB内存+32GB存储（冰川白）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1466128630678.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2324.html#7827,75" title="荣耀7i 双卡双待 全网通版 3GB内存+32GB存储（冰川白）" target="_blank">
-								荣耀7i
-									<span class="p-slogan">全网通版原价1699直降200</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>1499</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀7i 双卡双待 全网通版 3GB内存+32GB存储（冰川白）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-7" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3325.html#8279,76" title="HUAWEI P9 3GB+32GB 联通定制版（钛银灰）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1465973713137.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3325.html#8279,76" title="HUAWEI P9 3GB+32GB 联通定制版（钛银灰）" target="_blank">
-								HUAWEI P9
-									<span class="p-slogan">1200万徕卡双摄像头</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>2988</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460242398600_003.png')}}" alt="HUAWEI P9 3GB+32GB 联通定制版（钛银灰）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-8" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2225.html#6152,77" title="荣耀4A 双卡双待 全网通版（金色）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1465733614542.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2225.html#6152,77" title="荣耀4A 双卡双待 全网通版（金色）" target="_blank">
-								荣耀4A
-									<span class="p-slogan">青春优等生，火爆销售中</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>699</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-9" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2634.html#6052,81" title="华为 HUAWEI 畅享5S 移动 2GB RAM+16GB ROM（金色）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1466043150723.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2634.html#6052,81" title="华为 HUAWEI 畅享5S 移动 2GB RAM+16GB ROM（金色）" target="_blank">
-								华为畅享5S
-									<span class="p-slogan">直降100元</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>999</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460248152224.png')}}" alt="华为 HUAWEI 畅享5S 移动 2GB RAM+16GB ROM（金色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-1-10" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2494.html#5886,81" title="华为 HUAWEI 畅享5 移动4G智能手机（梦幻金）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1461034428472.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2494.html#5886,81" title="华为 HUAWEI 畅享5 移动4G智能手机（梦幻金）" target="_blank">
-								华为畅享5
-									<span class="p-slogan">持久续航</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>799</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460248152224.png')}}" alt="华为 HUAWEI 畅享5 移动4G智能手机（梦幻金）">
-								</i>
-							</div>
-						</div>
-					</li>
+                                        @foreach($phones as $phone)
 					<li id="channel-pro-1-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2270.html#7443,81" title="华为 HUAWEI 麦芒4 双卡双待 全网通4G智能手机（玫瑰金）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1453455044526.jpg')}}" style="" alt="">
+								<div class="p-img"><a href="" title="{{$phone->name}}" target="_blank" rel="nofollow">
+												<img src="{{$phone->im}}" style="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="http://www.vmall.com/product/2270.html#7443,81" title="华为 HUAWEI 麦芒4 双卡双待 全网通4G智能手机（玫瑰金）" target="_blank">
-								华为 麦芒4
-									<span class="p-slogan">无畏生长，磨砺见真我~</span>
+								<a href="" title="{{$phone->name}}" target="_blank">
+								{{$phone->name}}
+									<span class="p-slogan">1</span>
 
 								</a></div>
-								<div class="p-price"><em>¥</em><span>2299</span></div>
+								<div class="p-price"><em>¥</em><span>{{$phone->price}}</span></div>
 							</div>
 						</div>
 					</li>
+					@endforeach
+					
 
 
 			</ul>
@@ -841,185 +679,27 @@
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-2-2" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3531.html#8943,41" title="华为揽阅 M2 青春版 7.0英寸 16GB ROM 全网通版 （珍珠白）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1462366569026.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3531.html#8943,41" title="华为揽阅 M2 青春版 7.0英寸 16GB ROM 全网通版 （珍珠白）" target="_blank">
-								华为揽阅 M2 青春版 7.0英寸
-									<span class="p-slogan">平板手机，4G全网通</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>1599</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460246367953.png')}}" alt="华为揽阅 M2 青春版 7.0英寸 16GB ROM 全网通版 （珍珠白）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-3" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3487.html#8741,42" title="华为手环 B3 商务版（浅沙棕）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1467125479490.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3487.html#8741,42" title="华为手环 B3 商务版（浅沙棕）" target="_blank">
-								华为手环 B3
-									<span class="p-slogan">腕上私语，动静随心</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>1199</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460246367953.png')}}" alt="华为手环 B3 商务版（浅沙棕）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-4" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3543.html#8989,41" title="华为揽阅 M2 青春版 10.1英寸平板电脑 WiFi版 16GB （珍珠白）" target="_blank" rel="nofollow">
-												<img src="{{url('/images/home/1462366978456.png')}}" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3543.html#8989,41" title="华为揽阅 M2 青春版 10.1英寸平板电脑 WiFi版 16GB （珍珠白）" target="_blank">
-								华为 M2青春版 10.1英寸
-									<span class="p-slogan">美，天生的</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>1499</span></div>
-								<i class="p-tag">
-													<img src="{{url('/images/home/1460246367953.png')}}" alt="华为揽阅 M2 青春版 10.1英寸平板电脑 WiFi版 16GB （珍珠白）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-5" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2322.html#4985,85" title="荣耀小K儿童通话手表 双向通话 + 彩屏触控 + 迪士尼外观和皮肤 + 安全定位 + 摇一摇加好友（冰雪奇缘）" target="_blank" rel="nofollow">
-												<img src="./images/1457006843394.png" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2322.html#4985,85" title="荣耀小K儿童通话手表 双向通话 + 彩屏触控 + 迪士尼外观和皮肤 + 安全定位 + 摇一摇加好友（冰雪奇缘）" target="_blank">
-								荣耀小K 儿童通话手表
-									<span class="p-slogan">荣耀小K放“价”促销7.1~7.11直降200</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>488</span></div>
-								<i class="p-tag">
-													<img src="./images/1446367641045.png" alt="荣耀小K儿童通话手表 双向通话 + 彩屏触控 + 迪士尼外观和皮肤 + 安全定位 + 摇一摇加好友（冰雪奇缘）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-6" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2132.html#3866,0" title="荣耀畅玩平板note 9.6英寸平板电脑 1GB RAM 标准版 Wi-Fi版" target="_blank" rel="nofollow">
-												<img src="./images/1460019221135.png" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2132.html#3866,0" title="荣耀畅玩平板note 9.6英寸平板电脑 1GB RAM 标准版 Wi-Fi版" target="_blank">
-								荣耀畅玩平板note平板电脑
-									<span class="p-slogan">9.6英寸IPS高清屏幕,大容量电池长时续航！</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>999</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-7" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1910.html#3727,42" title="华为 HUAWEI 华为手环 B2  牛皮腕带 商务版（金色）" target="_blank" rel="nofollow">
-												<img src="./images/1447211984495.png" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1910.html#3727,42" title="华为 HUAWEI 华为手环 B2  牛皮腕带 商务版（金色）" target="_blank">
-								华为手环 B2
-									<span class="p-slogan">腕上私语，言行一致</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>999</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-8" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3087.html#7363,41" title="华为（HUAWEI） M2 10.0 平板电脑 WiFi 月光银" target="_blank" rel="nofollow">
-												<img src="./images/1452586655406.png" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3087.html#7363,41" title="华为（HUAWEI） M2 10.0 平板电脑 WiFi 月光银" target="_blank">
-								华为 M2 10.0 平板
-									<span class="p-slogan">悦耳倾心，智趣合一</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>2288</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-9" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2642.html#5990,85" title="华为 HUAWEI WATCH  华为手表  经典系列（星河银） 黑色尖尾真皮表带 手表蓝牙通话" target="_blank" rel="nofollow">
-												<img src="./images/1459852823263.png" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2642.html#5990,85" title="华为 HUAWEI WATCH  华为手表  经典系列（星河银） 黑色尖尾真皮表带 手表蓝牙通话" target="_blank">
-								HUAWEI WATCH
-									<span class="p-slogan">6月25日起经典系列、动感系列直降600！</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>1788</span></div>
-								<i class="p-tag">
-													<img src="./images/1460242398600_002.png" alt="华为 HUAWEI WATCH  华为手表  经典系列（星河银） 黑色尖尾真皮表带 手表蓝牙通话">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-2-10" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1350.html#3261,41" title="荣耀平板 Wi-Fi优享版 8.0英寸平板电脑（香槟色）" target="_blank" rel="nofollow">
-												<img src="./images/1446881383308.png" style="" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1350.html#3261,41" title="荣耀平板 Wi-Fi优享版 8.0英寸平板电脑（香槟色）" target="_blank">
-								荣耀平板
-									<span class="p-slogan">金属机身，轻薄ID，轻松便携！</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>999</span></div>
-							</div>
-						</div>
-					</li>
+					@foreach($pban as $pd)
 					<li id="channel-pro-2-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2323.html#5003,42" title="荣耀手环zero 长腕带（黑色）" target="_blank" rel="nofollow">
-												<img src="./images/1466036574859.png" style="" alt="">
+								<div class="p-img"><a href="" title="{{$pd->name}}" target="_blank" rel="nofollow">
+												<img src="{{$pd->im}}" style="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="http://www.vmall.com/product/2323.html#5003,42" title="荣耀手环zero 长腕带（黑色）" target="_blank">
-								荣耀手环zero
-									<span class="p-slogan">北欧简约气质</span>
+								<a href="" title="{{$pd->name}}" target="_blank">
+								{{$pd->name}}
+									<span class="p-slogan">22</span>
 
 								</a></div>
-								<div class="p-price"><em>¥</em><span>399</span></div>
+								<div class="p-price"><em>¥</em><span>{{$pd->price}}</span></div>
 								<i class="p-tag">
-													<img src="./images/1460242398600_002.png" alt="荣耀手环zero 长腕带（黑色）">
+												
 								</i>
 							</div>
 						</div>
 					</li>
-
+                                       @endforeach
 
 			</ul>
 		</div>
@@ -1060,38 +740,24 @@
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-3-2" class="channel-pro-item">
+                                        @foreach($pc as $p)
+					<li id="channel-pro-3-4" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/710271861.html#233380033,249" title="华为（HUAWEI）MateBook 手写笔 MatePen 翻页激光笔（银色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res2.vmallres.com/pimages//frontLocation/content/516953/1465722327551.png" alt="">
+								<div class="p-img"><a href="" title="{{$p->name}}" target="_blank" rel="nofollow">
+												<img src="{{$p->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="http://www.vmall.com/product/710271861.html#233380033,249" title="华为（HUAWEI）MateBook 手写笔 MatePen 翻页激光笔（银色）" target="_blank">
-								HUAWEI MatePen 触控笔
+								<a href="" title="{{$p->name}}" target="_blank">
+								{{$p->name}}
 									<span class="p-slogan">灵活输入，自由书写</span>
 
 								</a></div>
-								<div class="p-price"><em>¥</em><span>488</span></div>
+								<div class="p-price"><em>¥</em><span>{{$p->price}}</span></div>
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-3-3" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/326048789.html#691756031,247" title="华为（HUAWEI）MateBook 扩展坞 MateDock USB typeC 转网口/HDMI/VGA /USB typeA（棕色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res2.vmallres.com/pimages//frontLocation/content/517207/1465722394776.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/326048789.html#691756031,247" title="华为（HUAWEI）MateBook 扩展坞 MateDock USB typeC 转网口/HDMI/VGA /USB typeA（棕色）" target="_blank">
-								HUAWEI MateDock 扩展坞
-									<span class="p-slogan">轻松扩展，多面兼容</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>588</span></div>
-							</div>
-						</div>
-					</li>
+					@endforeach
 
 
 			</ul>
@@ -1136,102 +802,25 @@
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-4-2" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1847.html#3502,46" title="华为 HUAWEI MediaQ M330 华为盒子 4K高清网络机顶盒（黑色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/59/1463554043595.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1847.html#3502,46" title="华为 HUAWEI MediaQ M330 华为盒子 4K高清网络机顶盒（黑色）" target="_blank">
-								华为盒子 4K高清网络机顶盒
-									<span class="p-slogan">真4K 高清H.265精细画面~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>349</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-4-3" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1680.html#3633,0" title="荣耀盒子 标准版（4K，H.265，4核芯片1G内存+4G存储，300Mwifi，HDMI/SD卡/USB/AV/SPDIF/网口）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/23189/1466218892915.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1680.html#3633,0" title="荣耀盒子 标准版（4K，H.265，4核芯片1G内存+4G存储，300Mwifi，HDMI/SD卡/USB/AV/SPDIF/网口）" target="_blank">
-								荣耀盒子
-									<span class="p-slogan">4核专业媒体芯片，解码能力大提升！</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>258</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-4-4" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3061.html#7229,44" title="荣耀WiFi穿墙宝 双支装  电线变网线，插孔变WiFi，无线信号满格 增强放大主流品牌无线路由器信号（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/17367/1453165887092.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3061.html#7229,44" title="荣耀WiFi穿墙宝 双支装  电线变网线，插孔变WiFi，无线信号满格 增强放大主流品牌无线路由器信号（白色）" target="_blank">
-								荣耀WiFi穿墙宝
-									<span class="p-slogan">电线插座变热点,房间信号变满格！</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>268</span></div>
-							</div>
-						</div>
-					</li>
+					
+					@foreach($zns as $zn)		
 					<li id="channel-pro-4-5" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1822.html#3463,0" title="荣耀路由（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/2150/1429088320550.png" alt="">
+								<div class="p-img"><a href="" title="{{$zn->name}}" target="_blank" rel="nofollow">
+												<img src="{{$zn->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="http://www.vmall.com/product/1822.html#3463,0" title="荣耀路由（白色）" target="_blank">
-								荣耀路由
-									<span class="p-slogan">独立WiFi引擎,单路由信号,设置简单,轻松上网!</span>
+								<a href="" title="{{$zn->name}}" target="_blank">
+								{{$zn->name}}
+									<span class="p-slogan"></span>
 
 								</a></div>
-								<div class="p-price"><em>¥</em><span>188</span></div>
+								<div class="p-price"><em>¥</em><span>{{$zn->price}}</span></div>
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-4-6" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2380.html#5055,0" title="华为（HUAWEI）WS832 1200M 11AC双频智能无线路由器（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/54/1453046369036.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2380.html#5055,0" title="华为（HUAWEI）WS832 1200M 11AC双频智能无线路由器（白色）" target="_blank">
-								华为WS832 1200M 无线路由器
-									<span class="p-slogan">海思双核CPU，更快、更稳</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>249</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-4-7" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3213.html#8125,97" title="华为随身随行WiFi Pro天际通E5771h 国内外出游上网无线路由器 移动充电宝 （香槟金色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res3.vmallres.com/pimages//frontLocation/content/56/1459907115959.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3213.html#8125,97" title="华为随身随行WiFi Pro天际通E5771h 国内外出游上网无线路由器 移动充电宝 （香槟金色）" target="_blank">
-								华为随身随行WiFi Pro
-									<span class="p-slogan">上网充电两不误，商务人士的不二之选~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>799</span></div>
-							</div>
-						</div>
-					</li>
+					@endforeach
 
 
 			</ul>
@@ -1278,386 +867,30 @@
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-5-2" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2134.html#4309,55" title="华为 HUAWEI 小天鹅无线蓝牙音箱4.0  车载低音炮/便携户外迷你音响AM08（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/91460/1433835808223.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2134.html#4309,55" title="华为 HUAWEI 小天鹅无线蓝牙音箱4.0  车载低音炮/便携户外迷你音响AM08（白色）" target="_blank">
-								华为 小天鹅蓝牙免提音箱
-									<span class="p-slogan">音触即发，会唱歌的“天鹅”</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>99</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-3" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2747.html#7747,231" title="荣耀自拍杆（荣耀粉）" target="_blank" rel="nofollow">
-												<img src="%./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/276597/1455673004262.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2747.html#7747,231" title="荣耀自拍杆（荣耀粉）" target="_blank">
-								荣耀自拍杆
-									<span class="p-slogan">发现更美的自己</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>49</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/35/1460242398600.png" alt="荣耀自拍杆（荣耀粉）">
-								</i>
-							</div>
-						</div>
-					</li>
+					
+					@foreach($pjs as $pj)
 					<li id="channel-pro-5-4" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/812952235.html#221865572,229" title="荣耀原装三键线控防缠绕 动圈式 高保真立体声入耳式耳机&nbsp;引擎2代（皓月银）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/520631/1465978562630.png" alt="">
+								<div class="p-img"><a href="" title="{{$pj->name}}" target="_blank" rel="nofollow">
+												<img src="{{$pj->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="http://www.vmall.com/product/812952235.html#221865572,229" title="荣耀原装三键线控防缠绕 动圈式 高保真立体声入耳式耳机&nbsp;引擎2代（皓月银）" target="_blank">
-								荣耀引擎耳机2
-									<span class="p-slogan">一副耳机，两种音乐态度</span>
+								<a href="" title="{{$pj->name}}" target="_blank">
+								{{$pj->name}}
+									<span class="p-slogan"></span>
 
 								</a></div>
-								<div class="p-price"><em>¥</em><span>129</span></div>
+								<div class="p-price"><em>¥</em><span>{{$pj->price}}</span></div>
 								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/14/1446369334983.png" alt="荣耀原装三键线控防缠绕 动圈式 高保真立体声入耳式耳机&nbsp;引擎2代（皓月银）">
+													<img src="" data-lazy-src="" alt="">
 								</i>
 							</div>
 						</div>
 					</li>
-					<li id="channel-pro-5-5" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3153.html#7591,56" title="华为5000mAh 移动电源  2A快充  聚合物充电宝（石墨黑）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/209439/1454136259058.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3153.html#7591,56" title="华为5000mAh 移动电源  2A快充  聚合物充电宝（石墨黑）" target="_blank">
-								华为5000mAh移动电源
-									<span class="p-slogan">颜即正义，纤薄轻巧</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>89</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/41/1460248152224.png" alt="华为5000mAh 移动电源  2A快充  聚合物充电宝（石墨黑）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-6" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2091.html#4126,229" title="华为 HUAWEI AM116半入耳式耳机（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/91463/1457522181557.jpg" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2091.html#4126,229" title="华为 HUAWEI AM116半入耳式耳机（白色）" target="_blank">
-								华为AM116半入耳式耳机
-									<span class="p-slogan">佩戴舒适，清听时光</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>69</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/41/1460248152224.png" alt="华为 HUAWEI AM116半入耳式耳机（白色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-7" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2205.html#7703,229" title="荣耀小口哨 AM07  智控随充蓝牙耳机  （金色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/91461/1456382193085.jpg" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2205.html#7703,229" title="荣耀小口哨 AM07  智控随充蓝牙耳机  （金色）" target="_blank">
-								荣耀小口哨
-									<span class="p-slogan">金属机身，简约时尚设计</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>189</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-8" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2247.html#4670,229" title="荣耀引擎耳机PLUS（星空灰）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/71960/1463990849317.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2247.html#4670,229" title="荣耀引擎耳机PLUS（星空灰）" target="_blank">
-								荣耀引擎耳机PLUS
-									<span class="p-slogan">好看、好听、好品质</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>89</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-9" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3225.html#7853,229" title="华为 HUAWEI 主动降噪耳机2（香槟金）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/276853/1457231717141.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3225.html#7853,229" title="华为 HUAWEI 主动降噪耳机2（香槟金）" target="_blank">
-								华为 主动降噪耳机2
-									<span class="p-slogan">主动降噪 享受安静时光</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>599</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/39/1460246367953.png" alt="华为 HUAWEI 主动降噪耳机2（香槟金）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-10" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2699.html#6169,229" title="荣耀 AM175圈铁耳机（苍穹灰）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/200363/1450089339226.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2699.html#6169,229" title="荣耀 AM175圈铁耳机（苍穹灰）" target="_blank">
-								荣耀圈铁耳机
-									<span class="p-slogan">品质，听得见。</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>299</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-11" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1782.html#5442,58" title="华为 HUAWEI 电源适配器+数据线 5V2A手机带线充电器 USB带线充电头（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/236795/1460679267517.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1782.html#5442,58" title="华为 HUAWEI 电源适配器+数据线 5V2A手机带线充电器 USB带线充电头（白色）" target="_blank">
-								华为 5V2A手机带线充电器
-									<span class="p-slogan">2A大电流供电，充电迅速，性能稳定，智能保护，轻便可靠，携带方便</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>45</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-12" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3301.html#8317,58" title="华为 HUAWEI Type C 数据线 P9手机充电、数据传输二合一 USB数据线 2A快充 1m（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/45905/1461031073038.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3301.html#8317,58" title="华为 HUAWEI Type C 数据线 P9手机充电、数据传输二合一 USB数据线 2A快充 1m（白色）" target="_blank">
-								华为 Type C 数据线
-									<span class="p-slogan">高品质线芯，多层安全保护</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>29</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-13" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3457.html#8695,58" title="华为 HUAWEI Type C 转接头 数据传输、充电、OTG功能三合一 无缝接头 USB转接器（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/276851/1463725866214.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3457.html#8695,58" title="华为 HUAWEI Type C 转接头 数据传输、充电、OTG功能三合一 无缝接头 USB转接器（白色）" target="_blank">
-								华为 Type C 转接头
-									<span class="p-slogan">多种用途，轻巧便携</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>19</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-14" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1774.html#5448,0" title="华为 HUAWEI USB转Micro USB数据传输 充电二合一安卓通用数据线 5V/2A（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/226839/1450863312793.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1774.html#5448,0" title="华为 HUAWEI USB转Micro USB数据传输 充电二合一安卓通用数据线 5V/2A（白色）" target="_blank">
-								华为二合一通用数据线
-									<span class="p-slogan">充电迅速，传输稳定，安全可靠，质高耐用</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>15</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-15" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2749.html#6539,0" title="荣耀 1.5m加长 2A快充 安卓通用多彩数据线（粉色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/520245/1465959715621.jpg" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2749.html#6539,0" title="荣耀 1.5m加长 2A快充 安卓通用多彩数据线（粉色）" target="_blank">
-								荣耀 1.5m加长 2A快充 安卓通用多彩数据线
-									<span class="p-slogan">缤纷多彩可选</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>29</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/17/1446369435465.png" alt="荣耀 1.5m加长 2A快充 安卓通用多彩数据线（粉色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-16" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/874913960.html#138267749,239" title="暴风魔镜4 虚拟现实VR 手机3D眼镜 安卓版（黑色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/78006/1463567619458.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/874913960.html#138267749,239" title="暴风魔镜4 虚拟现实VR 手机3D眼镜 安卓版（黑色）" target="_blank">
-								暴风魔镜4 虚拟现实VR 手机3D眼镜
-									<span class="p-slogan">一人独享IMAX巨幕3D影院</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>199</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/13/1446367740730.png" alt="暴风魔镜4 虚拟现实VR 手机3D眼镜 安卓版（黑色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-17" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3165.html#7621,235" title="猎奇LQ-601 智能手机拍照辅助镜头 （香槟金）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/150505/1454404828543.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3165.html#7621,235" title="猎奇LQ-601 智能手机拍照辅助镜头 （香槟金）" target="_blank">
-								手机拍照镜头
-									<span class="p-slogan">手机拍照助手</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>79</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-18" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/3171.html#7651,83" title="耐翔 USB3.0 安卓手机U盘 2016款 32GB （金猴献瑞）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/150633/1454405299337.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/3171.html#7651,83" title="耐翔 USB3.0 安卓手机U盘 2016款 32GB （金猴献瑞）" target="_blank">
-								手机U盘3.0
-									<span class="p-slogan">手机平板电脑三用~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>98</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-19" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1844.html#3493,239" title="麦开Cuptime2 智能水杯 提醒喝水 温度监测 创意个性健康礼品随手杯子（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/36589/1467014077458.jpg" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1844.html#3493,239" title="麦开Cuptime2 智能水杯 提醒喝水 温度监测 创意个性健康礼品随手杯子（白色）" target="_blank">
-								麦开Cuptime2 智能水杯
-									<span class="p-slogan">贴心提醒喝水管理，上班族必备~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>399</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-20" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/763087333.html#652546518,239" title="BroadLink智能遥控黑豆RM mini3（黑色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/521895/1465982127364.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/763087333.html#652546518,239" title="BroadLink智能遥控黑豆RM mini3（黑色）" target="_blank">
-								BroadLink智能遥控黑豆
-									<span class="p-slogan">个性化随心控制家里的电器~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>79</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/39/1460246367953.png" alt="BroadLink智能遥控黑豆RM mini3（黑色）">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/39/1460246367953.png" alt="BroadLink智能遥控黑豆RM mini3（黑色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-21" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2327.html#4917,237" title="车听宝 高质量智能移动车载点播电台mp3（黑色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/522023/1465982217309.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2327.html#4917,237" title="车听宝 高质量智能移动车载点播电台mp3（黑色）" target="_blank">
-								车听宝 智能移动车载点播电台
-									<span class="p-slogan">智能执行，专属调频</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>199</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-22" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2615.html#5908,235" title="锐力 Relee RL107 商务便携式 WIFI云端摄像笔（黑色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/522277/1465982700478.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2615.html#5908,235" title="锐力 Relee RL107 商务便携式 WIFI云端摄像笔（黑色）" target="_blank">
-								锐力商务便携式 WIFI云端摄像笔
-									<span class="p-slogan">书写录像两不误~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>299</span></div>
-								<i class="p-tag">
-													<img src="./images/mask.png" data-lazy-src="http://res4.vmallres.com/pimages//tag/35/1460242398600.png" alt="锐力 Relee RL107 商务便携式 WIFI云端摄像笔（黑色）">
-								</i>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-5-23" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/1505.html#2669,239" title="BroadLink SP-mini  WiFi智能定时器开关插座（白色）" target="_blank" rel="nofollow">
-												<img src="./images/mask.png" style="" data-lazy-src="http://res4.vmallres.com/pimages//frontLocation/content/522405/1465982783293.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/1505.html#2669,239" title="BroadLink SP-mini  WiFi智能定时器开关插座（白色）" target="_blank">
-								BroadLink SP-mini  WiFi智能定时器开关插座
-									<span class="p-slogan">远程控制，一键开关~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>59</span></div>
-							</div>
-						</div>
-					</li>
+					@endforeach
+					
+					
 
 
 			</ul>
@@ -1665,76 +898,8 @@
 	</div><!-- 20130904-频道-楼层-end -->
 </div>
 <div class="hr-20"></div>
-<div class="layout">
-	<!-- 20130904-频道-楼层-start -->
-	<div class="channel-floor">
-		<div class="h">
-			<h2><a href="http://www.vmall.com/list-105" title="每日特价" target="_blank">每日特价</a></h2>
-			<em class="channel-subtitle">精品推荐</em>
-			<ul class="channel-nav">
-					<li><a href="http://www.vmall.com/list-105" target="_blank">每日特价</a></li>
-			</ul>
-		</div>
-		<div class="b">
-			<ul class="channel-pro-list">
-					<li id="channel-pro-6-1" class="channel-pro-item channel-pro-rec-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2763.html#6563,0" title="华为 HUAWEI Mate 8 小牛皮皮套（棕色）" target="_blank" rel="nofollow">
-												<img src="./images/1466503219426.png" style="" data-lazy-src="http://res5.vmallres.com/pimages//frontLocation/content/263159/1466503219426.png" alt="">
-								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/2763.html#6563,0" title="华为 HUAWEI Mate 8 小牛皮皮套（棕色）" target="_blank">
-								华为 HUAWEI Mate 8 小牛皮皮套
-								</a></div>
-								<div class="p-shining">
-									<div class="p-slogan">优选进口材料，手感更舒适~</div>
-									<div class="p-promotions">限时特惠</div>
-								</div>
-								<div class="p-price"><em>¥</em><span>228</span></div>
-								<div class="p-button"><a href="http://www.vmall.com/product/2763.html#551487,0" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
-
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-6-2" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/524.html#587,58" title="华为 HUAWEI 高端数据线缆（支持OTG功能）" target="_blank" rel="nofollow">
-												<img src="./images/1458613141200.png" style="" data-lazy-src="http://res5.vmallres.com/pimages//frontLocation/content/263161/1458613141200.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/524.html#587,58" title="华为 HUAWEI 高端数据线缆（支持OTG功能）" target="_blank">
-								华为 HUAWEI 高端数据线缆（支持OTG功能）
-									<span class="p-slogan">特价优惠25元！</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>25</span></div>
-							</div>
-						</div>
-					</li>
-					<li id="channel-pro-6-3" class="channel-pro-item">
-						<div class="channel-pro-panels">
-							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2189.html#4463,49" title="荣耀7 栅格翻盖保护套（粉蓝色）" target="_blank" rel="nofollow">
-												<img src="./images/1458613381474.png" style="" data-lazy-src="http://res5.vmallres.com/pimages//frontLocation/content/267643/1458613381474.png" alt="">
-								</a></div>
-								<div class="p-name">
-								<a href="http://www.vmall.com/product/2189.html#4463,49" title="荣耀7 栅格翻盖保护套（粉蓝色）" target="_blank">
-								荣耀7 栅格翻盖保护套
-									<span class="p-slogan">创新更好玩~</span>
-
-								</a></div>
-								<div class="p-price"><em>¥</em><span>50</span></div>
-							</div>
-						</div>
-					</li>
 
 
-			</ul>
-		</div>
-	</div><!-- 20130904-频道-楼层-end -->
-</div>
-<div class="hr-20"></div>
 
 <div class="layout">
 	<li class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/notice-657" target="_blank"><img src="{{url('/images/home/20160530195653686.jpg')}}"></a></div></li>
