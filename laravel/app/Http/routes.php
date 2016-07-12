@@ -11,9 +11,7 @@
 |
 */
 //前台首页
-Route::get('/', function () {
-    return view('index');
-});
+Route::any('/', "home\IndexController@index");
 //前台注册
 Route::get('/register',"home\LoginController@create");
 Route::post("/register","home\LoginController@store");

@@ -18,7 +18,7 @@ class CommonMiddleware
     public function handle($request, Closure $next)
     {
            //验证登陆状态 如果没有登陆则跳转到登陆页
-        if (!Session::has("userData") && !preg_match("/^\/Admin\/login/",$_SERVER['REQUEST_URI'])) {
+        if (preg_match("/^\/Admin/", $_SERVER['REQUEST_URI']) && !preg_match("/^\/Admin\/login/", $_SERVER['REQUEST_URI']) && !Session::has("userData")) {
             return redirect("/Admin/login");
         } else {
                        //查找一下所有的权限列表 判断当前的操作是否需要权限验证

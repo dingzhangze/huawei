@@ -99,7 +99,7 @@
 
             <li><a href="{{url('/Admin/goods')}}" class="am-cf"><span class="am-icon-th"></span> 商品列表</a></li>
             <li><a href="{{url('/Admin/goods/create')}}"><span class="am-icon-puzzle-piece"></span> 添加商品</a></li>
-            
+
 
 
           </ul>

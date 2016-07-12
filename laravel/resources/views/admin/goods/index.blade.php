@@ -1,12 +1,12 @@
 @include("admin.layout.head")
 
 <link type="text/css" rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.css')}}" />
- 
+
 <div class="admin-content">
   <div class="admin-content-body">
     <div class="am-cf am-padding">
       <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">商品列表</strong>  <small></small></div>
- 
+
     </div>
 
     <div class="am-g">
@@ -18,14 +18,14 @@
           </tr>
           </thead>
           <tbody>
-              @foreach($goods as $tmp) 
-          <tr><td>{{$tmp->gid}}</td><td>{{$tmp->name}}</td><td>{{$tmp->cname}}</td> <td><span class="am-badge am-badge-success">{{$tmp->price}}</span></td>
-        
+              @foreach($goods as $tmp)
+          <tr><td>{{$tmp->gid}}</td><td>{{$tmp->name}}</td><td>{{$tmp->cname}}</td> <td><span class="am-badge am-badge-success">{{$tmp->price}}￥</span></td>
+
             <td><img src="{{$tmp->im}}" height="50" /></td>
             <td><a href="/Admin/goods/{{$tmp->gid}}/edit">修改</a>  <a href="/Admin/goods/delete/{{$tmp->gid}}">删除</a></td>
           </tr>
           @endforeach
-        
+
           </tbody>
         </table>
           <p>
@@ -33,7 +33,7 @@
 </p>
       </div>
     </div>
-  
 
-     
+
+
  @include("admin.layout.foot")
