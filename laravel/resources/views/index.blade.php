@@ -641,19 +641,26 @@
 
              <span>荣耀品牌日
 
-			<s><img src="./images/hot.png" alt="hot"></s>
+			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
+
 					</span></a> </li>
 		<li id="honor"><a href="http://www.vmall.com/product/186517099.html" onclick="_paq.push(['trackLink','点击首页活动导航第5位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀V8
 
-			<s><img src="./images/hot.png" alt="hot"></s>
+
+
+			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
+
 					</span></a> </li>
 		<li id="HUAWEI"><a href="http://www.vmall.com/product/3325.html" onclick="_paq.push(['trackLink','点击首页活动导航第6位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>P9
 
-			<s><img src="./images/hot.png" alt="hot"></s>
+
+
+			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
+
 					</span></a> </li>
 		<li id="peijian"><a href="http://sale.vmall.com/peijian.html" onclick="_paq.push(['trackLink','点击首页活动导航第7位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
@@ -682,9 +689,9 @@
 
 <!-- 20130904-热门板-start -->
 <div class="hot-board">
-	<!--ads start-->
+
 	<div style="width: 100%; height: 448px;" class="ec-slider" id="index_slider">
-	<img class="qwe" src="images/folder/1.jpg" height="448px" style="margin-left:-300px; position: absolute;
+	<img class="qwe" src="images/folder/10.jpg" height="448px" style="margin-left:-300px; position: absolute;
 "/>
 	<div class="ec-slider-nav-1">
 	<span onclick="slider.flag = 0;" >1</span>
@@ -707,7 +714,9 @@
 				},
 				nextFrame :function () {
 					document.getElementsByClassName("qwe")[0].src = "images/folder/" + slider.arr[slider.flag%slider.arr.length];
+
 					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span");
+
 					for (var i = 0; i < lis.length; i++) {
 						if (i == slider.flag%slider.arr.length) {
 							lis[i].style.backgroundColor = "#cf2b33";
@@ -725,7 +734,7 @@
 		</script>
                 <a style="display: none;" class="button-slider-prev" href="javascript:;"></a>
                 <a style="display: none;" class="button-slider-next" href="javascript:;"></a>
-                </div><ul></ul><ul></ul>
+
 	<!--ads end-->
 </div><!-- 20130904-热门板-end -->
 <div class="hr-20"></div>
@@ -885,7 +894,44 @@
 <div class="layout">
 	<!-- 20130903-ad-1000*160-start -->
 	<div class="banner">
-		<!-- 20130903-ad-图片轮换-start --><div class="banner-slideshow"><div style="width: 1200px; height: 160px;" id="m-banner" class="ec-slider"><ul style="width: 1200px; height: 160px;" class="ec-slider-list"><li style="width: 1200px; height: 160px; position: absolute; display: none;" class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/product/2322.html" target="_blank"><img src="{{url('/images/home/20160701091447281.jpg')}}"></a></div></li><li style="width: 1200px; height: 160px; position: absolute; display: none;" class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/product/538499714.html" target="_blank"><img src="{{url('images/home/20160704103856178.jpg')}}"></a></div></li><li style="width: 1200px; height: 160px; position: absolute; display: none;" class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/product/2205.html" target="_blank"><img src="{{url('/images/home/20160419200019866.jpg')}}"></a></div></li><li style="width: 1200px; height: 160px; position: absolute;" class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/product/2747.html" target="_blank"><img src="{{url('/images/home/20160419200020747.jpg')}}"></a></div></li><li style="width: 1200px; height: 160px; display: none; position: absolute;" class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/product/3419.html" target="_blank"><img src="{{url('/images/home/20160602205539116.jpg')}}"></a></div></li><ul style="width: 1200px; height: 160px;"></ul></ul><div class="ec-slider-nav"><span class=""></span><span class=""></span><span class=""></span><span class="current"></span><span></span></div><a style="display: none;" class="button-slider-prev" href="javascript:;"></a><a style="display: none;" class="button-slider-next" href="javascript:;"></a></div></div>
+
+		<!-- 20130903-ad-图片轮换-start --><div class="banner-slideshow">
+                    <div style="width: 1200px; height: 160px;" id="m-banner" class="ec-slider">
+                        <img class="lunbo" src="images/folder/2-5.jpg" />
+                        <div class="ec-slider-nav">
+                            <span onclick="sliders.flag = 0;"></span>
+                            <span onclick="sliders.flag = 1;"></span>
+                            <span onclick="sliders.flag = 2;"></span>
+                            <span onclick="sliders.flag = 3;"></span>
+                            <span onclick="sliders.flag = 4;"></span>
+                        </div>
+                        <script>
+			var sliders = {
+				arr : ['2-1.jpg', '2-2.jpg', '2-3.jpg', '2-4.jpg', '2-5.jpg'],
+				flag : 0,
+				start : function () {
+					setInterval(sliders.nextFrame1, 5000);
+				},
+				nextFrame1 :function () {
+					document.getElementsByClassName("lunbo")[0].src = "images/folder/" + sliders.arr[sliders.flag%sliders.arr.length];
+					var lis = document.getElementsByClassName("ec-slider-nav")[0].getElementsByTagName("span");
+					for (var i = 0; i < lis.length; i++) {
+						if (i == sliders.flag%sliders.arr.length) {
+							lis[i].style.class="current";
+
+						} else {
+							lis[i].style.class="";
+
+						}
+					}
+					sliders.flag++;
+				}
+			};
+
+			sliders.start();
+		</script>
+                        <a style="display: none;" class="button-slider-prev" href="javascript:;"></a>
+
 	</div><!-- 20130903-ad-1000*160-end -->
 </div>
 <div class="hr-20"></div>
@@ -2143,6 +2189,8 @@
 				</ol>
 			</dd>
 		</dl>
+</div>
+
 </div>
 <div id="globleParameter" class="hide" context="" stylepath="http://res8.vmallres.com/20160612/css" scriptpath="http://res9.vmallres.com/20160612/js" imagepath="http://res.vmallres.com/20160612/images" mediapath="http://res.vmallres.com/pimages/"></div>
 <!--底部 -->

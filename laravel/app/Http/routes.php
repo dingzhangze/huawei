@@ -58,3 +58,8 @@ Route::resource("/Admin/category", "Admin\CategoryController");
 Route::get("/Admin/category/setIsNav/isNav/{isNav}/cid/{cid}", "Admin\CategoryController@setIsNav");
 Route::get("/Admin/category/child/{cid}", "Admin\CategoryController@create");
 Route::get("/Admin/category/delete/{cid}", "Admin\CategoryController@destroy");
+
+//商品模块
+Route::resource("/Admin/goods", "Admin\GoodsController");
+Route::post("/Admin/goods/upload", "Admin\GoodsController@upload");
+Route::get("/Admin/goods/delete/{id}", "Admin\GoodsController@destroy");
