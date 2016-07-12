@@ -51,9 +51,6 @@
         </a>
         <ul class="am-dropdown-content">
 
-          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
-          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-
           <li><a href="{{url('/Admin')}}"><span class="am-icon-user"></span> 资料</a></li>
 
           <li><a href="{{url('/Admin/login/logout')}}"><span class="am-icon-power-off"></span> 退出</a></li>
@@ -102,7 +99,7 @@
 
             <li><a href="{{url('/Admin/goods')}}" class="am-cf"><span class="am-icon-th"></span> 商品列表</a></li>
             <li><a href="{{url('/Admin/goods/create')}}"><span class="am-icon-puzzle-piece"></span> 添加商品</a></li>
-            
+
 
 
           </ul>
