@@ -706,21 +706,21 @@
 					setInterval(slider.nextFrame, 3000);
 				},
 				nextFrame :function () {
-					document.getElementsByClassName("qwe")[0].src = "imagese/folder/" + slider.arr[slider.flag%slider.arr.length];
-					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span"); 
+					document.getElementsByClassName("qwe")[0].src = "images/folder/" + slider.arr[slider.flag%slider.arr.length];
+					var lis = document.getElementsByClassName("ec-slider-nav-1")[0].getElementsByTagName("span");
 					for (var i = 0; i < lis.length; i++) {
 						if (i == slider.flag%slider.arr.length) {
-							lis[i].style.backgroundColor = "#cf2b33"; 
-							
+							lis[i].style.backgroundColor = "#cf2b33";
+
 						} else {
-							lis[i].style.backgroundColor = ""; 
-							
+							lis[i].style.backgroundColor = "";
+
 						}
 					}
 					slider.flag++;
 				}
 			};
-			
+
 			slider.start();
 		</script>
                 <a style="display: none;" class="button-slider-prev" href="javascript:;"></a>
