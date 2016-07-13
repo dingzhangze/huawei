@@ -23,13 +23,14 @@ class IndexController extends Controller
 //        foreach($firstNav as $fn){
 //            $subclass=DB::table("admin_category")->where("pid","=", $fn->cid)->get();
 //        }
-////        dd($cid);
+////        dd($cid)
 //       
 ////        dd($firstNav);
 //          dd($subclass);
+        
       
-                
-      
+         
+        
        //首页商品类别
          $phs = DB::table("admin_goods")->where("cid","=","46")->take(4)->get();
          $rexiao = DB::table("admin_goods")->where("cid","=","47")->get();
@@ -40,7 +41,7 @@ class IndexController extends Controller
         $pjs = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","7")->take(14)->get();
      //  dd($pjs);
        
-        return view("index",["firstNav" => $firstNav, "keyword" => $keyword, "goodss"=>$goodss, "nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao]);
+        return view("index",["firstNav" => $firstNav ,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao]);
         
         
     }
@@ -52,19 +53,7 @@ class IndexController extends Controller
      */
     public function create()
     {
-        //  // 搜索
-        $goodss = DB::table("admin_goods")
-                ->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")
-                ->where("admin_goods.name", "LIKE", "%" . $request->get("keyword") . "%")
-                ->orWhere("admin_category.cname", "LIKE", "%" . $request->get("keyword") . "%")
-                ->orderBy("admin_goods.cid", "DESC")
-                ->paginate(8);
-        //获取搜索条件
-        $keyword = $request->get("keyword");
-              
-   dd ($goodss);
-   
-      return view("home.")
+      
     }
 
     /**
@@ -75,7 +64,9 @@ class IndexController extends Controller
      */
     public function store(Request $request)
     {
-        //
+     
+         
+
     }
 
     /**

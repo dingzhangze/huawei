@@ -115,9 +115,9 @@
 		<!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
-			<div class="searchBar-form" id="searchBar-area">
-				<form method="get" onsubmit="return search(this)">
-					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);">V8</label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="{{$keyword}}" ><input class="button" value="搜索" type="submit">
+			<div class="searchBar-form" id="searchBar-area" >
+				<form method="get"  action="/home/goodslist" onsubmit="return search(this)">
+					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="" ><input class="button" value="搜索" type="submit">
 					<input id="default-search"  name="_token"  value="{{csrf_token()}} type="hidden">
 				</form>
 			</div>
