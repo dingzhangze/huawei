@@ -20,7 +20,9 @@ Route::get('/login',"home\LoginController@index");
 Route::post('/login',"home\LoginController@logTodo");
 
 //前台商品列表
-Route::get('/goodslist',"home\GoodslistController@index");
+Route::resource("/Home/goodslist", "Home\IndexController");
+//Route::get('/Home/goodslist/{id}/show',"Home\IndexController@show");
+Route::post('/Home/goodslist/sou',"Home\IndexController@sou");
 //消息提示
 Route::get("/tips", function () {
     return view("errors.tips");
