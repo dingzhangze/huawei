@@ -19,9 +19,14 @@ Route::post("/register","home\LoginController@store");
 Route::get('/login',"home\LoginController@index");
 Route::post('/login',"home\LoginController@logTodo");
 
-
 //商品详情
 Route::get('/details',"home\DetailsController@index");
+
+//前台商品列表
+Route::resource("/Home/goodslist", "Home\IndexController");
+//Route::get('/Home/goodslist/{id}/show',"Home\IndexController@show");
+Route::post('/Home/goodslist/sou',"Home\IndexController@sou");
+
 //消息提示
 Route::get("/tips", function () {
     return view("errors.tips");

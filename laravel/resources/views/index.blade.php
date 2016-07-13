@@ -116,9 +116,10 @@
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
 			<div class="searchBar-form" id="searchBar-area">
-				<form method="get" onsubmit="return search(this)">
-					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);">V8</label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text"><input class="button" value="搜索" type="submit">
-					<input id="default-search" value="V8" type="hidden">
+                            <form method="post"  action="Home/goodslist/sou">
+					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label>
+                                        <input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="" ><input class="button" value="搜索" type="submit">
+					<input id="default-search"  name="_token"  value="{{csrf_token()}}" type="hidden">
 				</form>
 			</div>
 
@@ -229,12 +230,12 @@
                         @foreach ($firstNav as $fNav)
 			<li class="category-item ">
                             <div class="category-info">
-				<h3><a href="" target="_blank"><span>{{$fNav->cname}}</span></a></h3>
+				<h3><a href="{{url('/Home/goodslist/'.$fNav->cid.'/edit')}}" target="_blank"><span>{{$fNav->cname}}</span></a></h3>
 
                                  @foreach($nav as $fn)
                                  @if(($fn->pid)==($fNav->cid)&&($fn->isNav)=="Y")
 
-                                <a href=""><span>{{$fn->cname}}</span></a>
+                                <a href="{{url('/Home/goodslist/'.$fn->cid.'/edit')}}"><span>{{$fn->cname}}</span></a>
 
                                 @endif
                                 @endforeach
@@ -244,7 +245,7 @@
                                         @foreach($nav as $fn)
                                              @if(($fn->pid)==($fNav->cid))
                                         <li class="subcate-item">
-                                              <a href="" target="_blank"><span>{{$fn->cname}}</span></a>
+                                              <a href="{{url('/Home/goodslist/'.$fn->cid.'/edit')}}" target="_blank"><span>{{$fn->cname}}</span></a>
                                         </li>
                                          @endif
                                           @endforeach

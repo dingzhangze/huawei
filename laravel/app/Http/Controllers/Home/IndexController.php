@@ -72,7 +72,7 @@ class IndexController extends Controller
      */
     public function show($id)
     {
-        //
+         
     }
 
     /**
@@ -81,9 +81,28 @@ class IndexController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+//        $ids=DB::table("admin_category")->where("pid","=","$id")->lists("cid");
+            $cidss=DB::table("admin_category")->where("cid","=", $id)->lists("pid");
+             $ids= implode(",",$cidss);
+//            dd($ids);  
+         //判断查找的是根类还是子类
+         if ("0" == $ids)
+         {
+//             dd($id);
+             $cid=DB::table("admin_category")->where("pid","=",$id)->lists("cid");
+//             dd($cids);
+//             $cid= implode(",",$cids);
+//             dd($cid);
+         }  else
+         {
+             $cid = [$id];
+         }
+//         dd($cid);      
+         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->take(20)->get();
+//         dd($goods);
+         return view("home.goodslist.index",compact("goods"));
     }
 
     /**
@@ -95,7 +114,7 @@ class IndexController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
     }
 
     /**
@@ -107,5 +126,21 @@ class IndexController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function sou(Request $request)
+    {
+        
+        //  // 搜索
+        $goods = DB::table("admin_goods")
+                ->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")
+                 ->where("admin_goods.name", "LIKE", "%" .  $request->get("keyword") . "%")
+                ->orWhere("admin_category.cname", "LIKE", "%" . $request->get("keyword") . "%")
+                ->orderBy("admin_goods.cid", "DESC")
+                ->get();
+        //获取搜索条件
+        $keyword = $request->get("keyword");
+//         dd($keyword);   
+       
+        return view("home.goodslist.index",  ["goods"=>$goods,"keyword"=>$keyword]);
     }
 }
