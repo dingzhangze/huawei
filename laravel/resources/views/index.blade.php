@@ -236,12 +236,12 @@
 			<li class="category-item ">
                             <div class="category-info">
 				<h3><a href="" target="_blank"><span>{{$fNav->cname}}</span></a></h3>
-                                
+
                                  @foreach($nav as $fn)
                                  @if(($fn->pid)==($fNav->cid)&&($fn->isNav)=="Y")
-                                  
+
                                 <a href=""><span>{{$fn->cname}}</span></a>
-                                
+
                                 @endif
                                 @endforeach
                             </div>
@@ -256,7 +256,7 @@
                                           @endforeach
                                     </ul>
                                 </div>
-                           
+
 			</li>
                         @endforeach
 		</ol>
@@ -937,96 +937,8 @@
 		</dl>
 </div>
 
-<!--服务-end -->
 
-<!--确认对话框-->
-<div id="ec_ui_confirm" class="popup-area popup-define-area hide">
-    <div class="b">
-        <p id="ec_ui_confirm_msg"></p>
-        <div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;" class="button-action-yes" title="是"><span>是</span></a><a id="ec_ui_confirm_no" href="javascript:;" class="button-action-no" title="否"><span>否</span></a></div>
-    </div>
-    <div class="f"><s class="icon-arrow-down"></s></div>
-</div>
 
-<!--新确认对话框-->
-<div id="ec_ui_confirm_new" class="popup-area-new hide">
-	<div class="b">
-		<p id="ec_ui_confirm_new_msg"></p>
-		<div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;" class="box-button-style-1" title="是"><span>是</span></a><a id="ec_ui_confirm_new_no" href="javascript:;" class="box-button-style-1" title="否"><span>否</span></a></div>
-	</div>
-	<div class="f"><s class="icon-arrow-down-new"></s></div>
-</div>
-
-<!--提示对话框-->
-<div id="ec_ui_tips" class="popup-area popup-define-area hide">
-    <div class="b">
-        <p id="ec_ui_tips_msg" class="tac"></p>
-        <div class="popup-button-area tac"><a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes" title="确定"><span>确定</span></a></div>
-    </div>
-    <div class="f"><s class="icon-arrow-down"></s></div>
-</div>
-
-<!--在线客服-->
-<div style="top: 244.5px; left: 1215px; z-index: 500; position: fixed;" class="hungBar" id="tools-nav">
-	<a style="display: none; opacity: 0.0803536;" title="返回顶部" class="hungBar-top" href="#" id="hungBar-top">返回顶部</a>
-	<a style="display: block;" id="tools-nav-survery" title="意见反馈" class="hungBar-feedback hide" href="javascript:;" onclick="ec.survery.open();">意见反馈</a>
-	<a id="tools-nav-service-qq" title="QQ客服" class="hungBar-olcs-qq hide" href="http://wpa.qq.com/msgrd?V=1&amp;Uin=4000886888" target="_blank">QQ客服</a>
-	<a style="display: block;" id="tools-nav-service-robotim" href="http://robotim.vmall.com/live800/chatClient/chatbox.jsp?companyID=8922&amp;configID=10&amp;enterurl=http%3A%2F%2Fwww.vmall.com%2F&amp;k=1&amp;remark=" title="在线客服" class="hungBar-olcs-web hide" target="_blank">在线客服</a>
-
-	<!--意见反馈box-->
-	<div id="survery-box" class="form-feedback-area hide">
-		<div class="h">
-			<a class="form-feedback-close" title="关闭" onclick="ec.survery.close();return false;" href="javascript:;"></a>
-		</div>
-		<div class="b">
-				<div class="form-edit-area">
-					<form onsubmit="return ec.survery.submit(this);" autocomplete="off">
-						<div class="form-edit-table">
-							<table border="0" cellpadding="0" cellspacing="0">
-								<tbody>
-							    <tr>
-                                    <td>
-                                        <b>疑问类型：</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <select id="type" name="type">
-                                        	<option selected="selected">请选择疑问类型</option>
-                                            <option>商品质量（手机、平板等软、硬件质量）</option>
-                                            <option>商品缺货</option>
-                                            <option>物流发货（发货快慢、发错货、送件人态度等）</option>
-                                            <option>售后服务（服务网点、维修、退换货、客服）</option>
-                                            <option>网站问题（商城功能失效、不好用等）</option>
-                                            <option>其他问题</option>
-                                        </select>
-                                    </td>
-                                </tr>
-
-								<tr>
-									<td><b>您的问题或建议：</b><span id="errMsg"></span></td>
-								</tr>
-								<tr>
-									<td><textarea class="textarea" type="textarea" name="content" id="surveryContent"></textarea></td>
-								</tr>
-								<tr>
-									<td>您的联系方式：</td>
-								</tr>
-								<tr>
-									<td><input class="text" name="contact" id="surveryContact" type="text"></td>
-								</tr>
-								<tr>
-									<td><div class="fl"><input name="code" id="surveryVerify" class="verify vam" maxlength="4" type="text">&nbsp;&nbsp;<img id="surveryVerifyImg" onclick="ec.survery.reloadCode()" class="vam" alt="验证码">&nbsp;&nbsp;&nbsp;&nbsp;<span class="vam"><a onclick="ec.survery.reloadCode();" href="javascript:;" class="u">看不清，换一张</a></span></div><div class="fr"><input value="" class="button-action-submit-3" type="submit"></div></td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
-					</form>
-				</div>
-		</div>
-	</div>
-
-</div>
 <div id="globleParameter" class="hide" context="" stylepath="http://res8.vmallres.com/20160612/css" scriptpath="http://res9.vmallres.com/20160612/js" imagepath="http://res.vmallres.com/20160612/images" mediapath="http://res.vmallres.com/pimages/"></div>
 <!--底部 -->
 
