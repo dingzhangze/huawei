@@ -52,6 +52,7 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 <script src="{{asset('/js/home/ec.js')}}"></script>
 <script src="{{asset('/js/home/ec_002.js')}}"></script>
 <!--[if lt IE 9]><script src="http://res9.vmallres.com/20160612/js/common/html5shiv.js"></script> <![endif]-->
+<script src="{{asset('/js/home/share.js')}}"></script>
 </head>
 
 
@@ -100,8 +101,8 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 		<div class="s-main">
 			<ul>
 				<li class="s-login" id="unlogin_status">
-						<script>document.write('<a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&reqClientType=26&loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3D'+encodeURIComponent(encodeURIComponent(window.location.href))+'" rel="nofollow">登录</a>');</script><a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&amp;reqClientType=26&amp;loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&amp;service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3Dhttp%253A%252F%252Fwww.vmall.com%252Flist-36" rel="nofollow">登录</a>
-						&nbsp;&nbsp;&nbsp;<a href="https://hwid1.vmall.com/oauth2/portal/regbymail.jsp?service=http://www.vmall.com/account/caslogin&amp;loginChannel=26000000&amp;reqClientType=26" rel="nofollow">注册</a>
+						<script>document.write('<a href="#">登录</a>');</script><a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&amp;reqClientType=26&amp;loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&amp;service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3Dhttp%253A%252F%252Fwww.vmall.com%252Flist-36" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="#" rel="nofollow">注册</a>
 				</li>
 				<li class="s-user hide" id="login_status">
 					<!--

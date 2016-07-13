@@ -211,12 +211,6 @@
 	</div>
 </header><!-- 21030909-头部-end -->
 
-
-<textarea id="micro-cart-tpl" class="hide">
-
-</textarea>
-
-
 <textarea class="hide" id="ec-binding-phone">
 
 </textarea><!-- 导航 -->
@@ -389,7 +383,7 @@
 <!-- 20130904-频道-优惠-start -->
 <div class="channel-favorable">
 	<ul class="channel-pro-list" id="main-sale-list">
-            
+
                    @foreach($phs as $ph)
 		<li id="channel-pro-favorable-{{rand(1,4)}}" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="859934072">
 			<div class="channel-pro-panels">
@@ -415,7 +409,7 @@
 			</div>
 		</li>
                     @endforeach
-		
+
 	</ul>
 </div><!-- 20130904-频道-优惠-end -->	</div>
 	<div class="fr u-4-1">
@@ -551,7 +545,7 @@
 							</div>
 						</div>
 					</li>
-                                        @foreach($phones as $phone)
+          @foreach($phones as $phone)
 					<li id="channel-pro-1-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
@@ -569,7 +563,7 @@
 						</div>
 					</li>
 					@endforeach
-					
+
 
 
 			</ul>
@@ -627,7 +621,7 @@
 								</a></div>
 								<div class="p-price"><em>¥</em><span>{{$pd->price}}</span></div>
 								<i class="p-tag">
-												
+
 								</i>
 							</div>
 						</div>
@@ -737,8 +731,8 @@
 							</div>
 						</div>
 					</li>
-					
-					@foreach($zns as $zn)		
+
+					@foreach($zns as $zn)
 					<li id="channel-pro-4-5" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
@@ -802,7 +796,7 @@
 							</div>
 						</div>
 					</li>
-					
+
 					@foreach($pjs as $pj)
 					<li id="channel-pro-5-4" class="channel-pro-item">
 						<div class="channel-pro-panels">
@@ -824,8 +818,8 @@
 						</div>
 					</li>
 					@endforeach
-					
-					
+
+
 
 
 			</ul>

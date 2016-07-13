@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use DB;
 
-class GoodslistController extends Controller
+class DetailsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,7 @@ class GoodslistController extends Controller
      */
     public function index()
     {
-    $goods=DB::table("admin_goods")->take(20)->get();
-      return view("home.goodslist.index",compact("goods"));
+        return view("home.goodslist.Details");
     }
 
     /**
