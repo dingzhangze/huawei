@@ -251,7 +251,7 @@ function showSelectRegion()
 			<!-- 页头热门搜索 -->
 			<div class="searchBar-form" id="searchBar-area">
 				<form method="get" onsubmit="return search(this)">
-					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" 
+					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword"
                                                                                                                                                                                                         value="@if(!empty($keyword)){{$keyword}} @endif" ><input class="button" value="搜索" type="submit">
 					<input id="default-search" value="荣耀8" type="hidden">
 				</form>
@@ -748,7 +748,7 @@ function showSelectRegion()
 </div>
 <!-- 20140822-分类-end -->
 
-		<!-- 20140823-分类-end -->
+
 		<!-- 20130909-导航-start -->
 		<nav class="naver">
 				<ul id="naver-list">

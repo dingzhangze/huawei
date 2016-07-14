@@ -12,11 +12,7 @@
 <link href="{{asset('/css/home/ec2.css')}}" rel="stylesheet" type="text/css">
 
 <link href="{{asset('/css/home/index.css')}}" rel="stylesheet" type="text/css">
-<!-- <script src="./js/jsapi1.js" namespace="ec"></script> --><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
-<!-- <script src="./js/jquery-2.js"></script>
-<script src="./js/ec8.js"></script>  -->
-<!-- <script src="./js/ec_003.js"></script>  -->
-<!--[if lt IE 9]><script src="http://res9.vmallres.com/20160612/js/common/html5shiv.js"></script> <![endif]-->
+
 </head>
 
 
@@ -28,12 +24,7 @@
 			<ul>
 				<li class="s-hw"><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
 				<li class="s-honor"><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
-				<!--
-				<li class="s-emui"><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></li>
-				<li class="s-appstore"><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></li>
-				<li class="s-cloud"><a href="http://cloud.huawei.com/cn/contact" target="_blank">云服务</a></li>
-				<li class="s-developer"><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></li>
-				-->
+
 				<li class="s-appsoft">
 					<div class="s-dropdown">
 						<div class="h">
@@ -55,8 +46,8 @@
 		<div class="s-main">
 			<ul>
 				<li class="s-login" id="unlogin_status">
-						<a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&amp;reqClientType=26&amp;loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&amp;service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3Dhttp%253A%252F%252Fwww.vmall.com%252F" rel="nofollow">登录</a>
-						&nbsp;&nbsp;&nbsp;<a href="https://hwid1.vmall.com/oauth2/portal/regbymail.jsp?service=http://www.vmall.com/account/caslogin&amp;loginChannel=26000000&amp;reqClientType=26" rel="nofollow">注册</a>
+						<a href="#" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="#" rel="nofollow">注册</a>
 				</li>
 				<li class="s-user hide" id="login_status">
 					<!--
@@ -65,16 +56,16 @@
 					-->
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://www.vmall.com/member?t=14677062410981467706535894" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user"></a>
+							<a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user"></a>
 							 <em class="vip-state" id="vip-info">
-								<a class="link-noAct" href="http://www.vmall.com/member/account" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
-								<a href="http://www.vmall.com/member/point" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
-								<a title="实名认证" id="authentication" href="http://www.vmall.com/authmember/accesstoken"></a>
+								<a class="link-noAct" href="#" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
+								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
+								<a title="实名认证" id="authentication" href="#"></a>
 							</em>
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="https://hwid1.vmall.com/oauth2/userCenter/hwAccount?reqClientType=26&amp;loginChannel=26000000&amp;themeName=cloudTheme" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
+							<p><a href="#" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
 						</div>
 					</div>
 				</li>
@@ -126,22 +117,22 @@
 				<div class="searchBar-key">
 	<b>热门搜索：</b>
 
-		<a href="http://www.vmall.com/search?keyword=5A" target="_blank">5A</a>
+		<a href="#" target="_blank">5A</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=%E8%8D%A3%E8%80%807" target="_blank">荣耀7</a>
+		<a href="#" target="_blank">荣耀7</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=HUAWEI%20P9" target="_blank">HUAWEI P9</a>
+		<a href="#" target="_blank">HUAWEI P9</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=5C" target="_blank">5C</a>
+		<a href="#" target="_blank">5C</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=5X" target="_blank">5X</a>
+		<a href="#" target="_blank">5X</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=%E5%BF%AB%E5%85%85%E7%A7%BB%E5%8A%A8%E7%94%B5%E6%BA%90" target="_blank">快充移动电源</a>
+		<a href="#" target="_blank">快充移动电源</a>
 
 </div>
 
@@ -152,7 +143,7 @@
 			<div class="header-toolbar-item" id="header-toolbar-imall">
 				<!-- 21030909-我的商城-start -->
 				<div class="i-mall">
-					<div class="h"><a href="http://www.vmall.com/member?t=14677062410991467706535894" rel="nofollow" timetype="timestamp">我的商城</a>
+					<div class="h"><a href="#" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-imall-content">
 						<div class="i-mall-prompt" id="cart_unlogin_info">
