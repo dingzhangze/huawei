@@ -115,10 +115,11 @@
 		<!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
-			<div class="searchBar-form" id="searchBar-area" >
-				<form method="get"  action="/home/goodslist" onsubmit="return search(this)">
-					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="" ><input class="button" value="搜索" type="submit">
-					<input id="default-search"  name="_token"  value="{{csrf_token()}} type="hidden">
+			<div class="searchBar-form" id="searchBar-area">
+                            <form method="post"  action="Home/goodslist/sou">
+					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label>
+                                        <input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="" ><input class="button" value="搜索" type="submit">
+					<input id="default-search"  name="_token"  value="{{csrf_token()}}" type="hidden">
 				</form>
 			</div>
 
@@ -211,12 +212,6 @@
 	</div>
 </header><!-- 21030909-头部-end -->
 
-
-<textarea id="micro-cart-tpl" class="hide">
-
-</textarea>
-
-
 <textarea class="hide" id="ec-binding-phone">
 
 </textarea><!-- 导航 -->
@@ -235,12 +230,12 @@
                         @foreach ($firstNav as $fNav)
 			<li class="category-item ">
                             <div class="category-info">
-				<h3><a href="" target="_blank"><span>{{$fNav->cname}}</span></a></h3>
+				<h3><a href="{{url('/Home/goodslist/'.$fNav->cid.'/edit')}}" target="_blank"><span>{{$fNav->cname}}</span></a></h3>
 
                                  @foreach($nav as $fn)
                                  @if(($fn->pid)==($fNav->cid)&&($fn->isNav)=="Y")
 
-                                <a href=""><span>{{$fn->cname}}</span></a>
+                                <a href="{{url('/Home/goodslist/'.$fn->cid.'/edit')}}"><span>{{$fn->cname}}</span></a>
 
                                 @endif
                                 @endforeach
@@ -250,7 +245,7 @@
                                         @foreach($nav as $fn)
                                              @if(($fn->pid)==($fNav->cid))
                                         <li class="subcate-item">
-                                              <a href="" target="_blank"><span>{{$fn->cname}}</span></a>
+                                              <a href="{{url('/Home/goodslist/'.$fn->cid.'/edit')}}" target="_blank"><span>{{$fn->cname}}</span></a>
                                         </li>
                                          @endif
                                           @endforeach
@@ -389,7 +384,7 @@
 <!-- 20130904-频道-优惠-start -->
 <div class="channel-favorable">
 	<ul class="channel-pro-list" id="main-sale-list">
-            
+
                    @foreach($phs as $ph)
 		<li id="channel-pro-favorable-{{rand(1,4)}}" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="859934072">
 			<div class="channel-pro-panels">
@@ -415,7 +410,7 @@
 			</div>
 		</li>
                     @endforeach
-		
+
 	</ul>
 </div><!-- 20130904-频道-优惠-end -->	</div>
 	<div class="fr u-4-1">
@@ -551,7 +546,7 @@
 							</div>
 						</div>
 					</li>
-                                        @foreach($phones as $phone)
+          @foreach($phones as $phone)
 					<li id="channel-pro-1-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
@@ -569,7 +564,7 @@
 						</div>
 					</li>
 					@endforeach
-					
+
 
 
 			</ul>
@@ -627,7 +622,7 @@
 								</a></div>
 								<div class="p-price"><em>¥</em><span>{{$pd->price}}</span></div>
 								<i class="p-tag">
-												
+
 								</i>
 							</div>
 						</div>
@@ -737,8 +732,8 @@
 							</div>
 						</div>
 					</li>
-					
-					@foreach($zns as $zn)		
+
+					@foreach($zns as $zn)
 					<li id="channel-pro-4-5" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
@@ -802,7 +797,7 @@
 							</div>
 						</div>
 					</li>
-					
+
 					@foreach($pjs as $pj)
 					<li id="channel-pro-5-4" class="channel-pro-item">
 						<div class="channel-pro-panels">
@@ -824,8 +819,8 @@
 						</div>
 					</li>
 					@endforeach
-					
-					
+
+
 
 
 			</ul>
