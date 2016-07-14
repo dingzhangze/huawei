@@ -546,15 +546,15 @@
 							</div>
 						</div>
 					</li>
-          @foreach($phones as $phone)
+                                     @foreach($phones as $phone)
 					<li id="channel-pro-1-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$phone->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$phone->gid)}}" title="{{$phone->name}}" target="_blank" rel="nofollow">
 												<img src="{{$phone->im}}" style="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="" title="{{$phone->name}}" target="_blank">
+								<a href="{{url('/Home/goodslist/'.$phone->gid)}}" title="{{$phone->name}}" target="_blank">
 								{{$phone->name}}
 									<span class="p-slogan">1</span>
 

@@ -388,6 +388,12 @@ button, input:not([type="radio"]):not([type="checkbox"]), select {
 .am-u-sm-9 {
     width: 75%;
 }
+.am-u-sm-13 {
+    width: 75%;
+}
+.am-u-sm-14 {
+    width: 35%;
+}
 .am-u-sm-10 {
     width: 83.3333%;
 }

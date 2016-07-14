@@ -72,7 +72,7 @@ class IndexController extends Controller
      */
     public function show($id)
     {
-         
+          return view("home.goodslist.Details"); 
     }
 
     /**
@@ -86,7 +86,7 @@ class IndexController extends Controller
 //        $ids=DB::table("admin_category")->where("pid","=","$id")->lists("cid");
             $cidss=DB::table("admin_category")->where("cid","=", $id)->lists("pid");
              $ids= implode(",",$cidss);
-//            dd($ids);  
+//            dd($ids);  i
          //判断查找的是根类还是子类
          if ("0" == $ids)
          {
