@@ -18,6 +18,11 @@ Route::post("/register","home\LoginController@store");
 //前台登陆
 Route::get('/login',"home\LoginController@index");
 Route::post('/login',"home\LoginController@logTodo");
+Route::get("/logout", "home\LoginController@logout");
+
+//前台用户信息
+Route::get('/userinfo',"home\UserController@index");
+Route::get('/edit',"home\UserController@create");
 
 //商品详情
 Route::get('/details',"home\DetailsController@index");
@@ -70,3 +75,9 @@ Route::get("/Admin/category/delete/{cid}", "Admin\CategoryController@destroy");
 Route::resource("/Admin/goods", "Admin\GoodsController");
 Route::post("/Admin/goods/upload", "Admin\GoodsController@upload");
 Route::get("/Admin/goods/delete/{id}", "Admin\GoodsController@destroy");
+
+//商品详情图片上传
+Route::post("/Admin/goods/thum", "Admin\GoodsController@thum");
+Route::post("/Admin/goods/im1", "Admin\GoodsController@im1");
+Route::post("/Admin/goods/im2", "Admin\GoodsController@im2");
+Route::post("/Admin/goods/details", "Admin\GoodsController@details");

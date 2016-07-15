@@ -32,49 +32,50 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></p>
-							<p><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></p>
-							<p><a href="http://cloud.huawei.com/" target="_blank">云服务</a></p>
-							<p><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></p>
+							<p><a href="#" target="_blank">EMUI</a></p>
+							<p><a href="#" target="_blank">应用市场</a></p>
+							<p><a href="#" target="_blank">云服务</a></p>
+							<p><a href="#" target="_blank">开发者联盟</a></p>
 						</div>
 					</div>
 
-				</li><li class="s-club"><a href="http://club.huawei.com/" target="_blank">花粉俱乐部</a></li>
+				</li><li class="s-club"><a href="#" target="_blank">花粉俱乐部</a></li>
 				<li class="s-sr"><a href="javascript:;" onclick="showSelectRegion()">Select Region</a></li>
 			</ul>
 		</div>
 		<div class="s-main">
 			<ul>
+          @if(empty(Session::get("userData")))
 				<li class="s-login" id="unlogin_status">
-						<a href="#" rel="nofollow">登录</a>
-						&nbsp;&nbsp;&nbsp;<a href="#" rel="nofollow">注册</a>
+
+						<a href="{{url('/login')}}" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="{{url('/register')}}" rel="nofollow">注册</a>
 				</li>
-				<li class="s-user hide" id="login_status">
-					<!--
-						ie6下鼠标悬停追加ClassName： hover
-						示例：[ s-dropdown hover ]
-					-->
+          @else
+				<li class="s-user " id="login_status">
+
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user"></a>
+              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userData")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
-								<a class="link-noAct" href="#" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
 							</em>
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="#" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
+							<p><a href="{{url('/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
+
 				</li>
+        @endif
 				<li class="s-myOrders">
-					<a href="http://www.vmall.com/member/order?t=14677062410981467706535894" rel="nofollow" timetype="timestamp">我的订单</a>
+					<a href="#" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>
-				<li class="s-promo"><a href="http://www.vmall.com/priority" rel="nofollow">V码(优购码)</a></li>
+				<li class="s-promo"><a href="#" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>
-				<li class="s-mobile"><a href="http://www.vmall.com/appdownload" target="_blank">手机版</a></li>
+				<li class="s-mobile"><a href="#" target="_blank">手机版</a></li>
 				<li class="s-sitemap">
 					<div class="s-dropdown ">
 						<div class="h">
@@ -151,11 +152,11 @@
 						</div>
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
-								<li><a href="http://www.vmall.com/member/order?t=14677062410991467706535894" rel="nofollow" timetype="timestamp">我的订单</a></li>
-								<li><a href="http://www.vmall.com/member/order?t=14677062410991467706535894&amp;tab=unpaid" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/order?t=14677062410991467706535894&amp;tab=nocomment" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/coupon?t=14677062410991467706535894" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/msg?t=14677062410991467706535894" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
+								<li><a href="#" rel="nofollow" timetype="timestamp">我的订单</a></li>
+								<li><a href="#" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
+								<li><a href="#" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
+								<li><a href="#" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
+								<li><a href="#" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
 							</ul>
 						</div>
 						<!-- 页头会员专享信息 -->
@@ -177,7 +178,7 @@
 						<ul class="minicart-pro-list" id="minicart-pro-list"><!--microCartList start--><li class="minicart-pro-item"><div class="pro-info"><div class="p-img"><a href="http://www.vmall.com/product/414244322.html#950613386" title="" target="_blank"><img src="./images/78_78_1466068575708mp.jpg" alt="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）"></a></div><div class="p-name"><a href="http://www.vmall.com/product/414244322.html#950613386" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）&nbsp;<span class="p-slogan">精致随行，百搭外观，轻巧佩戴。</span><span class="p-promotions hide"></span></a></div><div class="p-status"><div class="p-price"><b>¥&nbsp;129.00</b><em>x</em><span>1</span></div><div class="p-tags"></div></div><a href="javascript:;" class="icon-minicart-del" title="删除" onclick="ec.minicart.del(this , 950613386, 1)">删除</a></div></li><!--microCartList end--></ul>
 						</div>
 						<div class="minicart-pro-settleup" id="minicart-pro-settleup">
-							<p>共<em id="micro-cart-total">1</em>件商品，金额合计<b id="micro-cart-totalPrice">¥&nbsp;129.00</b></p>
+							<p>共<em id="micro-cart-total">0</em>件商品，金额合计<b id="micro-cart-totalPrice">0</b></p>
 							<a class="button-minicart-settleup" href="http://cart.vmall.com/cart/cart.html">去结算</a>
 						</div>
 					</div>
@@ -537,15 +538,15 @@
 							</div>
 						</div>
 					</li>
-          @foreach($phones as $phone)
+                                     @foreach($phones as $phone)
 					<li id="channel-pro-1-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$phone->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$phone->gid)}}" title="{{$phone->name}}" target="_blank" rel="nofollow">
 												<img src="{{$phone->im}}" style="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="" title="{{$phone->name}}" target="_blank">
+								<a href="{{url('/Home/goodslist/'.$phone->gid)}}" title="{{$phone->name}}" target="_blank">
 								{{$phone->name}}
 									<span class="p-slogan">1</span>
 

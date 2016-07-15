@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
-class DetailsController extends Controller
+use DB,
+    Session,
+    Validator;
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +18,7 @@ class DetailsController extends Controller
      */
     public function index()
     {
-        return view("home.goodslist.Details");
+        return view("home.userinfo.index");
     }
 
     /**
@@ -26,7 +28,7 @@ class DetailsController extends Controller
      */
     public function create()
     {
-        //
+        return view("home.userinfo.edit");
     }
 
     /**
@@ -37,7 +39,7 @@ class DetailsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -71,7 +73,12 @@ class DetailsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      //修改用户的数据
+      $data = $request->except("_token","_method");
+      if (false != $affectedRows  = DB::table("home_user")->where("id",$id )->update($data)) {
+
+          return redirect("/home/userinfo");
+      }
     }
 
     /**

@@ -6,6 +6,7 @@
 <link href="{{asset('/css/home/ec.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/common.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/zh-cn_css.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/home/zh-cn.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/dialog.css')}}" rel="stylesheet" type="text/css">
 <script type="text/javascript">var localHttps="https://hwid1.vmall.com/CAS";var currentSiteID="1";</script>
 <script src="{{asset('/js/home/jsapi.js')}}" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->

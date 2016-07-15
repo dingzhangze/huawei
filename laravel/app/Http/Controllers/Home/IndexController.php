@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use DB;
-
+use DB,
+    Session,
+    Validator,
+    Hash;
 class IndexController extends Controller
 {
     /**
@@ -72,7 +74,7 @@ class IndexController extends Controller
      */
     public function show($id)
     {
-
+          return view("home.goodslist.Details");
     }
 
     /**
@@ -86,17 +88,21 @@ class IndexController extends Controller
 //        $ids=DB::table("admin_category")->where("pid","=","$id")->lists("cid");
             $cidss=DB::table("admin_category")->where("cid","=", $id)->lists("pid");
              $ids= implode(",",$cidss);
-//            dd($ids);
+//            dd($ids);  i
          //判断查找的是根类还是子类
          if ("0" == $ids)
          {
+//             dd($id);
              $cid=DB::table("admin_category")->where("pid","=",$id)->lists("cid");
+//             dd($cids);
+//             $cid= implode(",",$cids);
+//             dd($cid);
          }  else
          {
              $cid = [$id];
          }
 //         dd($cid);
-         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->paginate(20);
+         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->take(20)->get();
 //         dd($goods);
          return view("home.goodslist.index",compact("goods"));
     }
@@ -132,7 +138,7 @@ class IndexController extends Controller
                  ->where("admin_goods.name", "LIKE", "%" .  $request->get("keyword") . "%")
                 ->orWhere("admin_category.cname", "LIKE", "%" . $request->get("keyword") . "%")
                 ->orderBy("admin_goods.cid", "DESC")
-                ->paginate(20);
+                ->get();
         //获取搜索条件
         $keyword = $request->get("keyword");
 //         dd($keyword);
