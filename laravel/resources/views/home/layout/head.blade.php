@@ -100,30 +100,32 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 		</div>
 		<div class="s-main">
 			<ul>
+          @if(empty(Session::get("userData")))
 				<li class="s-login" id="unlogin_status">
-						<script>document.write('<a href="#">登录</a>');</script><a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&amp;reqClientType=26&amp;loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&amp;service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3Dhttp%253A%252F%252Fwww.vmall.com%252Flist-36" rel="nofollow">登录</a>
-						&nbsp;&nbsp;&nbsp;<a href="#" rel="nofollow">注册</a>
+
+						<a href="{{url('/login')}}" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="{{url('/register')}}" rel="nofollow">注册</a>
 				</li>
-				<li class="s-user hide" id="login_status">
-					<!--
-						ie6下鼠标悬停追加ClassName： hover
-						示例：[ s-dropdown hover ]
-					-->
+          @else
+				<li class="s-user " id="login_status">
+
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://www.vmall.com/member?t=14683240080851468324177815" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user"></a>
+              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userData")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
-								<a class="link-noAct" href="http://www.vmall.com/member/account" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
-								<a href="http://www.vmall.com/member/point" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
-								<a title="实名认证" id="authentication" href="http://www.vmall.com/authmember/accesstoken"></a>
+								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
+								<a title="实名认证" id="authentication" href="#"></a>
 							</em>
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="https://hwid1.vmall.com/oauth2/userCenter/hwAccount?reqClientType=26&amp;loginChannel=26000000&amp;themeName=cloudTheme" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
+							<p><a href="#" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
+
 				</li>
+        @endif
+			
 				<li class="s-myOrders">
 					<a href="http://www.vmall.com/member/order?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>
@@ -251,7 +253,7 @@ function showSelectRegion()
 			<!-- 页头热门搜索 -->
 			<div class="searchBar-form" id="searchBar-area">
 				<form method="get" onsubmit="return search(this)">
-					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" 
+					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword"
                                                                                                                                                                                                         value="@if(!empty($keyword)){{$keyword}} @endif" ><input class="button" value="搜索" type="submit">
 					<input id="default-search" value="荣耀8" type="hidden">
 				</form>
@@ -748,7 +750,7 @@ function showSelectRegion()
 </div>
 <!-- 20140822-分类-end -->
 
-		<!-- 20140823-分类-end -->
+
 		<!-- 20130909-导航-start -->
 		<nav class="naver">
 				<ul id="naver-list">

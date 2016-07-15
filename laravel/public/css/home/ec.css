@@ -1,4 +1,4 @@
-@CHARSET "UTF-8"; 
+@CHARSET "UTF-8";
 /**begin public**/
 html {
 	-webkit-text-size-adjust: 100%;
@@ -242,6 +242,17 @@ button {
 	background-position: center center;
 }
 
+.s1{
+	height: 24px;
+	width:250px;
+}
+.sub1{
+padding: 5px 5px;
+margin-left:160px;
+}
+.s-city{
+	display: block;;
+}
 /***end box css***/
 
 /******Begin*注册密码复杂度*/
@@ -301,4 +312,3 @@ s{text-decoration:none}
 .seachDiv ul li{background:#fff;padding-left:5px;}
 .seachDiv ul li:hover{background:#eee;padding-left:5px;cursor:pointer;}
 /***End体验注册email输入文本框增加email结尾***/
-

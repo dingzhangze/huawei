@@ -37,7 +37,7 @@
           <div class="am-form-group">
             <label for="sex" class="am-u-sm-3 am-form-label">性别</label>
             <div class="am-u-sm-9">
-                <input type="radio" name="sex" value="男" @if($userRec->sex == "男") checked @endif  id="male" /><label for="male">男</lable>&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" value="男" @if($userRec->sex == "男") checked @endif  id="male" /><label for="male">男</lable>&nbsp;&nbsp;&nbsp;
             <input type="radio" name="sex" value="女" id="male" @if($userRec->sex == "女") checked @endif /><label>女<label for="female">
             </div>
           </div>

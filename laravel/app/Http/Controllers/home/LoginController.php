@@ -58,7 +58,7 @@ class LoginController extends Controller
       //将用户状态写入session
       Session::put("userData", $userRec);
                         Session::save();
-     return view('welcome');
+     return redirect("/");
     }
   }
 
@@ -108,5 +108,11 @@ class LoginController extends Controller
       }
     }
 
-
+    //退出登陆
+    public function logout()
+    {
+      //销毁session
+      Session::forget("userData");
+      return redirect("/");
+    }
 }
