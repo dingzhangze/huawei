@@ -102,7 +102,7 @@ class IndexController extends Controller
              $cid = [$id];
          }
 //         dd($cid);
-         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->take(20)->get();
+         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->paginate(20);
 //         dd($goods);
          return view("home.goodslist.index",compact("goods"));
     }
@@ -138,7 +138,7 @@ class IndexController extends Controller
                  ->where("admin_goods.name", "LIKE", "%" .  $request->get("keyword") . "%")
                 ->orWhere("admin_category.cname", "LIKE", "%" . $request->get("keyword") . "%")
                 ->orderBy("admin_goods.cid", "DESC")
-                ->get();
+                ->paginate(20);
         //获取搜索条件
         $keyword = $request->get("keyword");
 //         dd($keyword);

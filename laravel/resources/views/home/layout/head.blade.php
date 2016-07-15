@@ -45,6 +45,7 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 
 <link rel="shortcut icon" href="http://www.vmall.com/favicon.ico">
 <link href="{{asset('/css/home/ec3.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/home/ec2.css')}}" rel="stylesheet" type="text/css">
 
 <link href="{{asset('/css/home/main8.css')}}" rel="stylesheet" type="text/css">
 <script src="{{asset('/js/home/jsapi.js')}}" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
@@ -100,7 +101,7 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 		</div>
 		<div class="s-main">
 			<ul>
-          @if(empty(Session::get("userData")))
+          @if(empty(Session::get("userDatas")))
 				<li class="s-login" id="unlogin_status">
 
 						<a href="{{url('/login')}}" rel="nofollow">登录</a>
@@ -111,7 +112,7 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 
 					<div class="s-dropdown">
 						<div class="h">
-              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userData")->uname}}</strong></a>
+              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
@@ -125,7 +126,7 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 
 				</li>
         @endif
-			
+
 				<li class="s-myOrders">
 					<a href="http://www.vmall.com/member/order?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>

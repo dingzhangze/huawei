@@ -461,7 +461,7 @@ html {
 .system-error-area .cartoon {
     background: transparent url("../../images/echannel/bg/bg24.png") no-repeat scroll 0 0;
 }
-.slogan li i, .service dt i {
+/*.slogan li i, .service dt i {
     background: transparent url("../../images/home/67.jpg") no-repeat scroll 0 0;
 }
 .hungBar-top, .hungBar-feedback, .hungBar-olcs-qq, .hungBar-olcs-web {
@@ -472,7 +472,7 @@ html {
 }
 .follow i, .follow-panel-qrcode s {
     background: transparent url("../../images/home/icon27.png") no-repeat scroll 0 0;
-}
+}*/
 .icon-authentication {
     background: transparent url("../../images/echannel/icon/icon45.png") no-repeat scroll 0 0;
 }

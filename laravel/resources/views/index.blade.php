@@ -45,7 +45,7 @@
 		</div>
 		<div class="s-main">
 			<ul>
-          @if(empty(Session::get("userData")))
+          @if(empty(Session::get("userDatas")))
 				<li class="s-login" id="unlogin_status">
 
 						<a href="{{url('/login')}}" rel="nofollow">登录</a>
@@ -56,7 +56,7 @@
 
 					<div class="s-dropdown">
 						<div class="h">
-              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userData")->uname}}</strong></a>
+              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
@@ -64,7 +64,7 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="{{url('/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
+							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
 
@@ -147,9 +147,15 @@
 					<div class="h"><a href="#" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-imall-content">
+              @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
-							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="/account/login?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script><a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
+
+							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="{{url('/login')}}?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script>
+                <a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
 						</div>
+            @else
+            您好, <strong>{{Session::get("userDatas")->uname}}</strong>
+            @endif
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
 								<li><a href="#" rel="nofollow" timetype="timestamp">我的订单</a></li>

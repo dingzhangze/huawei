@@ -18,7 +18,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view("home.userinfo.index");
+        $id=Session::get("userDatas")->id;
+      $user= DB::table("home_user")->where("id","=",$id)->first();
+      // dd($user);
+        return view("home.userinfo.index",compact("user"));
     }
 
     /**
@@ -28,7 +31,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view("home.userinfo.edit");
+
     }
 
     /**
@@ -39,7 +42,17 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+      //修改用户的数据
 
+        $id=Session::get("userDatas")->id;
+      $data = $request->except("_token","_method","birth");
+      $data["city"]=$data["s_province"]."-".$data["s_city"]."-".$data["s_county"];
+      unset($data["s_province"],$data["s_city"],$data["s_county"]);
+     //dd($data);
+      if (false != $affectedRows  = DB::table("home_user")->where("id",$id )->update($data)) {
+
+          return redirect("/home/userinfo");
+      }
     }
 
     /**
@@ -50,7 +63,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -61,7 +74,14 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+    $id=Session::get("userDatas")->id;
+    $user= DB::table("home_user")->where("id",$id)->first();
+
+    $bana=$user->city;
+    // dd($bana);
+    $pize=explode("-",$bana);
+    // dd($pize);
+      return view("home.userinfo.edit",["user"=>$user,"pize"=>$pize]);
     }
 
     /**
@@ -73,12 +93,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-      //修改用户的数据
-      $data = $request->except("_token","_method");
-      if (false != $affectedRows  = DB::table("home_user")->where("id",$id )->update($data)) {
 
-          return redirect("/home/userinfo");
-      }
     }
 
     /**
@@ -91,4 +106,24 @@ class UserController extends Controller
     {
         //
     }
+
+    //上传头像
+    public function tx(Request $request)
+    {
+       //重命名并转存文件
+        $file = $request->file("Filedata");//get post file
+        $suffix = $file->getClientOriginalExtension();
+        $rename = date("YmdHis").rand(1000,9999).".".$suffix;//201607111549289527.jpg
+        $result = $file->move("./upload/avartar", $rename);
+        //返回提示
+        if ($result)
+        {
+            return response()->json(["status" => 1, "info" => "/upload/avartar/{$rename}"]);
+        } else
+        {
+            return response()->json(["status" => 0, "info" => "上传失败"]);
+        }
+    }
+
+
 }

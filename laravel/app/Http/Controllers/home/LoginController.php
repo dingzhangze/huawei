@@ -56,7 +56,7 @@ class LoginController extends Controller
     } else
     {//返回结果
       //将用户状态写入session
-      Session::put("userData", $userRec);
+      Session::put("userDatas", $userRec);
                         Session::save();
      return redirect("/");
     }
@@ -112,7 +112,7 @@ class LoginController extends Controller
     public function logout()
     {
       //销毁session
-      Session::forget("userData");
+      Session::forget("userDatas");
       return redirect("/");
     }
 }

@@ -21,8 +21,11 @@ Route::post('/login',"home\LoginController@logTodo");
 Route::get("/logout", "home\LoginController@logout");
 
 //前台用户信息
-Route::get('/userinfo',"home\UserController@index");
-Route::get('/edit',"home\UserController@create");
+Route::resource("/home/userinfo", "Home\UserController");
+Route::get( "/home/userinfo", "home\UserController@index");
+Route::post("/home/userinfo/tx","home\UserController@tx");
+
+
 
 //商品详情
 Route::get('/details',"home\DetailsController@index");

@@ -65,20 +65,33 @@ $.ajaxSetup({
 						<table border="0" cellpadding="0" cellspacing="0">
 							<tbody>
 								<tr>
-									<td><label for="login_userName" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;"><div class="text vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1">帐号</div></label><input style="z-index: 1;" validator="validator11467707383711" autocomplete="off" class="text vam" id="login_userName" name="uname" maxlength="50" tabindex="1" type="text"><div id="msg_username"></div></td>
+									<td><label for="login_userName" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;">
+                      <div class="text vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1"></div></label>
+                      <input style="z-index: 1;" validator="validator11467707383711" autocomplete="off" class="text vam" id="login_userName" name="uname" maxlength="50" tabindex="1" type="text" placeholder="账号">
+                      <div id="msg_username"></div>
+                  </td>
 								</tr>
+
 								<tr>
-									<td><label for="login_password" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;"><div class="text vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1">密码</div></label><input style="z-index: 1;" validator="validator21467707383711" id="login_password" autocomplete="off" class="text vam" name="password" maxlength="32" tabindex="2" type="password"><div id="msg_password"></div></td>
+									<td><label for="login_password" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;">
+                      <div class="text vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1"></div></label>
+                      <input style="z-index: 1;" validator="validator21467707383711" id="login_password" autocomplete="off" class="text vam" name="password" maxlength="32" tabindex="2" type="password"  placeholder="密码">
+                      <div id="msg_password"></div>
+                  </td>
 								</tr>
+
 								<tr>
 									<td class="verify-td">
 										<table>
 											<tbody><tr>
 												<td>
-													<label for="randomCode" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;"><div class="verify vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1">不区分大小写</div></label><input style="z-index: 1;" validator="validator31467707383712" autocomplete="off" class="verify vam" id="randomCode" name="code" maxlength="5" tabindex="3" type="text"><div id="msg_randowCode"></div>&nbsp;&nbsp;
+													<label for="randomCode" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;">
+                          <div class="verify vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1"></div></label>
+                          <input style="z-index: 1;" validator="validator31467707383712" autocomplete="off" class="verify vam" id="randomCode" name="code" maxlength="5" tabindex="3" type="text"  placeholder="不区分大小写">
+                          <div id="msg_randowCode"></div>&nbsp;&nbsp;
 												</td>
 												<td>
-													<img class="vam pointer" id="randomCodeImg" src="{{url('/Admin/login/captcha').'/'.rand()}}" alt="验证码：" onclick="this.src = this.src.replace(/\d+$/, '') + Math.random();" width="100">
+													<img class="vam pointer yzm"  src="{{url('/Admin/login/captcha').'/'.rand()}}" alt="验证码：" onclick="this.src = this.src.replace(/\d+$/, '') + Math.random();" width="103px" height="37px">
 													&nbsp;&nbsp;
 												</td>
 
@@ -100,7 +113,7 @@ $.ajaxSetup({
 									    <div style="border-bottom:1px solid #d7d7d7;margin-bottom:20px"></div>
 										<div style="margin-bottom:0px;"><span class="vam error" id="login_msg" style="margin-bottom:5px;display:block"></span></div>
 										<input style="width:280px;" class="button-login" id="btnLogin" value="登录" tabindex="5" type="submit"><div id="msg_login"></div>&nbsp;&nbsp;
-										<img class="load" src="%E7%99%BB%E5%BD%95_files/loading3.gif">
+
 									</td>
 								</tr>
 							</tbody>
@@ -111,7 +124,7 @@ $.ajaxSetup({
 
 				<p class="login-tips" style="margin-top:30px">
 					您还没有华为帐号吧？立即
-					&nbsp;&nbsp;<a href="#" title="免费注册">免费注册</a>
+					&nbsp;&nbsp;<a href="{{url('/register')}}" title="免费注册">免费注册</a>
 				</p>
                 <p class="login-tips inptips4">
                 	华为帐号是您用于访问所有华为服务的帐号。使用华为帐号登录后，您将可以使用华为云服务、华为商城、花粉俱乐部、应用市场、EMUI产品、华为网盘和开发者联盟。
