@@ -27,13 +27,12 @@ Route::post("/home/userinfo/tx","home\UserController@tx");
 
 
 
-//商品详情
-Route::get('/details',"home\DetailsController@index");
 
 //前台商品列表
 Route::resource("/Home/goodslist", "Home\IndexController");
 //Route::get('/Home/goodslist/{id}/show',"Home\IndexController@show");
 Route::post('/Home/goodslist/sou',"Home\IndexController@sou");
+Route::post("/Home/goodslist/comment","Home\IndexController@comment");
 
 //消息提示
 Route::get("/tips", function () {
@@ -84,3 +83,7 @@ Route::post("/Admin/goods/thum", "Admin\GoodsController@thum");
 Route::post("/Admin/goods/im1", "Admin\GoodsController@im1");
 Route::post("/Admin/goods/im2", "Admin\GoodsController@im2");
 Route::post("/Admin/goods/details", "Admin\GoodsController@details");
+
+//咨询模块
+Route::resource("/Admin/Comment", "Admin\CommentController");
+Route::get("/Admin/Comment", "Admin\CommentController@index");

@@ -111,10 +111,18 @@
 
           </ul>
         </li>
-
-		<li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-file"></span> 广告管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-file"></span> 咨询管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
+            <li><a href="{{url('/Admin/Comment')}}" class="am-cf"><span class="am-icon-th"></span> 咨询列表</a></li>
+           
+
+          </ul>
+        </li>
+		<li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 广告管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav5">
             <li><a href="" class="am-cf"><span class="am-icon-th"></span> 广告列表</a></li>
             <li><a href=""><span class="am-icon-puzzle-piece"></span> 添加广告</a></li>
 
