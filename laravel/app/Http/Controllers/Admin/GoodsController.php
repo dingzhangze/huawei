@@ -69,17 +69,19 @@ class GoodsController extends Controller
      */
     public function show($id)
     {
-        $value=DB::table("admin_goods_details")->where("gid","=",$id)->get();
-        dd($value);
+
         if(!empty(DB::table("admin_goods_details")->where("gid","=",$id)->get()))
-       {
-            $value=DB::table("admin_goods_details")->where("gid","=",$id)->get();
-             return view("admin.goods.details",  compact($value));
-        }else{
-            $value="111";
-            return view("admin.goods.details",  compact($value));
+        {
+            $abc=DB::table("admin_goods_details")->where("gid","=",$id)->first();
+//            dd($abc);
+             return view("admin.goods.details",["abc"=>$abc,"id"=>$id]);
+        }else
+        {
+//            dd($id);
+            return view("admin.goods.details", compact("id"));
         }
-       
+        
+
     }
 
     /**
@@ -153,6 +155,86 @@ class GoodsController extends Controller
         } else
         {
             return response()->json(["status" => 0, "info" => "上传失败"]);
+        }
+    }
+//    上传商品详情图片
+     public function thum(Request $request)
+    {
+       //重命名并转存文件
+        $file = $request->file("Filedata");//get post file
+        $suffix = $file->getClientOriginalExtension();
+        $rename = date("YmdHis").rand(1000,9999).".".$suffix;//201607111549289527.jpg
+        $result = $file->move("./uploads/goods", $rename);
+        //返回提示
+        if ($result)
+        {
+            return response()->json(["status" => 1, "info" => "/uploads/goods/{$rename}"]);
+        } else
+        {
+            return response()->json(["status" => 0, "info" => "上传失败"]);
+        }
+    }
+        
+    
+     public function im1(Request $request)
+    {
+       //重命名并转存文件
+        $file = $request->file("Filedata");//get post file
+        $suffix = $file->getClientOriginalExtension();
+        $rename = date("YmdHis").rand(1000,9999).".".$suffix;//201607111549289527.jpg
+        $result = $file->move("./uploads/goods", $rename);
+        //返回提示
+        if ($result)
+        {
+            return response()->json(["status" => 1, "info" => "/uploads/goods/{$rename}"]);
+        } else
+        {
+            return response()->json(["status" => 0, "info" => "上传失败"]);
+        }
+    }
+    
+     public function im2(Request $request)
+    {
+       //重命名并转存文件
+        $file = $request->file("Filedata");//get post file
+        $suffix = $file->getClientOriginalExtension();
+        $rename = date("YmdHis").rand(1000,9999).".".$suffix;//201607111549289527.jpg
+        $result = $file->move("./uploads/goods", $rename);
+        //返回提示
+        if ($result)
+        {
+            return response()->json(["status" => 1, "info" => "/uploads/goods/{$rename}"]);
+        } else
+        {
+            return response()->json(["status" => 0, "info" => "上传失败"]);
+        }
+    }
+    
+    
+     public function details(Request $request)
+    {
+        //接受数据
+        $data = $request->except("_token","upload");
+       $id=$data["gid"];
+//        dd($id);
+        if(!empty(DB::table("admin_goods_details")->where("gid","=",$id)->get()))
+        {
+//           $insertID = DB::table("admin_goods_details")->insertGetId($data);
+           $insertID = DB::table("admin_goods_details")->where("gid",$id)->update($data);
+         
+        }else
+        {
+            $insertID = DB::table("admin_goods_details")->insertGetId($data);
+//           $insertID = DB::table("admin_goods_details")->where("gid",$id)->update($data);
+        }
+        
+       
+        
+        
+        
+        if ($insertID !== false)
+        {
+            return redirect("/tips")->with(["info" => "Add Goods OK! ID :" .$insertID, "url" => "/Admin/goods"]);
         }
     }
 }

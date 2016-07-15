@@ -35,4 +35,33 @@ $(function () {
 		}
 	});
 })
-
+$(function () {
+	$("#avartar1").uploadify({
+		//flash上传程序的脚本文件
+		swf : "/plugins/uploadify/uploadify.swf",
+//		设置按钮样式
+		buttonText : "点我上传",
+		buttonImage : "/plugins/uploadify/ImgBtn.png", 
+		width : 50,
+		height:23,
+		//上传要求的控制
+		fileTypeExts : "*.jpg;*.jpeg;*.png;*.gif",
+		fileSizeLimit : 1*1024*1024,
+		//岁表单一起提交的数据
+		formData : {
+			_token: document.fm._token.value,
+			uid : document.fm.uid.value
+		},
+		//提交处理
+		method : "post",
+		uploader: "/Admin/user/avartar",
+		onUploadSuccess : function (file, txt, response) {
+			eval("var result =" +  txt);
+			if (!result.status){
+				alert(result.info);
+			} else {
+				$("#im").attr("src", result.info);
+			}
+		}
+	});
+})

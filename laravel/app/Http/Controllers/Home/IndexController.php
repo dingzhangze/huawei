@@ -72,7 +72,14 @@ class IndexController extends Controller
      */
     public function show($id)
     {
+         $goodslist = DB::table("admin_goods_details")->where("gid",$id)->first();
+         $comment=DB::table("admin_goods_comment")->where("gid",$id)->get();
          
+        $ppp = DB::table("admin_goods")->take(10)->get();
+      //  dd($ppp);
+         //dd($goodslist);
+        
+          return view("home.goodslist.Details",["goodslist"=>$goodslist,"ppp"=>$ppp,"comment"=>$comment]); 
     }
 
     /**
@@ -86,7 +93,7 @@ class IndexController extends Controller
 //        $ids=DB::table("admin_category")->where("pid","=","$id")->lists("cid");
             $cidss=DB::table("admin_category")->where("cid","=", $id)->lists("pid");
              $ids= implode(",",$cidss);
-//            dd($ids);  
+//            dd($ids);  i
          //判断查找的是根类还是子类
          if ("0" == $ids)
          {
@@ -142,5 +149,16 @@ class IndexController extends Controller
 //         dd($keyword);   
        
         return view("home.goodslist.index",  ["goods"=>$goods,"keyword"=>$keyword]);
+    }
+    //商品评论
+    public function comment(Request $request)
+    {
+//        dd($request);
+//        return 111;
+        $data = $request->except("_token");
+        $data["cdatetime"] = date("Y-m-d H:i:s");
+//        dd($data);
+        DB::table("admin_goods_comment")->insertGetId($data);
+       return redirect('/Home/goodslist/'.$data["gid"]);
     }
 }

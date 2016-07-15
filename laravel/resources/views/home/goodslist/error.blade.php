@@ -50,7 +50,7 @@
 		    <div class="hr-15"></div>
 
                     <!--商品简介-SKU -->
-                    <div id="pro-skus" class="pro-sku-area"><dl class="clearfix pro-sku-img"><dt>选择颜色：</dt><dd><ol><li class="tac pointer attr64263" data-attrname="颜色" data-attrid="64263" data-skuid="8267"><div class="sku"> <a title="{{$goodslist->color}}"><img src="{{$goodslist->thum}}" alt="{{$goodslist->color}}"></a><s></s>{{$goodslist->color}}</div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择制式：</dt><dd><ol><li class="tac pointer attr64241 attr64265 attr65097 attr68275 attr68281 attr68287 attr68317 selected" data-attrname="制式" data-attrid="64241,64265,65097,68275,68281,68287,68317" data-skuid="8255,8267,8259,8261,8263,8265,721625417"><div class="sku"> <a title="{{$goodslist->network}}">{{$goodslist->network}}</a><s></s></div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择内存：</dt><dd><ol><li class="tac pointer attr64243 attr65099 attr68277 attr68319 selected" data-attrname="内存" data-attrid="64243,65099,68277,68319" data-skuid="8255,8259,8261,721625417"><div class="sku"> <a title="{{$goodslist->versions}}">{{$goodslist->versions}}</a><s></s></div></li></ol></dd></dl></div>
+                    <div id="pro-skus" class="pro-sku-area"><dl class="clearfix pro-sku-img"><dt>选择颜色：</dt><dd><ol><li class="tac pointer attr64263" data-attrname="颜色" data-attrid="64263" data-skuid="8267"><div class="sku"> <a title="{{$goodslist->color}}"><img src="{{$goodslist->thum}}" alt="{{$goodslist->color}}"></a><s></s>流光金</div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择制式：</dt><dd><ol><li class="tac pointer attr64241 attr64265 attr65097 attr68275 attr68281 attr68287 attr68317 selected" data-attrname="制式" data-attrid="64241,64265,65097,68275,68281,68287,68317" data-skuid="8255,8267,8259,8261,8263,8265,721625417"><div class="sku"> <a title="{{$goodslist->network}}">{{$goodslist->network}}</a><s></s></div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择内存：</dt><dd><ol><li class="tac pointer attr64243 attr65099 attr68277 attr68319 selected" data-attrname="内存" data-attrid="64243,65099,68277,68319" data-skuid="8255,8259,8261,721625417"><div class="sku"> <a title="{{$goodslist->versions}}">{{$goodslist->versions}}</a><s></s></div></li></ol></dd></dl></div>
 
 					<div style="display: none;" class="pro-sku-area hide" id="contractLst">
 						<!-- 联通合约机套餐 -->
@@ -248,99 +248,13 @@
         	<!--商品简介-图片画廊 -->
         	<div class="pro-gallery-area">
             	<div class="pro-gallery-img">
-                    <div id="small"  style="padding:0px;margin:0px; top:0px;z-index:300;position:absolute;width:480px;height:480px; overflow:hidden"><img src="{{$goodslist->thum}}" alt="" width='100%' id='smallImg'>
-                        <div id="move" style="padding:0px;margin:0px; width:150px;height:150px;z-index:301;position:absolute;background:url('/images/home/bg.png');left:0px;top:0px;visibility:hidden;cursor:move;"></div>
-                            
-                    </div>
-                    <div id="big" style="padding:0px;margin:0px; width:480px;height:480px;position:absolute;left:540px;top:0px;overflow:hidden;display:none; background:white;z-index:3000"><img src="{{$goodslist->thum}}" alt="" id='bigImg' style="position:absolute;width:960px;height:960px"></div>
-                    
-      <script type="text/javascript">
-                var small = document.getElementById('small');
-
-                var move = document.getElementById('move');
-
-                var bigImg = document.getElementById('bigImg');
-
-                var big = document.getElementById('big');
-
-                var smallImg = document.getElementById('smallImg');
-
-                small.onmousemove = function(e)
-                {
-                        move.style.visibility = 'visible'; 
-
-                        big.style.display = 'block';
-                        //获取x坐标
-                        var x = e.pageX;
-                        //获取y坐标
-                        var y  = e.pageY;
-
-                        //获取samll左偏移量
-                        var ml = small.offsetLeft+65;
-                        //获取small顶部的偏移量
-                        var mt = small.offsetTop+310;
-
-                        //获取move的宽度一半的距离
-                        var mwh = move.offsetWidth/2;
-                        //获取move的高度一半的距离
-                        var mhh =move.offsetHeight/2;
-
-                        var mll = x-ml-mwh;
-
-                        var mhh = y-mt-mhh;
-
-                        if(mll <= 0) {
-                                mll = 0;
-                        }
-
-                        var maxl =  small.offsetWidth-move.offsetWidth;
-                        if(mll >= maxl) {
-                                mll = maxl;
-                        }
-
-                        if(mhh <= 0) {
-                                mhh = 0;
-                        }
-
-                        var maxt = small.offsetHeight-move.offsetHeight;
-
-                        if(mhh >= maxt) {
-
-                                mhh = maxt;
-                        }
-                        move.style.left = mll+'px';
-
-                        move.style.top = mhh+'px';
-
-                        var bl = (mll/small.offsetWidth)*(bigImg.offsetWidth-92);
-
-                        var bt = (mhh/small.offsetHeight)*(bigImg.offsetHeight-92);
-
-                        bigImg.style.left = -bl+'px';
-
-                        bigImg.style.top = -bt+'px';
-
-                        //console.log(mhh);
-                }
-
-                //鼠标移除事件
-                small.onmouseout = function()
-                {
-                        move.style.visibility= 'hidden';
-
-                        big.style.display = 'none';
-                }
-
-               
-
-
-                </script>   
-                    
-                    
-                    
-                    
-                    
-                    
+					<div id="wrap" style="top:0px;z-index:300;position:relative;">
+                                            <a  id="product-img" href="" class="cloud-zoom" rel="">
+						<img  src="{{$goodslist->thum}}" alt="" id="src">
+                                            </a> </div>
+                                            <div class="mousetrap" id="move"  style="background-image:url(about:blank);z-index:999;position:absolute;width:480px;height:480px;left:0px;top:0px;display:none"><img scr="{{$goodslist->thum}}"></div>
+                                        
+                                       
 				</div>
                 <div class="pro-gallery-nav">
                 	<a href="." class="pro-gallery-back" onclick=""></a>
@@ -355,18 +269,6 @@
     </div>
 </div>
 
-
-<!--//图片放大效果-->
-<script tyep="text/javascript">
-      
-
-
-
-
-
-
-
-</script>
 
 
 
@@ -600,7 +502,7 @@
 
 						</ul>
 					</div>
-					<div class="pro-detail-tab-link"></div>
+					<div class="pro-detail-tab-link"><a href="#inquire-form" onclick="ec.product.loginCheckBefCoun();">发表咨询&gt;&gt;</a></div>
 				</div><!-- 20140624-商品详情-书签-end -->
 			</div>
 
@@ -611,26 +513,25 @@
 					<label>温馨提示：</label>因产线可能更改商品包装、产地、附配件等未及时通知，且每位咨询者购买、提问时间等不同。为此，客服给到的回复仅对提问者3天内有效，其他网友仅供参考！给您带来的不便还请谅解，谢谢！
 				</div><!-- 20140624-商品详情-咨询提示-end -->
 				<div class="pro-inquire-list" id="all_prd_counsel_content">
-                                    
-                                    @foreach($comment as $comments)
 					<div class="pro-inquire-item clearfix">
 						<div class="pro-inquire-user">
-							<label>@if(!empty($comments->name)) {{$comments->name}} @endif</label><span></span><s><i class="icon-vip-level-0"></i></s><em>@if(!empty($comment->cdatetime)) {{$comments->cdatetime}} @endif</em>
+							<label>网友：</label><span>15881*****</span><s><i class="icon-vip-level-0"></i></s><em>2016-07-13 09:31:24</em>
 						</div>
 						<div class="pro-inquire-question">
-							<label>咨询内容：</label><span>@if(!empty($comments->comment)) {{$comments->comment}} @endif</span>
+							<label>咨询内容：</label><span>您好，华为P9这款手机支持VR么？</span>
 						</div>
 						<div class="pro-inquire-answer">
-							<label>回复：</label><span>@if(!empty($comments->reply)) {{$comments->reply}} @endif</span>
-							<em>@if(!empty($comments->rdatetime)) {{$comments->rdatetime}} @endif</em>
+							<label>回复：</label><span>您好，欢迎咨询华为商城。p9支持VR的。感谢您对华为商城的支持！</span>
+							<em>2016-07-13 14:15:37</em>
 						</div>
 					</div>
-                                    @endforeach
+					
 				</div>
 				<div class="pro-inquire-page clearfix">
 					<div class="pro-inquire-record">共<em>4057</em>条</div>
 					<!-- 20131220-分页-start -->
-					</div>
+					<div class="pager" id="all_prd_counsel"><ul><li class="pgNext link first first-empty">|&lt;</li><li class="pgNext link pre pre-empty">&lt;</li><span class="qpages"><li class="page-number link pgCurrent">1</li><li class="page-number link">2</li><li class="page-number link">3</li><li class="page-number link">4</li><li class="page-number link">5</li><li class="page-number link">6</li><li class="page-number link">7</li><li class="page-number link">8</li><li class="page-number link">9</li><li class="text">...</li><li class="page-number link page-number-last">812</li></span><li class="pgNext link next">&gt;</li><li class="pgNext link last">&gt;|</li><li class="text quickPager"><span class="fl">第</span><div id="chatpage"><input id="quickPager" class="pagenum fl" value="1" style="width:20px;"><a id="enter" class="enter fl" href="javascript:void(0)"></a></div><span class="fl">&nbsp;/812&nbsp;页</span></li></ul></div><!-- 20131220-分页-end -->
+				</div>
 			</div><!-- 20140624-商品详情-全部咨询-end -->
 
 			<!-- 20140624-商品详情-商品咨询-start -->
@@ -715,15 +616,21 @@
 				</div>
 				<div class="b">
 					<div class="form-edit-area">
-                                            <form method="post" action="/Home/goodslist/comment">
-                                                <input type="hidden" name="_token" value="{{csrf_token()}}" />
-                                                <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
-                                                <input type="hidden" name="name" value="@if(!empty(Session::get("userData")->name)) {{Session::get("userData")->name}}@else  游客{{rand(1000,9999)}}：  @endif" />
+						<form autocomplete="off" id="counsel_content_form">
 							<div class="form-edit-table">
-                                                            <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
+								<p>
+									<b>咨询类型：</b>
+									<input class="radio vam" value="1" name="type" checked="checked" type="radio"><label class="vam" for="">商品咨询</label>
+									<input class="radio vam" value="2" name="type" type="radio"><label class="vam" for="">支付</label>
+									<input class="radio vam" value="3" name="type" type="radio"><label class="vam" for="">配送</label>
+									<input class="radio vam" value="4" name="type" type="radio"><label class="vam" for="">售后</label>
+								</p>
+								<p><textarea placeholder="" onfocus="ec.product.loginCheckBefCoun();" class="textarea" name="question" id="counseltextid" maxlength="100"></textarea></p>
+								<p style="margin-top: -15px;"><input id="safeEmail" name="safeEmail" class="checkbox vam" vlaue="1" type="checkbox"><label class="vam">客服回复发送到我的安全邮箱</label></p>
 							</div>
 							<div class="form-edit-action">
-                                                            <input class="button-style-4 button-inquire-sumbit" value="提交"  type="submit">
+								<input class="button-style-4 button-inquire-sumbit" value="提交" onclick="ec.product.submitCounsel();" type="button">
+								&nbsp;&nbsp;<span class="vam error" id="error-span" style="display:none"></span>
 							</div>
 						</form>
 					</div>
