@@ -18,6 +18,11 @@ Route::post("/register","home\LoginController@store");
 //前台登陆
 Route::get('/login',"home\LoginController@index");
 Route::post('/login',"home\LoginController@logTodo");
+Route::get("/logout", "home\LoginController@logout");
+
+//前台用户信息
+Route::get('/userinfo',"home\UserController@index");
+Route::get('/edit',"home\UserController@create");
 
 
 //前台商品列表

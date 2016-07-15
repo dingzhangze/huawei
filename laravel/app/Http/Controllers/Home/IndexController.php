@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use DB;
-
+use DB,
+    Session,
+    Validator,
+    Hash;
 class IndexController extends Controller
 {
     /**
@@ -24,10 +26,10 @@ class IndexController extends Controller
 //            $subclass=DB::table("admin_category")->where("pid","=", $fn->cid)->get();
 //        }
 ////        dd($cid);
-//       
+//
 ////        dd($firstNav);
 //          dd($subclass);
-      
+
        //首页商品类别
          $phs = DB::table("admin_goods")->where("cid","=","46")->take(4)->get();
          $rexiao = DB::table("admin_goods")->where("cid","=","47")->get();
@@ -37,10 +39,10 @@ class IndexController extends Controller
         $zns = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","6")->take(6)->get();
         $pjs = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","7")->take(14)->get();
      //  dd($pjs);
-       
+
         return view("index",["firstNav" => $firstNav,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao]);
-        
-        
+
+
     }
 
     /**
@@ -106,7 +108,7 @@ class IndexController extends Controller
          {
              $cid = [$id];
          }
-//         dd($cid);      
+//         dd($cid);
          $goods=DB::table("admin_goods")->whereIn("cid",$cid)->take(20)->get();
 //         dd($goods);
          return view("home.goodslist.index",compact("goods"));
@@ -136,7 +138,7 @@ class IndexController extends Controller
     }
     public function sou(Request $request)
     {
-        
+
         //  // 搜索
         $goods = DB::table("admin_goods")
                 ->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")
@@ -146,8 +148,8 @@ class IndexController extends Controller
                 ->get();
         //获取搜索条件
         $keyword = $request->get("keyword");
-//         dd($keyword);   
-       
+//         dd($keyword);
+
         return view("home.goodslist.index",  ["goods"=>$goods,"keyword"=>$keyword]);
     }
     //商品评论
