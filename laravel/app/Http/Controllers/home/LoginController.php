@@ -85,7 +85,7 @@ class LoginController extends Controller
   		}
       //执行数据验证
       $this->validate($request, [
-          "uname" => "required|unique:user",
+          "uname" => "required|unique:home_user",
           "password" => "required|between:6, 15",
          "repassword" => "required|same:password",
       ], [
