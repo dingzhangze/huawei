@@ -22,7 +22,9 @@
           <tr><td>{{$tmp->gid}}</td><td>{{$tmp->name}}</td><td>{{$tmp->cname}}</td> <td><span class="am-badge am-badge-success">{{$tmp->price}}￥</span></td>
 
             <td><img src="{{$tmp->im}}" height="50" /></td>
+
             <td><a href="/Admin/goods/{{$tmp->gid}}/edit">修改</a>  <a href="/Admin/goods/delete/{{$tmp->gid}}">删除</a>  <a href="/Admin/goods/{{$tmp->gid}}">[更改详情]</a></td>
+
           </tr>
           @endforeach
 

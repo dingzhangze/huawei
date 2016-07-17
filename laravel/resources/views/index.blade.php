@@ -45,7 +45,7 @@
 		</div>
 		<div class="s-main">
 			<ul>
-          @if(empty(Session::get("userData")))
+          @if(empty(Session::get("userDatas")))
 				<li class="s-login" id="unlogin_status">
 
 						<a href="{{url('/login')}}" rel="nofollow">登录</a>
@@ -56,7 +56,7 @@
 
 					<div class="s-dropdown">
 						<div class="h">
-              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userData")->uname}}</strong></a>
+              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
@@ -64,7 +64,7 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="{{url('/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
+							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
 
@@ -147,9 +147,15 @@
 					<div class="h"><a href="#" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-imall-content">
+              @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
-							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="/account/login?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script><a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
+
+							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="{{url('/login')}}?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script>
+                <a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
 						</div>
+            @else
+            您好, <strong>{{Session::get("userDatas")->uname}}</strong>
+            @endif
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
 								<li><a href="#" rel="nofollow" timetype="timestamp">我的订单</a></li>
@@ -381,8 +387,8 @@
 		<li id="channel-pro-favorable-{{rand(1,4)}}" class="channel-pro-item channel-pro-favorable-item-1" data-activityid="" data-skutype="1" data-skuid="859934072">
 			<div class="channel-pro-panels">
 				<div class="pro-info">
-					<div class="p-img"><a href="" title="{{$ph->name}}" target="_blank"><img src="{{$ph->im}}" alt="荣耀V8"></a></div>
-					<div class="p-name"><a href="http://www.vmall.com/product/186517099.html" title="{{$ph->name}}" target="_blank">
+					<div class="p-img"><a href="{{url('/Home/goodslist/'.$ph->gid)}}" title="{{$ph->name}}" target="_blank"><img src="{{$ph->im}}" alt="荣耀V8"></a></div>
+					<div class="p-name"><a href="{{url('/Home/goodslist/'.$ph->gid)}}" title="{{$ph->name}}" target="_blank">
 					{{$ph->name}}</a></div>
 					<div class="p-shining">
 						<div class="p-slogan"></div>
@@ -391,7 +397,7 @@
 					<div class="p-price">
 					<em>¥</em><span>{{$ph->price}}</span></div>
 					<div class="p-button">
-					<a href="" target="_blank" class="channel-button">立即抢购</a>
+					<a href="{{url('/Home/goodslist/'.$ph->gid)}}" target="_blank" class="channel-button">立即抢购</a>
 					</div>
 					<div class="p-countdown hide">
 						<span class="p-time"></span>
@@ -519,10 +525,10 @@
 					<li id="channel-pro-1-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="http://www.vmall.com/product/2172.html#6146,75" title="{{$rexiao[0]->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$rexiao[0]->gid)}}" title="{{$rexiao[0]->name}}" target="_blank" rel="nofollow">
 												<img src="{{$rexiao[0]->im}}" style="" alt="">
 								</a></div>
-								<div class="p-name"><a href="http://www.vmall.com/product/2172.html#6146,75" title="{{$rexiao[0]->name}}" target="_blank">
+								<div class="p-name"><a href="{{url('/Home/goodslist/'.$rexiao[0]->gid)}}" title="{{$rexiao[0]->name}}" target="_blank">
 								{{$rexiao[0]->name}}
 								</a></div>
 								<div class="p-shining">
@@ -530,7 +536,7 @@
 									<div class="p-promotions">原价1799元 直降200元！</div>
 								</div>
 								<div class="p-price"><em>¥</em><span>{{$rexiao[0]->price}}</span></div>
-								<div class="p-button"><a href="http://www.vmall.com/product/2172.html#551485,75" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+								<div class="p-button"><a href="{{url('/Home/goodslist/'.$rexiao[0]->gid)}}" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
 									<i class="p-tag">
 													<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）">
 									</i>
@@ -581,10 +587,10 @@
 					<li id="channel-pro-2-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$rexiao[1]->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$rexiao[1]->gid)}}" title="{{$rexiao[1]->name}}" target="_blank" rel="nofollow">
 												<img src="{{$rexiao[1]->im}}" style="" alt="">
 								</a></div>
-								<div class="p-name"><a href="" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">
+								<div class="p-name"><a href="{{url('/Home/goodslist/'.$rexiao[1]->gid)}}" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">
 								{{$rexiao[1]->name}}
 								</a></div>
 								<div class="p-shining">
@@ -592,7 +598,7 @@
 									<div class="p-promotions"></div>
 								</div>
 								<div class="p-price"><em>¥</em><span>{{$rexiao[1]->price}}</span></div>
-								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+								<div class="p-button"><a href="{{url('/Home/goodslist/'.$rexiao[1]->gid)}}" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
                                                                             <i class="p-tag">
 										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）">
                                                                             </i>
@@ -603,11 +609,11 @@
 					<li id="channel-pro-2-11" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$pd->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$pd->gid)}}" title="{{$pd->name}}" target="_blank" rel="nofollow">
 												<img src="{{$pd->im}}" style="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="" title="{{$pd->name}}" target="_blank">
+								<a href="{{url('/Home/goodslist/'.$pd->gid)}}" title="{{$pd->name}}" target="_blank">
 								{{$pd->name}}
 									<span class="p-slogan">22</span>
 
@@ -644,10 +650,10 @@
 					<li id="channel-pro-3-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$rexiao[2]->gid)}}" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank" rel="nofollow">
 												<img src="{{$rexiao[2]->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
-								<div class="p-name"><a href="" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank">
+								<div class="p-name"><a href="{{url('/Home/goodslist/'.$rexiao[2]->gid)}}" title="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金" target="_blank">
 								{{$rexiao[2]->name}}
 								</a></div>
 								<div class="p-shining">
@@ -655,7 +661,7 @@
 									<div class="p-promotions"></div>
 								</div>
 								<div class="p-price"><em>¥</em><span>{{$rexiao[2]->price}}</span></div>
-								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+								<div class="p-button"><a href="{{url('/Home/goodslist/'.$rexiao[2]->gid)}}" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
                                                                             <i class="p-tag">
 										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="华为（HUAWEI）MateBook 12英寸平板二合一笔记本电脑（Intel core m3 4GB内存 128GB存储 Win10 内含键盘不含手写笔和扩展坞）香槟金">
                                                                             </i>
@@ -666,11 +672,11 @@
 					<li id="channel-pro-3-4" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$p->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$p->gid)}}" title="{{$p->name}}" target="_blank" rel="nofollow">
 												<img src="{{$p->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="" title="{{$p->name}}" target="_blank">
+								<a href="{{url('/Home/goodslist/'.$p->gid)}}" title="{{$p->name}}" target="_blank">
 								{{$p->name}}
 									<span class="p-slogan"></span>
 
@@ -705,10 +711,10 @@
 					<li id="channel-pro-4-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$rexiao[3]->gid)}}" title="" target="_blank" rel="nofollow">
 												<img src="{{$rexiao[3]->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
-								<div class="p-name"><a href="" title="" target="_blank">
+								<div class="p-name"><a href="{{url('/Home/goodslist/'.$rexiao[3]->gid)}}" title="" target="_blank">
 								{{$rexiao[3]->name}}
 								</a></div>
 								<div class="p-shining">
@@ -716,7 +722,7 @@
 									<div class="p-promotions"></div>
 								</div>
 								<div class="p-price"><em>¥</em><span>{{$rexiao[3]->price}}</span></div>
-								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+								<div class="p-button"><a href="{{url('/Home/goodslist/'.$rexiao[3]->gid)}}" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
 									 <i class="p-tag">
 										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="">
                                                                             </i>
@@ -729,11 +735,11 @@
 					<li id="channel-pro-4-5" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$zn->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$zn->gid)}}" title="{{$zn->name}}" target="_blank" rel="nofollow">
 												<img src="{{$zn->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="" title="{{$zn->name}}" target="_blank">
+								<a href="{{url('/Home/goodslist/'.$zn->gid)}}" title="{{$zn->name}}" target="_blank">
 								{{$zn->name}}
 									<span class="p-slogan"></span>
 
@@ -770,10 +776,10 @@
 					<li id="channel-pro-5-1" class="channel-pro-item channel-pro-rec-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$rexiao[4]->gid)}}" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank" rel="nofollow">
 												<img src="{{$rexiao[4]->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
-								<div class="p-name"><a href="" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank">
+								<div class="p-name"><a href="{{url('/Home/goodslist/'.$rexiao[4]->gid)}}" title="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）" target="_blank">
 								{{$rexiao[4]->name}}
 								</a></div>
 								<div class="p-shining">
@@ -781,7 +787,7 @@
 									<div class="p-promotions"></div>
 								</div>
 								<div class="p-price"><em>¥</em><span>{{$rexiao[4]->price}}</span></div>
-								<div class="p-button"><a href="" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
+								<div class="p-button"><a href="{{url('/Home/goodslist/'.$rexiao[4]->gid)}}" target="_blank" class="channel-button" title="立即抢购">立即抢购</a></div>
 									 <i class="p-tag">
 										<img src="{{url('/images/home/1460242398600_003.png')}}" alt="荣耀 移动电源 10000mAh充电宝 快充宝双向快充18W 功率TypeC 与Micro USB双输入快充版（白色）">
                                                                             </i>
@@ -794,11 +800,11 @@
 					<li id="channel-pro-5-4" class="channel-pro-item">
 						<div class="channel-pro-panels">
 							<div class="pro-info">
-								<div class="p-img"><a href="" title="{{$pj->name}}" target="_blank" rel="nofollow">
+								<div class="p-img"><a href="{{url('/Home/goodslist/'.$pj->gid)}}" title="{{$pj->name}}" target="_blank" rel="nofollow">
 												<img src="{{$pj->im}}" style="" data-lazy-src="" alt="">
 								</a></div>
 								<div class="p-name">
-								<a href="" title="{{$pj->name}}" target="_blank">
+								<a href="{{url('/Home/goodslist/'.$pj->gid)}}" title="{{$pj->name}}" target="_blank">
 								{{$pj->name}}
 									<span class="p-slogan"></span>
 

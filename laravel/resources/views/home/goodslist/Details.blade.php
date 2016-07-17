@@ -2,7 +2,7 @@
 <div class="hr-10"></div>
 <div class="g">
 	<!--面包屑 -->
-	<div class="breadcrumb-area fcn"><a href="http://www.vmall.com/index.html" title="首页">首页</a>&nbsp;&gt;&nbsp;<span id="bread-pro-name">HUAWEI P9 4GB+64GB 全网通版（陶瓷白）</span></div>
+	<div class="breadcrumb-area fcn"><a href="" title="首页">首页</a>&nbsp;&gt;&nbsp;<span id="bread-pro-name">{{$goodslist->name}}</span></div>
 </div>
 <div class="hr-10"></div>
 <div class="layout">
@@ -12,16 +12,16 @@
         	<!--商品简介-属性 -->
         	<div class="pro-property-area clearfix">
                 <div class="pro-meta-area">
-                	<h1 id="pro-name">HUAWEI P9 4GB+64GB 全网通版（陶瓷白）</h1>
+                	<h1 id="pro-name">{{$goodslist->name}}</h1>
 
                 	<!-- 插入 商品简介-广告语-->
-                	<div class="pro-slogan" id="skuPromWord">精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！</div>
+                	<div class="pro-slogan" id="skuPromWord">{{$goodslist->intro}}</div>
                 	<div class="hr-10"></div>
 					<div class="line"></div>
 
                     <div class="pro-price">
 							 <s style="display: none;" id="pro-price-old" class="hide"><label>华&nbsp;为&nbsp;&nbsp;价：</label>¥&nbsp; </s>
-							 <span id="pro-price"><label>华&nbsp;为&nbsp;&nbsp;价：</label><b>¥&nbsp;3688.00</b></span>
+							 <span id="pro-price"><label>华&nbsp;为&nbsp;&nbsp;价：</label><b>¥&nbsp;{{$goodslist->price}}</b></span>
                     </div>
 
                     <!--chenzhongxian 促销和赠品合并-->
@@ -44,13 +44,13 @@
 
 			</div>
 			<div class="pro-service"><label>服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：</label>由华为商城负责发货，并提供售后服务</div>
-			<div class="pro-service"><label>以旧换新：</label><a href="http://www.vmall.com/recycle?url=%3Fpid%3D1032" target="_blank" textvalue="旧机最高抵5000元，立即参加&gt;&gt;"><span style="color:#ff0000"><span style="font-family:'微软雅黑','sans-serif';color:red;font-size:14px"><span style="font-family:arial, helvetica,sans-serif;color:red;font-size:12px">旧机最高抵</span><span style="font-family:arial, helvetica,sans-serif;color:red;font-size:12px">5000元，</span></span>立即参加&gt;&gt;</span></a></div>
+			<div class="pro-service"><label>以旧换新：</label><a href="" target="_blank" textvalue="旧机最高抵5000元，立即参加&gt;&gt;"><span style="color:#ff0000"><span style="font-family:'微软雅黑','sans-serif';color:red;font-size:14px"><span style="font-family:arial, helvetica,sans-serif;color:red;font-size:12px">旧机最高抵</span><span style="font-family:arial, helvetica,sans-serif;color:red;font-size:12px">5000元，</span></span>立即参加&gt;&gt;</span></a></div>
 		    <div class="hr-10"></div>
 		    <div class="line"></div>
 		    <div class="hr-15"></div>
 
                     <!--商品简介-SKU -->
-                    <div id="pro-skus" class="pro-sku-area"><dl class="clearfix pro-sku-img"><dt>选择颜色：</dt><dd><ol><li class="tac pointer attr64239" data-attrname="颜色" data-attrid="64239" data-skuid="8255"><div class="sku"> <a title="金色"><img src="./40_40_1467252520756mp.jpg" alt="金色"></a><s></s>金色</div></li><li class="tac pointer attr64263" data-attrname="颜色" data-attrid="64263" data-skuid="8267"><div class="sku"> <a title="流光金"><img src="./40_40_1467252927907mp.jpg" alt="流光金"></a><s></s>流光金</div></li><li class="tac pointer attr64293 attr68279 attr68291 attr68309" data-attrname="颜色" data-attrid="64293,68279,68291,68309" data-skuid="8273,8263,8269,8277"><div class="sku"> <a title="皓月银"><img src="./40_40_1467253265493mp.jpg" alt="皓月银"></a><s></s>皓月银</div></li><li class="tac pointer attr65095 selected" data-attrname="颜色" data-attrid="65095" data-skuid="8259"><div class="sku"> <a title="陶瓷白"><img src="./40_40_1467252608007mp.jpg" alt="陶瓷白"></a><s></s>陶瓷白</div></li><li class="tac pointer attr68273" data-attrname="颜色" data-attrid="68273" data-skuid="8261"><div class="sku"> <a title="玫瑰金"><img src="./40_40_1467252677697mp.jpg" alt="玫瑰金"></a><s></s>玫瑰金</div></li><li class="tac pointer attr68285 attr68297 attr68303" data-attrname="颜色" data-attrid="68285,68297,68303" data-skuid="8265,8275,8279"><div class="sku"> <a title="钛银灰"><img src="./40_40_1467252867876mp.jpg" alt="钛银灰"></a><s></s>钛银灰</div></li><li class="tac pointer attr68315" data-attrname="颜色" data-attrid="68315" data-skuid="721625417"><div class="sku"> <a title="琥珀灰"><img src="./40_40_1467254679960mp.jpg" alt="琥珀灰"></a><s></s>琥珀灰</div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择制式：</dt><dd><ol><li class="tac pointer attr64241 attr64265 attr65097 attr68275 attr68281 attr68287 attr68317 selected" data-attrname="制式" data-attrid="64241,64265,65097,68275,68281,68287,68317" data-skuid="8255,8267,8259,8261,8263,8265,721625417"><div class="sku"> <a title="全网通版">全网通版</a><s></s></div></li><li class="tac pointer attr64295 attr68299 disabled" data-attrname="制式" data-attrid="64295,68299" data-skuid="8273,8275"><div class="sku"> <a title="移动定制版">移动定制版</a><s></s></div></li><li class="tac pointer attr68293 disabled" data-attrname="制式" data-attrid="68293" data-skuid="8269"><div class="sku"> <a title="电信定制版">电信定制版</a><s></s></div></li><li class="tac pointer attr68305 attr68311 disabled" data-attrname="制式" data-attrid="68305,68311" data-skuid="8279,8277"><div class="sku"> <a title="联通定制版">联通定制版</a><s></s></div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择内存：</dt><dd><ol><li class="tac pointer attr64243 attr65099 attr68277 attr68319 selected" data-attrname="内存" data-attrid="64243,65099,68277,68319" data-skuid="8255,8259,8261,721625417"><div class="sku"> <a title="4GB+64GB">4GB+64GB</a><s></s></div></li><li class="tac pointer attr64267 attr64297 attr68283 attr68289 attr68295 attr68301 attr68307 attr68313 disabled" data-attrname="内存" data-attrid="64267,64297,68283,68289,68295,68301,68307,68313" data-skuid="8267,8273,8263,8265,8269,8275,8279,8277"><div class="sku"> <a title="3GB+32GB">3GB+32GB</a><s></s></div></li></ol></dd></dl></div>
+                    <div id="pro-skus" class="pro-sku-area"><dl class="clearfix pro-sku-img"><dt>选择颜色：</dt><dd><ol><li class="tac pointer attr64263" data-attrname="颜色" data-attrid="64263" data-skuid="8267"><div class="sku"> <a title="{{$goodslist->color}}"><img src="{{$goodslist->thum}}" alt="{{$goodslist->color}}"></a><s></s>{{$goodslist->color}}</div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择制式：</dt><dd><ol><li class="tac pointer attr64241 attr64265 attr65097 attr68275 attr68281 attr68287 attr68317 selected" data-attrname="制式" data-attrid="64241,64265,65097,68275,68281,68287,68317" data-skuid="8255,8267,8259,8261,8263,8265,721625417"><div class="sku"> <a title="{{$goodslist->network}}">{{$goodslist->network}}</a><s></s></div></li></ol></dd></dl><dl class="clearfix pro-sku-text"><dt>选择内存：</dt><dd><ol><li class="tac pointer attr64243 attr65099 attr68277 attr68319 selected" data-attrname="内存" data-attrid="64243,65099,68277,68319" data-skuid="8255,8259,8261,721625417"><div class="sku"> <a title="{{$goodslist->versions}}">{{$goodslist->versions}}</a><s></s></div></li></ol></dd></dl></div>
 
 					<div style="display: none;" class="pro-sku-area hide" id="contractLst">
 						<!-- 联通合约机套餐 -->
@@ -73,29 +73,29 @@
 									<li style="z-index: 3;" id="extendProtected" class="sku-select">
 										<!-- 取数据字节最长的div.sku的宽度赋值给所有div.sku -->
 										<div style="width: 208px;" class="sku">
-										   <a id="2663" href="javascript:;" title="延保服务">终端延保服务（一年期）¥188.00</a><i></i><s></s>
+										   <a id="2663" href="" title="延保服务">终端延保服务（一年期）¥188.00</a><i></i><s></s>
 										</div>
-										<ul><li><div style="width:208px" class="sku" title="6092"><a id="2663" href="javascript:;" title="延保服务">终端延保服务（一年期）¥188.00</a></div></li><li><div style="width:208px" class="sku" title="820742949"><a id="728258707" href="javascript:;" title="延保服务">终端延保服务（半年期）¥98.00</a></div></li></ul>
+										<ul><li><div style="width:208px" class="sku" title="6092"><a id="2663" href="." title="延保服务">终端延保服务（一年期）¥188.00</a></div></li><li><div style="width:208px" class="sku" title="820742949"><a id="728258707" href="." title="延保服务">终端延保服务（半年期）¥98.00</a></div></li></ul>
 
 									</li>
 									<li id="extendProtectedProduct">
 										<div class="pro-sku-tips">
-											<a id="2663" href="http://www.vmall.com/product/2663.html" target="_blank">详情 &gt;</a>
+											<a id="2663" href="" target="_blank">详情 &gt;</a>
 										</div>
 									</li>
 									<li style="z-index: 3;" id="accidentProtected" class="sku-select clear">
 										<!-- 取数据字节最长的div.sku的宽度赋值给所有div.sku -->
 										<div style="width: 244px;" class="sku">
-										      <a id="472525757" href="javascript:;" title="意外保服务">意外保障服务D（一年期）¥280.00</a><i></i><s></s>
+										      <a id="472525757" href="." title="意外保服务">意外保障服务D（一年期）¥280.00</a><i></i><s></s>
 										</div>
-										<ul><li><div style="width:244px" class="sku" title="199637048"><a id="472525757" href="javascript:;" title="意外保服务">意外保障服务D（一年期）¥280.00</a></div></li><li><div style="width:244px" class="sku" title="441601818"><a id="739671590" href="javascript:;" title="意外保服务">碎屏意外保障服务D（一年期）¥139.00</a></div></li></ul>
+										<ul><li><div style="width:244px" class="sku" title="199637048"><a id="472525757" href="." title="意外保服务">意外保障服务D（一年期）¥280.00</a></div></li><li><div style="width:244px" class="sku" title="441601818"><a id="739671590" href="." title="意外保服务">碎屏意外保障服务D（一年期）¥139.00</a></div></li></ul>
 										<div class="pro-sku-tips">
 										</div>
 									</li>
 
 									<li id="accidentProtectedProduct">
 										<div class="pro-sku-tips">
-											<a id="472525757" href="http://www.vmall.com/product/472525757.html" target="_blank">详情 &gt;</a>
+											<a id="472525757" href="" target="_blank">详情 &gt;</a>
 										</div>
 									</li>
 
@@ -110,8 +110,8 @@
 							<dt>关联商品：</dt>
 							<dd>
 								<ol>
-									<li data-id="3419"><div class="sku"><a title="HUAWEI P9 Plus" href="http://www.vmall.com/product/3419.html" target="_blank">HUAWEI P9 Plus</a><s></s></div></li>
-									<li data-id="3457"><div class="sku"><a title="华为 HUAWEI Type C 转接头" href="http://www.vmall.com/product/3457.html" target="_blank">华为 HUAWEI Type C 转接头</a><s></s></div></li>
+									<li data-id="3419"><div class="sku"><a title="HUAWEI P9 Plus" href="" target="_blank">HUAWEI P9 Plus</a><s></s></div></li>
+									<li data-id="3457"><div class="sku"><a title="华为 HUAWEI Type C 转接头" href="" target="_blank">华为 HUAWEI Type C 转接头</a><s></s></div></li>
 								</ol>
 							</dd>
 						</dl>
@@ -123,7 +123,7 @@
 							<dt>购买数量：</dt>
 							<dd>
 							 <span class="stock-area">
-						     <a href="javascript:;" class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="javascript:;" class="icon-plus-2 vam" title="加"><span>+</span></a>
+						     <a href="." class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
    						     </span>
 							</dd>
 						</dl>
@@ -150,7 +150,7 @@
 		<form id="order-confirm-form" method="post" class="hide" action="/order/nowConfirmcart"></form>
 		<!--延保单独购买提交form -->
 		<form id="order-confirm-extend-form" method="post" class="hide" action="/order/extendConfirm"></form>
-		<form id="order-shoppingCart-form" method="get" class="hide" action="http://cart.vmall.com/cart/cart.html"></form>
+		<form id="order-shoppingCart-form" method="get" class="hide" action=""></form>
 		<!--预付订金form -->
 		<form id="order-confirm-deposit-form" method="post" class="hide" action="/order/confirmDeposit"></form>
 		<input id="isPriority" name="isPriority" value="0" type="hidden">
@@ -161,9 +161,9 @@
 <!--商品简介-提交操作 -->
 <div class="pro-fixed-action">
     <div id="pro-select-sku" class="pro-selected">您选择了<b>陶瓷白/全网通版/4GB+64GB</b></div>
-    <div style="visibility: visible;" id="pro-operation" class="pro-action-area"><a href="javascript:;" onclick="ec.product.addCart()" class="button-add-cart button-style-1" title="加入购物车"><span>加入购物车</span></a><a href="javascript:;" onclick="ec.product.orderNow()" class="button-book-2 button-style-2" title="立即下单"><span>立即下单</span></a></div>
+    <div style="visibility: visible;" id="pro-operation" class="pro-action-area"><a href="." onclick="" class="button-add-cart button-style-1" title="加入购物车"><span>加入购物车</span></a><a href="." onclick="ec.product.orderNow()" class="button-book-2 button-style-2" title="立即下单"><span>立即下单</span></a></div>
     <div class="pro-agreement-area hide" id="pro-agreement-area">
-		<input class="vam" checked="checked" id="pro-agreement-area-check" type="checkbox"><label for="" class="vam">同意</label>&nbsp;<a href="javascript:;" class="vam" onclick="ec.product.showDepositAgreement()">订金支付协议</a>
+		<input class="vam" checked="checked" id="pro-agreement-area-check" type="checkbox"><label for="" class="vam">同意</label>&nbsp;<a href="." class="vam" onclick="ec.product.showDepositAgreement()">订金支付协议</a>
 	</div>
 </div>
 
@@ -171,7 +171,7 @@
 <!--弹出层-成功添加到购物车 -->
 <div id="cart-tips" class="pro-popup-area hide">
      <div class="h">
-	<a href="javascript:;" onclick="$('#cart-tips').hide()" class="pro-popup-close" title="关闭"><span>关闭</span></a>
+	<a href="" class="pro-popup-close" title="关闭"><span>关闭</span></a>
     </div>
     <div class="b">
 		<div class="pro-add-success">
@@ -181,7 +181,7 @@
 					<p>HUAWEI P9 双摄像头  指纹识别</p>
 					<div class="pro-add-success-msg">成功加入购物车!</div>
 					<div class="pro-add-success-total">购物车中共&nbsp;<b id="cart-total">0</b>&nbsp;件商品，金额合计&nbsp;<b id="cart-price">¥&nbsp;0</b></div>
-					<div class="pro-add-success-button"><a href="javascript:;" class="button-style-1 button-go-cart" title="去购物车结算" onclick="ec.product.gotoshoppingCart()">去结算</a><a class="button-style-4 button-walking" href="javascript:;" title="继续逛逛" onclick="$('#cart-tips').hide()">继续逛逛&nbsp;&gt;&gt;</a></div>
+					<div class="pro-add-success-button"><a href="." class="button-style-1 button-go-cart" title="去购物车结算" onclick="ec.product.gotoshoppingCart()">去结算</a><a class="button-style-4 button-walking" href="." title="继续逛逛" onclick="">继续逛逛&nbsp;&gt;&gt;</a></div>
 				</dd>
 			</dl>
 		</div>
@@ -189,23 +189,23 @@
 </div>
 
 <!--弹出层-提示信息 -->
-<div id="popup-tips" class="pro-popup-area hide">
+<!--<div id="popup-tips" class="pro-popup-area hide">
     <div class="h">
-	<a href="javascript:;" class="pro-popup-close" title="关闭" onclick="$('#popup-tips').hide()"><span>关闭</span></a>
+	<a href="." class="pro-popup-close" title="关闭" onclick=""><span>关闭</span></a>
     </div>
 
     <div class="b">
 		<div class="pro-add-error">
 			<div class="pro-add-error-msg" id="popup-tips-msg">非常抱歉！该商品不能单独销售！</div>
-			<div class="pro-add-error-button"><a class="button-style-1 button-par-define" href="javascript:;" onclick="$('#popup-tips').hide()" title="知道了">知道了</a></div>
+			<div class="pro-add-error-button"><a class="button-style-1 button-par-define" href="." onclick="$('#popup-tips').hide()" title="知道了">知道了</a></div>
 		</div>
     </div>
-</div>
+</div>-->
 
 <!-- 20130913-弹出层-购买延保-start -->
 <div id="popup-extend" class="pro-popup-area hide">
 	<div class="h">
-		<a href="javascript:;" class="pro-popup-close" title="关闭" onclick="$('#popup-extend').hide()">关闭</a>
+		<a href="." class="pro-popup-close" title="关闭" onclick="">关闭</a>
 	</div>
 
 	<div class="b">
@@ -213,7 +213,7 @@
 				<h3>购买延保</h3>
 				<div class="pro-extend-search">
 					<div class="form-edit-area">
-						<form action="javascript:;" id="checkExtend-ID" onsubmit="return ec.product.checkExtend()">
+						<form action="." id="checkExtend-ID" onsubmit="return ec.product.checkExtend()">
 							<input id="extendSkuId" type="hidden">
 							<label for="extend-text" class="text vam" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);">输入IMEI/SN/MEID信息</label><input style="z-index: 1;" class="text vam" id="extend-text" maxlength="50" type="text"><input class="button-style-4 button-extend-search vam" value="查看可购买的延保" type="submit">
 						</form>
@@ -227,7 +227,7 @@
 
 				<div class="pro-extend-tips">温馨提示：IMEI/SN/MEID号可在产品外包装上找到，可拆卸电池的手机可将电池拆掉电池下面的标签上可以看到，手机上输入*#06#也可以显示。</div>
 				<div class="pro-extend-button">
-					<a id="button-extend" class="button-style-disabled-1 button-go-extend-checkout-disabled" href="javascript:;" title="提交订单" onclick="ec.product.extendBuy(this)"><span>提交订单</span></a>
+					<a id="button-extend" class="button-style-disabled-1 button-go-extend-checkout-disabled" href="." title="提交订单" onclick="ec.product.extendBuy(this)"><span>提交订单</span></a>
 				</div>
 		</div>
 	</div>
@@ -236,27 +236,11 @@
 
 <!-- Baidu Button BEGIN -->
 <div class="pro-bdShare-area">
-	<div id="bdshare" class="bdShare bdshare_t bds_tools get-codes-bdshare" data="{'url':'http://www.vmall.com/product/3325.html'}">
+	<div id="bdshare" class="bdShare bdshare_t bds_tools get-codes-bdshare" data="">
 	</div>
 </div>
 <form action="#" id="gotourl" method="get"></form>
-<script>
-	ec.code.addShare({
-		title : "我在@华为商城 发现了一个非常不错的商品：HUAWEI P9 4GB+64GB 全网通版（陶瓷白） 华为价：￥ 3688.00。分享一下："
-	});
 
-	//去结算
-	ec.product.gotoshoppingCart = function(){
-		//BI统计
-		_paq.push(['trackLink','加入购物车-去支付', 'link', ' ']);
-		ec.code.addAnalytics({hicloud:true});
-		setTimeout(function () {
-			//var url = '/order/shoppingCart';
-			var url = 'http://cart.vmall.com/cart/cart.html';
-			$('#gotourl').attr('action', url).submit();
-		}, 500);
-	};
-</script>
 <!-- Baidu Button END -->            </div>
         </div>
 
@@ -264,22 +248,126 @@
         	<!--商品简介-图片画廊 -->
         	<div class="pro-gallery-area">
             	<div class="pro-gallery-img">
-					<div id="wrap" style="top:0px;z-index:300;position:relative;"><a style="position: relative; display: block;" id="product-img" href="http://res.vmallres.com/pimages//product/6901443118854/group//800_800_1467252569418.jpg" class="cloud-zoom" rel="adjustX: 10, adjustY:0, zoomWidth:400 , zoomHeight:400">
-						<img style="display: block;" src="./428_428_1467252569418.jpg" alt="HUAWEI P9">
-					</a><div class="mousetrap" style="background-image:url(about:blank);z-index:999;position:absolute;width:480px;height:480px;left:0px;top:0px;"></div><div class="mousetrap" style="background-image: url(&quot;about:blank&quot;); z-index: 999; position: absolute; width: 480px; height: 480px; left: 0px; top: 0px; cursor: move;"></div><div class="mousetrap" style="background-image:url(about:blank);z-index:999;position:absolute;width:480px;height:480px;left:0px;top:0px;"></div><div class="mousetrap" style="background-image:url(about:blank);z-index:999;position:absolute;width:480px;height:480px;left:0px;top:0px;"></div><div class="mousetrap" style="background-image: url(&quot;about:blank&quot;); z-index: 999; position: absolute; width: 480px; height: 480px; left: 0px; top: 0px; cursor: move;"></div></div>
+                    <div id="small"  style="padding:0px;margin:0px; top:0px;z-index:300;position:absolute;width:480px;height:480px; overflow:hidden"><img src="{{$goodslist->thum}}" alt="" width='100%' id='smallImg'>
+                        <div id="move" style="padding:0px;margin:0px; width:150px;height:150px;z-index:301;position:absolute;background:url('/images/home/bg.png');left:0px;top:0px;visibility:hidden;cursor:move;"></div>
+                            
+                    </div>
+                    <div id="big" style="padding:0px;margin:0px; width:480px;height:480px;position:absolute;left:540px;top:0px;overflow:hidden;display:none; background:white;z-index:3000"><img src="{{$goodslist->thum}}" alt="" id='bigImg' style="position:absolute;width:960px;height:960px"></div>
+                    
+      <script type="text/javascript">
+                var small = document.getElementById('small');
+
+                var move = document.getElementById('move');
+
+                var bigImg = document.getElementById('bigImg');
+
+                var big = document.getElementById('big');
+
+                var smallImg = document.getElementById('smallImg');
+
+                small.onmousemove = function(e)
+                {
+                        move.style.visibility = 'visible'; 
+
+                        big.style.display = 'block';
+                        //获取x坐标
+                        var x = e.pageX;
+                        //获取y坐标
+                        var y  = e.pageY;
+
+                        //获取samll左偏移量
+                        var ml = small.offsetLeft+65;
+                        //获取small顶部的偏移量
+                        var mt = small.offsetTop+310;
+
+                        //获取move的宽度一半的距离
+                        var mwh = move.offsetWidth/2;
+                        //获取move的高度一半的距离
+                        var mhh =move.offsetHeight/2;
+
+                        var mll = x-ml-mwh;
+
+                        var mhh = y-mt-mhh;
+
+                        if(mll <= 0) {
+                                mll = 0;
+                        }
+
+                        var maxl =  small.offsetWidth-move.offsetWidth;
+                        if(mll >= maxl) {
+                                mll = maxl;
+                        }
+
+                        if(mhh <= 0) {
+                                mhh = 0;
+                        }
+
+                        var maxt = small.offsetHeight-move.offsetHeight;
+
+                        if(mhh >= maxt) {
+
+                                mhh = maxt;
+                        }
+                        move.style.left = mll+'px';
+
+                        move.style.top = mhh+'px';
+
+                        var bl = (mll/small.offsetWidth)*(bigImg.offsetWidth-92);
+
+                        var bt = (mhh/small.offsetHeight)*(bigImg.offsetHeight-92);
+
+                        bigImg.style.left = -bl+'px';
+
+                        bigImg.style.top = -bt+'px';
+
+                        //console.log(mhh);
+                }
+
+                //鼠标移除事件
+                small.onmouseout = function()
+                {
+                        move.style.visibility= 'hidden';
+
+                        big.style.display = 'none';
+                }
+
+               
+
+
+                </script>   
+                    
+                    
+                    
+                    
+                    
+                    
 				</div>
                 <div class="pro-gallery-nav">
-                	<a href="javascript:;" class="pro-gallery-back" onclick="ec.product.imgSlider.prev()"></a>
+                	<a href="." class="pro-gallery-back" onclick=""></a>
                 	<div class="pro-gallery-thumbs">
-                        <ul style="left: 0px;" id="pro-gallerys"><li class=""><a href="javascript:;"><img src="./55_55_1467252608007mp.jpg" alt="1467252608007mp.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252560857.jpg" alt="1467252560857.jpg"></a></li><li class=""><a href="javascript:;"><img src="./55_55_1467252564159.jpg" alt="1467252564159.jpg"></a></li><li class=""><a href="javascript:;"><img src="./55_55_1467252566788.jpg" alt="1467252566788.jpg"></a></li><li class="current"><a href="javascript:;"><img src="./55_55_1467252569418.jpg" alt="1467252569418.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252572179.jpg" alt="1467252572179.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252574763.jpg" alt="1467252574763.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252577831.jpg" alt="1467252577831.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252580692.jpg" alt="1467252580692.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252583538.jpg" alt="1467252583538.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252585997.jpg" alt="1467252585997.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252589867.jpg" alt="1467252589867.jpg"></a></li><li><a href="javascript:;"><img src="./55_55_1467252593129.jpg" alt="1467252593129.jpg"></a></li></ul>
+                        <ul style="left: 0px;" id="pro-gallerys"><li class=""><img src="{{$goodslist->thum}}" ></li></ul>
                     </div>
-                    <a href="javascript:;" class="pro-gallery-forward" onclick="ec.product.imgSlider.next()"></a>
+                    <a href="." class="pro-gallery-forward" onclick=""></a>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
+
+
+<!--//图片放大效果-->
+<script tyep="text/javascript">
+      
+
+
+
+
+
+
+
+</script>
+
 
 
 <div style="display: block;" id="group-area" class="layout hide">
@@ -305,902 +393,8 @@
 	    <div id="tab-split" class="hr-20 hide"></div>
 	    <!--商品详情-优惠套装 end -->
 
-	    <!--商品详情-搭配推荐 -->
-		<div style="display: block;" id="tab-comb" class="pro-recommend-area">
-		  <div class="h">
-            <h3>搭配推荐</h3>
-			<div class="h-tab">
-               		 <ul id="combList-list-8259" data-size="1" class="clearfix">
-                    	<li class="current" data-id="659">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-              	  </ul>
-               	<ul id="combList-list-8255" data-size="2" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="609">
-						<a href="javascript:;" title="推荐搭配一" onmouseover="ec.product.combChange(this)"><span>推荐搭配一</span></a>
-						</li>
-                    	<li class="" data-id="675">
-						<a href="javascript:;" title="推荐搭配二" onmouseover="ec.product.combChange(this)"><span>推荐搭配二</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8267" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="615">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8273" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="623">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8261" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="611">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8263" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="613">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8265" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="617">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8269" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="619">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8279" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="701">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-8277" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="703">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-               	<ul id="combList-list-721625417" data-size="1" class="clearfix" style="display:none;">
-                    	<li class="current" data-id="677">
-						<a href="javascript:;" title="推荐搭配" onmouseover="ec.product.combChange(this)"><span>推荐搭配</span></a>
-						</li>
-                </ul>
-            </div>
-        </div>
-		<div class="b clearfix">
-		    <div class="pro-main" id="comb-pro-area">
-				<div id="comb-pro-8259" class="pro-suit-parts-list">
-				    <div class="pro-suit-parts-area" style="width:1002px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252608007mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3688.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 4GB+64GB 全网通版（陶瓷白）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8215" title="" target="_blank"><img src="./100_100_1%2525201_005.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8215" title="">HUAWEI P9 无边开窗皮套（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8215" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8217" title="" target="_blank"><img src="./100_100_1%2525201_002.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8217" title="">HUAWEI P9 无边开窗皮套（粉色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8217" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8255" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:1002px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252520756mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3688.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 4GB+64GB 全网通版（金色）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8227" title="" target="_blank"><img src="./100_100_1.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8227" title="">HUAWEI P9 小牛皮皮套（棕色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8227" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8225" title="" target="_blank"><img src="./100_100_1_002.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8225" title="">HUAWEI P9 小牛皮皮套（黑色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8225" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8215" title="" target="_blank"><img src="./100_100_1%2525201_005.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8215" title="">HUAWEI P9 无边开窗皮套（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8215" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8255" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:1002px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252520756mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3688.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 4GB+64GB 全网通版（金色）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3225.html#7853" title="" target="_blank"><img src="./100_100_1466654835972mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3225.html#7853" title="">华为 HUAWEI 主动降噪耳机2（香槟金）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥599.00 </em>
-							    	<input class="hide" name="skuId" value="7853" autocomplete="off" data-price="599" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3487.html#8739" title="" target="_blank"><img src="./100_100_1_004.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3487.html#8739" title="">华为手环 B3 商务版（摩卡棕）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥1199.00 </em>
-							    	<input class="hide" name="skuId" value="8739" autocomplete="off" data-price="1199" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8219" title="" target="_blank"><img src="./100_100_1%2525201_003.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8219" title="">HUAWEI P9 无边开窗皮套（深灰色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8219" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8229" title="" target="_blank"><img src="./100_100_1_003.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8229" title="">HUAWEI P9 小牛皮皮套（蓝色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8229" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3153.html#7591" title="" target="_blank"><img src="./100_100_1466651783642mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3153.html#7591" title="">华为5000mAh 移动电源（石墨黑）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥89.00 </em>
-							    	<input class="hide" name="skuId" value="7591" autocomplete="off" data-price="89" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8267" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:835px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252927907mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3188.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 全网通版（流光金）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8221" title="" target="_blank"><img src="./100_100_1%25201.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8221" title="">HUAWEI P9 无边开窗皮套（金色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8221" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8227" title="" target="_blank"><img src="./100_100_1.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8227" title="">HUAWEI P9 小牛皮皮套（棕色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8227" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8273" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:835px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467253265493mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥2988.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 移动定制版（皓月银）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8229" title="" target="_blank"><img src="./100_100_1_003.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8229" title="">HUAWEI P9 小牛皮皮套（蓝色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8229" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8221" title="" target="_blank"><img src="./100_100_1%25201.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8221" title="">HUAWEI P9 无边开窗皮套（金色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8221" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8261" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:835px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252677697mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3688.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 4GB+64GB 全网通版（玫瑰金）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8217" title="" target="_blank"><img src="./100_100_1%2525201_002.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8217" title="">HUAWEI P9 无边开窗皮套（粉色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8217" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8263" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:835px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252774332mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3188.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 全网通版（皓月银）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8221" title="" target="_blank"><img src="./100_100_1%25201.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8221" title="">HUAWEI P9 无边开窗皮套（金色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8221" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8265" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:835px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467252867876mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3188.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 全网通版（钛银灰）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8219" title="" target="_blank"><img src="./100_100_1%2525201_003.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8219" title="">HUAWEI P9 无边开窗皮套（深灰色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8219" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8269" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:835px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467253007932mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥2988.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 电信定制版（皓月银）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8221" title="" target="_blank"><img src="./100_100_1%25201.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8221" title="">HUAWEI P9 无边开窗皮套（金色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8221" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8279" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:1002px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467254147578mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥2988.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 联通定制版（钛银灰）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8225" title="" target="_blank"><img src="./100_100_1_002.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8225" title="">HUAWEI P9 小牛皮皮套（黑色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8225" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8223" title="" target="_blank"><img src="./100_100_1%2525201_004.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8223" title="">HUAWEI P9 无边开窗皮套（棕色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8223" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-8277" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:1002px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467253885714mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥2988.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 3GB+32GB 联通定制版（皓月银）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8215" title="" target="_blank"><img src="./100_100_1%2525201_005.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8215" title="">HUAWEI P9 无边开窗皮套（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8215" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8229" title="" target="_blank"><img src="./100_100_1_003.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8229" title="">HUAWEI P9 小牛皮皮套（蓝色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8229" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-				<div style="display: none;" id="comb-pro-721625417" class="pro-suit-parts-list hide">
-				    <div class="pro-suit-parts-area" style="width:1002px;">
-					<ul class="clearfix">
-						    <li>
-							<div class="suit-master-area">
-							    <p class="p-img"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别"><img src="./100_100_1467254679960mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-price"><em id="mainCombPrice">华为价：¥3688.00</em></p>
-							    <p class="p-name"><a href="javascript:;" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9 4GB+64GB 全网通版（琥珀灰）</a></p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3321.html#8225" title="" target="_blank"><img src="./100_100_1_002.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3321.html#8225" title="">HUAWEI P9 小牛皮皮套（黑色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥299.00 </em>
-							    	<input class="hide" name="skuId" value="8225" autocomplete="off" data-price="299" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3319.html#8219" title="" target="_blank"><img src="./100_100_1%2525201_003.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3319.html#8219" title="">HUAWEI P9 无边开窗皮套（深灰色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥229.00 </em>
-							    	<input class="hide" name="skuId" value="8219" autocomplete="off" data-price="229" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3444243.html#523383389" title="" target="_blank"><img src="./100_100_1462247649464mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3444243.html#523383389" title="">HUAWEI P9 莱卡定制皮套（酒红色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥349.00 </em>
-							    	<input class="hide" name="skuId" value="523383389" autocomplete="off" data-price="349" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3457.html#8695" title="" target="_blank"><img src="./100_100_1466652827627mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3457.html#8695" title="">华为 HUAWEI Type C 转接头（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥19.00 </em>
-							    	<input class="hide" name="skuId" value="8695" autocomplete="off" data-price="19" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-						    <li>
-							<div class="suit-area">
-							    <p class="p-img"><a href="http://www.vmall.com/product/3301.html#8317" title="" target="_blank"><img src="./100_100_1466652784051mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p>
-							    <p class="p-name"><a href="http://www.vmall.com/product/3301.html#8317" title="">华为 HUAWEI Type C 数据线（白色）</a></p>
-							    <p onclick="ec.product.combClick(this)" class="p-price">
-							    	<s></s>
-							    	<em>¥29.00 </em>
-							    	<input class="hide" name="skuId" value="8317" autocomplete="off" data-price="29" type="checkbox">
-							    </p>
-							    <i class="and"></i>
-							</div>
-						    </li>
-					</ul>
-				    </div>
-				</div>
-		    </div>
-		    <div class="pro-sub">
-				<div class="pro-suit-cost-area">
-		            <p>已搭配：<em id="comb-count">0</em>&nbsp;件</p>
-			    	<p><b>组合价：¥<span id="comb-price">3688.00</span></b></p>
-			    	<p class="pro-suit-cost-button"><a href="javascript:;" class="button-add-cart-2 button-style-1" title="加入购物车" onclick="ec.product.buyComb();return false;"><span>加入购物车</span></a></p>
-					<p class="pro-suit-cost-agreement hide" id="pro-suit-cost-agreement-area"> <input checked="checked" class="vam" id="pro-suit-cost-agreement-area-check" type="checkbox"><label class="vam" for="">同意</label>&nbsp;<a href="javascript:;" class="vam" onclick="ec.product.showDepositAgreement()">订金支付协议</a></p>
-				</div>
-			</div>
-		<div class="f"></div>
-	    </div>
-	    <!--商品详情-搭配推荐 end -->
-</div>
+
+
 </div>
 
 
@@ -1216,17 +410,17 @@
         <div id="pro-tab-area" class="pro-detail-tab clearfix">
         	<div class="pro-detail-tab-nav">
             <ul>
-                <li id="pro-tab-feature" class="current"><a href="javascript:;" title="商品详情"><span>商品详情</span></a></li>
-                <li id="pro-tab-evaluate"><a href="javascript:;" title="用户评价"><span id="prd-remark-span-tab-evaluate">用户评价<em>（20629）</em></span></a></li>
-                <li id="pro-tab-parameter" data-skulist="8259,8255,8267,8273,8261,8263,8265,8269,8275,8279,8277,721625417"><a href="javascript:;" title="规格参数"><span>规格参数</span></a></li>
-                <li id="pro-tab-package"><a href="javascript:;" title="包装清单"><span>包装清单</span></a></li>
-		<li id="pro-tab-software"><a href="javascript:;" title="软件下载"><span>软件下载</span></a></li>
-                <li id="pro-tab-service"><a href="javascript:;" title="售后服务"><span>售后服务</span></a></li>
+                <li id="pro-tab-feature" class="current"><a href="." title="商品详情"><span>商品详情</span></a></li>
+                <li id="pro-tab-evaluate"><a href="." title="用户评价"><span id="prd-remark-span-tab-evaluate">用户评价<em>（20629）</em></span></a></li>
+                <li id="pro-tab-parameter" data-skulist="8259,8255,8267,8273,8261,8263,8265,8269,8275,8279,8277,721625417"><a href="." title="规格参数"><span>规格参数</span></a></li>
+                <li id="pro-tab-package"><a href="." title="包装清单"><span>包装清单</span></a></li>
+		<li id="pro-tab-software"><a href="." title="软件下载"><span>软件下载</span></a></li>
+                <li id="pro-tab-service"><a href="." title="售后服务"><span>售后服务</span></a></li>
 
             </ul>
             </div>
 
-            <div class="pro-detail-tab-button"><a style="display: inline-block;" id="tab-addcart-button" href="javascript:;" class="button-style-1 button-add-cart-3" onclick="ec.product.buyComb();return false;">加入购物车</a><a style="display: none;" href="javascript:;" id="tab-notice-button" class="button-style-2 button-notice-arrival-2" onclick="ec.product.arrival();return false;">到货通知</a></div>
+            <div class="pro-detail-tab-button"><a style="display: inline-block;" id="tab-addcart-button" href="." class="button-style-1 button-add-cart-3" onclick="ec.product.buyComb();return false;">加入购物车</a><a style="display: none;" href="." id="tab-notice-button" class="button-style-2 button-notice-arrival-2" onclick="ec.product.arrival();return false;">到货通知</a></div>
         </div>
         </div>
 
@@ -1236,41 +430,18 @@
 <div id="pro-tab-feature-content" class="pro-detail-tab-area pro-feature-area">
 <div>
 <div style="display: block;" id="pro-tab-feature-content-8259" class="hide">
-<p><img src="./20160614101358650377.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102855304.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102855469.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102855245.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102855410.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102855747.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102855688.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102855880.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102855905.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102855999.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102856155.jpg" style="" title="1_10.jpg"></p><p><img src="./2016050710285678.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8255" class="hide">
-<p><img src="./201606141013405737753.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102928579.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102928739.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102928586.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102928856.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102929430.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102928995.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102929927.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102929443.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102929636.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102929789.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102929834.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size: 14px;"><strong>P9 插卡指导视频</strong>：<span style="font-family: 宋体;"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</span></a> </span></span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8267" class="hide">
-<p><img src="./201606141014583760736.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102522926.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./2016050710252359.jpg" style="" title="1_02.jpg"></p><p><img src="./2016050710252306.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102523195.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102523333.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102523286.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102523493.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102523468.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102523542.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102523640.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102523651.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8273" class="hide">
-<p><img src="./201606141016369591253.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102332372.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102332527.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102332971.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102332535.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102332950.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102332693.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102333394.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102333241.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102333357.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102333448.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102333608.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8261" class="hide">
-<p><img src="./201606141014249484651.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102816821.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102817152.jpg" style="" title="1_02.jpg"></p><p><img src="./2016050710281731.jpg" style="" title="1_03.jpg"></p><p><img src="./2016050710281726.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102817360.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102817314.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102817601.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102817552.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102817771.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102817772.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102817855.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8263" class="hide">
-<p><img src="./201606141014405028964.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102636689.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102636638.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102636671.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102636869.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102636914.jpg" style="" title="1_05.jpg"></p><p><img src="./2016050710263777.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102637140.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102637141.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102637368.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102637409.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102637339.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8265" class="hide">
-<p><img src="./201606141015168138206.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102554969.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102555191.jpg" style="" title="1_02.jpg"></p><p><img src="./2016050710255576.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102555117.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102555572.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102555621.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102555625.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102555749.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102555847.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102555908.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102555908.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8269" class="hide">
-<p><img src="./201606141015596127518.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102446297.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102446372.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102446491.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102446514.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102446655.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102447271.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102447305.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102447266.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102447736.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102447700.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102447693.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8275" class="hide">
-<p><img src="./20160614101620705012.jpg" title="9.jpg" alt="9.jpg"></p><p><img src="./20160507102236875.jpg" style="" title="1_01.jpg"></p><p><img src="./20160507102237339.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102236964.jpg" style="" title="1_03.jpg"></p><p><img src="./2016050710223736.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102237197.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102237295.jpg" style="" title="1_06.jpg"></p><p><img src="./2016050710223811.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102237510.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102237627.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102237727.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507102237861.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8279" class="hide">
-<p><img src="./201606141016536918081.jpg" title="9.jpg" alt="9.jpg"></p><p><img src="./20160507101936422.jpg" style="" title="1_01.jpg"></p><p><img src="./20160507101936558.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507101936527.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507101936635.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507101936763.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507101936733.jpg" style="" title="1_06.jpg"></p><p><img src="./2016050710193753.jpg" style="" title="1_07.jpg"></p><p><img src="./2016050710193735.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507101937240.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507101937210.jpg" style="" title="1_10.jpg"></p><p><img src="./20160507101937265.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-8277" class="hide">
-<p><img src="./201606141017096426368.jpg" title="9.jpg" alt="9.jpg"></p><p><img src="./20160507102104452.jpg" style="" title="1_01.jpg"></p><p><img src="./20160507102104486.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102104492.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102104626.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102104687.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102104667.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102104775.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102104876.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102104913.jpg" style="" title="1_09.jpg"></p><p><img src="./2016050710210542.jpg" style="" title="1_10.jpg"></p><p><img src="./2016050710210566.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-feature-content-721625417" class="hide">
-<p><img src="./201606141017253993899.jpg" title="9.jpg" alt="9.jpg"></p><p><img alt="1_01.jpg" src="./20160507102855304.jpg" style="float:none;" title="1_01.jpg"></p><p><img src="./20160507102855469.jpg" style="" title="1_02.jpg"></p><p><img src="./20160507102855245.jpg" style="" title="1_03.jpg"></p><p><img src="./20160507102855410.jpg" style="" title="1_04.jpg"></p><p><img src="./20160507102855747.jpg" style="" title="1_05.jpg"></p><p><img src="./20160507102855688.jpg" style="" title="1_06.jpg"></p><p><img src="./20160507102855880.jpg" style="" title="1_07.jpg"></p><p><img src="./20160507102855905.jpg" style="" title="1_08.jpg"></p><p><img src="./20160507102855999.jpg" style="" title="1_09.jpg"></p><p><img src="./20160507102856155.jpg" style="" title="1_10.jpg"></p><p><img src="./2016050710285678.jpg" style="" title="1_11.jpg"></p><p style="text-align: center;"><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">P9 </span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'">插卡指导视频：</span><span style="font-size:14px;font-family:'MS Gothic'"></span><span style="font-size:14px;font-family:'微软雅黑','sans-serif'"><a href="http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA">http://v.youku.com/v_show/id_XMTUyNjg0MDQ2MA</a> </span></p><p><br></p>
-</div>
+<img src="{{$goodslist->im1}}" title="9.jpg" alt="9.jpg"></div>
+
+
+
+
+
+
+
+
+
+<div style="display: block;" id="pro-tab-feature-content-721625417" class="hide">
+<img src="{{$goodslist->im2}}" title="9.jpg" alt="9.jpg"></div>
 </div>
 <div class="hr-20"></div>
 <div class="pro-disclaimer-area">
@@ -1359,7 +530,7 @@
 </div>
 </div>
 <div id="pro-tab-software-content" class="pro-detail-tab-area pro-software-area hide">
-<iframe id="pro_software_iframe" name="pro_software_iframe" src="./a.htm" data-src="http://app.hicloud.com/vmall/applist.action?divid=pro_software_iframe&amp;itemid=101100101336" scrolling="no" frameborder="0" height="300" width="100%"></iframe>
+<iframe id="pro_software_iframe" name="pro_software_iframe" src="./a.htm" data-src="" scrolling="no" frameborder="0" height="300" width="100%"></iframe>
 </div>	    <div id="remarkLoading"></div>
             <!--用户评价 -->
             <div id="pro-tab-evaluate-content" class="pro-detail-tab-area pro-evaluate-area  hide">
@@ -1373,17 +544,17 @@
 
                  <div id="pro-score-impress" class="pro-score-impress"></div>
 
-                   <div class="pro-score-button"><a href="http://www.vmall.com/member/order/" class="button-style-4 button-comment">发表评价</a></div>
+                   <div class="pro-score-button"><a href="" class="button-style-4 button-comment">发表评价</a></div>
                 </div>
 
                 <!-- 20131220-商品详情-用户评论-书签-start -->
 				<div class="pro-evaluate-tab clearfix">
 					<div class="pro-evaluate-tab-nav">
 						<ul id="pro-evaluate-click-type">
-							<li id="pro-evaluate-click-all" class="current"><a href="javascript:;"><span>全部评价<em id="pro-evaluate-number-all">(</em></span></a></li>
-							<li id="pro-evaluate-click-high"><a href="javascript:;"><span>好评<em id="pro-evaluate-number-high">(100)</em></span></a></li>
-							<li id="pro-evaluate-click-mid"><a href="javascript:;"><span>中评<em id="pro-evaluate-number-mid"></em></span></a></li>
-							<li id="pro-evaluate-click-low"><a href="javascript:;"><span>差评<em id="pro-evaluate-number-low"></em></span></a></li>
+							<li id="pro-evaluate-click-all" class="current"><a href="."><span>全部评价<em id="pro-evaluate-number-all">(</em></span></a></li>
+							<li id="pro-evaluate-click-high"><a href="."><span>好评<em id="pro-evaluate-number-high">(100)</em></span></a></li>
+							<li id="pro-evaluate-click-mid"><a href="."><span>中评<em id="pro-evaluate-number-mid"></em></span></a></li>
+							<li id="pro-evaluate-click-low"><a href="."><span>差评<em id="pro-evaluate-number-low"></em></span></a></li>
 						</ul>
 					</div>
 
@@ -1420,16 +591,16 @@
 				<div class="pro-detail-tab clearfix">
 					<div class="pro-detail-tab-nav">
 						<ul>
-							<li class="current" id="prd_detail_counsel_1"><a href="javascript:;" onclick="ec.product.divchange(1)"><span>全部咨询</span></a></li>
-							<li id="prd_detail_counsel_6"><a href="javascript:;" onclick="ec.product.divchange(6)"><span>常见问题</span></a></li>
-							<li id="prd_detail_counsel_2"><a href="javascript:;" onclick="ec.product.divchange(2)"><span>商品咨询</span></a></li>
-							<li id="prd_detail_counsel_3"><a href="javascript:;" onclick="ec.product.divchange(3)"><span>支付</span></a></li>
-							<li id="prd_detail_counsel_4"><a href="javascript:;" onclick="ec.product.divchange(4)"><span>配送</span></a></li>
-							<li id="prd_detail_counsel_5"><a href="javascript:;" onclick="ec.product.divchange(5)"><span>售后</span></a></li>
+							<li class="current" id="prd_detail_counsel_1"><a href="." onclick="ec.product.divchange(1)"><span>全部咨询</span></a></li>
+							<li id="prd_detail_counsel_6"><a href="." onclick="ec.product.divchange(6)"><span>常见问题</span></a></li>
+							<li id="prd_detail_counsel_2"><a href="." onclick="ec.product.divchange(2)"><span>商品咨询</span></a></li>
+							<li id="prd_detail_counsel_3"><a href="." onclick="ec.product.divchange(3)"><span>支付</span></a></li>
+							<li id="prd_detail_counsel_4"><a href="." onclick="ec.product.divchange(4)"><span>配送</span></a></li>
+							<li id="prd_detail_counsel_5"><a href="." onclick="ec.product.divchange(5)"><span>售后</span></a></li>
 
 						</ul>
 					</div>
-					<div class="pro-detail-tab-link"><a href="#inquire-form" onclick="ec.product.loginCheckBefCoun();">发表咨询&gt;&gt;</a></div>
+					<div class="pro-detail-tab-link"></div>
 				</div><!-- 20140624-商品详情-书签-end -->
 			</div>
 
@@ -1440,72 +611,26 @@
 					<label>温馨提示：</label>因产线可能更改商品包装、产地、附配件等未及时通知，且每位咨询者购买、提问时间等不同。为此，客服给到的回复仅对提问者3天内有效，其他网友仅供参考！给您带来的不便还请谅解，谢谢！
 				</div><!-- 20140624-商品详情-咨询提示-end -->
 				<div class="pro-inquire-list" id="all_prd_counsel_content">
+                                    
+                                    @foreach($comment as $comments)
 					<div class="pro-inquire-item clearfix">
 						<div class="pro-inquire-user">
-							<label>网友：</label><span>15881*****</span><s><i class="icon-vip-level-0"></i></s><em>2016-07-13 09:31:24</em>
+							<label>@if(!empty($comments->name)) {{$comments->name}} @endif</label><span></span><s><i class="icon-vip-level-0"></i></s><em>@if(!empty($comment->cdatetime)) {{$comments->cdatetime}} @endif</em>
 						</div>
 						<div class="pro-inquire-question">
-							<label>咨询内容：</label><span>您好，华为P9这款手机支持VR么？</span>
+							<label>咨询内容：</label><span>@if(!empty($comments->comment)) {{$comments->comment}} @endif</span>
 						</div>
 						<div class="pro-inquire-answer">
-							<label>回复：</label><span>您好，欢迎咨询华为商城。p9支持VR的。感谢您对华为商城的支持！</span>
-							<em>2016-07-13 14:15:37</em>
+							<label>回复：</label><span>@if(!empty($comments->reply)) {{$comments->reply}} @endif</span>
+							<em>@if(!empty($comments->rdatetime)) {{$comments->rdatetime}} @endif</em>
 						</div>
 					</div>
-					<div class="pro-inquire-item clearfix">
-						<div class="pro-inquire-user">
-							<label>网友：</label><span>huafans01183005532</span><s><i class="icon-vip-level-2"></i></s><em>2016-07-12 17:50:20</em>
-						</div>
-						<div class="pro-inquire-question">
-							<label>咨询内容：</label><span>你好，华为P9可以用荣耀 移动电源 10000mAh充电宝 AP08Q的快充版吗？还是只能用标准版的？</span>
-						</div>
-						<div class="pro-inquire-answer">
-							<label>回复：</label><span>您好，欢迎咨询华为商城。支持的，p9手机标配5V2A充电器，也支持9V2A的高压快充充电器。荣耀 移动电源 10000mAh充电宝标配Micro USB数据线，TYPE-C接口的数据线需要您单独购买的。感谢您对华为商城的支持。</span>
-							<em>2016-07-13 10:33:17</em>
-						</div>
-					</div>
-					<div class="pro-inquire-item clearfix">
-						<div class="pro-inquire-user">
-							<label>网友：</label><span>13970*****</span><s><i class="icon-vip-level-2"></i></s><em>2016-07-12 15:05:41</em>
-						</div>
-						<div class="pro-inquire-question">
-							<label>咨询内容：</label><span>手机ROOT后保修吗？</span>
-						</div>
-						<div class="pro-inquire-answer">
-							<label>回复：</label><span>您好，欢迎咨询华为商城。手机Root以后是不影响保修，但是需要售后网点检测是否存在其他的非保现象，具体是否保修以服务中心和您确认的最终结果为准。感谢您对华为商城的支持。</span>
-							<em>2016-07-12 15:42:16</em>
-						</div>
-					</div>
-					<div class="pro-inquire-item clearfix">
-						<div class="pro-inquire-user">
-							<label>网友：</label><span>13487*****</span><s><i class="icon-vip-level-0"></i></s><em>2016-07-12 14:44:34</em>
-						</div>
-						<div class="pro-inquire-question">
-							<label>咨询内容：</label><span>请问P9支持收音机吗？</span>
-						</div>
-						<div class="pro-inquire-answer">
-							<label>回复：</label><span>您好，欢迎咨询华为商城。P9不支持收音机，感谢您对华为商城的支持。</span>
-							<em>2016-07-12 15:47:12</em>
-						</div>
-					</div>
-					<div class="pro-inquire-item clearfix">
-						<div class="pro-inquire-user">
-							<label>网友：</label><span>小晴天°</span><s><i class="icon-vip-level-0"></i></s><em>2016-07-12 11:23:53</em>
-						</div>
-						<div class="pro-inquire-question">
-							<label>咨询内容：</label><span>可以使用支付宝花呗付款吗？</span>
-						</div>
-						<div class="pro-inquire-answer">
-							<label>回复：</label><span>您好，欢迎咨询华为商城。商城支持蚂蚁花呗支付的，请选择支付宝支付，输入账号和密码后，点击选择其他付款方式，选中蚂蚁花呗即可。感谢您对华为商城的支持。</span>
-							<em>2016-07-12 11:31:44</em>
-						</div>
-					</div>
+                                    @endforeach
 				</div>
 				<div class="pro-inquire-page clearfix">
 					<div class="pro-inquire-record">共<em>4057</em>条</div>
 					<!-- 20131220-分页-start -->
-					<div class="pager" id="all_prd_counsel"><ul><li class="pgNext link first first-empty">|&lt;</li><li class="pgNext link pre pre-empty">&lt;</li><span class="qpages"><li class="page-number link pgCurrent">1</li><li class="page-number link">2</li><li class="page-number link">3</li><li class="page-number link">4</li><li class="page-number link">5</li><li class="page-number link">6</li><li class="page-number link">7</li><li class="page-number link">8</li><li class="page-number link">9</li><li class="text">...</li><li class="page-number link page-number-last">812</li></span><li class="pgNext link next">&gt;</li><li class="pgNext link last">&gt;|</li><li class="text quickPager"><span class="fl">第</span><div id="chatpage"><input id="quickPager" class="pagenum fl" value="1" style="width:20px;"><a id="enter" class="enter fl" href="javascript:void(0)"></a></div><span class="fl">&nbsp;/812&nbsp;页</span></li></ul></div><!-- 20131220-分页-end -->
-				</div>
+					</div>
 			</div><!-- 20140624-商品详情-全部咨询-end -->
 
 			<!-- 20140624-商品详情-商品咨询-start -->
@@ -1590,21 +715,15 @@
 				</div>
 				<div class="b">
 					<div class="form-edit-area">
-						<form autocomplete="off" id="counsel_content_form">
+                                            <form method="post" action="/Home/goodslist/comment">
+                                                <input type="hidden" name="_token" value="{{csrf_token()}}" />
+                                                <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
+                                                <input type="hidden" name="name" value="@if(!empty(Session::get("userData")->name)) {{Session::get("userData")->name}}@else  游客{{rand(1000,9999)}}：  @endif" />
 							<div class="form-edit-table">
-								<p>
-									<b>咨询类型：</b>
-									<input class="radio vam" value="1" name="type" checked="checked" type="radio"><label class="vam" for="">商品咨询</label>
-									<input class="radio vam" value="2" name="type" type="radio"><label class="vam" for="">支付</label>
-									<input class="radio vam" value="3" name="type" type="radio"><label class="vam" for="">配送</label>
-									<input class="radio vam" value="4" name="type" type="radio"><label class="vam" for="">售后</label>
-								</p>
-								<p><textarea placeholder="" onfocus="ec.product.loginCheckBefCoun();" class="textarea" name="question" id="counseltextid" maxlength="100"></textarea></p>
-								<p style="margin-top: -15px;"><input id="safeEmail" name="safeEmail" class="checkbox vam" vlaue="1" type="checkbox"><label class="vam">客服回复发送到我的安全邮箱</label></p>
+                                                            <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
 							</div>
 							<div class="form-edit-action">
-								<input class="button-style-4 button-inquire-sumbit" value="提交" onclick="ec.product.submitCounsel();" type="button">
-								&nbsp;&nbsp;<span class="vam error" id="error-span" style="display:none"></span>
+                                                            <input class="button-style-4 button-inquire-sumbit" value="提交"  type="submit">
 							</div>
 						</form>
 					</div>
@@ -1624,200 +743,40 @@
 		<!--商品列表 -->
 		<div class="pro-list">
 		<ul>
-					<li>
+                    @foreach($ppp as $pp)
+                   <li>
 			<div>
-			    <p class="p-img"><a href="http://www.vmall.com/product/186517099.html#859934072" title="荣耀V8 4GB+32GB 移动/联通版（铂光金）"><img src="./60_60_1467187031543mp.jpg" alt="荣耀V8 4GB+32GB 移动/联通版（铂光金）"></a><s class="s1"></s></p>
-			    <p class="p-name"><a href="http://www.vmall.com/product/186517099.html#859934072" title="荣耀V8 4GB+32GB 移动/联通版（铂光金）">荣耀V8 4GB+32GB 移动/联通版（铂光金）</a></p>
-			    <p class="p-price"><b>¥2299</b></p>
+			    <p class="p-img"><a href="{{url('/Home/goodslist/'.$pp->gid)}}" title=""><img src="{{$pp->im}}" alt="{{$pp->name}}"></a><s class="s1"></s></p>
+			    <p class="p-name"><a href="{{url('/Home/goodslist/'.$pp->gid)}}" title="">{{$pp->name}}</a></p>
+			    <p class="p-price"><b>¥{{$pp->price}}</b></p>
 			</div>
 		    </li>
-			<li>
-			<div>
-			    <p class="p-img"><a href="http://www.vmall.com/product/2172.html#6146" title="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）"><img src="./60_60_1468376124419mp.jpg" alt="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）"></a><s class="s2"></s></p>
-			    <p class="p-name"><a href="http://www.vmall.com/product/2172.html#6146" title="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）">荣耀7 移动4G增强版（冰河银）</a></p>
-			    <p class="p-price"><b>¥1599</b></p>
-			</div>
-		    </li>
-			<li>
-			<div>
-			    <p class="p-img"><a href="http://www.vmall.com/product/3325.html#8259" title="HUAWEI P9 4GB+64GB 全网通版（陶瓷白）"><img src="./60_60_1467252608007mp.jpg" alt="HUAWEI P9 4GB+64GB 全网通版（陶瓷白）"></a><s class="s3"></s></p>
-			    <p class="p-name"><a href="http://www.vmall.com/product/3325.html#8259" title="HUAWEI P9 4GB+64GB 全网通版（陶瓷白）">HUAWEI P9 全网通版（陶瓷白）</a></p>
-			    <p class="p-price"><b>¥3688</b></p>
-			</div>
-		    </li>
-			<li>
-			<div>
-			    <p class="p-img"><a href="http://www.vmall.com/product/641202729.html#755939196" title="荣耀畅玩5A 双卡双待 移动版 智能手机（白色）"><img src="./60_60_1465177230571mp.jpg" alt="荣耀畅玩5A 双卡双待 移动版 智能手机（白色）"></a><s class="s4"></s></p>
-			    <p class="p-name"><a href="http://www.vmall.com/product/641202729.html#755939196" title="荣耀畅玩5A 双卡双待 移动版 智能手机（白色）">荣耀畅玩5A 双卡双待 移动版 智能手机（白色）</a></p>
-			    <p class="p-price"><b>¥699</b></p>
-			</div>
-		    </li>
-			<li>
-			<div>
-			    <p class="p-img"><a href="http://www.vmall.com/product/2519.html#418934910" title="荣耀畅玩5X 双卡双待 移动版 智能手机（落日金）"><img src="./60_60_1466583930933mp.jpg" alt="荣耀畅玩5X 双卡双待 移动版 智能手机（落日金）"></a><s class="s5"></s></p>
-			    <p class="p-name"><a href="http://www.vmall.com/product/2519.html#418934910" title="荣耀畅玩5X 双卡双待 移动版 智能手机（落日金）">荣耀畅玩5X 双卡双待 移动版 智能手机（落日金）</a></p>
-			    <p class="p-price"><b>¥999</b></p>
-			</div>
-		    </li>
-			<li>
-			<div>
-			    <p class="p-img"><a href="http://www.vmall.com/product/2647.html#6035" title="华为 HUAWEI Mate 8 3GB+32GB版 移动定制（月光银）"><img src="./60_60_1_002.jpg" alt="华为 HUAWEI Mate 8 3GB+32GB版 移动定制（月光银）"></a><s class="s6"></s></p>
-			    <p class="p-name"><a href="http://www.vmall.com/product/2647.html#6035" title="华为 HUAWEI Mate 8 3GB+32GB版 移动定制（月光银）">华为 HUAWEI Mate 8（月光银）</a></p>
-			    <p class="p-price"><b>¥2699</b></p>
-			</div>
-		    </li>
+	            @endforeach
 		</ul>
 	    </div>
 	</div>
 </div>
         <div id="pro-seg-hot" class="hr-20"></div>
 <!-- 最近浏览过的商品  -->
-<div style="display: block;" id="product-history-area" class="rl-area hide">
-    <div class="h">
-        <h3 class="fl"><span>最近浏览过的商品</span></h3>
-        <span class="fr"><a class="icon-clear" href="javascript:;" onclick="ec.product.history.clear(function(){$('#product-history-area').hide();});">清空</a></span>
     </div>
-    <div class="b">
-        <!--商品列表  -->
-        <div class="pro-list">
-            <ul id="product-history-list"><li><div><p class="p-img"><a href="http://www.vmall.com/product/3325.html#8259" title="HUAWEI P9 双摄像头  指纹识别"><img src="./60_60_1467252608007mp.jpg" alt="HUAWEI P9 双摄像头  指纹识别"></a></p><p class="p-name"><a href="http://www.vmall.com/product/3325.html#8259" title="HUAWEI P9 双摄像头  指纹识别">HUAWEI P9</a></p><p class="p-price"><b>¥3688</b></p></div></li><li><div><p class="p-img"><a href="http://www.vmall.com/product/2647.html#6035" title="华为 HUAWEI Mate 8"><img src="./60_60_1_002.jpg" alt="华为 HUAWEI Mate 8"></a></p><p class="p-name"><a href="http://www.vmall.com/product/2647.html#6035" title="华为 HUAWEI Mate 8">华为 HUAWEI Mate 8</a></p><p class="p-price"><b>¥2699</b></p></div></li><li><div><p class="p-img"><a href="http://www.vmall.com/product/1681.html#3105" title="云度Yundu 运动防水太阳能移动电源"><img src="./60_60_7.jpg" alt="云度Yundu 运动防水太阳能移动电源"></a></p><p class="p-name"><a href="http://www.vmall.com/product/1681.html#3105" title="云度Yundu 运动防水太阳能移动电源">云度Yundu 运动防水太阳能移动电源</a></p><p class="p-price"><b>¥168</b></p></div></li><li><div><p class="p-img"><a href="http://www.vmall.com/product/938665621.html#762843846" title="荣耀8"><img src="./60_60_1468252543992mp.jpg" alt="荣耀8"></a></p><p class="p-name"><a href="http://www.vmall.com/product/938665621.html#762843846" title="荣耀8">荣耀8</a></p><p class="p-price"><b>¥2299</b></p></div></li><li><div><p class="p-img"><a href="http://www.vmall.com/product/186517099.html#859934072" title="荣耀V8"><img src="./60_60_1467187031543mp.jpg" alt="荣耀V8"></a></p><p class="p-name"><a href="http://www.vmall.com/product/186517099.html#859934072" title="荣耀V8">荣耀V8</a></p><p class="p-price"><b>¥2299</b></p></div></li><li><div><p class="p-img"><a href="http://www.vmall.com/product/3453.html#8659" title="【北京移动合约】华为 HUAWEI Mate 8"><img src="./60_60_1.jpg" alt="【北京移动合约】华为 HUAWEI Mate 8"></a></p><p class="p-name"><a href="http://www.vmall.com/product/3453.html#8659" title="【北京移动合约】华为 HUAWEI Mate 8">【北京移动合约】华为 HUAWEI Mate 8</a></p><p class="p-price"><b>¥3399</b></p></div></li></ul>
-        </div>
-    </div>
-</div>    </div>
 </div>
 
 <div class="hr-60"></div>
 
 <!--到货通知弹出框-->
 <textarea id="product-arrival-html" class="hide">	&lt;div class="arrival-remind-area"&gt;
-		&lt;ul class="clearfix"&gt;
-			&lt;li id="arrival-email"&gt;
-				&lt;p class="a-title"&gt;邮件通知&lt;/p&gt;
-				&lt;p id="account-email" class="a-txt"&gt;xxxxxxxxxxxxxxxxxxxx@huawei.com&lt;/p&gt;
-				&lt;s&gt;&lt;/s&gt;
-			&lt;/li&gt;
-			&lt;li id="arrival-mobile"&gt;
-				&lt;p class="a-title"&gt;短信通知&lt;/p&gt;
-				&lt;p id="account-mobile" class="a-txt"&gt;185&nbsp;6644&nbsp;5856&lt;/p&gt;
-				&lt;s&gt;&lt;/s&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-	&lt;div class="box-custom-button"&gt;
-		&lt;input type="submit" class="box-ok box-button-style-1" value="提交"/&gt;
-	&lt;/div&gt;
-	&lt;div id="arrival-error" class="box-form-tips hide"&gt;
-		&lt;span class="icon-error"&gt;输入有误&lt;/span&gt;
-	&lt;/div&gt;
+
 </textarea>
 
 
 <!-- 20150331-咨询提交成功提示-start -->
 <textarea id="product-counsel-html" class="hide">    &lt;div
-class="box-prompt-success-area"&gt;
-		&lt;div class="h"&gt;
-		&lt;i&gt;&lt;/i&gt;
-		&lt;/div&gt;
-		&lt;div class="b"&gt;
-			&lt;p&gt;咨询提交成功，请耐心等待客服人员的答复。&lt;/p&gt;
-			&lt;p
-id="counsel-success-msg"&gt;回复将发送到您的安全邮箱，您还未绑定，请先绑定安全邮箱。&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div id="counsel-bind-email" class="box-custom-button"&gt;
-	    &lt;a href="javascript:;" class="box-change box-button-style-2"
-target="_blank"
-onclick="ec.product.secEmailOper()"&gt;&lt;span&gt;去绑定&lt;/span&gt;&lt;
-/a&gt;
-	&lt;/div&gt;
+
 </textarea>
 
 <textarea id="product-attention-html" class="hide">&lt;!-- 20130423-表单-关注-start --&gt;
-&lt;div class="form-interest-area"&gt;
-	&lt;div class="form-edit-area"&gt;
-		&lt;form method="post" onsubmit="return false;"&gt;
-		&lt;table border="0" cellpadding="0" cellspacing="0"&gt;
-			&lt;tbody&gt;&lt;tr&gt;
-				&lt;th&gt;邮箱地址&lt;/th&gt;
-				&lt;td&gt;&lt;input class="text vam span-300" maxlength="50" name="email" value="" type="text"&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-				&lt;th&gt;手机号码&lt;/th&gt;
-				&lt;td&gt;&lt;input class="text vam span-300" maxlength="12" name="mobile" value="" type="text"&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-		&lt;/tbody&gt;&lt;/table&gt;
-		&lt;/form&gt;
-	&lt;/div&gt;
-	&lt;div class="form-edit-action"&gt;&lt;input class="button-action-submit-2 box-ok" value="" type="submit"&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;!-- 20130423-表单-关注-end --&gt;
+
 </textarea>
 
-<script src="./inventory.htm"></script>
-<script>
-(function(){
-var hash = location.hash, skuId = 0, virId = 0,
-	cateList = [];
-
-
-if(hash.length > 1) {
-	var skuInfo = hash.split('#', 2)[1];
-	skuId = (skuInfo.length > 1) ? (parseInt(skuInfo.split(',', 2)[0], 10) || 0) : 0;
-	virId = (skuInfo.length > 1) ? (parseInt(skuInfo.split(',', 2)[1], 10) || 0) : 0;
-}
-
-if(virId > 0) {
-	$.get('/category.json', {}, function (json) {
-		if(!json.success) return;
-		var lst = [];
-		for (var i = 0; i < json.virtualList.length; i += 1) {
-			lst = json.virtualList[i];
-			cateList[lst.id] = lst.text;
-		}
-		$('#bread-pro-name').before(cateList[virId]);
-	}, 'json');
-
-}
-
-ec.context = ""; ec.product.addSkuAttr("8255" , "100102" , "颜色", "64239" , "金色"); ec.product.addSkuAttr("8255" , "100389" , "制式", "64241" , "全网通版"); ec.product.addSkuAttr("8255" , "103869" , "内存", "64243" , "4GB+64GB"); ec.product.addSkuAttr("8267" , "100102" , "颜色", "64263" , "流光金"); ec.product.addSkuAttr("8267" , "100389" , "制式", "64265" , "全网通版"); ec.product.addSkuAttr("8267" , "103869" , "内存", "64267" , "3GB+32GB"); ec.product.addSkuAttr("8273" , "100102" , "颜色", "64293" , "皓月银"); ec.product.addSkuAttr("8273" , "100389" , "制式", "64295" , "移动定制版"); ec.product.addSkuAttr("8273" , "103869" , "内存", "64297" , "3GB+32GB"); ec.product.addSkuAttr("8259" , "100102" , "颜色", "65095" , "陶瓷白"); ec.product.addSkuAttr("8259" , "100389" , "制式", "65097" , "全网通版"); ec.product.addSkuAttr("8259" , "103869" , "内存", "65099" , "4GB+64GB"); ec.product.addSkuAttr("8261" , "100102" , "颜色", "68273" , "玫瑰金"); ec.product.addSkuAttr("8261" , "100389" , "制式", "68275" , "全网通版"); ec.product.addSkuAttr("8261" , "103869" , "内存", "68277" , "4GB+64GB"); ec.product.addSkuAttr("8263" , "100102" , "颜色", "68279" , "皓月银"); ec.product.addSkuAttr("8263" , "100389" , "制式", "68281" , "全网通版"); ec.product.addSkuAttr("8263" , "103869" , "内存", "68283" , "3GB+32GB"); ec.product.addSkuAttr("8265" , "100102" , "颜色", "68285" , "钛银灰"); ec.product.addSkuAttr("8265" , "100389" , "制式", "68287" , "全网通版"); ec.product.addSkuAttr("8265" , "103869" , "内存", "68289" , "3GB+32GB"); ec.product.addSkuAttr("8269" , "100102" , "颜色", "68291" , "皓月银"); ec.product.addSkuAttr("8269" , "100389" , "制式", "68293" , "电信定制版"); ec.product.addSkuAttr("8269" , "103869" , "内存", "68295" , "3GB+32GB"); ec.product.addSkuAttr("8275" , "100102" , "颜色", "68297" , "钛银灰"); ec.product.addSkuAttr("8275" , "100389" , "制式", "68299" , "移动定制版"); ec.product.addSkuAttr("8275" , "103869" , "内存", "68301" , "3GB+32GB"); ec.product.addSkuAttr("8279" , "100102" , "颜色", "68303" , "钛银灰"); ec.product.addSkuAttr("8279" , "100389" , "制式", "68305" , "联通定制版"); ec.product.addSkuAttr("8279" , "103869" , "内存", "68307" , "3GB+32GB"); ec.product.addSkuAttr("8277" , "100102" , "颜色", "68309" , "皓月银"); ec.product.addSkuAttr("8277" , "100389" , "制式", "68311" , "联通定制版"); ec.product.addSkuAttr("8277" , "103869" , "内存", "68313" , "3GB+32GB"); ec.product.addSkuAttr("721625417" , "100102" , "颜色", "68315" , "琥珀灰"); ec.product.addSkuAttr("721625417" , "100389" , "制式", "68317" , "全网通版"); ec.product.addSkuAttr("721625417" , "103869" , "内存", "68319" , "4GB+64GB"); ec.product.setSkuShowType("100102" , "1"); ec.product.setSkuShowType("100389" , "2"); ec.product.setSkuShowType("103869" , "2"); ec.product.id = "3325"; ec.product.defaultSku = "8259"; ec.product.setSkuId = (!ec.product.getSkuInfo(skuId)) ? 0 : skuId; ec.product.status = "2"; ec.product.virId = virId; ec.product.productType = "0"; var _imgName, _giftList, _promotionsList, _prolongLst, _contractList,_groupPhotoList; _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467252560857.jpg");_imgName.push("1467252564159.jpg");_imgName.push("1467252566788.jpg");_imgName.push("1467252569418.jpg");_imgName.push("1467252572179.jpg");_imgName.push("1467252574763.jpg");_imgName.push("1467252577831.jpg");_imgName.push("1467252580692.jpg");_imgName.push("1467252583538.jpg");_imgName.push("1467252585997.jpg");_imgName.push("1467252589867.jpg");_imgName.push("1467252593129.jpg"); _groupPhotoList.push({name:"1467252560857.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252564159.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252566788.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252569418.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252572179.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252574763.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252577831.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252580692.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252583538.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252585997.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252589867.jpg", path:"/product/6901443118854/group/"});_groupPhotoList.push({name:"1467252593129.jpg", path:"/product/6901443118854/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8259" , { groupPhotoList:_groupPhotoList, code : "10110010133602", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3688", originPrice : "3688", name : "HUAWEI P9 4GB+64GB 全网通版（陶瓷白）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:06:31", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467252608007mp.jpg", photoPath : "/product/6901443118854/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467249557057.jpg");_imgName.push("1467249560122.jpg");_imgName.push("1467249566489.jpg");_imgName.push("1467249569195.jpg");_imgName.push("1467249563584.jpg");_imgName.push("1467249589893.jpg");_imgName.push("1467249595386.jpg");_imgName.push("1467249592572.jpg");_imgName.push("1467249583962.jpg");_imgName.push("1467249586302.jpg");_imgName.push("1467249598629.jpg"); _groupPhotoList.push({name:"1467249557057.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249560122.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249566489.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249569195.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249563584.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249589893.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249595386.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249592572.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249583962.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249586302.jpg", path:"/product/6901443118847/group/"});_groupPhotoList.push({name:"1467249598629.jpg", path:"/product/6901443118847/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8255" , { groupPhotoList:_groupPhotoList, code : "10110010133601", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3688", originPrice : "3688", name : "HUAWEI P9 4GB+64GB 全网通版（金色）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:06:56", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467252520756mp.jpg", photoPath : "/product/6901443118847/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467252894532.jpg");_imgName.push("1467252897759.jpg");_imgName.push("1467252900467.jpg");_imgName.push("1467252904027.jpg");_imgName.push("1467252907017.jpg");_imgName.push("1467252910366.jpg");_imgName.push("1467252912931.jpg");_imgName.push("1467252915661.jpg");_imgName.push("1467252918171.jpg");_imgName.push("1467252921579.jpg");_imgName.push("1467252924196.jpg"); _groupPhotoList.push({name:"1467252894532.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252897759.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252900467.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252904027.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252907017.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252910366.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252912931.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252915661.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252918171.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252921579.jpg", path:"/product/6901443118892/group/"});_groupPhotoList.push({name:"1467252924196.jpg", path:"/product/6901443118892/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8267" , { groupPhotoList:_groupPhotoList, code : "10110010133606", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3188", originPrice : "3188", name : "HUAWEI P9 3GB+32GB 全网通版（流光金）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:04:24", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467252927907mp.jpg", photoPath : "/product/6901443118892/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467253169052.jpg");_imgName.push("1467253184233.jpg");_imgName.push("1467253187163.jpg");_imgName.push("1467253190202.jpg");_imgName.push("1467253193581.jpg");_imgName.push("1467253202563.jpg");_imgName.push("1467253205114.jpg");_imgName.push("1467253210467.jpg");_imgName.push("1467253215108.jpg");_imgName.push("1467253220997.jpg");_imgName.push("1467253223403.jpg"); _groupPhotoList.push({name:"1467253169052.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253184233.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253187163.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253190202.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253193581.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253202563.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253205114.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253210467.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253215108.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253220997.jpg", path:"/product/6901443119974/group/"});_groupPhotoList.push({name:"1467253223403.jpg", path:"/product/6901443119974/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8273" , { groupPhotoList:_groupPhotoList, code : "10110010133609", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "2988", originPrice : "2988", name : "HUAWEI P9 3GB+32GB 移动定制版（皓月银）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:00:24", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467253265493mp.jpg", photoPath : "/product/6901443119974/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467252640458.jpg");_imgName.push("1467252643239.jpg");_imgName.push("1467252645630.jpg");_imgName.push("1467252648035.jpg");_imgName.push("1467252650422.jpg");_imgName.push("1467252653405.jpg");_imgName.push("1467252656326.jpg");_imgName.push("1467252658816.jpg");_imgName.push("1467252662176.jpg");_imgName.push("1467252664910.jpg");_imgName.push("1467252668325.jpg");_imgName.push("1467252670887.jpg"); _groupPhotoList.push({name:"1467252640458.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252643239.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252645630.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252648035.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252650422.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252653405.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252656326.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252658816.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252662176.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252664910.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252668325.jpg", path:"/product/6901443118861/group/"});_groupPhotoList.push({name:"1467252670887.jpg", path:"/product/6901443118861/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8261" , { groupPhotoList:_groupPhotoList, code : "10110010133603", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3688", originPrice : "3688", name : "HUAWEI P9 4GB+64GB 全网通版（玫瑰金）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:06:05", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467252677697mp.jpg", photoPath : "/product/6901443118861/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467252735000.jpg");_imgName.push("1467252738198.jpg");_imgName.push("1467252740889.jpg");_imgName.push("1467252744173.jpg");_imgName.push("1467252746810.jpg");_imgName.push("1467252751780.jpg");_imgName.push("1467252754450.jpg");_imgName.push("1467252756974.jpg");_imgName.push("1467252759912.jpg");_imgName.push("1467252763128.jpg");_imgName.push("1467252767261.jpg"); _groupPhotoList.push({name:"1467252735000.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252738198.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252740889.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252744173.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252746810.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252751780.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252754450.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252756974.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252759912.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252763128.jpg", path:"/product/6901443118878/group/"});_groupPhotoList.push({name:"1467252767261.jpg", path:"/product/6901443118878/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8263" , { groupPhotoList:_groupPhotoList, code : "10110010133604", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3188", originPrice : "3188", name : "HUAWEI P9 3GB+32GB 全网通版（皓月银）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:05:33", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467252774332mp.jpg", photoPath : "/product/6901443118878/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467252829609.jpg");_imgName.push("1467252832720.jpg");_imgName.push("1467252836308.jpg");_imgName.push("1467252839068.jpg");_imgName.push("1467252841891.jpg");_imgName.push("1467252844655.jpg");_imgName.push("1467252847569.jpg");_imgName.push("1467252850291.jpg");_imgName.push("1467252853054.jpg");_imgName.push("1467252856364.jpg");_imgName.push("1467252859384.jpg"); _groupPhotoList.push({name:"1467252829609.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252832720.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252836308.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252839068.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252841891.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252844655.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252847569.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252850291.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252853054.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252856364.jpg", path:"/product/6901443118885/group/"});_groupPhotoList.push({name:"1467252859384.jpg", path:"/product/6901443118885/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8265" , { groupPhotoList:_groupPhotoList, code : "10110010133605", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3188", originPrice : "3188", name : "HUAWEI P9 3GB+32GB 全网通版（钛银灰）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:04:49", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467252867876mp.jpg", photoPath : "/product/6901443118885/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467252961100.jpg");_imgName.push("1467252964504.jpg");_imgName.push("1467252967167.jpg");_imgName.push("1467252970325.jpg");_imgName.push("1467252973599.jpg");_imgName.push("1467252977393.jpg");_imgName.push("1467252979799.jpg");_imgName.push("1467252982396.jpg");_imgName.push("1467252984957.jpg");_imgName.push("1467252988599.jpg");_imgName.push("1467252991135.jpg"); _groupPhotoList.push({name:"1467252961100.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252964504.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252967167.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252970325.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252973599.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252977393.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252979799.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252982396.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252984957.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252988599.jpg", path:"/product/6901443119707/group/"});_groupPhotoList.push({name:"1467252991135.jpg", path:"/product/6901443119707/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8269" , { groupPhotoList:_groupPhotoList, code : "10110010133607", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "2988", originPrice : "2988", name : "HUAWEI P9 3GB+32GB 电信定制版（皓月银）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:00:54", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467253007932mp.jpg", photoPath : "/product/6901443119707/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:56", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467253328913.jpg");_imgName.push("1467253336354.jpg");_imgName.push("1467253339121.jpg");_imgName.push("1467253341956.jpg");_imgName.push("1467253387653.jpg");_imgName.push("1467253397213.jpg");_imgName.push("1467253400419.jpg");_imgName.push("1467253404224.jpg");_imgName.push("1467253407083.jpg");_imgName.push("1467253409748.jpg");_imgName.push("1467253412200.jpg"); _groupPhotoList.push({name:"1467253328913.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253336354.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253339121.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253341956.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253387653.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253397213.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253400419.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253404224.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253407083.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253409748.jpg", path:"/product/6901443119981/group/"});_groupPhotoList.push({name:"1467253412200.jpg", path:"/product/6901443119981/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8275" , { groupPhotoList:_groupPhotoList, code : "10110010133610", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "2988", originPrice : "2988", name : "HUAWEI P9 3GB+32GB 移动定制版（钛银灰）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 14:59:55", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467253421815mp.jpg", photoPath : "/product/6901443119981/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467253912355.jpg");_imgName.push("1467254112426.jpg");_imgName.push("1467254115370.jpg");_imgName.push("1467254118314.jpg");_imgName.push("1467254121146.jpg");_imgName.push("1467254123663.jpg");_imgName.push("1467254126238.jpg");_imgName.push("1467254130274.jpg");_imgName.push("1467254132739.jpg");_imgName.push("1467254135595.jpg");_imgName.push("1467254138452.jpg"); _groupPhotoList.push({name:"1467253912355.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254112426.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254115370.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254118314.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254121146.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254123663.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254126238.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254130274.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254132739.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254135595.jpg", path:"/product/6901443120000/group/"});_groupPhotoList.push({name:"1467254138452.jpg", path:"/product/6901443120000/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8279" , { groupPhotoList:_groupPhotoList, code : "10110010133612", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "2988", originPrice : "2988", name : "HUAWEI P9 3GB+32GB 联通定制版（钛银灰）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 14:58:29", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467254147578mp.jpg", photoPath : "/product/6901443120000/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467253812592.jpg");_imgName.push("1467253819965.jpg");_imgName.push("1467253823192.jpg");_imgName.push("1467253826456.jpg");_imgName.push("1467253842006.jpg");_imgName.push("1467253834297.jpg");_imgName.push("1467253837533.jpg");_imgName.push("1467253830924.jpg");_imgName.push("1467253815556.jpg");_imgName.push("1467253852307.jpg");_imgName.push("1467253854975.jpg"); _groupPhotoList.push({name:"1467253812592.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253819965.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253823192.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253826456.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253842006.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253834297.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253837533.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253830924.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253815556.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253852307.jpg", path:"/product/6901443119998/group/"});_groupPhotoList.push({name:"1467253854975.jpg", path:"/product/6901443119998/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("8277" , { groupPhotoList:_groupPhotoList, code : "10110010133611", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "2988", originPrice : "2988", name : "HUAWEI P9 3GB+32GB 联通定制版（皓月银）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 14:59:17", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467253885714mp.jpg", photoPath : "/product/6901443119998/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = [];_groupPhotoList=[]; _imgName.push("1467254640367.jpg");_imgName.push("1467254643552.jpg");_imgName.push("1467254646225.jpg");_imgName.push("1467254649179.jpg");_imgName.push("1467254652038.jpg");_imgName.push("1467254655285.jpg");_imgName.push("1467254659027.jpg");_imgName.push("1467254662330.jpg");_imgName.push("1467254666302.jpg");_imgName.push("1467254669099.jpg");_imgName.push("1467254671842.jpg");_imgName.push("1467254674560.jpg"); _groupPhotoList.push({name:"1467254640367.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254643552.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254646225.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254649179.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254652038.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254655285.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254659027.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254662330.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254666302.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254669099.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254671842.jpg", path:"/product/6901443124930/group/"});_groupPhotoList.push({name:"1467254674560.jpg", path:"/product/6901443124930/group/"}); _giftList.push({ giftId : "738132989" , giftName : "华为 HUAWEI Type C 转接头（白色）"}); _prolongLst.push({id:6092,serviceType:1, name:"终端延保服务（一年期）¥188.00",productId:2663});_prolongLst.push({id:199637048,serviceType:2, name:"意外保障服务D（一年期）¥280.00",productId:472525757});_prolongLst.push({id:820742949,serviceType:1, name:"终端延保服务（半年期）¥98.00",productId:728258707});_prolongLst.push({id:441601818,serviceType:2, name:"碎屏意外保障服务D（一年期）¥139.00",productId:739671590}); ec.product.setSku("721625417" , { groupPhotoList:_groupPhotoList, code : "10110010133613", skuPromWord : "精致外观、后置1200万徕卡双摄像头，大光圈拍摄，麒麟955芯片，指纹识别！", skuPromWordLink : "", price : "3688", originPrice : "3688", name : "HUAWEI P9 4GB+64GB 全网通版（琥珀灰）", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "2016-06-15 15:02:20", countDown : "2", isProm : false, type : "normal", integral : "0", photoName : "1467254679960mp.jpg", photoPath : "/product/6901443124930/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "2016-06-20 23:59:59", isShowReminder : "0" }); })();</script>
-<script>
-//��֤�Ƿ��п�棨ʵ����Ʒ��
-ec.product.setType("normal");
-ec.track99click({
-	cid : "",
-	id : "3325"
-});
-</script><script>
-(function () {
-	//验证是否有库存（实体商品）
-	ec.product.execute("renderInventory", [ec.product.inventory.haveInventory(ec.product.setSkuId || 8259)]);
-
-	// 自适配PC和客户端
-	var wapUrl = window.location.href;
-	wapUrl = wapUrl.replace("www", "m");
-	$("meta[name=mobile-agent]").attr('content', "format=xhtml;url=" + wapUrl);
-})();
-ec.load("ec.pager");
-ec.ready(function(){
-	 ec.product.allrenderPage({
-		pageNumber : 1,
-		totalPage : 812,
-		recordCount : 4057
-	 });
-	 ec.product.prdrenderPage({
-		pageNumber : 1
-	 });
-	 ec.product.payrenderPage({
-		pageNumber : 1
-		});
-	 ec.product.transrenderPage({
-		pageNumber : 1
-		});
-	 ec.product.serrenderPage({
-		pageNumber : 1
-		});
-	 ec.product.quesrenderPage({
-		pageNumber :1
-		});
-});
-</script><script id="jsapi_loader4" loadtype="insert" type="text/javascript" src="./pager-min.js" charset="gbk"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader4');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader4 fail!');} return; }ol._setLoadStatus("ec.pager/pager-min.js","complete");})();</script>
+<
 @include("home.layout.foot")

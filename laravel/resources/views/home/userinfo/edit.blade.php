@@ -8,6 +8,17 @@
 <link href="{{asset('/css/home/common.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/zh-cn_css.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/dialog.css')}}" rel="stylesheet" type="text/css">
+<script src="{{ asset('/js/jquery-1.8.3.min.js') }}" type="text/javascript"></script>
+<script src="/plugins/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="{{asset('/plugins/uploadify/uploadify.css')}}" />
+<meta name="csrf-token" content="{{ csrf_token() }}" />
+<script>
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+</script>
 </head>
 <body>
 
@@ -21,7 +32,7 @@
 						<b class="user"></b>
 
 
-				<a class="account" href="#">{{Session::get("userData")->uname}}</a>
+				<a class="account" href="#">{{Session::get("userDatas")->uname}}</a>
 				<span> | </span>
 				<a id="logoutUrl" href="{{url('/logout')}}">退出</a>
 			</div>
@@ -33,7 +44,7 @@
 	<div class="menu wp mkcl">
 		<div class="mnr">
 			<ul class="nav mkcl">
-				<li data-menu="2" class="sel"><a href="#">个人信息</a></li
+				<li data-menu="2" class="sel"><a href="/home/userinfo">个人信息</a></li
 			</ul>
 			<b class="navsign" style="display:none"></b>
 		</div>
@@ -56,34 +67,48 @@
 		</div>
 	</div>
 
+	<form action="/home/userinfo" method="post" name="fm"  enctype="multipart/form-data">
+		<input type="hidden" name="_token" value="{{csrf_token()}}" />
 
-<form action="" method="post">
+		<input type="hidden" name="avartar" id="avartar" value="" />
+			<input type="hidden" name="id" value="{{Session::get("userDatas")->id}}" />
+
 	<div class="wp">
 		<div class="pannel">
+
+
 			<div class="upic">
-				<a href="#" id="uploadImg"><img id="headPic" src="{{url('/images/home/pic.png')}}" height:"160px"="" width="160px"></a>
-				<p id="uploadImgDiv">设置头像</p>
+				<a href="#" id="uploadImg"><img id="preview" src="{{$user->avartar}}"   height:"160px"="" width="160px"></a>
+				 <p><input type="file" name="upload" id="upload"></p>
+
 			</div>
 
+              <script src="/js/home/user_tx.js"></script>
+
+
 			<div id="upload_dialog_show" style="display:none;"></div>
+
+
+
+
 
 			<div class="umsg">
 				<p class="title">公开信息</p>
 				<p class="line">
-					昵称：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="s1" name="nickname" value="{{Session::get("userData")->uname}}">
+					用户名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="s1" name="uname" value="{{$user->uname}}">
 					<span class="uinfo"><label id="nickname"></label></span>
 			    </p>
 
 				<p class="line">
-					性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="男" ) checked   id="male" /><label for="male">男</lable>&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="sex" value="女" id="male") checked  /><label>女<label for="female">
+					性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="男" @if(($user->sex)=="男") checked @endif  id="male" /><label for="male">男</lable>&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" value="女" id="male" @if(($user->sex)=="女") checked @endif  /><label>女<label for="female">
 				</p>
 
 
 				  <p class="line">
 				  	城市地区：
 
-	          <select id="s_province" name="s_province"></select>  
+          <select id="s_province" name="s_province" ></select>  
             <select id="s_city" name="s_city" ></select>  
             <select id="s_county" name="s_county"></select>
             <script class="resources library" src="{{asset('/js/home/area.js')}}" type="text/javascript"></script>
@@ -127,17 +152,17 @@
 				</p>
 
 				<p class="line">
-					真实姓名：<input type="text" class="s1" name="relname" value="">
+					真实姓名：<input type="text" class="s1" name="relname" value="{{$user->relname}}">
 					<span><label id="relname"></label></span>
 				</p>
 
 				<p class="line">
-					手机号码：<input type="text" class="s1" name="tel" value="">
+					手机号码：<input type="text" class="s1" name="tel" value="{{$user->tel}}">
 					<span><label id="tel"></label></span>
 				</p>
 
 				<p class="line">
-					邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="s1" name="email" value="">
+					邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="s1" name="email" value="{{$user->email}}">
 					<span><label id="email"></label></span>
 				</p>
 

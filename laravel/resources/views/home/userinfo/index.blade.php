@@ -21,7 +21,7 @@
 						<b class="user"></b>
 
 
-				<a class="account" href="#">{{Session::get("userData")->uname}}</a>
+				<a class="account" href="#">{{Session::get("userDatas")->uname}}</a>
 				<span> | </span>
 				<a id="logoutUrl" href="{{url('/logout')}}">退出</a>
 			</div>
@@ -33,7 +33,7 @@
 	<div class="menu wp mkcl">
 		<div class="mnr">
 			<ul class="nav mkcl">
-				<li data-menu="2" class="sel"><a href="{{url('/edit')}}">编辑</a></li
+				<li data-menu="2" class="sel"><a href="/home/userinfo/{{Session::get("userDatas")->id}}/edit">编辑</a></li
 			</ul>
 			<b class="navsign" style="display:none"></b>
 		</div>
@@ -61,8 +61,8 @@
 	<div class="wp">
 		<div class="pannel">
 			<div class="upic">
-				<a href="#" id="uploadImg"><img id="headPic" src="{{url('/images/home/pic.png')}}" height:"160px"="" width="160px"></a>
-				<p id="uploadImgDiv">设置头像</p>
+				<a href="#" id="uploadImg"><img id="headPic" src="{{$user->avartar}}" height:"160px"="" width="160px"></a>
+
 			</div>
 
 			<div id="upload_dialog_show" style="display:none;"></div>
@@ -71,7 +71,7 @@
 				<p class="title">公开信息</p>
 				<p class="line">
 					用户名：
-					<span class="uinfo"><label id="uname">{{Session::get("userData")->uname}}</label></span>
+					<span class="uinfo"><label id="uname">{{$user->uname}}</label></span>
 			    </p>
 
 			    <p class="line">
@@ -81,13 +81,13 @@
 
 				<p class="line">
 					性别：
-					<span class="uinfo"><label id="gender">{{Session::get("userData")->sex}}</label></span>
+					<span class="uinfo"><label id="gender">{{$user->sex}}</label></span>
 				</p>
 
 
 				  <p class="line">
 				  	城市地区：
-				  	<span class="uinfo"><label id="cityarea"></label></span>
+				  	<span class="uinfo"><label id="cityarea">{{$user->city}}</label></span>
 				  </p>
 
 				<p class="title">非公开信息</p>
@@ -98,17 +98,17 @@
 
 				<p class="line">
 					真实姓名：
-					<span><label id="relname"></label></span>
+					<span><label id="relname"></label>{{$user->relname}}</span>
 				</p>
 
 				<p class="line">
 					手机号码：
-					<span><label id="tel"></label></span>
+					<span><label id="tel"></label>{{$user->tel}}</span>
 				</p>
 
 				<p class="line">
 					邮箱：
-					<span><label id="email"></label></span>
+					<span><label id="email"></label>{{$user->email}}</span>
 				</p>
 
 
