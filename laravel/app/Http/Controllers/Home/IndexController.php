@@ -21,7 +21,10 @@ class IndexController extends Controller
     {
         //首页导航
         $firstNav=DB::table("admin_category")->where("pid","=","0")->get();
+        session(["firstNav"=>$firstNav]);
         $nav=Db::table("admin_category")->get();
+        session(["nav"=>$nav]);
+//        dd(Session::get("nav"));
 //        foreach($firstNav as $fn){
 //            $subclass=DB::table("admin_category")->where("pid","=", $fn->cid)->get();
 //        }
