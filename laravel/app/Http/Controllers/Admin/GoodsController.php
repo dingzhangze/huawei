@@ -69,6 +69,7 @@ class GoodsController extends Controller
      */
     public function show($id)
     {
+
         if(!empty(DB::table("admin_goods_details")->where("gid","=",$id)->get()))
         {
             $abc=DB::table("admin_goods_details")->where("gid","=",$id)->first();
@@ -79,6 +80,7 @@ class GoodsController extends Controller
 //            dd($id);
             return view("admin.goods.details", compact("id"));
         }
+
     }
 
     /**

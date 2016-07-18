@@ -84,8 +84,8 @@
       @foreach($goods as $good)
       <li>
 					<div class="pro-panels">
-						<p class="p-img"><a target="_blank" href="{{url('/Home/goodslist/'.$goods->gid)}}" title="{{$good->name}}"><img alt="{{$good->name}}" src="{{$good->im}}"></a></p>
-						<p class="p-name"><a target="_blank" href="{{url('/Home/goodslist/'.$goods->gid)}}" title="{{$good->name}}">{{$good->name}}<span class="red"></span></a></p>
+						<p class="p-img"><a target="_blank" href="{{url('/Home/goodslist/'.$good->gid)}}" title="{{$good->name}}"><img alt="{{$good->name}}" src="{{$good->im}}"></a></p>
+						<p class="p-name"><a target="_blank" href="{{url('/Home/goodslist/'.$good->gid)}}" title="{{$good->name}}">{{$good->name}}<span class="red"></span></a></p>
 						<p class="p-price"><b>¥{{$good->price}}</b></p>
 						<div class="p-button clearfix">
 							<table colspan="0" rowspan="0" border="0">

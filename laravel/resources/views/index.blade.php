@@ -45,7 +45,7 @@
 		</div>
 		<div class="s-main">
 			<ul>
-          @if(empty(Session::get("userData")))
+          @if(empty(Session::get("userDatas")))
 				<li class="s-login" id="unlogin_status">
 
 						<a href="{{url('/login')}}" rel="nofollow">登录</a>
@@ -56,7 +56,7 @@
 
 					<div class="s-dropdown">
 						<div class="h">
-              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userData")->uname}}</strong></a>
+              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
@@ -64,7 +64,7 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="{{url('/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
+							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
 
@@ -108,7 +108,7 @@
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
 			<div class="searchBar-form" id="searchBar-area">
-                            <form method="post"  action="Home/goodslist/sou">
+                            <form method="post"  action="/Home/goodslist/sou">
 					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label>
                                         <input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="" ><input class="button" value="搜索" type="submit">
 					<input id="default-search"  name="_token"  value="{{csrf_token()}}" type="hidden">
@@ -147,9 +147,15 @@
 					<div class="h"><a href="#" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-imall-content">
+              @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
-							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="/account/login?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script><a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
+
+							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="{{url('/login')}}?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script>
+                <a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
 						</div>
+            @else
+            您好, <strong>{{Session::get("userDatas")->uname}}</strong>
+            @endif
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
 								<li><a href="#" rel="nofollow" timetype="timestamp">我的订单</a></li>
@@ -932,7 +938,14 @@
 <footer class="footer">
     <!-- 20130902-底部-友情链接-start -->
 	<div class="footer-otherLink">
-		<p style="text-align:left;">友情链接： | <a href="http://www.huawei.com/cn/" target="_blank">华为官网</a> | <a href="http://consumer.huawei.com/cn/" target="_blank" style="line-height:1.5;">华为消费者业务</a><span style="line-height:1.5;"> </span><span style="line-height:1.5;">|</span><span style="line-height:1.5;"> </span><a href="http://www.honor.cn/" target="_blank" style="line-height:1.5;">荣耀官网</a><span style="line-height:1.5;"> | </span><a href="http://club.huawei.com/" target="_blank" textvalue="花粉俱乐部">花粉俱乐部</a><span style="line-height:1.5;"> | </span><a href="http://www.huaweimossel.com/" target="_blank" style="line-height:1.5;">莫塞尔商城</a><span style="line-height:1.5;"> | </span><a href="http://www.hwtrip.com/" target="_blank" style="line-height:1.5;">爱旅官网</a><span style="line-height:1.5;"> | </span><a href="http://app.vmall.com/" target="_blank" style="line-height:1.5;">华为应用市场</a><span style="line-height:1.5;"> | </span><a href="http://www.wbiao.cn/" target="_blank" style="line-height:1.5;">万表网</a><span style="line-height:1.5;"> | </span><a href="http://www.imobile.com.cn/" target="_blank" style="line-height:1.5;">手机之家</a><span style="line-height:1.5;"> | </span><a href="http://www.askci.com/" target="_blank" style="line-height:1.5;">中商情报网</a><span style="line-height:1.5;"> | </span><a href="http://www.zbird.com/" target="_blank" style="line-height:1.5;">钻石小鸟</a><span style="line-height:1.5;"> | </span><a href="http://www.shuame.com/" target="_blank" style="line-height:1.5;">刷机精灵</a><span style="line-height:1.5;"> | </span><a href="http://www.nduoa.com/" target="_blank" style="line-height:1.5;">安卓市场</a><span style="line-height:1.5;"> | </span><a href="http://www.17ugo.com/" target="_blank" style="line-height:1.5;">优购物</a><span style="line-height:1.5;">官网 | </span><a href="http://www.ydss.cn/" target="_blank" style="line-height:1.5;">移动叔叔</a><span style="line-height:1.5;"> | </span><a href="http://www.outlets365.com/" target="_blank" style="line-height:1.5;">奥特莱斯</a><span style="line-height:1.5;"> |</span></p><p style="text-align:left;"><a href="http://www.zol.com/" target="_blank">中关村商城</a> | <a href="http://www.kugou.com/" target="_blank">酷狗音乐</a> | <a href="http://m.vmall.com/" target="_blank" style="line-height:1.5;">华为商城手机版</a><span style="line-height:1.5;"> | </span><a href="http://www.3533.com/" target="_blank" style="line-height:1.5;">手机世界</a><span style="line-height:1.5;"> | </span><a href="http://www.958shop.com/" target="_blank" style="line-height:1.5;">百信手机网</a><span style="line-height:1.5;"> | </span><a href="http://www.youboy.com/" target="_blank" style="line-height:1.5;">一呼百应网</a><span style="line-height:1.5;"> | </span><a href="http://www.cardbaobao.com/" target="_blank" style="line-height:1.5;">卡宝宝网</a><span style="line-height:1.5;"> | </span><a href="http://www.duote.com/" target="_blank" textvalue="多特软件下载">多特软件下载</a><span style="line-height:1.5;"> </span><span style="line-height:1.5;">| </span><a href="http://www.hitao.com/" target="_blank" style="line-height:1.5;">嗨淘网</a><span style="line-height:1.5;"> | </span><a href="http://www.tongbu.com/" target="_blank" style="line-height:1.5;">同步助手</a><span style="line-height:1.5;"> | </span><a href="http://www.fengniao.com/" target="_blank" style="line-height:1.5;">蜂鸟摄影网</a><span style="line-height:1.5;"> | </span><a href="http://www.7po.com/" target="_blank" style="line-height:1.5;">奇珀论坛</a><span style="line-height:1.5;"> | </span><a href="http://www.homekoo.com/" target="_blank" style="line-height:1.5;">家具商城</a><span style="line-height:1.5;"> | </span><a href="http://www.xbiao.com/" target="_blank" style="line-height:1.5;">世界名表</a><span style="line-height:1.5;"> | </span><a href="http://www.paixie.net/" target="_blank" style="line-height:1.5;">拍鞋网</a><span style="line-height:1.5;">商城</span><span style="line-height:1.5;"> | </span><a href="http://www.obolee.com/" target="_blank" style="line-height:1.5;">欧宝丽珠宝</a><span style="line-height:1.5;"> | </span><a href="http://www.xungou.com/" target="_blank" style="line-height:1.5;">寻购网</a><span style="line-height:1.5;"> </span><span style="line-height:1.5;"></span><span style="line-height:1.5;"></span><span style="line-height:1.5;">|</span></p><p style="text-align:left;"><a href="http://www.jiukuaiyou.com/" target="_blank">九块邮官网</a> | <a href="http://www.mumayi.com/" target="_blank">安卓游戏</a> | <a href="http://baike.1688.com/" target="_blank">阿里巴巴生意经</a> | <a href="http://product.cnmo.com/" target="_blank">手机大全</a> | <a href="http://www.anzow.com/" target="_blank">安卓软件园</a> | <a href="http://www.dashi.com/" target="_blank">卓大师刷机</a> | <a href="http://www.wpxap.com/" target="_blank">智机论坛</a> | <a href="http://www.eepw.com.cn/" target="_blank">电子产品世界</a> | <a href="http://www.liqucn.com/" target="_blank">历趣网</a> | <a href="http://www.51bi.com/" target="_blank">网购返利</a> | <a href="http://cn.china.cn/" target="_blank">中国供应商</a> | <a href="http://www.apple110.com/" target="_blank" title="Apple110">Apple110</a> | <a href="http://www.91.com/" target="_blank" textvalue="91手机门户网">91.手机门户网</a> <span style="line-height:1.5;"></span><span style="line-height:1.5;">| </span><a href="http://www.in189.com/" target="_blank" textvalue="添翼圈社区">添翼圈社区</a> <span style="line-height:1.5;"></span><span style="line-height:1.5;">| </span><a href="http://www.egou.com/" target="_blank" style="line-height:1.5;">易购官网</a><span style="line-height:1.5;"> </span><span style="line-height:1.5;">|</span><span style="line-height:1.5;"> </span><a href="http://www.meilele.com/" target="_blank" textvalue="美乐乐家具网">美乐乐家具网</a><span style="line-height:1.5;"> | </span></p><p style="text-align:left;"><a href="http://www.znds.com/" target="_blank" style="line-height:1.5;">智能电视网</a><span style="line-height:1.5;"> </span><span style="line-height:1.5;">| </span><a href="http://m.kuaidi100.com/index_all.html" target="_blank" title="快递查询" textvalue="快递查询">快递查询</a> <span style="line-height:1.5;">|</span><span style="line-height:1.5;"> </span><a href="http://www.yzmg.com/" target="_blank" style="line-height:1.5;">亿智蘑菇</a>手机网<span style="line-height:1.5;"> </span><span style="line-height:1.5;">|</span><span style="line-height:1.5;"> </span><a href="http://www.uc.cn/" target="_blank" style="line-height:1.5;">UC浏览器</a><span style="line-height:1.5;"> </span><span style="line-height:1.5;">| </span><a href="http://www.vmall.com/recycle" target="_blank" textvalue="以旧换新" style="line-height:1.5;">以旧换新</a><span style="line-height:1.5;"><span style="line-height:1.5;"> | <a href="http://www.vmall.com/" target="_blank" textvalue="华为P9">华为P9</a> | 携程<a href="http://car.ctrip.com/" target="_blank">租车</a> | <a href="http://www.wandoujia.com/" target="_blank">安卓市场</a> | </span></span><a href="http://www.vmall.com/links" target="_blank" style="line-height:1.5;color:#ff0000;">申请链接 &gt;&gt;</a></p><p style="text-align:left;"><span style="line-height:1.5;"></span></p>
+		<p style="text-align:left;">友情链接： | 
+                    
+                    @foreach($addres as $add)
+                    <a href="http://{{$add->addres}}" target="_blank">{{$add->name}}</a> | 
+                    @endforeach
+                    
+                </p>
+                <p style="text-align:left;"><span style="line-height:1.5;"></span></p>
 	</div>
 	<div class="footer-warrant-area"><p><a textvalue="隐私政策" title="隐私政策" target="_blank" href="http://www.vmall.com/help/faq-2635.html">隐私政策</a>  <a title="服务协议" target="_blank" href="http://www.vmall.com/help/faq-778.html">服务协议</a>        Copyright © 2012-2016  VMALL.COM   版权所有  保留一切权利</p><p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011402010009"><img style="width:20px;height:20px;float:none;" src="{{url('/images/home/20160226162651249.png')}}" title="公安备案" border="0" height="20" hspace="0" vspace="0" width="20"><span style="font-size:15px;font-family:宋体"><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 苏公网安备</span><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 32011402010009号</span></span></a> | 苏ICP备09062682号-9 | 增值电信业务经营许可证：苏B2-20130048 | <a target="_blank" href="http://res.vmallres.com/certificate/wwwz.jpg">网络文化经营许可证：苏网文[2012]0401-019号</a></p><p><br><a target="_blank" href="http://res.vmallres.com/certificate/wwwz.jpg"></a></p><p><a target="_blank" href="http://www.jsgsj.gov.cn:60103/businessCheck/verifKey.do?serial=320100913201147770231720001001-SAIC_SHOW_32000020160129102316602&amp;signData=MEUCIQDjstcg6fPylz+uES4LNTcBpBVlZujS8l5erIgXiDGw1QIgfHZFK11kZ1vB2enLCwvaslyfE1fztpB19AEK4hlwibo="><img src="{{url('/images/home/20160226162415360.png')}}" style="float:none;width:90px;height:32px;" title="电子营业执照" border="0" height="32" hspace="0" vspace="0" width="90"></a>   <a target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e13010932010038497pwz6000000&amp;trustKey=dn&amp;trustValue=vmall.com"><img style="width:90px;height:32px;float:none;" src="{{url('/images/home/20160226162521265.png')}}" title="可信网站" border="0" height="32" hspace="0" vspace="0" width="90"></a>   <a target="_blank" href="https://search.szfw.org/cert/l/CX20121017001773002082"><img style="width:90px;height:32px;float:none;" src="{{url('/images/home/20160226162531395.png')}}" title="诚信网站" border="0" height="32" hspace="0" vspace="0" width="90"></a></p></div><!--授权结束 -->
 </footer>

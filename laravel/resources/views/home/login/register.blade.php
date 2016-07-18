@@ -74,7 +74,7 @@ $.ajaxSetup({
 			</div>
 			<div class="login r">
 				已有华为帐号
-				<a href="#" class="login-a" title="登录">登录 </a>▶
+				<a href="{{url('/login')}}" class="login-a" title="登录">登录 </a>▶
 			</div>
 
 			<div id="zc">
@@ -138,7 +138,8 @@ $.ajaxSetup({
 
 
 
-			<a href="#" target="_blank"><em style="font-style: normal">|</em> </a><a style="text-decoration: underline;" target="blank" href="https://hwid1.vmall.com/CAS/portal/faq/faq.html">常见问题</a>
+			<a href="#" target="_blank"><em style="font-style: normal">|</em> </a>
+      <a style="text-decoration: underline;" target="blank" href="#">常见问题</a>
 		</p>
 
 
@@ -148,116 +149,6 @@ $.ajaxSetup({
 限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;保留一切权利&nbsp;&nbsp;苏B2-20070200
 号&nbsp;|&nbsp;苏ICP备09062682号-9</p>
 
-	   <div class="foot-selectCountry-margin">
-	     <div style="float:right;right:10px">
-
-		  </div>
-	     <div style="float:right;margin-right:10px">
-		     <div>
-		         <div id="selectedCountry">中国</div>
-		     </div>
-		  </div>
-
-	  </div>
 	</div>
 </div>
-
-	<script type="text/javascript">
-
- 		$(document).ready(function(){
- 			//drop menu
- 			$(".ddrop").click(function() {
- 				var open = $(this).data("open");
- 				if (!open) {
- 				$(this).children('.dpmenu').attr("tabindex", 0).fadeIn(300).focus();
- 				$(this).data("open", true);
- 				}
- 				});
-
- 				$(".dpmenu > li").click(function() {
- 				var $p = $(this).closest('.ddrop');
- 				$p.children('input').val($(this).data("value"));
- 				$p.children('span').text($(this).text());
- 				$(this).parent().fadeOut(300, function() {
- 				$p.data("open", false);
- 				});
- 				});
-
- 				$(".dpmenu").blur(function() {
- 				$(this).fadeOut(300, function() {
- 				$(this).parent().data("open", false);
- 				});
- 				});
-
-
-				$(".tick").on("click", function() {
-					$(this).data("value") == true ? $(this).trigger("turnoff") : $(this).trigger("turnon");
-				}).on("turnon", function() {
-					$(this).removeClass("off");
-					$(this).data("value", true);
-					$(this).trigger("change", [true]);
-					if($(".tick.off").length == 0) {
-						$("#btnSubmit").addClass("sel");
-					}
-				}).on("turnoff",function() {
-					$(this).addClass("off");
-					$(this).data("value", false);
-					$(this).trigger("change", [false]);
-					$("#btnSubmit").removeClass("sel");
-				});
-
-				//调整tips样式
-		 		$(".lb_opacity_Class").css("padding-top","8px");
-
-				//下拉列表
-		 		var items = [];
-		 		if (localInfo.countryCodes)
-		 		{
-		 			var contrysArr = localInfo.countryCodes.split(",");
-		 			$.each(contrysArr, function(n, value) {
-		 				var temp = value.split("(");
-		 				var key = temp[0];
-		 				if(key.indexOf("+")>-1) {
-			 				key = key.replace("+", "00");
-		 				}
-
-		 				if (key) {
-			 				var item = {
-			 					value:key,
-			 					label:value
-			 				};
-		 					items.push(item);
-		 				}
-		 			});
-
-		 		}
-		 		$('#input_languageCode').DropList({
-		 			items: items,
-		 			defaultValue:localInfo.default_country_code,
-		 			onChange: function(key, value) {
-		 				var temp = value.split("(");
-		 				if (temp.length > 1)
-		 				{
-		 					$("#countryCode").val(temp[0]);
-		 					var phone = $("#username").val();
-		 					if(phone != "") {
-		 						checkLengthByCountry($("#countryCode").val(), $("#username"), "#msg_phone", rss.error);
-			 					if(!valiMobile(phone))
-			 					{
-			 						showError($("#msg_phone"), rss.error);
-			 						return;
-			 					}
-		 					}
-		 				}
-		 			}
-		 	    });
-
-		 		//页面加载时获取国家列表
-		 		//getIPCountry();
-		 		getCountryRegion();
-		 		displayCountry();
-	 	});
- 	</script>
-
-
 </body></html>

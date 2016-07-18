@@ -21,13 +21,21 @@ Route::post('/login',"home\LoginController@logTodo");
 Route::get("/logout", "home\LoginController@logout");
 
 //前台用户信息
-Route::get('/userinfo',"home\UserController@index");
-Route::get('/edit',"home\UserController@create");
+Route::resource("/home/userinfo", "Home\UserController");
+Route::get( "/home/userinfo", "home\UserController@index");
+Route::post("/home/userinfo/tx","home\UserController@tx");
+
+//购物车
+Route::get("/shopcar","home\ShopcarController@index");
+Route::get("/order","home\ShopcarController@create");
+Route::get("/pay","home\ShopcarController@pay");
+Route::get("/usermall","home\ShopcarController@usermall");
+Route::get("/address","home\ShopcarController@address");
+
 
 
 //前台商品列表
 Route::resource("/Home/goodslist", "Home\IndexController");
-//Route::get('/Home/goodslist/{id}/show',"Home\IndexController@show");
 Route::post('/Home/goodslist/sou',"Home\IndexController@sou");
 Route::post("/Home/goodslist/comment","Home\IndexController@comment");
 
@@ -84,3 +92,10 @@ Route::post("/Admin/goods/details", "Admin\GoodsController@details");
 //咨询模块
 Route::resource("/Admin/Comment", "Admin\CommentController");
 Route::get("/Admin/Comment", "Admin\CommentController@index");
+
+//友情链接
+Route::resource("/Admin/Addres", "Admin\AddresController");
+Route::get("/Admin/Addres", "Admin\AddresController@index");
+Route::get("/Admin/Addres/create", "Admin\AddresController@create");
+Route::post("/Admin/Addres/store", "Admin\AddresController@store");
+Route::get("/Admin/Addres/delete/{id}", "Admin\AddresController@delete");

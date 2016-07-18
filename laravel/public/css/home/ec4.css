@@ -257,6 +257,9 @@ button {
 .span-300 {
     width: 300px;
 }
+.span-370 {
+    width: 370px;
+}
 .span-400 {
     width: 400px;
 }
@@ -410,7 +413,7 @@ html {
 .i-mall-uc, .minicart-pro-item, .ec-slider, .naver ul, .category-info {
 }
 .pager ul li.pgNext, .hotPro-area .h h2, .button-slider-prev, .button-slider-next, .button-slider-prev-high, .button-slider-next-high, .shortcut .s-dropdown s {
-    
+    background: transparent url("../../images/echannel/sprites/sprites3.png?20150213") no-repeat scroll 0 0;
 }
 .pro-area .p-sku em, .order-pro-title-area .h, .hotPro-relational-area span {
     background: transparent url("../../images/echannel/bg/bg1.png") no-repeat scroll 0 0;
@@ -461,18 +464,18 @@ html {
 .system-error-area .cartoon {
     background: transparent url("../../images/echannel/bg/bg24.png") no-repeat scroll 0 0;
 }
-/*.slogan li i, .service dt i {
-    background: transparent url("../../images/home/67.jpg") no-repeat scroll 0 0;
+.slogan li i, .service dt i {
+    background: transparent url("../../images/echannel/icon/icon14.png") no-repeat scroll 0 0;
 }
 .hungBar-top, .hungBar-feedback, .hungBar-olcs-qq, .hungBar-olcs-web {
-    background: transparent url("../../images/home/49.jpg") no-repeat scroll 0 0;
+    background: transparent url("../../images/echannel/icon/icon29.png") no-repeat scroll 0 0;
 }
 .follow {
-    background: transparent url("../../images/home/bg51.jpg") no-repeat scroll 0 0;
+    background: transparent url("../../images/echannel/bg/bg51.jpg") no-repeat scroll 0 0;
 }
 .follow i, .follow-panel-qrcode s {
-    background: transparent url("../../images/home/icon27.png") no-repeat scroll 0 0;
-}*/
+    background: transparent url("../../images/echannel/icon/icon27.png") no-repeat scroll 0 0;
+}
 .icon-authentication {
     background: transparent url("../../images/echannel/icon/icon45.png") no-repeat scroll 0 0;
 }
@@ -1842,19 +1845,19 @@ select.ec_linkSelect {
     width: 16px;
 }
 .service .s1 dt i {
-    background-position: 0 -54px;
+    background: transparent url("../../images/home/67.jpg") no-repeat scroll 0 0;
 }
 .service .s2 dt i {
-    background-position: -26px -54px;
+    background: transparent url("../../images/home/104.jpg") no-repeat scroll 0 0;
 }
 .service .s3 dt i {
-    background-position: -52px -54px;
+    background: transparent url("../../images/home/100.jpg") no-repeat scroll 0 0;
 }
 .service .s4 dt i {
-    background-position: -78px -54px;
+    background: transparent url("../../images/home/101.jpg") no-repeat scroll 0 0;
 }
 .service .s5 dt i {
-    background-position: 0 -78px;
+    background: transparent url("../../images/home/103.jpg") no-repeat scroll 0 0;
 }
 .service dd li {
     line-height: 24px;
@@ -2004,12 +2007,10 @@ select.ec_linkSelect {
     background-color: #fafafa;
     border: 1px solid #dddcdb;
     float: left;
-	text-align:center;
     height: 29px;
-    line-height: 29px;
+    line-height: 64px;
     overflow: hidden;
-    padding:0;
-    
+    padding: 0;
     width: 29px;
 }
 .pager ul li.first {

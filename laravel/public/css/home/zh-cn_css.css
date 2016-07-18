@@ -22,7 +22,7 @@
 /* mainbody */
 
 /*userinformation*/
-.upic{float: left; margin:64px 92px 0 64px;text-align: center; font-size: 14px;}
+.upic{float: left; margin:64px 92px 0 5px;text-align: center; font-size: 14px;}
 .upic img{border-radius:50%; width:160px;height:160px}
 .upic p{margin-top: 10px;}
 .umsg{ margin: 32px 0 90px 297px; text-align: left;} 

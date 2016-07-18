@@ -21,7 +21,10 @@ class IndexController extends Controller
     {
         //首页导航
         $firstNav=DB::table("admin_category")->where("pid","=","0")->get();
+        session(["firstNav"=>$firstNav]);
         $nav=Db::table("admin_category")->get();
+        session(["nav"=>$nav]);
+//        dd(Session::get("nav"));
 //        foreach($firstNav as $fn){
 //            $subclass=DB::table("admin_category")->where("pid","=", $fn->cid)->get();
 //        }
@@ -29,6 +32,8 @@ class IndexController extends Controller
 //
 ////        dd($firstNav);
 //          dd($subclass);
+        //友情链接
+        $addres=DB::table("home_addres")->get();
 
        //首页商品类别
          $phs = DB::table("admin_goods")->where("cid","=","46")->take(4)->get();
@@ -40,7 +45,7 @@ class IndexController extends Controller
         $pjs = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","7")->take(14)->get();
      //  dd($pjs);
 
-        return view("index",["firstNav" => $firstNav,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao]);
+        return view("index",["firstNav" => $firstNav,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao,"addres"=>$addres]);
 
 
     }
@@ -109,7 +114,7 @@ class IndexController extends Controller
              $cid = [$id];
          }
 //         dd($cid);
-         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->take(20)->get();
+         $goods=DB::table("admin_goods")->whereIn("cid",$cid)->paginate(20);
 //         dd($goods);
          return view("home.goodslist.index",compact("goods"));
     }
@@ -145,7 +150,7 @@ class IndexController extends Controller
                  ->where("admin_goods.name", "LIKE", "%" .  $request->get("keyword") . "%")
                 ->orWhere("admin_category.cname", "LIKE", "%" . $request->get("keyword") . "%")
                 ->orderBy("admin_goods.cid", "DESC")
-                ->get();
+                ->paginate(20);
         //获取搜索条件
         $keyword = $request->get("keyword");
 //         dd($keyword);
