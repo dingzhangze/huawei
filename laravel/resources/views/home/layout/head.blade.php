@@ -253,11 +253,16 @@ function showSelectRegion()
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
 			<div class="searchBar-form" id="searchBar-area">
-				<form method="get" onsubmit="return search(this)">
-					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label><input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword"
-                                                                                                                                                                                                        value="@if(!empty($keyword)){{$keyword}} @endif" ><input class="button" value="搜索" type="submit">
+                            
+                            
+				<form method="post"  action="{{url('Home/goodslist/sou')}}">
+					<label for="search-kw" class="text" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label>
+                                        <input autocomplete="off" style="z-index: 1;" class="text" maxlength="100" id="search-kw" type="text" name="keyword" value="@if(!empty($keyword)){{$keyword}} @endif" ><input class="button" value="搜索" type="submit">
 					<input id="default-search" value="荣耀8" type="hidden">
+                                        <input   name="_token"  value="{{csrf_token()}}" type="hidden">
 				</form>
+                            
+                            
 			</div>
 
 				<div class="searchBar-key">

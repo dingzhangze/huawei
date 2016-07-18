@@ -69,10 +69,7 @@ class GoodsController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
 
-=======
->>>>>>> ce2bd5e0650942b8ffd91d85fc41e5e55cfd19b5
         if(!empty(DB::table("admin_goods_details")->where("gid","=",$id)->get()))
         {
             $abc=DB::table("admin_goods_details")->where("gid","=",$id)->first();
@@ -84,10 +81,7 @@ class GoodsController extends Controller
             return view("admin.goods.details", compact("id"));
         }
         
-<<<<<<< HEAD
 
-=======
->>>>>>> ce2bd5e0650942b8ffd91d85fc41e5e55cfd19b5
     }
 
     /**

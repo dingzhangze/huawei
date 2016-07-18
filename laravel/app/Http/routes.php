@@ -30,7 +30,6 @@ Route::post("/home/userinfo/tx","home\UserController@tx");
 
 //前台商品列表
 Route::resource("/Home/goodslist", "Home\IndexController");
-//Route::get('/Home/goodslist/{id}/show',"Home\IndexController@show");
 Route::post('/Home/goodslist/sou',"Home\IndexController@sou");
 Route::post("/Home/goodslist/comment","Home\IndexController@comment");
 
@@ -87,3 +86,10 @@ Route::post("/Admin/goods/details", "Admin\GoodsController@details");
 //咨询模块
 Route::resource("/Admin/Comment", "Admin\CommentController");
 Route::get("/Admin/Comment", "Admin\CommentController@index");
+
+//友情链接
+Route::resource("/Admin/Addres", "Admin\AddresController");
+Route::get("/Admin/Addres", "Admin\AddresController@index");
+Route::get("/Admin/Addres/create", "Admin\AddresController@create");
+Route::post("/Admin/Addres/store", "Admin\AddresController@store");
+Route::get("/Admin/Addres/delete/{id}", "Admin\AddresController@delete");
