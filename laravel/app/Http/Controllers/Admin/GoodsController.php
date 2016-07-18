@@ -81,7 +81,6 @@ class GoodsController extends Controller
             return view("admin.goods.details", compact("id"));
         }
         
-
     }
 
     /**

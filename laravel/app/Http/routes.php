@@ -25,6 +25,12 @@ Route::resource("/home/userinfo", "Home\UserController");
 Route::get( "/home/userinfo", "home\UserController@index");
 Route::post("/home/userinfo/tx","home\UserController@tx");
 
+//购物车
+Route::get("/shopcar","home\ShopcarController@index");
+Route::get("/order","home\ShopcarController@create");
+Route::get("/pay","home\ShopcarController@pay");
+Route::get("/usermall","home\ShopcarController@usermall");
+Route::get("/address","home\ShopcarController@address");
 
 
 
