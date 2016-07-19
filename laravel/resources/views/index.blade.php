@@ -15,8 +15,6 @@
 
 </head>
 
-
-
 <body class="wide">
 <div class="shortcut">
     <div class="layout">
@@ -144,7 +142,7 @@
 			<div class="header-toolbar-item" id="header-toolbar-imall">
 				<!-- 21030909-我的商城-start -->
 				<div class="i-mall">
-					<div class="h"><a href="#" rel="nofollow" timetype="timestamp">我的商城</a>
+					<div class="h"><a href="{{url('Home/member')}}" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-imall-content">
               @if(empty(Session::get("userDatas")))

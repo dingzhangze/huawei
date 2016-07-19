@@ -29,8 +29,13 @@ Route::post("/home/userinfo/tx","home\UserController@tx");
 Route::get("/shopcar","home\ShopcarController@index");
 Route::get("/order","home\ShopcarController@create");
 Route::get("/pay","home\ShopcarController@pay");
-Route::get("/usermall","home\ShopcarController@usermall");
-Route::get("/address","home\ShopcarController@address");
+
+//用户个人中心
+Route::get("/Home/member/Myorder","Home\UserController@order");
+// Route::get("/Home/member/orderDetail","Home\UserController@order");
+Route::get("/Home/member/Myaddres","Home\UserController@site");
+Route::resource("/Home/member","Home\UserController");
+Route::get("/Home/member","Home\UserController@member");
 
 
 

@@ -483,13 +483,13 @@ html {
     background: transparent url("../../images/home/icon33.png") no-repeat scroll 0 0;
 }
 .arrival-remind-area s {
-    background: transparent url("../../../images/home/echannel/icon/icon31.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/icon31.png") no-repeat scroll 0 0;
 }
 .shortcut li {
-    background: transparent url("../../../images/home/echannel/bg/bg65.png?20150213") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/bg65.png?20150213") no-repeat scroll 0 0;
 }
 .category-banner dt {
-    background: rgba(0, 0, 0, 0) url("../../../images/home/echannel/bg/bg63.png?20150906") repeat-x scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../../images/home/bg63.png?20150906") repeat-x scroll 0 0;
 }
 .radio, .checkbox {
     cursor: pointer;
@@ -1705,7 +1705,7 @@ select.ec_linkSelect {
 }
 .breadcrumb-area {
     line-height: 1.5;
-    margin-left: 1px;
+    margin-left: 75px;
 }
 .breadcrumb-area {
     color: #bbb;

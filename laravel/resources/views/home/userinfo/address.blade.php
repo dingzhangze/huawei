@@ -5,7 +5,7 @@
 <div class="hr-10"></div>
 <div class="g">
 	<!--面包屑 -->
-<div class="breadcrumb-area"><a href="http://www.vmall.com/" title="首页">首页</a>&nbsp;&nbsp;\&nbsp;&nbsp;<em id="personCenter"><a href="http://www.vmall.com/member/" title="我的商城">我的商城</a></em><em id="pathPoint">&nbsp;&nbsp;\&nbsp;&nbsp;</em><span id="pathTitle">收货地址管理</span></div>	
+<div class="breadcrumb-area"><a href="{{url('/')}}" title="首页">首页</a>&nbsp;&nbsp;\&nbsp;&nbsp;<em id="personCenter"><a href="{{url('/home/member')}}" title="我的商城">我的商城</a></em><em id="pathPoint">&nbsp;&nbsp;\&nbsp;&nbsp;</em><span id="pathTitle">收货地址管理</span></div>	
 </div>
 <div class="hr-10"></div>
 
@@ -36,14 +36,32 @@
                         <tr>
                             <th rowspan="2" class="selecte-vat"><span class="required">*</span><label for="province">收货地址：</label></th>
                             <td>
-								<div id="myAddress-region" class="inline-block"><span class="ol_linkSelect ol_linkSelect_region"><select id="province" name="province" class="ec_linkSelect"><option selected="selected" value="">- 请选择 -</option><option value="3510">北京</option><option value="3511">安徽</option><option value="3656">福建</option><option value="3751">甘肃</option><option value="3853">广东</option><option value="4035">广西</option><option value="4158">贵州</option><option value="4261">海南</option><option value="4304">河北</option><option value="4489">河南</option><option value="4672">黑龙江</option><option value="4814">湖北</option><option value="4935">湖南</option><option value="5073">吉林</option><option value="5147">江苏</option><option value="5285">江西</option><option value="5399">辽宁</option><option value="5516">内蒙古</option><option value="5630">宁夏</option><option value="5662">青海</option><option value="5714">山东</option><option value="5873">山西</option><option value="6008">陕西</option><option value="6126">上海</option><option value="6147">四川</option><option value="6349">天津</option><option value="6370">西藏</option><option value="6451">新疆</option><option value="6565">云南</option><option value="6711">浙江</option><option value="6819">重庆</option></select></span></div>
-								<label id="myAddress-msg"></label>
+								<div>
+                                            <select id="s_province" name="s_province"></select>  
+                                            <select id="s_city" name="s_city" ></select>  
+                                            <select id="s_county" name="s_county"></select>
+                                            <script class="resources library" src="{{asset('/js/home/area.js')}}" type="text/javascript"></script>
+                                            
+                                            <script type="text/javascript">_init_area();</script>
+                                            </div>
+                                            <div id="show"></div>
+                                        </div>
+                                        <script type="text/javascript">
+                                        var Gid  = document.getElementById ;
+                                        var showArea = function(){
+                                            Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+                                            Gid('s_city').value + " - 县/区" + 
+                                            Gid('s_county').value + "</h3>"
+                                                                    }
+                                        Gid('s_county').setAttribute('onchange','showArea()');
+                                        </script>
 							</td>
                         </tr>
                         <tr class="tr-rel">
                             <td>
+                            <label for="address" class="textarea span-480" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label>
                             	<div class="inline-block relative">
-                            		<label for="address" class="textarea span-480" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);">详细地址</label><textarea style="z-index: 1;" validator="validator21467805414437" name="address" id="address" maxlength="100" class="textarea span-480"></textarea>
+                            		<textarea style="z-index: 1;" validator="validator21467805414437" name="address" id="address" maxlength="100" class="textarea span-480" placeholder="详细地址"></textarea>
                             	</div>
                             	<label class="vat" id="address-msg"></label>
                             </td>
@@ -58,9 +76,9 @@
                         <tr>
                             <th><span class="required">*</span><label for="mobile">手机号码：</label></th>
                             <td>
-								<div class="inline-block vam"><input validator="validator41467805414437" maxlength="15" name="mobile" id="mobile" class="text span-130 ime-disabled" alt="tel-msg" type="text"><label class="titlebox" for="phone">或者固定电话：</label></div>
-								<div class="inline-block vam relative"><label for="phone" class="text span-130 ime-disabled" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);">区号-主机-分机号</label><input style="z-index: 1;" validator="validator51467805414438" maxlength="20" name="phone" id="phone" class="text span-130 ime-disabled" alt="tel-msg" type="text"></div>
-								<label id="tel-msg"></label>
+								<div class="inline-block vam"><input validator="validator41467805414437" maxlength="15" name="mobile" id="mobile" class="text span-130 ime-disabled" alt="tel-msg" type="text"></div>
+								
+								
 			    			</td>
                         </tr>
                         <tr>
@@ -73,8 +91,8 @@
                         	<th>&nbsp;</th>
                         	<td>
                         		<div id="form-edit-button">
-                        			<input id="button-ok" class="button-action-ok" value="添加新地址" type="submit"><a href="javascript:;" id="button-cancel" class="button-action-cancel" onclick="ec.member.myAddress.reset()"><span>清&nbsp;&nbsp;空</span></a>
-                        			<label class="label-info" id="submit-msg"></label>
+                        			<input id="button-ok" class="button-action-ok" value="添加新地址" type="submit">
+                        			
                         		</div>
                         	</td>
                         </tr>
@@ -104,15 +122,13 @@
 	</div>
 	<div class="list-group" id="list-group"><div class="list-group-item" id="myAddress-area-28664189"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="col-name">张晓宇</td><td class="col-address">北京&nbsp;&nbsp;北京&nbsp;&nbsp;东城区&nbsp;&nbsp;北京市</td><td class="col-zip">111111</td><td class="col-tel"><p>13111112311</p></td><td class="col-operate"><p class="p-edit"><a class="edit" href="javascript:;" onclick="ec.member.myAddress.edit(28664189);" title="编辑"><span>编辑</span></a></p><p class="p-del"><a class="del" href="javascript:;" onclick="ec.member.myAddress.del(this,28664189);" title="删除"><span>删除</span></a></p><p class="p-state"><span class="default">默认地址</span></p></td></tr></tbody></table></div></div>
 </div>
-<textarea class="hide" id="success-tips">
-</textarea>
-<script src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/address.js"></script><script id="jsapi_loader0" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/jquery.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader0');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader0 fail!');} return; }ol._setLoadStatus("jquery.form","complete");})();</script><script id="jsapi_loader1" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/ajax.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader1');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader1 fail!');} return; }ol._setLoadStatus("ajax","complete");})();</script><script id="jsapi_loader2" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/box-min.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader2');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader2 fail!');} return; }ol._setLoadStatus("ec.box/box-min.js","complete");})();</script><script id="jsapi_loader3" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/region-min.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader3');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader3 fail!');} return; }ol._setLoadStatus("linkSelect/region-min.js","complete");})();</script><script id="jsapi_loader4" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/bigInt.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader4');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader4 fail!');} return; }ol._setLoadStatus("dh/bigInt.min.js","complete");})();</script><script id="jsapi_loader5" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/aes.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader5');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader5 fail!');} return; }ol._setLoadStatus("aes/aes.js","complete");})();</script><script id="jsapi_loader6" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/aesUtil.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader6');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader6 fail!');} return; }ol._setLoadStatus("aes/aesUtil.js","complete");})();</script><script id="jsapi_loader7" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/pbkdf2.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader7');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader7 fail!');} return; }ol._setLoadStatus("aes/pbkdf2.js","complete");})();</script><script id="jsapi_loader8" loadtype="insert" type="text/javascript" src="%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80_%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_%E5%8D%8E%E4%B8%BA%E5%95%86%E5%9F%8E_files/rc4.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader8');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader8 fail!');} return; }ol._setLoadStatus("crypt/rc4.js","complete");})();</script></div>
+ </div>
 	<div class="fl u-1-5">
     	
 
 <!--左边菜单 -->
 <div class="mc-menu-area">
-	<div class="h"><a href="http://www.vmall.com/member?t=1467805409931" class="button-go-mc" title="我的商城"><span>我的商城</span></a></div>
+	<div class="h"><a href="{{('/home/member')}}" class="button-go-mc" title="我的商城"><span>我的商城</span></a></div>
     <div class="b">
         <ul>
         	<li>

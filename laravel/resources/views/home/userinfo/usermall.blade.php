@@ -12,14 +12,14 @@
     <div class="fr u-4-5"><!-- 20141227-我的商城-欢迎信息-start -->
 <div class="myHome-welcome">
 	<div class="h">
-		<div class="w-img"><img src="./images/img88.jpg" alt=""></div>
+		<div class="w-img"><img src="{{Session::get("userDatas")->avartar}}" alt=""></div>
 		<div class="w-vip">
 				<i class="icon-vip-level-0"></i>
 		</div>
 	</div>
 	<div class="b">
 		<h2 class="w-name">
-			huafans01186357003，欢迎您！</h2>
+			{{Session::get("userDatas")->uname}}，欢迎您！</h2>
 		<div class="w-info">
 			<span>我的经验值：&nbsp;<em><a href="#" class="red">0</a></em></span>
 		   		<span><a class="link-non-validated" href="#" target="_blank">未验证手机</a></span>
@@ -60,13 +60,13 @@
 <div class="myHome-uneval-record">
 	<div class="myHome-order-title">
 		<div class="fl">
-			<h3>待评价列表（<a href="http://www.vmall.com/member/prdRemarkView?t=1467805370644&amp;tab=nocomment" id="member-notRemarkCount">0</a>）</h3>
+			<h3>待评价列表（<a href="#" id="member-notRemarkCount">0</a>）</h3>
 		</div>
 		<div class="fr">
-			<a href="http://www.vmall.com/member/order?t=1467805370644&amp;tab=nocomment" class="more">更多<em>&gt;</em></a>
+			<a href="#" class="more">更多<em>&gt;</em></a>
 		</div>
 	</div>
-	<div class="list-group" id="uneval-list-group"><div class="list-group-empty">您暂时没有待评价订单。<a href="http://www.vmall.com/">挑选喜欢的商品去&gt;&gt;</a></div></div>
+	<div class="list-group" id="uneval-list-group"><div class="list-group-empty">您暂时没有待评价订单。<a href="{{url('/')}}">挑选喜欢的商品去&gt;&gt;</a></div></div>
 </div>
 <!-- 20141227-我的商城-待评价列表-end -->    	
 
@@ -95,18 +95,16 @@
             		<span>个人中心</span>
             	</h3>
             	<ol>
-            		<li id="li-myAppointment"><a href="http://www.vmall.com/member/myAppointment?t=1467805370645" title="我的预约"><span>我的预约</span></a></li>
-                    <li id="li-notification"><a href="http://www.vmall.com/member/notification?t=1467805370645" title="到货通知"><span>到货通知</span></a></li>
-                    <li id="li-point"><a href="http://www.vmall.com/member/point?t=1467805370645" title="等级与特权"><span>等级与特权</span></a></li>
-                    <li id="li-authentication"><a href="http://www.vmall.com/authmember/accesstoken?t=1467805370645" title="实名认证"><span>实名认证</span></a></li>
-                    <li id="li-balance"><a href="http://www.vmall.com/member/balance?t=1467805370645" title="代金券"><span>代金券</span></a></li>
-					<li id="li-petal"><a href="http://www.vmall.com/member/petal?t=1467805370645" title="我的花瓣"><span>我的花瓣</span></a></li>
-                    <li id="li-coupon"><a href="http://www.vmall.com/member/coupon?t=1467805370645" title="我的优惠劵"><span>我的优惠劵</span></a></li>
+            		<li id="li-myAppointment"><a href="#" title="我的预约"><span>我的预约</span></a></li>
+                    <li id="li-notification"><a href="#" title="到货通知"><span>到货通知</span></a></li>
+                    <li id="li-point"><a href="#" title="等级与特权"><span>等级与特权</span></a></li>
+                    <li id="li-authentication"><a href="#" title="实名认证"><span>实名认证</span></a></li>
+                    <li id="li-balance"><a href="#" title="代金券"><span>代金券</span></a></li>
+					<li id="li-petal"><a href="#" title="我的花瓣"><span>我的花瓣</span></a></li>
+                    <li id="li-coupon"><a href="#" title="我的优惠劵"><span>我的优惠劵</span></a></li>
                     <li id="li-enterprise" class="hide"></li>
-                    <li id="li-myAddress"><a href="http://www.vmall.com/member/myAddress?t=1467805370645" title="收货地址管理"><span>收货地址管理</span></a></li>
-                    <!--  
-                    <li id="li-zp"><a href="/member/invoiceQualifications/view?t=1467805370645" title="专票资质"><span>专票资质</span></a></li>
-                	-->
+                    <li id="li-myAddress"><a href="{{url('Home/member/Myaddres')}}" title="收货地址管理"><span>收货地址管理</span></a></li>
+                    
                 </ol>
             </li>
             <li>

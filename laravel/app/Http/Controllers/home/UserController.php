@@ -31,7 +31,7 @@ class UserController extends Controller
      */
     public function create()
     {
-
+      
     }
 
     /**
@@ -125,5 +125,21 @@ class UserController extends Controller
         }
     }
 
+    //用户中心
+    public function member()
+    {
+        return view("home.userinfo.usermall");
+    }
 
+    //用户收货地址
+    public function site()
+    {
+        return view("home.userinfo.address");
+    }
+
+    //我的订单
+    public function order()
+    {
+        return view("home.userinfo.Myorder");
+    }
 }

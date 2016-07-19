@@ -294,7 +294,7 @@ function showSelectRegion()
 			<div class="header-toolbar-item" id="header-toolbar-imall">
 				<!-- 21030909-我的商城-start -->
 				<div class="i-mall">
-					<div class="h"><a href="http://www.vmall.com/member?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的商城</a>
+					<div class="h"><a href="{{url('Home/member')}}" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div style="display: none;" class="b" id="header-toolbar-imall-content">
 						<div class="i-mall-prompt" id="cart_unlogin_info">
