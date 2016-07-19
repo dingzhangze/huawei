@@ -68,7 +68,9 @@
     background: transparent url("../../images/echannel/icon/icon1.png") no-repeat scroll 0 0;
 }
 .pro-sku-area .selected s, .pro-ew-area .selected s, .icon-minus-2, .icon-plus-2, .pro-eval-impress .selected s {
-    background: transparent url("../../images/echannel/icon/icon31.png") no-repeat scroll 0 0;
+
+    background: transparent url("../../images/home/icon31.png") no-repeat scroll 0 0;
+
 }
 .pro-summary-area {
     background: transparent url("../../images/echannel/bg/bg54.png") no-repeat scroll 0 0;
@@ -744,6 +746,7 @@
     text-align: right;
 }
 .channel-list .pro-list {
+
     margin-left: 75px;
     padding-bottom: 20px;
     width: 1220px;

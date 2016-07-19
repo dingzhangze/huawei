@@ -938,8 +938,8 @@
 	<div class="footer-otherLink">
 		<p style="text-align:left;">友情链接： | 
                     
-                    @foreach($addres as $add)
-                    <a href="http://{{$add->addres}}" target="_blank">{{$add->name}}</a> | 
+                    @foreach($chaining as $add)
+                    <a href="http://{{$add->chaining}}" target="_blank">{{$add->name}}</a> | 
                     @endforeach
                     
                 </p>

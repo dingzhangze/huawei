@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB,Session,Validator;
-class AddresController extends Controller
+class chainingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class AddresController extends Controller
      */
     public function index()
     {
-      $addres=DB::table("home_addres")->get();  
-      return view("admin.Addres.index",compact("addres"));
+      $chaining=DB::table("home_chaining")->get();  
+      return view("admin.chaining.index",compact("chaining"));
 //        return 111;
     }
 
@@ -34,7 +34,7 @@ class AddresController extends Controller
      */
     public function create()
     {
-        return view("admin.Addres.create");
+        return view("admin.chaining.create");
     }
 
     /**
@@ -47,13 +47,13 @@ class AddresController extends Controller
     {
        $data = $request->except("_token");
        
-       str_replace(".","\.",$data["addres"]);
+       str_replace(".","\.",$data["chaining"]);
 //       dd($data1);
        
-       if (false !== $insertID = DB::table("home_addres")->insertGetId($data)) {
-             return redirect("/tips")->with(["info" => "添加成功! ID:" . $insertID, "url" => "/Admin/Addres"]);
+       if (false !== $insertID = DB::table("home_chaining")->insertGetId($data)) {
+             return redirect("/tips")->with(["info" => "添加成功! ID:" . $insertID, "url" => "/Admin/chaining"]);
          } else {
-             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/Addres"]);
+             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/chaining"]);
          }
     }
 
@@ -77,8 +77,8 @@ class AddresController extends Controller
     public function edit($id)
     {
 //       return 111;
-        $value=DB::table("home_addres")->where("aid",$id)->first();
-        return view("admin.Addres.edit",compact("value"));
+        $value=DB::table("home_chaining")->where("aid",$id)->first();
+        return view("admin.chaining.edit",compact("value"));
     }
 
     /**
@@ -92,12 +92,12 @@ class AddresController extends Controller
     {
        $data = $request->except("_token","_method");
 //       dd($data);
-        str_replace(".","\.",$data["addres"]);
+        str_replace(".","\.",$data["chaining"]);
         
-        if (false !== $insertID = DB::table("home_addres")->where("aid",$id )->update($data)) {
-             return redirect("/tips")->with(["info" => "修改成功! ID:" . $insertID, "url" => "/Admin/Addres"]);
+        if (false !== $insertID = DB::table("home_chaining")->where("aid",$id )->update($data)) {
+             return redirect("/tips")->with(["info" => "修改成功! ID:" . $insertID, "url" => "/Admin/chaining"]);
          } else {
-             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/Addres"]);
+             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/chaining"]);
          }
     }
 
@@ -114,10 +114,10 @@ class AddresController extends Controller
     
     public function delete(Request $request, $id)
     {
-       if (false !== $insertID = DB::table("home_addres")->where("aid",$id )->delete()) {
-             return redirect("/tips")->with(["info" => "删除成功! ID:" . $insertID, "url" => "/Admin/Addres"]);
+       if (false !== $insertID = DB::table("home_chaining")->where("aid",$id )->delete()) {
+             return redirect("/tips")->with(["info" => "删除成功! ID:" . $insertID, "url" => "/Admin/chaining"]);
          } else {
-             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/Addres"]);
+             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/chaining"]);
          }
     }
 }

@@ -107,7 +107,7 @@
 		<li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 订单管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav3">
-            <li><a href="" class="am-cf"><span class="am-icon-th"></span> 订单列表</a></li>
+            <li><a href="{{url('/Admin/addres')}}" class="am-cf"><span class="am-icon-th"></span> 订单列表</a></li>
 
           </ul>
         </li>
@@ -123,8 +123,8 @@
 		<li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 友情链接管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav5">
-            <li><a href="{{url('/Admin/Addres')}}" class="am-cf"><span class="am-icon-th"></span> 链接列表</a></li>
-            <li><a href="{{url('/Admin/Addres/create')}}"><span class="am-icon-puzzle-piece"></span> 添加链接</a></li>
+            <li><a href="{{url('/Admin/chaining')}}" class="am-cf"><span class="am-icon-th"></span> 链接列表</a></li>
+            <li><a href="{{url('/Admin/chaining/create')}}"><span class="am-icon-puzzle-piece"></span> 添加链接</a></li>
 
           </ul>
         </li>

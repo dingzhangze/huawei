@@ -123,7 +123,7 @@
 							<dt>购买数量：</dt>
 							<dd>
 							 <span class="stock-area">
-						     <a href="." class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
+						     <a href="" class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="" class="icon-plus-2 vam" title="加"><span>+</span></a>
    						     </span>
 							</dd>
 						</dl>
@@ -160,8 +160,10 @@
 
 <!--商品简介-提交操作 -->
 <div class="pro-fixed-action">
-    <div id="pro-select-sku" class="pro-selected">您选择了<b>陶瓷白/全网通版/4GB+64GB</b></div>
-    <div style="visibility: visible;" id="pro-operation" class="pro-action-area"><a href="." onclick="" class="button-add-cart button-style-1" title="加入购物车"><span>加入购物车</span></a><a href="." onclick="ec.product.orderNow()" class="button-book-2 button-style-2" title="立即下单"><span>立即下单</span></a></div>
+   
+    <div style="visibility: visible;" id="pro-operation" class="pro-action-area">\
+        <input name="" type="submit" class="button-add-cart button-style-1" value="加入购物车"/>
+        <input name="" type="submit" class="button-book-2 button-style-2" value="立即下单"/></div>
     <div class="pro-agreement-area hide" id="pro-agreement-area">
 		<input class="vam" checked="checked" id="pro-agreement-area-check" type="checkbox"><label for="" class="vam">同意</label>&nbsp;<a href="." class="vam" onclick="ec.product.showDepositAgreement()">订金支付协议</a>
 	</div>
