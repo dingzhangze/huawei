@@ -94,8 +94,12 @@ Route::resource("/Admin/Comment", "Admin\CommentController");
 Route::get("/Admin/Comment", "Admin\CommentController@index");
 
 //友情链接
-Route::resource("/Admin/Addres", "Admin\AddresController");
-Route::get("/Admin/Addres", "Admin\AddresController@index");
-Route::get("/Admin/Addres/create", "Admin\AddresController@create");
-Route::post("/Admin/Addres/store", "Admin\AddresController@store");
-Route::get("/Admin/Addres/delete/{id}", "Admin\AddresController@delete");
+Route::resource("/Admin/chaining", "Admin\chainingController");
+Route::get("/Admin/chaining", "Admin\chainingController@index");
+Route::get("/Admin/chaining/create", "Admin\chainingController@create");
+Route::post("/Admin/chaining/store", "Admin\chainingController@store");
+Route::get("/Admin/chaining/delete/{id}", "Admin\chainingController@delete");
+
+//订单管理
+Route::resource("/Admin/addres", "Admin\addresController");
+Route::get("/Admin/addres", "Admin\addresController@index");

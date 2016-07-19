@@ -33,7 +33,7 @@ class IndexController extends Controller
 ////        dd($firstNav);
 //          dd($subclass);
         //友情链接
-        $addres=DB::table("home_addres")->get();
+        $chaining=DB::table("home_chaining")->get();
 
        //首页商品类别
          $phs = DB::table("admin_goods")->where("cid","=","46")->take(4)->get();
@@ -45,7 +45,7 @@ class IndexController extends Controller
         $pjs = DB::table("admin_goods")->leftJoin("admin_category", "admin_goods.cid", "=", "admin_category.cid")->where("pid","=","7")->take(14)->get();
      //  dd($pjs);
 
-        return view("index",["firstNav" => $firstNav,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao,"addres"=>$addres]);
+        return view("index",["firstNav" => $firstNav,"nav" => $nav,"phones"=> $phones, "pban" => $pban, "pc" => $pc,"zns"=> $zns,"pjs"=>$pjs,"phs"=>$phs,"rexiao"=>$rexiao,"chaining"=>$chaining]);
 
 
     }
