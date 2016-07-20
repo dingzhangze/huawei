@@ -41,12 +41,15 @@ class ShopcarController extends Controller
     
     public  function order()
     {
+        $uid=Session::get("userDatas")->id;
+        $site=DB::table("home_address")->where("uid",$uid)->get();
+//        dd($site);
         $id = Session::get("userDatas")->uname;
         
         $goods = Session::get("cart")["$id"];
        // dd($goods);
         
-        return view("/home/shopcar/order",compact("goods"));
+        return view("/home/shopcar/order",["goods"=>$goods,"site"=>$site]);
     }
 
 
@@ -67,7 +70,7 @@ class ShopcarController extends Controller
         $sess["$id"] = $old;
         Session::put("cart",$sess);
         Session::save();
-       dd(Session::get("cart"));
+     //  dd(Session::get("cart"));
     }
 
     /**
@@ -123,5 +126,26 @@ class ShopcarController extends Controller
         Session::save();
         //回调
         return back();
+    }
+    
+    //订单提交
+    public function orders(Request $request) 
+    {
+       $data = $request->except("_token");
+       $data["number"] = rand(100000,999999);
+       $data["ordertime"] = date("Y-m-d H:i:s");
+       $name =Session::get("userDatas")->uname;
+      $goods =  Session::get("cart")["$name"];
+     // dd($goods);
+        foreach($goods as $good) {
+             $datas =  array_merge($good,$data);
+             DB::table("home_orders")->insertGetId($datas);
+                 
+        }
+       $goodss =  DB::table("home_orders")->where("number",$data["number"])->first();
+     // dd($goodss);
+     return view("/home/shopcar/pay",compact("goodss"));
+        
+       
     }
 }

@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Language" content="zh-cn">
 <title>订单创建成功华为商城</title>
-<link rel="shortcut icon" href="http://www.vmall.com/favicon.ico">
+<link rel="shortcut icon" href="">
 <link href="{{asset('/css/home/ec2.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/main4.css')}}" rel="stylesheet" type="text/css">
 </head>
@@ -25,23 +25,23 @@
     <div class="layout">
 		<div class="s-sub">
 			<ul>
-				<li class="s-hw"><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
-				<li class="s-honor"><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+				<li class="s-hw"><a href="" target="_blank">华为官网</a></li>
+				<li class="s-honor"><a href="" target="_blank">荣耀官网</a></li>
 				<li class="s-appsoft">
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://emui.huawei.com/appsoft/" target="_blank">软件应用</a>
+							<a href="" target="_blank">软件应用</a>
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></p>
-							<p><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></p>
-							<p><a href="http://cloud.huawei.com/" target="_blank">云服务</a></p>
-							<p><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></p>
+							<p><a href="" target="_blank">EMUI</a></p>
+							<p><a href="" target="_blank">应用市场</a></p>
+							<p><a href="" target="_blank">云服务</a></p>
+							<p><a href="" target="_blank">开发者联盟</a></p>
 						</div>
 					</div>	
 					
-				</li><li class="s-club"><a href="http://club.huawei.com/" target="_blank">花粉俱乐部</a></li>
+				</li><li class="s-club"><a href="" target="_blank">花粉俱乐部</a></li>
 				<li class="s-sr"><a href="javascript:;" onclick="showSelectRegion()">Select Region</a></li>
 			</ul>
 		</div>
@@ -72,11 +72,11 @@
 					</div>
 				</li>
 				<li class="s-myOrders">
-					<a href="http://www.vmall.com/member/order?t=14678053011651467805305698" rel="nofollow" timetype="timestamp">我的订单</a>
+					<a href="" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>
-				<li class="s-promo"><a href="http://www.vmall.com/priority" rel="nofollow">V码(优购码)</a></li>
+				<li class="s-promo"><a href="" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>
-				<li class="s-mobile"><a href="http://www.vmall.com/appdownload" target="_blank">手机版</a></li>
+				<li class="s-mobile"><a href="" target="_blank">手机版</a></li>
 				<li class="s-sitemap">
 					<div class="s-dropdown ">
 						<div class="h">
@@ -84,11 +84,11 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://www.vmall.com/help/index.html">帮助中心</a></p>
-							<p><a href="http://consumer.huawei.com/minisite/HiSuite_cn/" target="_blank">PC软件</a></p>
-							<p><a href="http://vmall.118100.cn/" target="_blank">数字音乐</a></p>
-							<p><a href="http://www.hwtrip.com/" target="_blank">爱旅</a></p>
-							<p><a href="http://dbank.vmall.com/" target="_blank">华为网盘</a></p>
+							<p><a href="">帮助中心</a></p>
+							<p><a href="" target="_blank">PC软件</a></p>
+							<p><a href="/" target="_blank">数字音乐</a></p>
+							<p><a href="" target="_blank">爱旅</a></p>
+							<p><a href="" target="_blank">华为网盘</a></p>
 						</div>
 					</div>
 				</li>
@@ -129,10 +129,10 @@
 		<div class="h">
 			<s class="icon-success-7"></s>
 			<h3>订单提交成功，请您尽快付款！</h3>	
-			<p name="order-pay-info" ordertype="">订单号：&nbsp;&nbsp;2390112920&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;付款金额（元）：&nbsp;&nbsp;<b>
-				1599.00
+			<p name="order-pay-info" ordertype="">订单号：&nbsp;&nbsp;HW000{{$goodss->number}}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;付款金额（元）：&nbsp;&nbsp;<b>
+				{{$goodss->total}}
 			</b>&nbsp;<b>元</b></p>
-			<div class="tips">请您在&nbsp;&nbsp;<b id="lastPayTime">2016-07-07 19:41</b>&nbsp;完成支付，否则订单将自动取消。</div>
+			<div class="tips">请您在&nbsp;&nbsp;<b id="lastPayTime">{{$goodss->ordertime}}</b>&nbsp;完成支付，否则订单将自动取消。</div>
 			<div class="hr-5"></div>
 		</div>
 		<div class="b">
@@ -141,28 +141,28 @@
 				
 					<tr>
 						<th>订单编号：</th>
-						<td><span>2390112920</span></td>
+						<td><span>HW000{{$goodss->number}}</span></td>
 					</tr>
 					<tr>
 						<th>订单金额：</th>
 						<td>
-							1599.00元	
+							{{$goodss->total}}
 						</td>
 					</tr>
 					
 					<tr>
 						<th>收货信息：</th>
 						<td>
-							北京北京东城区北京市&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							张晓宇&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							13111112311
+							{{$goodss->address}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							{{$goodss->name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							{{$goodss->phone}}
 						</td>
 					</tr>
 
 					
 					<tr>
 						<th>购买日期：</th>
-						<td>2016-07-06 19:41:41</td>
+						<td>{{$goodss->ordertime}}</td>
 					</tr>
 					<tr>
 						<th>配送方式：</th>
@@ -179,7 +179,7 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="f"><a href="javascript:;" onclick="$('#order-confirm-detail').toggleClass('order-confirm-expand')">订单详情<i></i><s></s><b></b></a></div>
+		<div class="f"></div>
 	</div><!-- 20131130-订单-确认-end -->
 
 	<!--订单-表单-支付方式-20121012 -->
