@@ -146,6 +146,7 @@ class UserController extends Controller
     //收货地址入库
     public function address(Request $request)
     {
+        $id=Session::get("userDatas")->id;
        //接受数据
         $data = $request->except("_token");
         $data["address"]=$data["s_province"]."-".$data["s_city"]."-".$data["s_county"]."-".$data["add_detail"];
@@ -221,5 +222,40 @@ class UserController extends Controller
         return view("home.userinfo.Myorder");
     }
 
+    
+        //收货地址入库
+    public function add(Request $request)
+    {
+        $id=Session::get("userDatas")->id;
+       //接受数据
+        $data = $request->except("_token");
+//        $data["address"]=$data["s_province"]."-".$data["s_city"]."-".$data["s_county"]."-".$data["add_detail"];
+//       unset($data["s_province"],$data["s_city"],$data["s_county"],$data["add_detail"]);
+        
+         //数据有效性验证
+            $this->validate($request,[
+            "name"=>"required",
+            "address"=>"required",
+            "phone"=>"required",
+            ],[
+            "name.required"=>"收货人未填写",
+            "address.required"=>"地址不能为空",
+           "phone.required"=>"电话号码不能为空"
+            ]);
+            $data["uid"]=$id;
+            //执行数据创建
+            if (FALSE !== DB::table("home_address")->insertGetId($data)) {
+                return back()->with(["info" => "添加成功"]);
+            }else {
+                return back()->with(["info" => "添加失败"]);
+            }
+        // $insertID=DB::table("home_address")->insertGetId($data);
+        //返回提示
+        if ($insertID !== false)
+        {
+            return back();
+        }
+        
+    }
 
 }

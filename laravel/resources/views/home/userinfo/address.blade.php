@@ -61,7 +61,7 @@
                             <td>
                             <label for="address" class="textarea span-480" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; color: rgb(153, 153, 153);"></label>
                             	<div class="inline-block relative">
-                            		<textarea style="z-index: 1;" validator="validator21467805414437" name="add_detail"  maxlength="100" class="textarea span-480" placeholder="详细地址" >@if(!empty($alter)) {{$alter->address}}@endif</textarea>
+                                        <textarea style="z-index: 1;" validator="validator21467805414437" name="add_detail" id="address" maxlength="100" class="textarea span-480" placeholder="详细地址"></textarea>
                             	</div>
                             	<label class="vat" id="address-msg"></label>
                             </td>

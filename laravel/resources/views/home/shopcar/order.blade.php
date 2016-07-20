@@ -1,3 +1,8 @@
+<?php  
+    if(empty(Session::get("userDatas"))){ 
+        return redirect("/login");
+    }
+?>
 <!DOCTYPE html>
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,6 +12,15 @@
 <link href="{{asset('/css/home/ec4.css')}}" rel="stylesheet" type="text/css">
 
 <link href="{{asset('/css/home/main9.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('/css/home/main7.css')}}" rel="stylesheet" type="text/css">
+<meta name="csrf-token" content="{{ csrf_token() }}" />
+	<script>
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		}
+	});
+	</script>
 </head>
 
 
@@ -49,18 +63,21 @@
 		</div>
 		<div class="s-main">
 			<ul>
+                            @if(empty(Session::get("userDatas")))
 				<li style="display: none;" class="s-login" id="unlogin_status">
 						<a href="" rel="nofollow">登录</a>
 						&nbsp;&nbsp;&nbsp;<a href="" rel="nofollow">注册</a>
 				</li>
+                                    @else
 				<li style="display: list-item;" class="s-user hide" id="login_status">
 					<!--
 						ie6下鼠标悬停追加ClassName： hover
 						示例：[ s-dropdown hover ]
 					-->
+                                    
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">dingzha***...</a>
+							<a href="" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">{{Session::get("userDatas")->uname}}.</a>
 							 <em class="vip-state" id="vip-info">
 								<a style="display: none;" class="link-noAct" href="" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
 								<a href="" title="VMALL V0会员" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
@@ -72,7 +89,9 @@
 							<p><a href="https://hwid1.vmall.com/oauth2/userCenter/hwAccount?reqClientType=26&amp;loginChannel=26000000&amp;themeName=cloudTheme" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
 						</div>
 					</div>
+                                       
 				</li>
+                                 @endif
 				<li class="s-myOrders">
 					<a href="" timetype="timestamp">我的订单</a>
 				</li>
@@ -129,19 +148,67 @@
 	    	<!-- 20140813-订单-表单-地址-start -->
     	<div class="order-address" id="order-address-mod">
     	
-			<h3 class="title">收货人信息<b>[<a id="addAddress" href="javascript:;" onclick="">使用新地址</a>]</b></h3>
+			<h3 class="title">收货人信息</h3>
 			<div style="display: none;" class="order-address-list" id="order-address-list">
 				<ol>
 				</ol>
 			</div>
+                             @if(!empty($site)) 
+                        <div style="display: block;" class="myAddress-record hide" id="myAddress-record">
+                        <div class="list-group-title">
+                    
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                                <tr>
+                                                        <th class="col-name">收货人</th>
+                                                        <th class="col-address">收货地址</th>
+                                                        <th class="col-zip">邮编</th>
+                                                        <th class="col-tel">手机/电话</th>
+                                                   
+                                                </tr>
+                                        </thead>
+                                </table>
+                        </div>
+                          
+                      @foreach($site as $Uadd)
+                      <div class="list-group" id="list-group"><div class="list-group-item" id="myAddress-area-28664189"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="col-name">{{$Uadd->name}}</td><td class="col-address"><center>{{$Uadd->address}}</center></td><td class="col-zip">{{$Uadd->postcode}}</td><td class="col-tel"><p>{{$Uadd->phone}}</p></tr></tbody></table></div></div>
+                    @endforeach
+                        </div>
+                        @else
 			<!-- 20140813-订单-表单-地址-空数据-start -->
-			<div class="order-address-empty" id="order-address-empty">您还没有收货地址，马上&nbsp;<a id="creatAddress" href="javascript:;" onclick="ec.order.myAddress.add()">添加</a>&nbsp;吧！</div><!-- 20140813-订单-表单-地址-空数据-end -->
+                        <div class="order-address-empty" id="order-address-empty">
+                            <form action="/Home/member/Myadd" method="post" >
+                               <input type="hidden" name="_token" value="{{csrf_token()}}" />
+                                <table class="orderadd">
+                                    <tr >
+                                        <td>收货人</td>
+                                        <td><input type="text" name="name"  value="" class="dd"></td>
+                                        <td class="ds">收货地址</td>
+                                        <td><input type="text" name="address"  value="" class="dd"></td>
+                                    </tr>
+                                    <tr class="sx">
+                                        <td>邮编</td>
+                                        <td><input type="text" name="postcode"  value="" class="dd"></td>
+                                        <td class="ds">手机号码</td>
+                                        <td><input type="text" name="phone"   value="" class="dd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="sub1">
+                                            <input type="submit" value="提交" class="sub" >
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div><!-- 20140813-订单-表单-地址-空数据-end -->
 			<div id="address-more" class="hide">
 				<a href="javascript:;" class="address-expand">更多地址<i></i></a>
 			</div>
 			<input name="orderDistrict" id="order-district" type="hidden">
             </div>
-			
+			@endif
 		<!--    新的发票信息【End】            --><!--modify by l00222000 增加支持电子发票 20150320-->
 		
 		<form id="order-confirm-form" action="/order/createcart" autocomplete="off" method="post">
@@ -396,9 +463,20 @@
 				</div>
 				<!-- 20140630-订单-下单验证-end -->
 				   <span class="p-subtotal-price">应付总额：<b>¥<span class="vab" id="payableTotal">{{$total}}</span></b></span>
-                                   <form method="post" action=""> 
-
+                              
+                                   <form method="post" action="/home/shopcar/orders"> 
+                          
+                                  <input type="hidden" name="_token" value="{{csrf_token()}}" />
+                                   <input type="hidden"  name="uid" value="{{Session::get("userDatas")->id}}">
+                                   <input type="hidden"  name="name" value="{{$Uadd->name}}">
+                                   <input type="hidden"  name="address" value="{{$Uadd->address}}">
+                                   <input type="hidden"  name="phone" value="{{$Uadd->phone}}">
+                                    <input type="hidden"  name="total" value="{{$total}}">
                                    
+                                
+                                  
+                              
+                                         
 				<input type="submit"  class="button-style-1 button-submit-order" value="提交订单" seed="checkout-submit">
                                 
                                 

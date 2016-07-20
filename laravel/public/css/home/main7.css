@@ -8379,3 +8379,26 @@ input.button-action-ok, input.button-action-cancel, input.button-action-save, in
     line-height: 30px;
    color:red;
 }
+.dd{
+    width: 200px;
+    height: 25px;
+  
+}
+.ds{
+     padding-left: 80px;
+}
+.sx{
+   line-height: 70px;
+   
+}
+.orderadd{
+    margin: auto;
+}
+.sub{
+    
+    width: 50px;
+    height:30px;
+}
+.sub1{
+   padding-left:180px;
+}

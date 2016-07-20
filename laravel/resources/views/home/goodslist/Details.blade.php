@@ -123,11 +123,9 @@
 							<dt>购买数量：</dt>
 							<dd>
 							 <span class="stock-area">
-<<<<<<< HEAD
-						     <a href="." class="icon-minus-2 vam" title="-"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
-=======
+
 						     <a href="" class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="" class="icon-plus-2 vam" title="加"><span>+</span></a>
->>>>>>> e8238a9f7ef1351cb1a2aa5b19016b5e101047f2
+
    						     </span>
 							</dd>
 						</dl>
