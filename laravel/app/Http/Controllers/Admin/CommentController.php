@@ -109,4 +109,12 @@ class CommentController extends Controller
     {
         //
     }
+    public function delete(Request $request, $id)
+    {
+       if (false !== $insertID = DB::table("admin_goods_comment")->where("id",$id )->delete()) {
+             return redirect("/tips")->with(["info" => "删除成功! ID:" . $insertID, "url" => "/Admin/Comment"]);
+         } else {
+             return redirect("/tips")->with(["info" => "出错了!" . $insertID, "url" => "/Admin/Comment"]);
+         }
+    }
 }

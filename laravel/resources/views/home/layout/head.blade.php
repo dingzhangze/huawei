@@ -39,6 +39,13 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 	catch (err){}
 })();
 </script>
+<script>
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+</script>
 <title>华为手机【报价 价格 大全 怎么样】_华为商城</title>
 <meta name="keywords" content="华为手机报价,华为智能手机,华为智能手机报价,">
 <meta name="description" content="华为商城是华为旗下面向全国服务的电子商务官网。我们提供最新款的华为智能手机的价格、参数、图片大全等信息。官方品质保证，全国价格最低，欢迎选购！">
@@ -294,7 +301,7 @@ function showSelectRegion()
 			<div class="header-toolbar-item" id="header-toolbar-imall">
 				<!-- 21030909-我的商城-start -->
 				<div class="i-mall">
-					<div class="h"><a href="http://www.vmall.com/member?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的商城</a>
+					<div class="h"><a href="{{url('Home/member')}}" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
 					<div style="display: none;" class="b" id="header-toolbar-imall-content">
 						<div class="i-mall-prompt" id="cart_unlogin_info">

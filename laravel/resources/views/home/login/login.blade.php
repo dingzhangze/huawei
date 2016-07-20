@@ -64,6 +64,17 @@ $.ajaxSetup({
 					<div class="form-edit-area">
 						<table border="0" cellpadding="0" cellspacing="0">
 							<tbody>
+                                                            <tr>
+                                                                <td>{{ session("info") }}</td>
+                                                            </tr>
+                                                                    <tr><td>
+                                                                    @if(count($errors) > 0)
+                                                                    @foreach($errors->all() as $e)
+                                                                        <center> <li>{{$e}}</li></center>
+                                                                    @endforeach
+                                                                    @endif
+                                                                </td></tr>
+                                                            
 								<tr>
 									<td><label for="login_userName" class="lb_opacity_Class" style="display: block; position: absolute; cursor: text; float: left; z-index: 2; padding-left: 1px; padding-top: 1px;">
                       <div class="text vam" style="border: medium none; background: transparent none repeat scroll 0% 0%; cursor: text; margin: 2px; color: rgb(204, 204, 204);" tabindex="-1"></div></label>
@@ -138,14 +149,8 @@ $.ajaxSetup({
 	</div>
 <div class="login-foot">
 <!-- 底部  -->
-{{ session("info") }}
-<ul>
-@if(count($errors) > 0)
-		@foreach($errors->all() as $e)
-		<li>{{$e}}</li>
-		@endforeach
-@endif
-</ul>
+
+
 	<div class="wp ft">
 		<p>
 

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Gregwar\Captcha\CaptchaBuilder;
-use Session,DB,Hash;
+use Session,DB,Hash,Validator;
 
 class LoginController extends Controller
 {
@@ -45,11 +45,11 @@ class LoginController extends Controller
     if(empty($userRec))
     {
       $request->flash();
-      return back()->with(["info"=>"账号不存在"]);
+      return back()->with(["info"=>"账号不存在!"]);
     }else if(!Hash::check($data["password"],$userRec->password))
     {
       $request->flash();
-      return back()->with(["info"=>"密码错误"]);
+      return back()->with(["info"=>"密码错误!"]);
     }else
     {
       //返回结果

@@ -20,7 +20,7 @@
 <!-- 20141216-我的收货地址-表单-编辑地址-start -->
 <div class="myAddress-edit" id="myAddress-edit">
     <div class="form-edit-panels" id="form-edit-panels">
-	    <form id="myAddress-form" action="/Home/member/Myaddres"  method="post"  data-type="add">
+	    <form  action="/Home/member/edit/{{$ids}}"  method="post"  data-type="add">
         <input type="hidden" name="_token" value="{{csrf_token()}}" />
 
             <div class="form-edit-table">
@@ -85,7 +85,7 @@
                         	<th>&nbsp;</th>
                         	<td>
                         		<div id="form-edit-button">
-                        			<input id="button-ok" class="button-action-ok" value="添加收货地址" type="submit">
+                        			<input id="button-ok" class="button-action-ok" value="确定" type="submit">
                         			
                         		</div>
                         	</td>

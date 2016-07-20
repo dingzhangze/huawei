@@ -18,13 +18,13 @@
           </tr>
           </thead>
           <tbody>
-              @foreach($addres as $add)
+              @foreach($chaining as $add)
           <tr>
               <td>{{$add->aid}}</td>
               <td>{{$add->name}}</td>
-              <td>{{$add->addres}}</td>
+              <td>{{$add->chaining}}</td>
        
-            <td><a href="/Admin/Addres/{{$add->aid}}/edit">修改</a>  <a href="/Admin/Addres/delete/{{$add->aid}}">删除</a></td>
+            <td><a href="/Admin/chaining/{{$add->aid}}/edit">修改</a>  <a href="/Admin/chaining/delete/{{$add->aid}}">删除</a></td>
           </tr>
          
                @endforeach

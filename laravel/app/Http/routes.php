@@ -31,6 +31,19 @@ Route::resource("/home/shopcar","Home\ShopcarController");
 Route::get("/home/shopcar/delete/{key}", "Home\ShopcarController@destroy");
 
 
+//用户个人中心
+Route::get("/Home/member/Myorder","Home\UserController@order");
+// Route::get("/Home/member/orderDetail","Home\UserController@order");
+Route::get("/Home/member/Myaddres","Home\UserController@site");
+Route::post("/Home/member/Myaddres","Home\UserController@address");
+Route::get("/Home/member/delete/{id}","Home\UserController@delete");
+Route::get("/Home/member/edit/{id}","Home\UserController@alter");
+Route::post("/Home/member/edit/{id}","Home\UserController@editaddr");
+Route::resource("/Home/member","Home\UserController");
+Route::get("/Home/member","Home\UserController@member");
+
+
+
 
 
 //前台商品列表
@@ -91,10 +104,15 @@ Route::post("/Admin/goods/details", "Admin\GoodsController@details");
 //咨询模块
 Route::resource("/Admin/Comment", "Admin\CommentController");
 Route::get("/Admin/Comment", "Admin\CommentController@index");
+Route::get("/Admin/Comment/delete/{id}", "Admin\CommentController@delete");
 
 //友情链接
-Route::resource("/Admin/Addres", "Admin\AddresController");
-Route::get("/Admin/Addres", "Admin\AddresController@index");
-Route::get("/Admin/Addres/create", "Admin\AddresController@create");
-Route::post("/Admin/Addres/store", "Admin\AddresController@store");
-Route::get("/Admin/Addres/delete/{id}", "Admin\AddresController@delete");
+Route::resource("/Admin/chaining", "Admin\chainingController");
+Route::get("/Admin/chaining", "Admin\chainingController@index");
+Route::get("/Admin/chaining/create", "Admin\chainingController@create");
+Route::post("/Admin/chaining/store", "Admin\chainingController@store");
+Route::get("/Admin/chaining/delete/{id}", "Admin\chainingController@delete");
+
+//订单管理
+Route::resource("/Admin/addres", "Admin\addresController");
+Route::get("/Admin/addres", "Admin\addresController@index");

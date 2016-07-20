@@ -42,7 +42,12 @@
 </div>
 <div class="am-g">
   <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-    {{session("info")}}
+    <center>{{session("info")}}</center>
+     @if(count($errors) > 0)
+        @foreach($errors->all() as $e)
+        <center> <li>{{$e}}</li></center>
+        @endforeach
+    @endif
     <form method="post" class="am-form" name="login" action="/Admin/login/logTodo">
       <input type="hidden" name="_token" value="{{$data["_token"] or csrf_token()}}" />
       <label for="uname">用户名:</label>

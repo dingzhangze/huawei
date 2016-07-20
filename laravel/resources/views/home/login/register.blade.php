@@ -8,18 +8,6 @@
 <link href="{{asset('/css/home/zh-cn_css.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/zh-cn.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/dialog.css')}}" rel="stylesheet" type="text/css">
-<script type="text/javascript">var localHttps="https://hwid1.vmall.com/CAS";var currentSiteID="1";</script>
-<script src="{{asset('/js/home/jsapi.js')}}" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
-<script src="{{asset('/js/home/jquery-1.js')}}" id="jsid"></script>
-<script src="{{asset('/js/home/ec_002.js')}}"></script>
-<script src="{{asset('/js/home/casui.js')}}"></script>
-<script src="{{asset('/js/home/ec.js')}}"></script>
-<script src="{{asset('/js/home/commonjs.js')}}"></script>
-<script src="{{asset('/js/home/base.js')}}"></script>
-
-
-<script src="{{asset('/js/home/casui.js')}}"></script>
-<script src="{{asset('/js/home/uc_base.js')}}"></script>
 
 <script>
 $.ajaxSetup({
@@ -85,6 +73,14 @@ $.ajaxSetup({
 
         <input type="hidden" name="_token" value="{{csrf_token()}}" />
 			  <div class="zc_main_top">
+                              <div class="zc_ra1"><center>{{ session("info") }}</center></div>
+                              <div class="zc_ra1">
+                                    @if(count($errors) > 0)
+                                    @foreach($errors->all() as $e)
+                                    <center>{{$e}}</center>
+                                    @endforeach
+                                    @endif
+                              </div>
 				<div class="zc_ra1">账户<input type="text" value="" name="uname"></div>
 				<div class="zc_ra1">密码<input type="password" value="" name="password"></div>
 				<div class="zc_ra2">确认密码<input type="password" value="" name="repassword"></div>
@@ -101,14 +97,8 @@ $.ajaxSetup({
 				</div>
 			</div>
 			<div class="zc_foot">
-        {{ session("info") }}
-        <ul>
-        @if(count($errors) > 0)
-            @foreach($errors->all() as $e)
-            <li>{{$e}}</li>
-            @endforeach
-        @endif
-        </ul>
+        
+        
 			</div>
         </form>
         </table>

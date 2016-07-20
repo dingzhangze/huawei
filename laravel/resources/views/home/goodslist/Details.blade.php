@@ -123,7 +123,11 @@
 							<dt>购买数量：</dt>
 							<dd>
 							 <span class="stock-area">
+<<<<<<< HEAD
 						     <a href="." class="icon-minus-2 vam" title="-"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
+=======
+						     <a href="" class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="" class="icon-plus-2 vam" title="加"><span>+</span></a>
+>>>>>>> e8238a9f7ef1351cb1a2aa5b19016b5e101047f2
    						     </span>
 							</dd>
 						</dl>
@@ -168,8 +172,10 @@
     <input type="hidden" name="color" value="{{$goodslist->color}}">
     <input type="hidden" name="count" value="1">
 <div class="pro-fixed-action">
-    <div id="pro-select-sku" class="pro-selected">您选择了<b>陶瓷白/全网通版/4GB+64GB</b></div>
+
+    <div id="pro-select-sku" class="pro-selected"></div>
     <div style="visibility: visible;" id="pro-operation" class="pro-action-area"> 
+
         <input name="" type="submit" class="button-add-cart button-style-1" value="加入购物车"/>
         <input name="" type="submit" class="button-book-2 button-style-2" value="立即下单"/></div>
     <div class="pro-agreement-area hide" id="pro-agreement-area">
@@ -728,7 +734,7 @@
                                             <form method="post" action="/Home/goodslist/comment">
                                                 <input type="hidden" name="_token" value="{{csrf_token()}}" />
                                                 <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
-                                                <input type="hidden" name="name" value="@if(!empty(Session::get("userData")->name)) {{Session::get("userData")->name}}@else  游客{{rand(1000,9999)}}：  @endif" />
+<input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}：  @endif" />
 							<div class="form-edit-table">
                                                             <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
 							</div>
