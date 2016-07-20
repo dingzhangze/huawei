@@ -34,8 +34,13 @@ Route::get("/pay","home\ShopcarController@pay");
 Route::get("/Home/member/Myorder","Home\UserController@order");
 // Route::get("/Home/member/orderDetail","Home\UserController@order");
 Route::get("/Home/member/Myaddres","Home\UserController@site");
+Route::post("/Home/member/Myaddres","Home\UserController@address");
+Route::get("/Home/member/delete/{id}","Home\UserController@delete");
+Route::get("/Home/member/edit/{id}","Home\UserController@alter");
+Route::post("/Home/member/edit/{id}","Home\UserController@editaddr");
 Route::resource("/Home/member","Home\UserController");
 Route::get("/Home/member","Home\UserController@member");
+
 
 
 
