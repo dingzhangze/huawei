@@ -97,6 +97,7 @@ Route::post("/Admin/goods/details", "Admin\GoodsController@details");
 //咨询模块
 Route::resource("/Admin/Comment", "Admin\CommentController");
 Route::get("/Admin/Comment", "Admin\CommentController@index");
+Route::get("/Admin/Comment/delete/{id}", "Admin\CommentController@delete");
 
 //友情链接
 Route::resource("/Admin/chaining", "Admin\chainingController");

@@ -102,7 +102,7 @@ class LoginController extends Controller
         $data["createtime"] = date("Y-m-d H:i:s");
       //执行数据创建
       if (FALSE !== DB::table("home_user")->insertGetId($data)) {
-           return back()->with(["info" => "注册成功"]);
+           return redirect("/login")->with(["info" => "注册成功"]);
       }else {
           return back()->with(["info" => "注册失败"]);
       }

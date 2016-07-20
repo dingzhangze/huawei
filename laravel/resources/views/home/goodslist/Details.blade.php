@@ -720,7 +720,7 @@
                                             <form method="post" action="/Home/goodslist/comment">
                                                 <input type="hidden" name="_token" value="{{csrf_token()}}" />
                                                 <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
-                                                <input type="hidden" name="name" value="@if(!empty(Session::get("userData")->name)) {{Session::get("userData")->name}}@else  游客{{rand(1000,9999)}}：  @endif" />
+<input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}：  @endif" />
 							<div class="form-edit-table">
                                                             <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
 							</div>

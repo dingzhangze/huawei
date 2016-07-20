@@ -27,7 +27,7 @@
              
               <td>{{$comments->reply}}</td>
             
-            <td><a href="{{url('/Admin/Comment/'.$comments->id.'/edit')}}">回复</a>  <a href="">删除</a></td>
+            <td><a href="{{url('/Admin/Comment/'.$comments->id.'/edit')}}">回复</a>  <a href="{{url('/Admin/Comment/delete/'.$comments->id)}}">删除</a></td>
           </tr>
               @endforeach
         

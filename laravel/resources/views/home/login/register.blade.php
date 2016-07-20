@@ -85,6 +85,14 @@ $.ajaxSetup({
 
         <input type="hidden" name="_token" value="{{csrf_token()}}" />
 			  <div class="zc_main_top">
+                              <div class="zc_ra1"><center>{{ session("info") }}</center></div>
+                              <div class="zc_ra1">
+                                    @if(count($errors) > 0)
+                                    @foreach($errors->all() as $e)
+                                    <center>{{$e}}</center>
+                                    @endforeach
+                                    @endif
+                              </div>
 				<div class="zc_ra1">账户<input type="text" value="" name="uname"></div>
 				<div class="zc_ra1">密码<input type="password" value="" name="password"></div>
 				<div class="zc_ra2">确认密码<input type="password" value="" name="repassword"></div>
@@ -101,14 +109,8 @@ $.ajaxSetup({
 				</div>
 			</div>
 			<div class="zc_foot">
-        {{ session("info") }}
-        <ul>
-        @if(count($errors) > 0)
-            @foreach($errors->all() as $e)
-            <li>{{$e}}</li>
-            @endforeach
-        @endif
-        </ul>
+        
+        
 			</div>
         </form>
         </table>
