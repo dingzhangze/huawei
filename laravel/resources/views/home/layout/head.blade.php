@@ -39,6 +39,13 @@ var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount
 	catch (err){}
 })();
 </script>
+<script>
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+</script>
 <title>华为手机【报价 价格 大全 怎么样】_华为商城</title>
 <meta name="keywords" content="华为手机报价,华为智能手机,华为智能手机报价,">
 <meta name="description" content="华为商城是华为旗下面向全国服务的电子商务官网。我们提供最新款的华为智能手机的价格、参数、图片大全等信息。官方品质保证，全国价格最低，欢迎选购！">

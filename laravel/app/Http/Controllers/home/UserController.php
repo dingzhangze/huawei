@@ -44,7 +44,7 @@ class UserController extends Controller
     {
       //修改用户的数据
 
-        $id=Session::get("userDatas")->id;
+      $id=Session::get("userDatas")->id;
       $data = $request->except("_token","_method","birth");
       $data["city"]=$data["s_province"]."-".$data["s_city"]."-".$data["s_county"];
       unset($data["s_province"],$data["s_city"],$data["s_county"]);
@@ -78,9 +78,9 @@ class UserController extends Controller
     $user= DB::table("home_user")->where("id",$id)->first();
 
     $bana=$user->city;
-    // dd($bana);
+   
     $pize=explode("-",$bana);
-    // dd($pize);
+   
       return view("home.userinfo.edit",["user"=>$user,"pize"=>$pize]);
     }
 
@@ -131,15 +131,95 @@ class UserController extends Controller
         return view("home.userinfo.usermall");
     }
 
+
+
     //用户收货地址
     public function site()
     {
-        return view("home.userinfo.address");
+         $id=Session::get("userDatas")->id;
+        //查询收货地址
+        $add=DB::table("home_address")->where('uid','=',$id)->get();
+     
+        return view("home.userinfo.address",compact('add'));
     }
+
+    //收货地址入库
+    public function address(Request $request)
+    {
+       //接受数据
+        $data = $request->except("_token");
+        $data["address"]=$data["s_province"]."-".$data["s_city"]."-".$data["s_county"]."-".$data["add_detail"];
+       unset($data["s_province"],$data["s_city"],$data["s_county"],$data["add_detail"]);
+        
+         //数据有效性验证
+            $this->validate($request,[
+            "name"=>"required",
+            "add_detail"=>"required",
+            "phone"=>"required",
+            ],[
+            "name.required"=>"收货人未填写",
+            "add_detail.required"=>"地址不能为空",
+           "phone.required"=>"电话号码不能为空"
+            ]);
+            $data["uid"]=$id;
+            //执行数据创建
+            if (FALSE !== DB::table("home_address")->insertGetId($data)) {
+                return back()->with(["info" => "添加成功"]);
+            }else {
+                return back()->with(["info" => "添加失败"]);
+            }
+        // $insertID=DB::table("home_address")->insertGetId($data);
+        //返回提示
+        if ($insertID !== false)
+        {
+            return redirect("/Home/member/Myaddres");
+        }
+        
+    }
+
+    // 删除收获地址
+   public function delete($id) 
+   {
+       $del= DB::table("home_address")->where("id",$id)->delete();
+       
+         if ($del !== false)
+        {
+            return redirect("/Home/member/Myaddres");
+        }
+   }
+
+   //修改收获地址
+   public function alter($id)
+   {
+       $uid=Session::get("userDatas")->id;
+        //查询收货地址
+       $add=DB::table("home_address")->where('uid',$uid)->get();
+       $ids=$add[0]->id;
+       $alter=DB::table("home_address")->where("id",$id)->first();
+       return view("home.userinfo.editaddr",["add"=>$add,"alter"=>$alter,"ids"=>$ids]);
+   }
+
+   //修改收获地址数据
+   public function editaddr(Request $request,$id)
+   {
+     $uid=Session::get("userDatas")->id;
+       //修改数据
+    $add=DB::table("home_address")->where('uid','=',$uid)->get();
+    $data=$request->except("_token","s_province","s_city","s_county");
+    $data["address"]=$data["add_detail"];
+    unset($data["add_detail"]);
+    // dd($data);
+    if (false != $affectedRows  = DB::table("home_address")->where("id",$id )->update($data)) {
+       
+    return redirect("/Home/member/Myaddres");
+   }
+   }
 
     //我的订单
     public function order()
     {
         return view("home.userinfo.Myorder");
     }
+
+
 }

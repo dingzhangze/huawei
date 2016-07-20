@@ -8,18 +8,6 @@
 <link href="{{asset('/css/home/zh-cn_css.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/zh-cn.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('/css/home/dialog.css')}}" rel="stylesheet" type="text/css">
-<script type="text/javascript">var localHttps="https://hwid1.vmall.com/CAS";var currentSiteID="1";</script>
-<script src="{{asset('/js/home/jsapi.js')}}" namespace="ec"></script><!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
-<script src="{{asset('/js/home/jquery-1.js')}}" id="jsid"></script>
-<script src="{{asset('/js/home/ec_002.js')}}"></script>
-<script src="{{asset('/js/home/casui.js')}}"></script>
-<script src="{{asset('/js/home/ec.js')}}"></script>
-<script src="{{asset('/js/home/commonjs.js')}}"></script>
-<script src="{{asset('/js/home/base.js')}}"></script>
-
-
-<script src="{{asset('/js/home/casui.js')}}"></script>
-<script src="{{asset('/js/home/uc_base.js')}}"></script>
 
 <script>
 $.ajaxSetup({
