@@ -62,13 +62,39 @@ class IndexController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     *将商品加入购物车
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+       // dd($request->all());
+        //获取商品信息
+       $goods  = $request->except("_token");
+     
+//       dd($goods);
+      // 加入购物车 先判断购物车中是否有商品  有的话在原来的基础上添加一个
+        $id=Session::get("userDatas")->uname;
+//      dd($id)
+       
+       if(!isset(Session::get("cart")["$id"]))
+       {
+           $sess["$id"] = array();
+       } else
+       {
+           $sess["$id"] = Session::pull("cart")["$id"]; 
+       }
+       array_push($sess["$id"],$goods);  
+       Session::put("cart",$sess);
+       Session::save(); 
+//      dd(Session::get("cart"));
+       //跳转到购物车显示页
+       return redirect("/home/shopcar");
+      
+       
+        
+        
+        
     }
 
     /**

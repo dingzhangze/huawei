@@ -26,20 +26,20 @@
     <div class="layout">
 		<div class="s-sub">
 			<ul>
-				<li class="s-hw"><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
-				<li class="s-honor"><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+				<li class="s-hw"><a href="" target="_blank">华为官网</a></li>
+				<li class="s-honor"><a href="" target="_blank">荣耀官网</a></li>
 				
 				<li class="s-appsoft">
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://emui.huawei.com/appsoft/" target="_blank">软件应用</a>
+							<a href="" target="_blank">软件应用</a>
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></p>
-							<p><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></p>
-							<p><a href="http://cloud.huawei.com/" target="_blank">云服务</a></p>
-							<p><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></p>
+							<p><a href="" target="_blank">EMUI</a></p>
+							<p><a href="" target="_blank">应用市场</a></p>
+							<p><a href="" target="_blank">云服务</a></p>
+							<p><a href="" target="_blank">开发者联盟</a></p>
 						</div>
 					</div>	
 					
@@ -50,8 +50,8 @@
 		<div class="s-main">
 			<ul>
 				<li style="display: none;" class="s-login" id="unlogin_status">
-						<script>document.write('<a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&reqClientType=26&loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3D'+encodeURIComponent(encodeURIComponent(window.location.href))+'" rel="nofollow">登录</a>');</script><a href="https://hwid1.vmall.com/casserver/remoteLogin?loginChannel=26000000&amp;reqClientType=26&amp;loginUrl=http%3A%2F%2Fhwid1.vmall.com%3A8080%2Foauth2%2Fportal%2Flogin.jsp&amp;service=http%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3Dhttp%253A%252F%252Fwww.vmall.com%252Forder%252FnowConfirmcart" rel="nofollow">登录</a>
-						&nbsp;&nbsp;&nbsp;<a href="https://hwid1.vmall.com/oauth2/portal/regbymail.jsp?service=http://www.vmall.com/account/caslogin&amp;loginChannel=26000000&amp;reqClientType=26" rel="nofollow">注册</a>
+						<a href="" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="" rel="nofollow">注册</a>
 				</li>
 				<li style="display: list-item;" class="s-user hide" id="login_status">
 					<!--
@@ -60,11 +60,11 @@
 					-->
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://www.vmall.com/member?t=14687357054951468735691512" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">dingzha***...</a>
+							<a href="" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">dingzha***...</a>
 							 <em class="vip-state" id="vip-info">
-								<a style="display: none;" class="link-noAct" href="http://www.vmall.com/member/account" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
-								<a href="http://www.vmall.com/member/point" title="VMALL V0会员" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
-								<a title="实名认证" id="authentication" href="http://www.vmall.com/authmember/accesstoken"><i class="icon-authentication icon-authentication-not"></i>&nbsp;</a>
+								<a style="display: none;" class="link-noAct" href="" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
+								<a href="" title="VMALL V0会员" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
+								<a title="实名认证" id="authentication" href=""><i class="icon-authentication icon-authentication-not"></i>&nbsp;</a>
 							</em>
 							<s></s>
 						</div>
@@ -74,11 +74,11 @@
 					</div>
 				</li>
 				<li class="s-myOrders">
-					<a href="http://www.vmall.com/member/order?t=14687357054951468735691512" rel="nofollow" timetype="timestamp">我的订单</a>
+					<a href="" timetype="timestamp">我的订单</a>
 				</li>
-				<li class="s-promo"><a href="http://www.vmall.com/priority" rel="nofollow">V码(优购码)</a></li>
+				<li class="s-promo"><a href="" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>
-				<li class="s-mobile"><a href="http://www.vmall.com/appdownload" target="_blank">手机版</a></li>
+				<li class="s-mobile"><a href="" target="_blank">手机版</a></li>
 				<li class="s-sitemap">
 					<div class="s-dropdown">
 						<div class="h">
@@ -86,11 +86,11 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://www.vmall.com/help/index.html">帮助中心</a></p>
-							<p><a href="http://consumer.huawei.com/minisite/HiSuite_cn/" target="_blank">PC软件</a></p>
-							<p><a href="http://vmall.118100.cn/" target="_blank">数字音乐</a></p>
-							<p><a href="http://www.hwtrip.com/" target="_blank">爱旅</a></p>
-							<p><a href="http://dbank.vmall.com/" target="_blank">华为网盘</a></p>
+							<p><a href="">帮助中心</a></p>
+							<p><a href="" target="_blank">PC软件</a></p>
+							<p><a href="" target="_blank">数字音乐</a></p>
+							<p><a href="" target="_blank">爱旅</a></p>
+							<p><a href="" target="_blank">华为网盘</a></p>
 						</div>
 					</div>
 				</li>
@@ -117,11 +117,7 @@
         </div>
     </div>
 </div>
-<script>ec.code.addService({showService : true , showTools : true});</script>
 
-
-<script>window._to = { start: new Date() };</script>
-<script>document.body.className = "wide order";</script>
 
 <div class="layout order">
 	<!--栏目 -->
@@ -133,7 +129,7 @@
 	    	<!-- 20140813-订单-表单-地址-start -->
     	<div class="order-address" id="order-address-mod">
     	
-			<h3 class="title">收货人信息<b>[<a id="addAddress" href="javascript:;" onclick="ec.order.myAddress.add()">使用新地址</a>]</b></h3>
+			<h3 class="title">收货人信息<b>[<a id="addAddress" href="javascript:;" onclick="">使用新地址</a>]</b></h3>
 			<div style="display: none;" class="order-address-list" id="order-address-list">
 				<ol>
 				</ol>
@@ -145,31 +141,7 @@
 			</div>
 			<input name="orderDistrict" id="order-district" type="hidden">
             </div>
-				<div class="order-invoice">
-        	<h3 class="title">发票信息<em>（请谨慎选择发票抬头，订单出库后不能修改）</em></h3>
-			<div class="order-invoice-list" id="order-invoice-area">
-				<ul>
-					<li>
-						<div class="invoice-main">
-							<input name="titleType" id="titleType-per" class="radio" value="1" checked="checked" seed="Invoice_1" type="radio"><label for="titleType-per">个人</label>
-						</div>
-					</li>
-					<li>
-						<div class="invoice-main">
-							<input name="titleType" id="titleType-com" class="radio" value="2" type="radio"><label for="titleType-com">单位</label>
-						</div>
-						<div class="invoice-sub">
-							<label><input style="width:21%;" id="invoiceTitle-com" placeholder="请输入单位名称，勿填无关信息" class="text vam" seed="Invoice_content" disabled="disabled" type="text"><span id="companyError"></span></label>
-						</div>
-					</li>
-					
-                    <!-- 灰色状态className " invoice-main-disabled " -->
-					<input id="selfAllSkuIds" value="5886" type="hidden">
-					<input id="huaweiTerminalName" name="huaweiTerminalName" value="华为终端有限公司" type="hidden">
-				</ul>
-			</div>
-			<p class="tips"><em>注意：</em>如果商品由第三方卖家销售，发票内容由其卖家决定，发票由卖家开具并寄出</p>
-        </div>
+			
 		<!--    新的发票信息【End】            --><!--modify by l00222000 增加支持电子发票 20150320-->
 		
 		<form id="order-confirm-form" action="/order/createcart" autocomplete="off" method="post">
@@ -231,23 +203,31 @@
 				
 				<!--订单-商品-普通商品-->
 				<div class="order-pro-area">
+                                      <?php
+                              
+                                $total = 0;
+                                       ?>
 					<table border="0" cellpadding="0" cellspacing="0">
 						<tbody>
+                                                    @foreach($goods as $key=>$tmp)
+                                                   <?php  $total += $tmp["price"]*$tmp["count"] ?>
 							<tr>
 								<td class="tr-pro">
 									<ul class="pro-area-2">
 										<li>
-										  <a title="华为 HUAWEI 畅享5 移动4G智能手机（梦幻金）" target="_blank" href="http://www.vmall.com/product/2494.html#5886" seed="item-name">华为 HUAWEI 畅享5 移动4G智能手机（梦幻金）</a>
+                                                                                    <img src="{{$tmp["thum"]}}" width="40">
+										  <a title="{{$tmp["name"]}}"  href="javascript:;" seed="item-name">{{$tmp["name"]}}</a>
 										</li> 
 									 </ul>
 								 </td>
 								<!-- 预付订金商品的价格为空 -->
-								<td class="tr-price">¥799.00</td>
-								<td class="tr-quantity">1</td>
+								<td class="tr-price">¥{{$tmp["price"]}}</td>
+								<td class="tr-quantity">{{$tmp["count"]}}</td>
 								<td rowspan="1" class="tr-subtotal">
-								<p><b>¥799.00</b></p>
+								<p><b>¥{{$tmp["price"]*$tmp["count"]}}</b></p>
 								</td>
 							</tr>
+                                                        @endforeach
 						</tbody>
 					</table>
 				</div>
@@ -268,9 +248,8 @@
 					<!--20140627-订单-表单-使用优惠-start -->
 					 <div class="order-coupon">
 						<div class="order-coupon-area">
-						    <input id="order-coupon-check" class="checkbox vam" seed="preferential" type="checkbox">
-						    <label class="vam">使用优惠券</label>
-						    <em>（<a href="http://www.vmall.com/help/faq-957.html" target="_blank" title="了解华为商城优惠券规则">了解优惠券使用规则</a>）</em>
+						
+						  
 						<span id="coupon-info" class="vam hide"> 
 						<span id="coupon-info-desc"></span> 
 					
@@ -279,7 +258,7 @@
 					<div class="order-coupon-edit-area hide" id="order-coupon-area">
 						<div class="form-edit-area">
 							<div class="form-edit-table">
-								<form onsubmit="return ec.order.addCoupon()" autocomplete="off">
+								<form onsubmit="" autocomplete="off">
 								<table border="0" cellpadding="0" cellspacing="0">
 									<tbody>
 										<tr>
@@ -315,10 +294,8 @@
 				   <!-- 20140628-订单-表单-花瓣-start -->
 					<div class="order-huaban">
 					  <div class="order-huaban-area">
-						<input class="checkbox vam" id="huaban-checkbox" onclick="ec.order.huaban.toggle(this)" autocomplete="off" type="checkbox">
-						<label class="vam">使用花瓣</label>
-						<em>（<a target="_blank" href="http://www.vmall.com/help/faq-960.html" title="了解花瓣使用规则">使用规则</a>）</em>
-						<em>（<a href="http://www.vmall.com/member/petal" target="_blank" title="花瓣详情">花瓣详情</a>）</em> 
+						
+						
 						<span class="vam hide" id="huaban-deduction-1">¥&nbsp;<b>-0</b>&nbsp;元</span>
 					    </div>
 					    <div class="order-huaban-edit-area hide" id="huaban-form">
@@ -360,7 +337,7 @@
 							<tr>
 								<td class="tal">商品总金额：</td>
 								<td class="tar">&nbsp;¥&nbsp;
-								   <em id="order-cost-area" data-oldval=" 799.00">799.00</em>
+								   <em id="order-cost-area" data-oldval=" 799.00">{{$total}}</em>
 								</td>
 							</tr>
 							<tr>
@@ -390,7 +367,7 @@
 						</tbody>
 					</table>
 						<p class="order-cost-total">
-						  <span class="p-subtotal-price"> 应付金额：<b class="total">¥</b><b class="total" id="order-price" data-oldval="799.00">799.00</b></span>
+						  <span class="p-subtotal-price"> 应付金额：<b class="total">¥</b><b class="total" id="order-price" data-oldval="799.00">{{$total}}</b></span>
 					    </p>
 					</div><!-- 20140630-订单-金额-end -->
 				</div>
@@ -418,8 +395,14 @@
 				<div class="order-protect">
 				</div>
 				<!-- 20140630-订单-下单验证-end -->
-				   <span class="p-subtotal-price">应付总额：<b>¥<span class="vab" id="payableTotal"></span></b></span>
-				<a href="javascript:;" onclick="ec.order.submit();" class="button-style-1 button-submit-order" title="提交订单" seed="checkout-submit"><span>提交订单</span></a>
+				   <span class="p-subtotal-price">应付总额：<b>¥<span class="vab" id="payableTotal">{{$total}}</span></b></span>
+                                   <form method="post" action=""> 
+
+                                   
+				<input type="submit"  class="button-style-1 button-submit-order" value="提交订单" seed="checkout-submit">
+                                
+                                
+                                  </form>
 			</div>
 		  <!-- 提交订单end-->
 	</div>
@@ -429,11 +412,7 @@
 
 
 <!-- 优惠卷列表 -->
-<textarea id="order-coupon-tpl" class="hide">	&lt;!--#macro orderCoupon data--&gt;
-	&lt;!--#list data as lst--&gt;
-	&lt;option value="{#lst.couponCode}"&gt;{#lst.couponName}&lt;/option&gt;
-	&lt;!--/#list--&gt;
-	&lt;!--/#macro--&gt;
+<textarea id="order-coupon-tpl" class="hide">	
 </textarea>
 
 

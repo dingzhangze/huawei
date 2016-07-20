@@ -31,7 +31,7 @@
                             <dt>优惠信息：</dt>
                             <dd>
                                 <ul style="display: none;" id="pro-promotions-list"></ul>
-                                <ul id="pro-gift-list"><li><span>配&nbsp;</span> <a href="http://www.vmall.com/product/738132989.html#undefined" target="_blank">华为 HUAWEI Type C 转接头（白色）</a></li></ul>
+                                <ul id="pro-gift-list"><li><span>配&nbsp;</span> <a href="" target="_blank">华为 HUAWEI Type C 转接头（白色）</a></li></ul>
                             </dd>
                         </dl>
                     </div>
@@ -123,7 +123,7 @@
 							<dt>购买数量：</dt>
 							<dd>
 							 <span class="stock-area">
-						     <a href="." class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
+						     <a href="." class="icon-minus-2 vam" title="-"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
    						     </span>
 							</dd>
 						</dl>
@@ -159,14 +159,24 @@
 
 
 <!--商品简介-提交操作 -->
+<form method="post" action="/Home/goodslist">
+    <input  type="hidden" name="_token" value="{{csrf_token()}}">
+    <input type="hidden" name="gid" value="{{$goodslist->gid}}">
+    <input type="hidden" name="name" value="{{$goodslist->name}}">
+    <input type="hidden" name="price" value="{{$goodslist->price}}">
+    <input type="hidden" name="thum" value="{{$goodslist->thum}}">
+    <input type="hidden" name="color" value="{{$goodslist->color}}">
+    <input type="hidden" name="count" value="1">
 <div class="pro-fixed-action">
     <div id="pro-select-sku" class="pro-selected">您选择了<b>陶瓷白/全网通版/4GB+64GB</b></div>
-    <div style="visibility: visible;" id="pro-operation" class="pro-action-area"><a href="." onclick="" class="button-add-cart button-style-1" title="加入购物车"><span>加入购物车</span></a><a href="." onclick="ec.product.orderNow()" class="button-book-2 button-style-2" title="立即下单"><span>立即下单</span></a></div>
+    <div style="visibility: visible;" id="pro-operation" class="pro-action-area"> 
+        <input name="" type="submit" class="button-add-cart button-style-1" value="加入购物车"/>
+        <input name="" type="submit" class="button-book-2 button-style-2" value="立即下单"/></div>
     <div class="pro-agreement-area hide" id="pro-agreement-area">
-		<input class="vam" checked="checked" id="pro-agreement-area-check" type="checkbox"><label for="" class="vam">同意</label>&nbsp;<a href="." class="vam" onclick="ec.product.showDepositAgreement()">订金支付协议</a>
+		<input class="vam" checked="checked" id="pro-agreement-area-check" type="checkbox"><label for="" class="vam">同意</label>&nbsp;<a href="." class="vam" onclick="">订金支付协议</a>
 	</div>
 </div>
-
+</form>
 
 <!--弹出层-成功添加到购物车 -->
 <div id="cart-tips" class="pro-popup-area hide">
@@ -227,7 +237,7 @@
 
 				<div class="pro-extend-tips">温馨提示：IMEI/SN/MEID号可在产品外包装上找到，可拆卸电池的手机可将电池拆掉电池下面的标签上可以看到，手机上输入*#06#也可以显示。</div>
 				<div class="pro-extend-button">
-					<a id="button-extend" class="button-style-disabled-1 button-go-extend-checkout-disabled" href="." title="提交订单" onclick="ec.product.extendBuy(this)"><span>提交订单</span></a>
+					<a id="button-extend" class="button-style-disabled-1 button-go-extend-checkout-disabled" href="." title="提交订单" onclick=""><span>提交订单</span></a>
 				</div>
 		</div>
 	</div>
