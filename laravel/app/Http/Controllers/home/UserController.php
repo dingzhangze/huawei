@@ -220,6 +220,10 @@ class UserController extends Controller
     {
         return view("home.userinfo.Myorder");
     }
-
+    //订单详情
+    public function orders()
+    {
+        return view("home.userinfo.orderDetail");
+    }
 
 }
