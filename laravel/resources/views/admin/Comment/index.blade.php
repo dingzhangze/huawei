@@ -21,7 +21,7 @@
               @foreach($comment as $comments)
           <tr>
               <td>{{$comments->id}}</td>
-              <td>{{$goods[0]}}</td>
+              <td>{{$comments->gname}}</td>
               <td>{{$comments->name}}</td>
               <td>{{$comments->comment}}</td>
              

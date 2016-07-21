@@ -466,9 +466,9 @@
                           
                                   <input type="hidden" name="_token" value="{{csrf_token()}}" />
                                    <input type="hidden"  name="uid" value="{{Session::get("userDatas")->id}}">
-                                   <input type="hidden"  name="name" value="{{$Uadd->name}}">
-                                   <input type="hidden"  name="address" value="{{$Uadd->address}}">
-                                   <input type="hidden"  name="phone" value="{{$Uadd->phone}}">
+                                   <input type="hidden"  name="name" value="@if(!empty($Uadd->name)){{$Uadd->name}}@endif">
+                                   <input type="hidden"  name="address" value="@if(!empty($Uadd->address)){{$Uadd->address}}@endif">
+                                   <input type="hidden"  name="phone" value="@if(!empty($Uadd->phone)){{$Uadd->phone}}@endif">
                                     <input type="hidden"  name="total" value="{{$total}}">
                                    
                                 

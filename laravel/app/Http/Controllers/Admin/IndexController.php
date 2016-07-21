@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Session;
+use Session,DB;
 
 class IndexController extends Controller
 {
@@ -17,7 +17,9 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view("admin.index");
+        $comment=DB::table("admin_goods_comment")->get();
+//        dd($comment);
+        return view("admin.index",compact("comment"));
     }
 
     /**

@@ -148,13 +148,15 @@
               @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
 
+
 							<p>你好，请&nbsp;&nbsp;
                 <a href="{{url('/login')}}" rel="nofollow">登录</a> | <a href="{{url('/register')}}" rel="nofollow">注册</a></p>
 						</div>
             @else
-            您好, <strong>{{Session::get("userDatas")->uname}}</strong>
-            @endif
-						<div class="i-mall-uc " id="cart_login_info">
+            <div class="i-mall-prompt" id="cart_unlogin_info">
+            <p>您好, <strong>{{Session::get("userDatas")->uname}}</strong></p>
+            </div>
+            <div class="i-mall-uc " id="cart_login_info">
 							<ul>
 								<li><a href="{{url('/Home/member/Myorder')}}" rel="nofollow" timetype="timestamp">我的订单</a></li>
 								<li><a href="#" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
@@ -163,16 +165,21 @@
 								<li><a href="#" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
 							</ul>
 						</div>
+            @endif
+						
 						<!-- 页头会员专享信息 -->
+
 						<div class="i-mall-event ">
 							<p><a href=""><img src="./images/20160127095348354.jpg" alt="特权频道"></a></p>
 						</div>
+
 					</div>
 				</div><!-- 21030909-我的商城-end -->
 			</div>
 			<div class="header-toolbar-item" id="header-toolbar-minicart">
 				<!-- 21030909-迷你购物车-start -->
 				<div class="minicart">
+
 					<div class="h" id="header-toolbar-minicart-h"><a href="{{url('/home/shopcar')}}" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">1</em><b></b></span></a><i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-minicart-content">
 						<div style="display: none;" class="minicart-pro-empty" id="minicart-pro-empty">
@@ -180,6 +187,7 @@
 						</div>
 						
 					</div>
+
 				</div><!-- 21030909-迷你购物车-end -->
 			</div>
 

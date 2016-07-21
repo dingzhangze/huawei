@@ -138,6 +138,7 @@
 							<dd>
 							 <span class="stock-area">
 
+
                                                 <form method="post" action="/Home/goodslist">
                                            <input  type="hidden" name="_token" value="{{csrf_token()}}">
                                            <input type="hidden" name="gid" value="{{$goodslist->gid}}">
@@ -151,6 +152,7 @@
                                          <script src="/js/home/shoplist.js"></script>
                     
                                                          </span>
+
 							</dd>
 						</dl>
 					</div><!-- 20131215-商品简介-购买数量-end -->
@@ -420,7 +422,7 @@
         	<div class="pro-detail-tab-nav">
             <ul>
                 <li id="pro-tab-feature" class="current"><a href="." title="商品详情"><span>商品详情</span></a></li>
-                <li id="pro-tab-evaluate"><a href="." title="用户评价"><span id="prd-remark-span-tab-evaluate">用户评价<em>（20629）</em></span></a></li>
+                <li id="pro-tab-evaluate"><a href="." title="用户评价"><span id="prd-remark-span-tab-evaluate">用户评价<em></em></span></a></li>
                 <li id="pro-tab-parameter" data-skulist="8259,8255,8267,8273,8261,8263,8265,8269,8275,8279,8277,721625417"><a href="." title="规格参数"><span>规格参数</span></a></li>
                 <li id="pro-tab-package"><a href="." title="包装清单"><span>包装清单</span></a></li>
 		<li id="pro-tab-software"><a href="." title="软件下载"><span>软件下载</span></a></li>
@@ -458,6 +460,7 @@
 <p>※限于篇幅，本网站中所包含的信息（包括但不限于产品规格、功能说明等）可能不完整，请以有关产品使用说明书的具体信息为准。</p>
 </div>
 </div>
+
 <!--规格参数 -->
 <div id="pro-tab-parameter-content" class="pro-detail-tab-area pro-parameter-area hide"><div>正在加载中...</div></div>
 <!--包装清单 -->
@@ -538,6 +541,7 @@
 <p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
 </div>
 </div>
+
 <div id="pro-tab-software-content" class="pro-detail-tab-area pro-software-area hide">
 <iframe id="pro_software_iframe" name="pro_software_iframe" src="./a.htm" data-src="" scrolling="no" frameborder="0" height="300" width="100%"></iframe>
 </div>	    <div id="remarkLoading"></div>
@@ -624,7 +628,7 @@
                                     @foreach($comment as $comments)
 					<div class="pro-inquire-item clearfix">
 						<div class="pro-inquire-user">
-							<label>@if(!empty($comments->name)) {{$comments->name}} @endif</label><span></span><s><i class="icon-vip-level-0"></i></s><em>@if(!empty($comment->cdatetime)) {{$comments->cdatetime}} @endif</em>
+                                                    <label>@if(!empty($comments->name)) {{$comments->name}} @endif </label><span></span><s><i class="icon-vip-level-0"></i></s>:&nbsp;&nbsp;&nbsp;&nbsp;<em>@if(!empty($comments->cdatetime)) {{$comments->cdatetime}} @endif</em>
 						</div>
 						<div class="pro-inquire-question">
 							<label>咨询内容：</label><span>@if(!empty($comments->comment)) {{$comments->comment}} @endif</span>
@@ -637,7 +641,7 @@
                                     @endforeach
 				</div>
 				<div class="pro-inquire-page clearfix">
-					<div class="pro-inquire-record">共<em>4057</em>条</div>
+					<div class="pro-inquire-record">共<em>{{$count}}</em>条</div>
 					<!-- 20131220-分页-start -->
 					</div>
 			</div><!-- 20140624-商品详情-全部咨询-end -->
@@ -727,7 +731,8 @@
                                             <form method="post" action="/Home/goodslist/comment">
                                                 <input type="hidden" name="_token" value="{{csrf_token()}}" />
                                                 <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
-<input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}：  @endif" />
+                                                <input type="hidden" name="gname" value="{{$goodslist->name}}" />
+<input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}  @endif" />
 							<div class="form-edit-table">
                                                             <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
 							</div>

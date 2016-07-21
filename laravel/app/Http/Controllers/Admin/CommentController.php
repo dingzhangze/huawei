@@ -18,11 +18,11 @@ class CommentController extends Controller
     {
         
         $comment=DB::table("admin_goods_comment")->get();
-        $id=$comment[0]->gid;
+//        $id=$comment[0]->gid;
 //        dd($id);
-        $goods=DB::table("admin_goods")->where("gid",$id)->lists("name");
+//        $goods=DB::table("admin_goods")->where("gid",$id)->lists("name");
 //        dd($goods);
-       return view("admin.Comment.index",["comment"=>$comment,"goods"=>$goods]);
+       return view("admin.Comment.index",["comment"=>$comment]);
 //        return 111;
     }
 
@@ -81,7 +81,7 @@ class CommentController extends Controller
      */
     public function edit($id)
     {
-        $comments=DB::table("admin_goods_comment")->get();
+        $comments=DB::table("admin_goods_comment")->where("id",$id)->get();
         $comment=$comments[0];
 //        dd($comment);
         return view("admin.Comment.create",compact("comment"));
