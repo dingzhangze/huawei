@@ -38,13 +38,7 @@
 <!-- 20141222-我的订单-订单类别-end -->
 <!-- 20141222-我的订单-列表-start -->
 <div class="myOrder-record" id="myOrders-list-content">
-	<!-- 20141222-我的订单-列表-订单合并-start -->
-	<div class="myOrder-control">
-		<label class="inputbox" for="checkAllBox">
-			<input class="checkbox" id="checkAllBox" name="checkAllBox" type="checkbox"><span>全选</span>
-		</label>
-		<a href="javascript:;" class="button-operate-merge-pay" id="topButton" onclick="ec.member.orderList.mergePay();"><span>合并支付</span></a>
-	</div>
+	
 	<!-- 20141222-我的订单-列表-订单合并-end -->
 	<div class="list-group-title">
 		<table border="0" cellpadding="0" cellspacing="0">
@@ -63,14 +57,16 @@
 				<div class="list-group-item">
 					<div class="o-info">
 							<div class="col-info">
-								<span class="o-date">2016-07-17 14:59</span>
-								<span class="o-no">订单号：<a href="http://www.vmall.com/member/order-1820113094" title="1820113094">1820113094</a></span>
+							<span class="o-date">{{$order[0]->ordertime}}</span>
+							<span class="o-no">订单号：<a href="" >HW00{{$order[0]->number}}</a></span>
 							</div>
 							<div class="col-state">
 									已取消
 							</div>
 					</div>
 					<div class="o-pro">
+                                            @if(!empty($order))
+                                            @foreach($order as $ord)
 						<table border="0" cellpadding="0" cellspacing="0">
 		        			<tbody>
 		                        <!-- 组合套餐列表 -->
@@ -78,35 +74,38 @@
 	                        			<tr>
 				        					<td class="col-pro-img">
 				    							<p class="p-img">
-				    								<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" href="http://www.vmall.com/product/2324.html#8155" target="_blank">
-			                                    		<img alt="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" src="./100_100_1468402962113mp.jpg">
-			                                    	</a>
+				    								
+			                                    		<img alt="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" src="{{$ord->thum}}">
+			                                    
 				    							</p>
 				        					</td>
 				        					<td class="col-pro-info">
 												<p class="p-name">
 													
-													<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" target="_blank" href="http://www.vmall.com/product/2324.html#8155">荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）</a>
+													<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" target="_blank" href="http://www.vmall.com/product/2324.html#8155">{{$gname->name}}</a>
 												</p>
 				        					</td>
 				        					<td class="col-price"><em>¥</em><span>
-				        								1499.00
+				        								{{$ord->price}}
 				        					</span></td>
-				        					<td class="col-quty">1</td>
+				        					<td class="col-quty">{{$ord->count}}</td>
 				        							<td rowspan="1" class="col-pay">
 				        								<p><em>¥</em><span>
-				        												1499.00
+				        												{{$ord->total}}
 							        								
 								        				</span></p>
 				        							</td>
 				        								<td rowspan="1" class="col-operate">
 				        										<!--已取消-->
-				        									<p class="p-link"><a href="{{url('/Home/member/orderDetail')}}">订单详情</a></p>
+				        									
+                                                                                                                <p class="p-link"><a href="{{url('/Home/member/orderDetail/'.$order[0]->number)}}">订单详情</a></p>
 				        								</td>
 				        				</tr>
 	                        	<!-- 普通商品列表 end -->
 		        			</tbody>
 		        		</table>
+                                            @endforeach
+                                            @endif
 					</div>
 				</div>
 	</div>
@@ -114,10 +113,10 @@
 	<div class="myOrder-control " id="myOrder-control-bottom">
 		<label class="inputbox" id="bottomCheckBoxDiv" name="bottomCheckBoxDiv">
 			<!-- 20140819-我的订单-合并付款-start -->
-				<input class="checkbox" id="bottomCheckAllBox" name="bottomCheckAllBox" type="checkbox"><span>全选</span>
+				
 			<!-- 20140819-我的订单-合并付款-end -->
 		</label>
-		<a href="javascript:;" class="button-operate-merge-pay" id="bottomButton" onclick="ec.member.orderList.mergePay();"><span>合并支付</span></a>
+		<a href="javascript:;" class="button-operate-merge-pay" id="bottomButton" onclick="ec.member.orderList.mergePay();"><span>立即支付</span></a>
 	</div>
 	<!-- 20141222-我的订单-列表-订单合并-end -->
 	<div class="list-group-page">

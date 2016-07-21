@@ -219,13 +219,21 @@ class UserController extends Controller
     //我的订单
     public function order()
     {
-        return view("home.userinfo.Myorder");
+         $id=Session::get("userDatas")->id;
+         $order=DB::table("home_orders")->where("uid",$id)->get();
+         $gid=$order[0]->gid;
+        $gname=DB::table("admin_goods")->where("gid",$gid)->first();
+        return view("home.userinfo.Myorder",  ["order"=>$order,"gname"=>$gname]);
     }
 
     //订单详情
-    public function orders()
+    public function orders(Request $request,$id)
     {
-        return view("home.userinfo.orderDetail");
+      $ords=DB::table("home_orders")->where("number",$id)->get();
+      $gid=$ords[0]->gid;
+     $gname=DB::table("admin_goods")->where("gid",$gid)->first();
+     
+        return view("home.userinfo.orderDetail",["ords"=>$ords,"gname"=>$gname]);
 
     }
     

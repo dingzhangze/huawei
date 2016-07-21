@@ -116,6 +116,20 @@
 							</dd>
 						</dl>
 					</div>
+                    
+                                       <script src="/js/jquery-1.8.3.min.js"></script>
+                                       <meta name="csrf-token" content="{{ csrf_token() }}" />
+                                                    <script>
+                                                    $.ajaxSetup({
+                                                            headers: {
+                                                                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                                            }
+                                                    });
+                                                    </script>
+                             <?php
+                                $count =1;
+                               ?>
+     	
 
                     <!-- 20131215-商品简介-购买数量-start -->
 					<div id="pro-quantity-area" class="pro-stock-area">
@@ -125,9 +139,20 @@
 							 <span class="stock-area">
 
 
-						     <a href="." class="icon-minus-2 vam" title="-"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
+                                                <form method="post" action="/Home/goodslist">
+                                           <input  type="hidden" name="_token" value="{{csrf_token()}}">
+                                           <input type="hidden" name="gid" value="{{$goodslist->gid}}">
+                                           <input type="hidden" name="name" value="{{$goodslist->name}}">
+                                           <input type="hidden" name="price" value="{{$goodslist->price}}">
+                                           <input type="hidden" name="thum" value="{{$goodslist->thum}}">
+                                           <input type="hidden" name="color" value="{{$goodslist->color}}">
+                                        
 
-   						     </span>
+						     <a href="javascript:;" class="icon-minus-2 vam butt" title="减" ><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text"    value="{{$count}}"   autocomplete="off" type="text" name="count"><a href="javascript:;" class="icon-plus-2 vam butt" title="加"><span>+</span></a>
+                                         <script src="/js/home/shoplist.js"></script>
+                    
+                                                         </span>
+
 							</dd>
 						</dl>
 					</div><!-- 20131215-商品简介-购买数量-end -->
@@ -150,26 +175,9 @@
                 </div><!--end pro-meta-area-->
 
 		<!--商品简介-提交操作 -->
-		<form id="order-confirm-form" method="post" class="hide" action="/order/nowConfirmcart"></form>
-		<!--延保单独购买提交form -->
-		<form id="order-confirm-extend-form" method="post" class="hide" action="/order/extendConfirm"></form>
-		<form id="order-shoppingCart-form" method="get" class="hide" action=""></form>
-		<!--预付订金form -->
-		<form id="order-confirm-deposit-form" method="post" class="hide" action="/order/confirmDeposit"></form>
-		<input id="isPriority" name="isPriority" value="0" type="hidden">
-		<script src="./detail.js"></script><script id="jsapi_loader0" loadtype="insert" type="text/javascript" src="./jquery.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader0');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader0 fail!');} return; }ol._setLoadStatus("jquery.form","complete");})();</script><script id="jsapi_loader1" loadtype="insert" type="text/javascript" src="./ajax.js" charset="utf-8"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader1');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader1 fail!');} return; }ol._setLoadStatus("ajax","complete");})();</script><script id="jsapi_loader2" loadtype="insert" type="text/javascript" src="./cloud-zoom.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader2');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader2 fail!');} return; }ol._setLoadStatus("cloud-zoom.1.0.2/cloud-zoom.1.0.2-hack-min.js","complete");(function (){setTimeout(function(){$("#product-img").CloudZoom()},200)})();})();</script><script id="jsapi_loader3" loadtype="insert" type="text/javascript" src="./fixed.js"></script><script>(function(){var time = 0,el = document.getElementById('jsapi_loader3');if(!el || (el.readyState && 'complete' != el.readyState)){ if(time<10){ setTimeout(arguments.callee,30); time++; }else{ logger.error('load the script of id jsapi_loader3 fail!');} return; }ol._setLoadStatus("jquery.fixed/fixed.js","complete");(function (){$(function(){$("#pro-tab-all").fixed()})})();})();</script>
-
-
-
+		
 <!--商品简介-提交操作 -->
-<form method="post" action="/Home/goodslist">
-    <input  type="hidden" name="_token" value="{{csrf_token()}}">
-    <input type="hidden" name="gid" value="{{$goodslist->gid}}">
-    <input type="hidden" name="name" value="{{$goodslist->name}}">
-    <input type="hidden" name="price" value="{{$goodslist->price}}">
-    <input type="hidden" name="thum" value="{{$goodslist->thum}}">
-    <input type="hidden" name="color" value="{{$goodslist->color}}">
-    <input type="hidden" name="count" value="1">
+
 <div class="pro-fixed-action">
 
     <div id="pro-select-sku" class="pro-selected"></div>
@@ -203,19 +211,7 @@
     </div>
 </div>
 
-<!--弹出层-提示信息 -->
-<!--<div id="popup-tips" class="pro-popup-area hide">
-    <div class="h">
-	<a href="." class="pro-popup-close" title="关闭" onclick=""><span>关闭</span></a>
-    </div>
 
-    <div class="b">
-		<div class="pro-add-error">
-			<div class="pro-add-error-msg" id="popup-tips-msg">非常抱歉！该商品不能单独销售！</div>
-			<div class="pro-add-error-button"><a class="button-style-1 button-par-define" href="." onclick="$('#popup-tips').hide()" title="知道了">知道了</a></div>
-		</div>
-    </div>
-</div>-->
 
 <!-- 20130913-弹出层-购买延保-start -->
 <div id="popup-extend" class="pro-popup-area hide">

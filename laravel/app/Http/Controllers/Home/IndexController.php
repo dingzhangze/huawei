@@ -72,20 +72,23 @@ class IndexController extends Controller
        // dd($request->all());
         //获取商品信息
        $goods  = $request->except("_token");
-     
-//       dd($goods);
+        $gid = $goods["gid"];
+//        dd($gid);
       // 加入购物车 先判断购物车中是否有商品  有的话在原来的基础上添加一个
         $id=Session::get("userDatas")->uname;
 //      dd($id)
        
        if(!isset(Session::get("cart")["$id"]))
        {
-           $sess["$id"] = array();
+         
+            $sess["$id"] = array();
+//            $sess["$id"]["$gid"]= Session::pull("cart")["$id"] ; 
        } else
        {
-           $sess["$id"] = Session::pull("cart")["$id"]; 
+        $sess["$id"]= Session::pull("cart")["$id"] ; 
        }
        array_push($sess["$id"],$goods);  
+//       dd($sess);
        Session::put("cart",$sess);
        Session::save(); 
 //      dd(Session::get("cart"));

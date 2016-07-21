@@ -11,7 +11,7 @@
     <div class="fr u-4-5"><!-- 20141212-栏目-start -->
 <div class="section-header">
     <div class="fl">
-        <h2><span>订单号：1820113094</span></h2>
+        <h2><span>订单号：HW00{{$ords[0]->number}}</span></h2>
     </div>
 </div>
 
@@ -19,59 +19,6 @@
 		
 　　
 <!-- 20141212-栏目-end -->
-<div class="hr-50"></div>
-<!-- 20141223-订单详情-订单处理信息-start -->
-<div class="order-detail-process-record">
-	<div class="list-group-caption">
-		<h3>订单处理信息</h3>
-	</div>
-	<div class="list-group-title">
-		<table border="0" cellpadding="0" cellspacing="0">
-			<thead>
-				<tr>
-					<th class="col-date">处理时间</th>
-					<th class="col-info">处理信息</th>
-					<th class="col-operator">操作人</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
-	<div class="list-group" id="order-list-group">
-				<div class="list-group-item latest">
-					<table border="0" cellpadding="0" cellspacing="0">
-		    			<tbody>
-		    				<tr>
-		    					<td class="col-date">2016-07-17 15:00:01</td>
-		    					<td class="col-info">您的订单已经取消</td>
-		    					<td class="col-operator">huafans01187039827</td>
-		    				</tr>
-		    			</tbody>
-		    		</table>
-				</div>
-				<div class="list-group-item">
-					<table border="0" cellpadding="0" cellspacing="0">
-		    			<tbody>
-		    				<tr>
-		    					<td class="col-date">2016-07-17 14:59:35</td>
-		    					<td class="col-info">您提交了订单，请等待系统确认</td>
-		    					<td class="col-operator">huafans01187039827</td>
-		    				</tr>
-		    			</tbody>
-		    		</table>
-				</div>
-		
-	</div>
-</div>
-<!-- 20141223-订单详情-订单处理信息-end -->
-
-
-<input value="" id="realnameStatus" type="hidden">
-<input value="1820113094" id="realnameOrderId" type="hidden">
-
-
-
-
-
 <!-- 20141223-订单详情-收货信息-start -->
 <div class="hr-50"></div>
 <div class="order-detail-receive">
@@ -84,15 +31,15 @@
 				<tbody>
 					<tr>
 						<th>姓名：</th>
-						<td>丁章泽</td>
+						<td>{{$ords[0]->name}}</td>
 					</tr>
 					<tr>
 						<th>收货地址：</th>
-						<td>北京北京昌平区回龙观地区育荣教育园区 兄弟连教育</td>
+						<td>{{$ords[0]->address}}</td>
 					</tr>
 					<tr>
 						<th>联系电话：</th>
-						<td>18183572240</td>
+						<td>{{$ords[0]->phone}}</td>
 					</tr>
 					<tr>
 						<th>配送方式：</th>
@@ -137,33 +84,35 @@
 	    		<!-- 组合套餐 -->
 		    		<div class="list-group-item">
 		    			<div class="o-pro">
+                                            @foreach($ords as $ord)
 		    				<table border="0" cellpadding="0" cellspacing="0">
 			        			<tbody>
 				        				<tr>
 				        					<td class="col-pro-img">
 			        							<p class="p-img">
-			        								<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" href="http://www.vmall.com/product/2324.html#8155" target="_blank">
-														<img alt="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" src="./100_100_1468402962113mp.jpg">                                        
+			        								<a  href="" target="_blank">
+														<img alt="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" src="{{$ord->thum}}">                                        
 													</a>
 			        							</p>
 				        					</td>
 				        					<td class="col-pro-info">
 			    								<p class="p-name">
-			    									<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" target="_blank" href="http://www.vmall.com/product/2324.html#8155">荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）</a>
+			    									<a  target="_blank" href="">{{$gname->name}}</a>
 			    								</p>
 				        					</td>
 				        					<td class="col-int">0</td>
 				        					<td class="col-price"><em>¥</em><span>
-				        								1499.00
+				        								{{$ord->price}}
 				        					</span></td>
-				        					<td class="col-quty">1</td>
+				        					<td class="col-quty">{{$ord->count}}</td>
 				        					<td class="col-pay" rowspan="1"><em>¥</em><span>
-				        							1499.00
+				        							{{$ord->total}}
 				        					</span></td>
 				        					<td class="col-state">--</td>
 				        				</tr>
 			        			</tbody>
 			        		</table>
+                                            @endforeach
 		    			</div>
 		    		</div>
 	    	</div>
@@ -178,7 +127,7 @@
 					<tbody>
 						<tr>
 							<th>商品金额总计：</th>
-							<td><em>¥</em><span>1499.00</span></td>
+							<td><em>¥</em><span>{{$ord->price}}</span></td>
 						</tr>
 						<tr>
 							<th>
@@ -203,7 +152,7 @@
 				</table>
 			</div>
 			<div class="order-pro-cost-total">合计（含运费）：<em>¥</em><span>
-					1499.00
+					{{$ord->total}}
 				</span></div>
 		</div>
 		<!-- 20141223-商品清单-合计-end -->
