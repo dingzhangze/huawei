@@ -21,10 +21,11 @@ class ShopcarController extends Controller
         //查询SESSION中cart字段的值
        $goods =  Session::get("cart")["$id"];
        //将数组转化正对象集合
+//       dd($goods);
        $goods = (json_decode(json_encode($goods)));
         
-      // dd($goods);
-     //  dd($goods);
+       
+//       dd($goods);
        //在模板中显示
        return view("home.shopcar.index",compact("goods"));
     }

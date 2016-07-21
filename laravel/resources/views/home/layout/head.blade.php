@@ -127,7 +127,7 @@ $.ajaxSetup({
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="#" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
+							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
 
@@ -135,11 +135,11 @@ $.ajaxSetup({
         @endif
 
 				<li class="s-myOrders">
-					<a href="http://www.vmall.com/member/order?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的订单</a>
+					<a href="" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>
-				<li class="s-promo"><a href="http://www.vmall.com/priority" rel="nofollow">V码(优购码)</a></li>
+				<li class="s-promo"><a href="" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>
-				<li class="s-mobile"><a href="http://www.vmall.com/appdownload" target="_blank">手机版</a></li>
+				<li class="s-mobile"><a href="" target="_blank">手机版</a></li>
 				<li class="s-sitemap">
 					<div class="s-dropdown ">
 						<div class="h">
@@ -147,11 +147,11 @@ $.ajaxSetup({
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://www.vmall.com/help/index.html">帮助中心</a></p>
-							<p><a href="http://consumer.huawei.com/minisite/HiSuite_cn/" target="_blank">PC软件</a></p>
-							<p><a href="http://vmall.118100.cn/" target="_blank">数字音乐</a></p>
-							<p><a href="http://www.hwtrip.com/" target="_blank">爱旅</a></p>
-							<p><a href="http://dbank.vmall.com/" target="_blank">华为网盘</a></p>
+							<p><a href="javascript:;">帮助中心</a></p>
+							<p><a href="javascript:;" target="_blank">PC软件</a></p>
+							<p><a href="javascript:;" target="_blank">数字音乐</a></p>
+							<p><a href="javascript:;" target="_blank">爱旅</a></p>
+							<p><a href="javascript:;" target="_blank">华为网盘</a></p>
 						</div>
 					</div>
 				</li>
@@ -255,7 +255,7 @@ function showSelectRegion()
 <header class="header">
 	<div class="layout">
 		<!-- 21030909-logo-start -->
-		<div class="logo logo-index"><a href="http://www.vmall.com/index.html" title="Vmall.com - 华为商城"><img src="{{url('/images/home/newLogo.png')}}" alt="Vmall.com - 华为商城"></a></div><!-- 21030909-logo-start -->
+		<div class="logo logo-index"><a href="/" title="Vmall.com - 华为商城"><img src="{{url('/images/home/newLogo.png')}}" alt="Vmall.com - 华为商城"></a></div><!-- 21030909-logo-start -->
 		<!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
@@ -275,22 +275,22 @@ function showSelectRegion()
 				<div class="searchBar-key">
 	<b>热门搜索：</b>
 
-		<a href="http://www.vmall.com/search?keyword=V8" target="_blank">V8</a>
+		<a href="javascript:;" target="_blank">V8</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=5A" target="_blank">5A</a>
+		<a href="javascript:;" target="_blank">5A</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=5X" target="_blank">5X</a>
+		<a href="javascript:;" target="_blank">5X</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=HUAWEI%20P9" target="_blank">HUAWEI P9</a>
+		<a href="javascript:;" target="_blank">HUAWEI P9</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=5C" target="_blank">5C</a>
+		<a href="javascript:;" target="_blank">5C</a>
 
 
-		<a href="http://www.vmall.com/search?keyword=%E5%BF%AB%E5%85%85%E7%A7%BB%E5%8A%A8%E7%94%B5%E6%BA%90" target="_blank">快充移动电源</a>
+		<a href="javascript:;" target="_blank">快充移动电源</a>
 
 </div>
 
@@ -309,16 +309,16 @@ function showSelectRegion()
 						</div>
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
-								<li><a href="http://www.vmall.com/member/order?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的订单</a></li>
-								<li><a href="http://www.vmall.com/member/order?t=14683240080851468324177815&amp;tab=unpaid" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/order?t=14683240080851468324177815&amp;tab=nocomment" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/coupon?t=14683240080851468324177815" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/msg?t=14683240080851468324177815" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
+								<li><a href="javascript:;" rel="nofollow" timetype="timestamp">我的订单</a></li>
+								<li><a href="javascript:;" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
+								<li><a href="javascript:;" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
+								<li><a href="javascript:;" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
+								<li><a href="javascript:;" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
 							</ul>
 						</div>
 						<!-- 页头会员专享信息 -->
 						<div class="i-mall-event ">
-							<p><a href="http://www.vmall.com/notice-657"><img src="./css/20160127095348354.jpg" alt="特权频道"></a></p>
+							<p><a href="javascript:;"><img src="./css/20160127095348354.jpg" alt="特权频道"></a></p>
 						</div>
 					</div>
 				</div><!-- 21030909-我的商城-end -->
@@ -326,7 +326,7 @@ function showSelectRegion()
 			<div class="header-toolbar-item" id="header-toolbar-minicart">
 				<!-- 21030909-迷你购物车-start -->
 				<div class="minicart">
-					<div class="h" id="header-toolbar-minicart-h"><a href="http://cart.vmall.com/cart/cart.html?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">0</em><b></b></span></a><i></i><s></s><u></u></div>
+					<div class="h" id="header-toolbar-minicart-h"><a href="javascript:;" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">0</em><b></b></span></a><i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-minicart-content">
 						<div class="minicart-pro-empty" id="minicart-pro-empty">
 							<span class="icon-minicart">您的购物车是空的，赶紧选购吧！</span>
@@ -338,7 +338,7 @@ function showSelectRegion()
 						</div>
 						<div style="display: none;" class="minicart-pro-settleup" id="minicart-pro-settleup">
 							<p>共<em id="micro-cart-total">0</em>件商品，金额合计<b id="micro-cart-totalPrice">¥&nbsp;0</b></p>
-							<a class="button-minicart-settleup" href="http://cart.vmall.com/cart/cart.html">去结算</a>
+							<a class="button-minicart-settleup" href="javascript:;">去结算</a>
 						</div>
 					</div>
 				</div><!-- 21030909-迷你购物车-end -->
@@ -350,12 +350,12 @@ function showSelectRegion()
 			<div style="width: 91px; height: 96px;" class="ec-slider" id="ec-erweima">
 				<ul style="width: 91px; height: 96px;" class="ec-slider-list">
 					<li style="width: 91px; height: 96px; position: absolute; display: list-item;" class="ec-slider-item">
-						<p><a href="http://www.vmall.com/appdownload" target="blank" title="专享周三荣耀专场"><img src="{{url('/images/home/qrcode_vmall_app01.png')}}" alt="华为商城官方客户端"></a></p>
-						<p><a href="http://www.vmall.com/appdownload" target="blank"><span>专享周三荣耀专场</span></a></p>
+						<p><a href="javascript:;" target="blank" title="专享周三荣耀专场"><img src="{{url('/images/home/qrcode_vmall_app01.png')}}" alt="华为商城官方客户端"></a></p>
+						<p><a href="javascript:;" target="blank"><span>专享周三荣耀专场</span></a></p>
 					</li>
 					<li style="width: 91px; height: 96px; position: absolute; display: none;" class="ec-slider-item">
-						<p><a href="http://www.vmall.com/appdownload" target="blank" title="微信扫码关注我们"><img src="{{url('/images/qrcode_vmall_wechat01.jpg')}}" alt="华为商城官方微信"></a></p>
-						<p><a href="http://www.vmall.com/appdownload" target="blank"><span>微信扫码关注我们</span></a></p>
+						<p><a href="javascript:;" target="blank" title="微信扫码关注我们"><img src="{{url('/images/qrcode_vmall_wechat01.jpg')}}" alt="华为商城官方微信"></a></p>
+						<p><a href="javascript:;" target="blank"><span>微信扫码关注我们</span></a></p>
 					</li>
 				</ul>
 			<div class="ec-slider-nav"><span class="current"></span><span class=""></span></div><a style="display: none;" class="button-slider-prev" href="javascript:;"></a><a style="display: none;" class="button-slider-next" href="javascript:;"></a></div>
@@ -415,40 +415,40 @@ function showSelectRegion()
 		<!-- 20130909-导航-start -->
 		<nav class="naver">
 				<ul id="naver-list">
-			<li class="" id="index"><a href="http://www.vmall.com/index.html" onclick="_paq.push(['trackLink','点击首页活动导航第1位', 'link', '']);ec.code.addAnalytics({hicloud:true});" class="current">
+			<li class="" id="index"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第1位', 'link', '']);ec.code.addAnalytics({hicloud:true});" class="current">
 
              <span>首 页
 
 					</span></a> </li>
-		<li class="" id="huawei"><a href="http://www.vmall.com/huawei" onclick="_paq.push(['trackLink','点击首页活动导航第2位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li class="" id="huawei"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第2位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>华为专区
 
 					</span></a> </li>
-		<li id="honor"><a href="http://www.vmall.com/honor" onclick="_paq.push(['trackLink','点击首页活动导航第3位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="honor"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第3位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀专区
 
 					</span></a> </li>
-		<li id="honor"><a href="http://mm.vmall.com/ry8.html" onclick="_paq.push(['trackLink','点击首页活动导航第4位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="honor"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第4位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀8
 
 			<s><img src="{{url('images/home/hot.png')}}" alt="new"></s>
 		</span></a> </li>
-		<li class="" id="HUAWEI"><a href="http://www.vmall.com/product/3325.html" onclick="_paq.push(['trackLink','点击首页活动导航第5位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li class="" id="HUAWEI"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第5位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>P9
 
 			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
 					</span></a> </li>
-		<li id="honor"><a href="http://www.vmall.com/product/186517099.html" onclick="_paq.push(['trackLink','点击首页活动导航第6位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="honor"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第6位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀V8
 
 			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
 					</span></a> </li>
-		<li id="peijian"><a href="http://sale.vmall.com/peijian.html" onclick="_paq.push(['trackLink','点击首页活动导航第7位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="peijian"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第7位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>配件专区
 
@@ -456,13 +456,13 @@ function showSelectRegion()
 		<li><a href="javascript:;"><span>精彩频道</span><i></i></a>
 			<ol>
 					<li id="honor">
-                 <a href="http://www.vmall.com/honor/remind" onclick="_paq.push(['trackLink','点击首页活动导航第8位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">开售提醒</a></li>
+                 <a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第8位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">开售提醒</a></li>
 					<li id="smrz">
-                 <a href="http://www.vmall.com/notice-657" onclick="_paq.push(['trackLink','点击首页活动导航第9位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">实名认证</a></li>
+                 <a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第9位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">实名认证</a></li>
 					<li id="honor">
-                 <a href="http://www.vmall.com/recycle?url=%3Fpid%3D1032" onclick="_paq.push(['trackLink','点击首页活动导航第10位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">以旧换新</a></li>
+                 <a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第10位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">以旧换新</a></li>
 					<li id="hyj">
-                 <a href="http://www.vmall.com/list-38" onclick="_paq.push(['trackLink','点击首页活动导航第11位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">合约机</a></li>
+                 <a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第11位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">合约机</a></li>
 			</ol>
 		</li>
 </ul>
