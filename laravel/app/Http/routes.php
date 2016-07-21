@@ -119,3 +119,4 @@ Route::get("/Admin/chaining/delete/{id}", "Admin\chainingController@delete");
 //订单管理
 Route::resource("/Admin/addres", "Admin\addresController");
 Route::get("/Admin/addres", "Admin\addresController@index");
+Route::post("/Admin/addres/setState", "Admin\addresController@setState");

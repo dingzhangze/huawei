@@ -148,13 +148,14 @@
               @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
 
-							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="{{url('/login')}}?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script>
+							<p>你好，请&nbsp;&nbsp;<script></script>
                 <a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
 						</div>
             @else
-            您好, <strong>{{Session::get("userDatas")->uname}}</strong>
-            @endif
-						<div class="i-mall-uc " id="cart_login_info">
+            <div class="i-mall-prompt" id="cart_unlogin_info">
+            <p>您好, <strong>{{Session::get("userDatas")->uname}}</strong></p>
+            </div>
+            <div class="i-mall-uc " id="cart_login_info">
 							<ul>
 								<li><a href="#" rel="nofollow" timetype="timestamp">我的订单</a></li>
 								<li><a href="#" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
@@ -163,29 +164,18 @@
 								<li><a href="#" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
 							</ul>
 						</div>
+            @endif
+						
 						<!-- 页头会员专享信息 -->
-						<div class="i-mall-event ">
-							<p><a href="http://www.vmall.com/notice-657"><img src="./images/20160127095348354.jpg" alt="特权频道"></a></p>
-						</div>
+						
 					</div>
 				</div><!-- 21030909-我的商城-end -->
 			</div>
 			<div class="header-toolbar-item" id="header-toolbar-minicart">
 				<!-- 21030909-迷你购物车-start -->
 				<div class="minicart">
-					<div class="h" id="header-toolbar-minicart-h"><a href="http://cart.vmall.com/cart/cart.html?t=14677062410991467706535894" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">1</em><b></b></span></a><i></i><s></s><u></u></div>
-					<div class="b" id="header-toolbar-minicart-content">
-						<div style="display: none;" class="minicart-pro-empty" id="minicart-pro-empty">
-							<span class="icon-minicart">您的购物车是空的，赶紧选购吧！</span>
-						</div>
-						<div id="minicart-pro-list-block">
-						<ul class="minicart-pro-list" id="minicart-pro-list"><!--microCartList start--><li class="minicart-pro-item"><div class="pro-info"><div class="p-img"><a href="http://www.vmall.com/product/414244322.html#950613386" title="" target="_blank"><img src="./images/78_78_1466068575708mp.jpg" alt="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）"></a></div><div class="p-name"><a href="http://www.vmall.com/product/414244322.html#950613386" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）&nbsp;<span class="p-slogan">精致随行，百搭外观，轻巧佩戴。</span><span class="p-promotions hide"></span></a></div><div class="p-status"><div class="p-price"><b>¥&nbsp;129.00</b><em>x</em><span>1</span></div><div class="p-tags"></div></div><a href="javascript:;" class="icon-minicart-del" title="删除" onclick="ec.minicart.del(this , 950613386, 1)">删除</a></div></li><!--microCartList end--></ul>
-						</div>
-						<div class="minicart-pro-settleup" id="minicart-pro-settleup">
-							<p>共<em id="micro-cart-total">0</em>件商品，金额合计<b id="micro-cart-totalPrice">0</b></p>
-							<a class="button-minicart-settleup" href="http://cart.vmall.com/cart/cart.html">去结算</a>
-						</div>
-					</div>
+					<div class="h" id="header-toolbar-minicart-h"><a href="http://cart.vmall.com/cart/cart.html?t=14677062410991467706535894" rel="nofollow" timetype="timestamp">我的购物车</a><i></i><s></s><u></u></div>
+					
 				</div><!-- 21030909-迷你购物车-end -->
 			</div>
 

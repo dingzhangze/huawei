@@ -107,6 +107,9 @@ class IndexController extends Controller
     public function show($id)
     {
          $goodslist = DB::table("admin_goods_details")->where("gid",$id)->first();
+        
+         if(!empty($goodslist)){    
+         
          $comment=DB::table("admin_goods_comment")->where("gid",$id)->get();
          $count=DB::table("admin_goods_comment")->where("gid",$id)->count();
 //         dd("$comments");
@@ -115,6 +118,10 @@ class IndexController extends Controller
          //dd($goodslist);
         
           return view("home.goodslist.Details",["goodslist"=>$goodslist,"ppp"=>$ppp,"comment"=>$comment,"count"=>$count]); 
+         }else{
+             
+           return redirect("/tips")->with(["info"=>"无详情","url" => "/"]);
+         }
     }
 
     /**

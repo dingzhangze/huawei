@@ -426,7 +426,7 @@
         	<div class="pro-detail-tab-nav">
             <ul>
                 <li id="pro-tab-feature" class="current"><a href="." title="商品详情"><span>商品详情</span></a></li>
-                <li id="pro-tab-evaluate"><a href="." title="用户评价"><span id="prd-remark-span-tab-evaluate">用户评价<em>（20629）</em></span></a></li>
+                <li id="pro-tab-evaluate"><a href="." title="用户评价"><span id="prd-remark-span-tab-evaluate">用户评价<em></em></span></a></li>
                 <li id="pro-tab-parameter" data-skulist="8259,8255,8267,8273,8261,8263,8265,8269,8275,8279,8277,721625417"><a href="." title="规格参数"><span>规格参数</span></a></li>
                 <li id="pro-tab-package"><a href="." title="包装清单"><span>包装清单</span></a></li>
 		<li id="pro-tab-software"><a href="." title="软件下载"><span>软件下载</span></a></li>
@@ -464,86 +464,8 @@
 <p>※限于篇幅，本网站中所包含的信息（包括但不限于产品规格、功能说明等）可能不完整，请以有关产品使用说明书的具体信息为准。</p>
 </div>
 </div>
-<!--规格参数 -->
-<div id="pro-tab-parameter-content" class="pro-detail-tab-area pro-parameter-area hide"><div>正在加载中...</div></div>
-<!--包装清单 -->
-<div id="pro-tab-package-content" class="pro-detail-tab-area pro-package-area hide">
-<div id="pro-tab-package-content-8259">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8255">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8267">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8273">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8261">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8263">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8265">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8269">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8275">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8279">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-8277">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-<div style="display: none;" id="pro-tab-package-content-721625417">
-<p><span style="font-family:arial,helvetica,sans-serif;font-size:12px;">手机（电池内置） x 1，中式充电器 x 1，数据线（Type-C头） x 1，半入耳式线控耳机 x 1，点纹透明保护壳 x 1，快速指南 x 1，华为手机三包凭证 x 1，取卡针 x 1，金卡会员卡 x 1</span><br></p><p><br></p>
-</div>
-</div>
-<!--售后服务 -->
-<div id="pro-tab-service-content" class="pro-detail-tab-area pro-service-area hide">
-<div style="display: block;" id="pro-tab-service-content-8259" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8255" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8267" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8273" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8261" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8263" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8265" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8269" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8275" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8279" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-8277" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-<div style="display: none;" id="pro-tab-service-content-721625417" class="hide">
-<p><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">本产品全国联保，享受三包服务，质保期为：一年质保</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7天内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">售后服务电话：400-830-8300</span><br style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:tahoma, 微软雅黑;font-size:14px"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">华为消费者BG官网： </span><a style="font-family:arial, helvetica, sans-serif;color:#333333;cursor:pointer;text-decoration:underline" href="http://consumer.huawei.com/cn/"><span style="line-height:21px;background-color:#ffffff;font-family:arial,helvetica,sans-serif;font-size:12px;">http://consumer.huawei.com/cn/</span></a></span><br></p>
-</div>
-</div>
+
+
 <div id="pro-tab-software-content" class="pro-detail-tab-area pro-software-area hide">
 <iframe id="pro_software_iframe" name="pro_software_iframe" src="./a.htm" data-src="" scrolling="no" frameborder="0" height="300" width="100%"></iframe>
 </div>	    <div id="remarkLoading"></div>
@@ -630,7 +552,7 @@
                                     @foreach($comment as $comments)
 					<div class="pro-inquire-item clearfix">
 						<div class="pro-inquire-user">
-							<label>@if(!empty($comments->name)) {{$comments->name}} @endif</label><span></span><s><i class="icon-vip-level-0"></i></s><em>@if(!empty($comments->cdatetime)) {{$comments->cdatetime}} @endif</em>
+                                                    <label>@if(!empty($comments->name)) {{$comments->name}} @endif </label><span></span><s><i class="icon-vip-level-0"></i></s>:&nbsp;&nbsp;&nbsp;&nbsp;<em>@if(!empty($comments->cdatetime)) {{$comments->cdatetime}} @endif</em>
 						</div>
 						<div class="pro-inquire-question">
 							<label>咨询内容：</label><span>@if(!empty($comments->comment)) {{$comments->comment}} @endif</span>
@@ -734,7 +656,7 @@
                                                 <input type="hidden" name="_token" value="{{csrf_token()}}" />
                                                 <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
                                                 <input type="hidden" name="gname" value="{{$goodslist->name}}" />
-<input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}：  @endif" />
+<input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}  @endif" />
 							<div class="form-edit-table">
                                                             <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
 							</div>

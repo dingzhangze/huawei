@@ -129,7 +129,7 @@
 		<div class="h">
 			<s class="icon-success-7"></s>
 			<h3>订单提交成功，请您尽快付款！</h3>	
-			<p name="order-pay-info" ordertype="">订单号：&nbsp;&nbsp;HW000{{$goodss->number}}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;付款金额（元）：&nbsp;&nbsp;<b>
+			<p name="order-pay-info" ordertype="">订单号：&nbsp;&nbsp;HW00{{$goodss->number}}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;付款金额（元）：&nbsp;&nbsp;<b>
 				{{$goodss->total}}
 			</b>&nbsp;<b>元</b></p>
 			<div class="tips">请您在&nbsp;&nbsp;<b id="lastPayTime">{{$goodss->ordertime}}</b>&nbsp;完成支付，否则订单将自动取消。</div>
@@ -141,7 +141,7 @@
 				
 					<tr>
 						<th>订单编号：</th>
-						<td><span>HW000{{$goodss->number}}</span></td>
+						<td><span>HW00{{$goodss->number}}</span></td>
 					</tr>
 					<tr>
 						<th>订单金额：</th>
