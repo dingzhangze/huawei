@@ -3,7 +3,7 @@
 <div class="hr-10"></div>
 <div class="g">
 	<!--面包屑 -->
-<div class="breadcrumb-area"><a href="http://www.vmall.com/" title="首页">首页</a>&nbsp;&nbsp;\&nbsp;&nbsp;<em id="personCenter"><a href="http://www.vmall.com/member/" title="我的商城">我的商城</a></em><em id="pathPoint">&nbsp;&nbsp;\&nbsp;&nbsp;</em><span id="pathTitle">我的订单</span></div>	
+<div class="breadcrumb-area"><a href="{{url('/')}}" title="首页">首页</a>&nbsp;&nbsp;\&nbsp;&nbsp;<em id="personCenter"><a href="{{url('/Home/member/Myorder')}}" title="我的商城">我的商城</a></em><em id="pathPoint">&nbsp;&nbsp;\&nbsp;&nbsp;</em><span id="pathTitle">我的订单</span></div>	
 </div>
 <div class="hr-10"></div>
 
@@ -82,7 +82,7 @@
 				        					<td class="col-pro-info">
 												<p class="p-name">
 													
-													<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" target="_blank" href="http://www.vmall.com/product/2324.html#8155">{{$gname->name}}</a>
+													<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" target="_blank" href="">{{$gname->name}}</a>
 												</p>
 				        					</td>
 				        					<td class="col-price"><em>¥</em><span>

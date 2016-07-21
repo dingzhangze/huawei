@@ -20,13 +20,13 @@
     <div class="layout">
 		<div class="s-sub">
 			<ul>
-				<li class="s-hw"><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
-				<li class="s-honor"><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+				<li class="s-hw"><a href="" target="_blank">华为官网</a></li>
+				<li class="s-honor"><a href="" target="_blank">荣耀官网</a></li>
 
 				<li class="s-appsoft">
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://emui.huawei.com/appsoft/" target="_blank">软件应用</a>
+							<a href="" target="_blank">软件应用</a>
 							<s></s>
 						</div>
 						<div class="b">
@@ -81,11 +81,11 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://www.vmall.com/help/index.html">帮助中心</a></p>
-							<p><a href="http://consumer.huawei.com/minisite/HiSuite_cn/" target="_blank">PC软件</a></p>
-							<p><a href="http://vmall.118100.cn/" target="_blank">数字音乐</a></p>
-							<p><a href="http://www.hwtrip.com/" target="_blank">爱旅</a></p>
-							<p><a href="http://dbank.vmall.com/" target="_blank">华为网盘</a></p>
+							<p><a href="">帮助中心</a></p>
+							<p><a href="" target="_blank">PC软件</a></p>
+							<p><a href="" target="_blank">数字音乐</a></p>
+							<p><a href="" target="_blank">爱旅</a></p>
+							<p><a href="" target="_blank">华为网盘</a></p>
 						</div>
 					</div>
 				</li>
@@ -148,8 +148,8 @@
               @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
 
-							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="{{url('/login')}}?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script>
-                <a href="http://www.vmall.com/account/login?url=%2F" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
+							<p>你好，请&nbsp;&nbsp;
+                <a href="{{url('/login')}}" rel="nofollow">登录</a> | <a href="{{url('/register')}}" rel="nofollow">注册</a></p>
 						</div>
             @else
             您好, <strong>{{Session::get("userDatas")->uname}}</strong>
@@ -165,7 +165,7 @@
 						</div>
 						<!-- 页头会员专享信息 -->
 						<div class="i-mall-event ">
-							<p><a href="http://www.vmall.com/notice-657"><img src="./images/20160127095348354.jpg" alt="特权频道"></a></p>
+							<p><a href=""><img src="./images/20160127095348354.jpg" alt="特权频道"></a></p>
 						</div>
 					</div>
 				</div><!-- 21030909-我的商城-end -->
@@ -178,13 +178,7 @@
 						<div style="display: none;" class="minicart-pro-empty" id="minicart-pro-empty">
 							<span class="icon-minicart">您的购物车是空的，赶紧选购吧！</span>
 						</div>
-						<div id="minicart-pro-list-block">
-						<ul class="minicart-pro-list" id="minicart-pro-list"><!--microCartList start--><li class="minicart-pro-item"><div class="pro-info"><div class="p-img"><a href="http://www.vmall.com/product/414244322.html#950613386" title="" target="_blank"><img src="./images/78_78_1466068575708mp.jpg" alt="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）"></a></div><div class="p-name"><a href="http://www.vmall.com/product/414244322.html#950613386" title="荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）" target="_blank">荣耀畅玩手环 A1 智能运动手环 运动睡眠监测 紫外线测试（活力蓝）&nbsp;<span class="p-slogan">精致随行，百搭外观，轻巧佩戴。</span><span class="p-promotions hide"></span></a></div><div class="p-status"><div class="p-price"><b>¥&nbsp;129.00</b><em>x</em><span>1</span></div><div class="p-tags"></div></div><a href="javascript:;" class="icon-minicart-del" title="删除" onclick="ec.minicart.del(this , 950613386, 1)">删除</a></div></li><!--microCartList end--></ul>
-						</div>
-						<div class="minicart-pro-settleup" id="minicart-pro-settleup">
-							<p>共<em id="micro-cart-total">0</em>件商品，金额合计<b id="micro-cart-totalPrice">0</b></p>
-							<a class="button-minicart-settleup" href="http://cart.vmall.com/cart/cart.html">去结算</a>
-						</div>
+						
 					</div>
 				</div><!-- 21030909-迷你购物车-end -->
 			</div>
@@ -195,12 +189,12 @@
 			<div style="width: 91px; height: 96px;" class="ec-slider" id="ec-erweima">
 				<ul style="width: 91px; height: 96px;" class="ec-slider-list">
 					<li style="width: 91px; height: 96px; position: absolute;" class="ec-slider-item">
-						<p><a href="http://www.vmall.com/appdownload" target="blank" title="专享周三荣耀专场"><img src="{{url('/images/home/qrcode_vmall_app01.png')}}" alt="华为商城官方客户端"></a></p>
-						<p><a href="http://www.vmall.com/appdownload" target="blank"><span>专享周三荣耀专场</span></a></p>
+						<p><a href="" target="blank" title="专享周三荣耀专场"><img src="{{url('/images/home/qrcode_vmall_app01.png')}}" alt="华为商城官方客户端"></a></p>
+						<p><a href="" target="blank"><span>专享周三荣耀专场</span></a></p>
 					</li>
 					<li style="width: 91px; height: 96px; display: none; position: absolute;" class="ec-slider-item">
-						<p><a href="http://www.vmall.com/appdownload" target="blank" title="微信扫码关注我们"><img src="{{url('/images/qrcode_vmall_wechat01.jpg')}}" alt="华为商城官方微信"></a></p>
-						<p><a href="http://www.vmall.com/appdownload" target="blank"><span>微信扫码关注我们</span></a></p>
+						<p><a href="" target="blank" title="微信扫码关注我们"><img src="{{url('/images/qrcode_vmall_wechat01.jpg')}}" alt="华为商城官方微信"></a></p>
+						<p><a href="" target="blank"><span>微信扫码关注我们</span></a></p>
 					</li>
 				</ul>
 			<div class="ec-slider-nav"><span class="current"></span><span></span></div><a style="display: none;" class="button-slider-prev" href="javascript:;"></a><a style="display: none;" class="button-slider-next" href="javascript:;"></a></div>
@@ -264,24 +258,24 @@
              <span>首 页
 
 					</span></a> </li>
-		<li id="huawei"><a href="http://www.vmall.com/huawei" onclick="_paq.push(['trackLink','点击首页活动导航第2位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="huawei"><a href="" onclick="_paq.push(['trackLink','点击首页活动导航第2位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>华为专区
 
 					</span></a> </li>
-		<li id="honor"><a href="http://www.vmall.com/honor" onclick="_paq.push(['trackLink','点击首页活动导航第3位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="honor"><a href="" onclick="_paq.push(['trackLink','点击首页活动导航第3位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀专区
 
 					</span></a> </li>
-		<li id="honor"><a href="http://sale.vmall.com/honor.html" onclick="_paq.push(['trackLink','点击首页活动导航第4位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="honor"><a href="" onclick="_paq.push(['trackLink','点击首页活动导航第4位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀品牌日
 
 			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
 
 					</span></a> </li>
-		<li id="honor"><a href="http://www.vmall.com/product/186517099.html" onclick="_paq.push(['trackLink','点击首页活动导航第5位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="honor"><a href="" onclick="_paq.push(['trackLink','点击首页活动导航第5位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>荣耀V8
 
@@ -290,7 +284,7 @@
 			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
 
 					</span></a> </li>
-		<li id="HUAWEI"><a href="http://www.vmall.com/product/3325.html" onclick="_paq.push(['trackLink','点击首页活动导航第6位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="HUAWEI"><a href="" onclick="_paq.push(['trackLink','点击首页活动导航第6位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>P9
 
@@ -299,7 +293,7 @@
 			<s><img src="{{url('images/home/hot.png')}}" alt="hot"></s>
 
 					</span></a> </li>
-		<li id="peijian"><a href="http://sale.vmall.com/peijian.html" onclick="_paq.push(['trackLink','点击首页活动导航第7位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
+		<li id="peijian"><a href="" onclick="_paq.push(['trackLink','点击首页活动导航第7位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">
 
              <span>配件专区
 
@@ -307,13 +301,13 @@
 		<li><a href="javascript:;"><span>精彩频道</span><i></i></a>
 			<ol>
 					<li id="honor">
-                 <a href="http://www.vmall.com/honor/remind" onclick="_paq.push(['trackLink','点击首页活动导航第8位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">开售提醒</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第8位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">开售提醒</a></li>
 					<li id="smrz">
-                 <a href="http://www.vmall.com/notice-657" onclick="_paq.push(['trackLink','点击首页活动导航第9位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">实名认证</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第9位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">实名认证</a></li>
 					<li id="honor">
-                 <a href="http://www.vmall.com/recycle?url=%3Fpid%3D1032" onclick="_paq.push(['trackLink','点击首页活动导航第10位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">以旧换新</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第10位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">以旧换新</a></li>
 					<li id="hyj">
-                 <a href="http://www.vmall.com/list-38" onclick="_paq.push(['trackLink','点击首页活动导航第11位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">合约机</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第11位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">合约机</a></li>
 			</ol>
 		</li>
 </ul>
@@ -415,7 +409,7 @@
 	<div style="width: 276px; height: 310px;" class="ec-slider" id="group-slider">
 		<ul style="width: 276px; height: 310px;" class="channel-pro-list ec-slider-list" id="slider-sale-list">
 					<li style="width: 276px; height: 310px;" class="channel-pro-item ec-slider-item" data-block="slider">
-				<p><a textvalue="只支持选中一个链接时生效" target="_blank" href="http://www.vmall.com/product/3427.html"><img src="{{url('/images/home/20160612175100190.jpg')}}" title="HUAWEI G9青春版 "></a><br></p>
+				<p><a textvalue="只支持选中一个链接时生效" target="_blank" href=""><img src="{{url('/images/home/20160612175100190.jpg')}}" title="HUAWEI G9青春版 "></a><br></p>
 			</li>
 		</ul>
 	</div>
@@ -428,25 +422,25 @@
 			<div class="h">
 				<div class="h-tab">
 					<ul>
-						<li class="current" id="tab-notice"><a href="http://www.vmall.com/notice-list">公告</a></li>
-						<li id="tab-news"><a href="http://www.vmall.com/media-list">评测 </a></li>
+						<li class="current" id="tab-notice"><a href="">公告</a></li>
+						<li id="tab-news"><a href="">评测 </a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="b">
 				<ul id="tab-notice-content">
-						<li><a href="http://www.vmall.com/notice-683" title="【系统升级公告】" target="_blank">【系统升级公告】</a></li>
-						<li><a href="http://www.vmall.com/notice-1143" title="【必看】Vmall购机秘籍" target="_blank">【必看】Vmall购机秘籍</a></li>
-						<li><a href="http://www.vmall.com/notice-1069" title="【中奖名单】【荣耀618 】购荣耀V8！赢美国FISE观赛游!抽奖" target="_blank">【中奖名单】【荣耀618 】购荣耀V8！赢美国FISE观赛游!抽奖</a></li>
-						<li><a href="http://www.vmall.com/notice-1157" title="6月20日-7月19日使用支付宝支付，可赢2999元支付宝红包，每天一个。" target="_blank">6月20日-7月19日使用支付宝支付，可赢2999元支付宝红包，每天一个。</a></li>
-						<li><a href="http://www.vmall.com/notice-1163" title="618荣耀年中大促返场72小时" target="_blank">618荣耀年中大促返场72小时</a></li>
+						<li><a href="" title="【系统升级公告】" target="_blank">【系统升级公告】</a></li>
+						<li><a href="" title="【必看】Vmall购机秘籍" target="_blank">【必看】Vmall购机秘籍</a></li>
+						<li><a href="" title="【中奖名单】【荣耀618 】购荣耀V8！赢美国FISE观赛游!抽奖" target="_blank">【中奖名单】【荣耀618 】购荣耀V8！赢美国FISE观赛游!抽奖</a></li>
+						<li><a href="" title="6月20日-7月19日使用支付宝支付，可赢2999元支付宝红包，每天一个。" target="_blank">6月20日-7月19日使用支付宝支付，可赢2999元支付宝红包，每天一个。</a></li>
+						<li><a href="" title="618荣耀年中大促返场72小时" target="_blank">618荣耀年中大促返场72小时</a></li>
 				</ul>
 				<ul id="tab-news-content" class="hide">
-						<li><a href="http://www.vmall.com/media-1089" title="流滑得让你爱不释手 荣耀V8全面评测" target="_blank">流滑得让你爱不释手 荣耀V8全面评测</a></li>
-						<li><a href="http://www.vmall.com/media-1095" title="荣耀畅玩5C手机上手评测:更贴心的用机体验" target="_blank">荣耀畅玩5C手机上手评测:更贴心的用机体验</a></li>
-						<li><a href="http://www.vmall.com/media-1093" title="时尚新商务 HUAWEI MateBook深度评测" target="_blank">时尚新商务 HUAWEI MateBook深度评测</a></li>
-						<li><a href="http://www.vmall.com/media-1091" title="能打电话的智能手环 华为手环 B3 评测" target="_blank">能打电话的智能手环 华为手环 B3 评测</a></li>
-						<li><a href="http://www.vmall.com/media-905" title="华为P9真机上手评测：如何做到时尚且强大" target="_blank">华为P9真机上手评测：如何做到时尚且强大</a></li>
+						<li><a href="" title="流滑得让你爱不释手 荣耀V8全面评测" target="_blank">流滑得让你爱不释手 荣耀V8全面评测</a></li>
+						<li><a href="" title="荣耀畅玩5C手机上手评测:更贴心的用机体验" target="_blank">荣耀畅玩5C手机上手评测:更贴心的用机体验</a></li>
+						<li><a href="" title="时尚新商务 HUAWEI MateBook深度评测" target="_blank">时尚新商务 HUAWEI MateBook深度评测</a></li>
+						<li><a href="" title="能打电话的智能手环 华为手环 B3 评测" target="_blank">能打电话的智能手环 华为手环 B3 评测</a></li>
+						<li><a href="" title="华为P9真机上手评测：如何做到时尚且强大" target="_blank">华为P9真机上手评测：如何做到时尚且强大</a></li>
 				</ul>
 
 			</div>
@@ -454,7 +448,7 @@
 		<div class="hr-20"></div>
 		<!-- 20130909-ad-218*132-start -->
 		<div class="banner">
-			<p><a target="_blank" href="http://www.vmall.com/notice-657"><img src="{{url('/images/home/20160622165023742.jpg')}}"></a></p>
+			<p><a target="_blank" href=""><img src="{{url('/images/home/20160622165023742.jpg')}}"></a></p>
 		</div><!-- 20130909-ad-218*132-start -->
 		<div class="hr-20"></div>
 	</div>
@@ -508,14 +502,14 @@
 	<!-- 20130904-频道-楼层-start -->
 	<div class="channel-floor">
 		<div class="h">
-			<h2><a href="http://www.vmall.com/list-36" title="手机" target="_blank">手机</a></h2>
+			<h2><a href="" title="手机" target="_blank">手机</a></h2>
 			<em class="channel-subtitle">华为精品手机</em>
 			<ul class="channel-nav">
-					<li><a href="http://www.vmall.com/list-75" target="_blank">荣耀</a></li>
-					<li><a href="http://www.vmall.com/list-77" target="_blank">荣耀畅玩</a></li>
-					<li><a href="http://www.vmall.com/list-76" target="_blank">华为 Mate/P系列</a></li>
-					<li><a href="http://www.vmall.com/list-81" target="_blank">华为 G/Y系列</a></li>
-					<li><a href="http://www.vmall.com/list-38" target="_blank">运营商合约</a></li>
+					<li><a href="" target="_blank">荣耀</a></li>
+					<li><a href="" target="_blank">荣耀畅玩</a></li>
+					<li><a href="" target="_blank">华为 Mate/P系列</a></li>
+					<li><a href="" target="_blank">华为 G/Y系列</a></li>
+					<li><a href="" target="_blank">运营商合约</a></li>
 			</ul>
 		</div>
 		<div class="b">
@@ -572,12 +566,12 @@
 	<!-- 20130904-频道-楼层-start -->
 	<div class="channel-floor">
 		<div class="h">
-			<h2><a href="http://www.vmall.com/list-40" title="平板 &amp; 穿戴" target="_blank">平板 &amp; 穿戴</a></h2>
+			<h2><a href="" title="平板 &amp; 穿戴" target="_blank">平板 &amp; 穿戴</a></h2>
 			<em class="channel-subtitle">华为精品平板</em>
 			<ul class="channel-nav">
-					<li><a href="http://www.vmall.com/list-41" target="_blank">平板电脑</a></li>
-					<li><a href="http://www.vmall.com/list-42" target="_blank">手环</a></li>
-					<li><a href="http://www.vmall.com/list-85" target="_blank">手表</a></li>
+					<li><a href="" target="_blank">平板电脑</a></li>
+					<li><a href="" target="_blank">手环</a></li>
+					<li><a href="" target="_blank">手表</a></li>
 			</ul>
 		</div>
 		<div class="b">
@@ -634,13 +628,13 @@
 	<!-- 20130904-频道-楼层-start -->
 	<div class="channel-floor">
 		<div class="h">
-			<h2><a href="http://www.vmall.com/list-59" title="笔记本电脑" target="_blank">笔记本电脑</a></h2>
+			<h2><a href="" title="笔记本电脑" target="_blank">笔记本电脑</a></h2>
 			<em class="channel-subtitle">移动办公</em>
 			<ul class="channel-nav">
-					<li><a href="http://www.vmall.com/list-241" target="_blank">MateBook</a></li>
-					<li><a href="http://www.vmall.com/list-247" target="_blank">拓展坞</a></li>
-					<li><a href="http://www.vmall.com/list-249" target="_blank">触控笔</a></li>
-					<li><a href="http://www.vmall.com/list-251" target="_blank">二合一键盘</a></li>
+					<li><a href="" target="_blank">MateBook</a></li>
+					<li><a href="" target="_blank">拓展坞</a></li>
+					<li><a href="" target="_blank">触控笔</a></li>
+					<li><a href="" target="_blank">二合一键盘</a></li>
 			</ul>
 		</div>
 		<div class="b">
@@ -695,13 +689,13 @@
 	<!-- 20130904-频道-楼层-start -->
 	<div class="channel-floor">
 		<div class="h">
-			<h2><a href="http://www.vmall.com/list-43" title="智能家居" target="_blank">智能家居</a></h2>
+			<h2><a href="" title="智能家居" target="_blank">智能家居</a></h2>
 			<em class="channel-subtitle">上网必备</em>
 			<ul class="channel-nav">
-					<li><a href="http://www.vmall.com/list-44" target="_blank">电力猫</a></li>
-					<li><a href="http://www.vmall.com/list-45" target="_blank">路由器</a></li>
-					<li><a href="http://www.vmall.com/list-46" target="_blank">电视盒子</a></li>
-					<li><a href="http://www.vmall.com/list-97" target="_blank">随行wifi</a></li>
+					<li><a href="" target="_blank">电力猫</a></li>
+					<li><a href="" target="_blank">路由器</a></li>
+					<li><a href="" target="_blank">电视盒子</a></li>
+					<li><a href="" target="_blank">随行wifi</a></li>
 			</ul>
 		</div>
 		<div class="b">
@@ -758,15 +752,15 @@
 	<!-- 20130904-频道-楼层-start -->
 	<div class="channel-floor">
 		<div class="h">
-			<h2><a href="http://www.vmall.com/list-47" title="专属配件" target="_blank">专属配件</a></h2>
+			<h2><a href="" title="专属配件" target="_blank">专属配件</a></h2>
 			<em class="channel-subtitle">配件与服务</em>
 			<ul class="channel-nav">
-					<li><a href="http://www.vmall.com/list-48" target="_blank">保护壳</a></li>
-					<li><a href="http://www.vmall.com/list-49" target="_blank">保护套</a></li>
-					<li><a href="http://www.vmall.com/list-50" target="_blank">贴膜</a></li>
-					<li><a href="http://www.vmall.com/list-223" target="_blank">盒子遥控器</a></li>
-					<li><a href="http://www.vmall.com/list-225" target="_blank">表带</a></li>
-					<li><a href="http://www.vmall.com/list-227" target="_blank">电容笔</a></li>
+					<li><a href="" target="_blank">保护壳</a></li>
+					<li><a href="" target="_blank">保护套</a></li>
+					<li><a href="" target="_blank">贴膜</a></li>
+					<li><a href="" target="_blank">盒子遥控器</a></li>
+					<li><a href="" target="_blank">表带</a></li>
+					<li><a href="" target="_blank">电容笔</a></li>
 			</ul>
 		</div>
 		<div class="b">
@@ -828,18 +822,18 @@
 
 
 <div class="layout">
-	<li class="ec-slider-item"><div class="ec-slider-item-img"><a href="http://www.vmall.com/notice-657" target="_blank"><img src="{{url('/images/home/20160530195653686.jpg')}}"></a></div></li>
+	<li class="ec-slider-item"><div class="ec-slider-item-img"><a href="" target="_blank"><img src="{{url('/images/home/20160530195653686.jpg')}}"></a></div></li>
 </div>
 <div class="hr-40"></div>
 <!-- 20130902-关注-start -->
 <div class="follow">
 	<div class="layout">
 		<ul>
-			<li><a class="follow-hwsoft" href="http://emui.huawei.com/appsoft/" target="_blank"><img src="{{url('/images/home/follow_hwsoft_application.png')}}" alt="华为软件应用"></a></li>
-			<!--<li><a class="follow-hwsoft" href="http://appstore.huawei.com/huaweiSoft" target="_blank"><img src="http://res.vmallres.com/20160612/images/echannel/misc/follow_hwsoft.png" alt="华为软件专区"/></a></li> -->
-			<li><a href="http://weibo.com/shophuawei" target="_blank" rel="nofollow" class="follow-sina"><img alt="关注新浪微博" src="{{url('/images/home/follow_sina.png')}}"></a></li>
-			<li><a class="follow-qzone" href="http://user.qzone.qq.com/2305534418" target="_blank"><img src="{{url('/images/home/follow_qzone.png')}}" alt="关注QQ空间"></a></li>
-			<!--<li><a class="follow-qzone" href="http://vmallhw.qzone.qq.com" target="_blank"><img src="http://res.vmallres.com/20160612/images/echannel/misc/follow_qzone.png" alt="关注QQ空间"/></a></li>-->
+			<li><a class="follow-hwsoft" href="" target="_blank"><img src="{{url('/images/home/follow_hwsoft_application.png')}}" alt="华为软件应用"></a></li>
+			
+			<li><a href="" target="_blank" rel="nofollow" class="follow-sina"><img alt="关注新浪微博" src="{{url('/images/home/follow_sina.png')}}"></a></li>
+			<li><a class="follow-qzone" href="" target="_blank"><img src="{{url('/images/home/follow_qzone.png')}}" alt="关注QQ空间"></a></li>
+			
 			<li onmouseout="this.className=''" onmouseover="this.className='hover'" class=""><a href="javascript:;" class="follow-android"><img alt="下载手机客户端" src="{{url('/images/home/follow_android.png')}}"></a><div class="follow-panel follow-panel-qrcode">
 			<img src="{{url('/images/home/img67.png')}}" alt="专享周三荣耀专场"><p><b>专享周三荣耀专场</b></p><s></s></div></li>
 		</ul>
@@ -876,10 +870,10 @@
 			<dt><i></i>帮助中心</dt>
 			<dd>
 				<ol>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-790.html">购物指南</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-814.html">配送方式</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-828.html">支付方式</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/category-16.html">常见问题</a></li>
+					<li><a target="_blank" href="">购物指南</a></li>
+					<li><a target="_blank" href="">配送方式</a></li>
+					<li><a target="_blank" href="">支付方式</a></li>
+					<li><a target="_blank" href="">常见问题</a></li>
 				</ol>
 			</dd>
 		</dl>
@@ -887,10 +881,10 @@
 			<dt><i></i>售后服务</dt>
 			<dd>
 				<ol>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-833.html">保修政策</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-834.html">退换货政策</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-835.html">退换货流程</a></li>
-					<li><a target="_blank" href="http://consumer.huawei.com/cn/support/warranty-query/index.htm">保修状态查询</a></li>
+					<li><a target="_blank" href="">保修政策</a></li>
+					<li><a target="_blank" href="">退换货政策</a></li>
+					<li><a target="_blank" href="">退换货流程</a></li>
+					<li><a target="_blank" href="">保修状态查询</a></li>
 				</ol>
 			</dd>
 		</dl>
@@ -898,10 +892,10 @@
 			<dt><i></i>技术支持</dt>
 			<dd>
 				<ol>
-					<li><a target="_blank" href="http://consumer.huawei.com/cn/support/service-center/index.htm">售后网点</a></li>
-					<li><a target="_blank" href="http://consumer.huawei.com/cn/support/reservation/index.htm">预约维修</a></li>
-					<li><a target="_blank" href="http://consumer.huawei.com/cn/support/express-repair/index.htm">手机寄修服务</a></li>
-					<li><a target="_blank" href="http://app.hicloud.com/">软件下载</a></li>
+					<li><a target="_blank" href="">售后网点</a></li>
+					<li><a target="_blank" href="">预约维修</a></li>
+					<li><a target="_blank" href="">手机寄修服务</a></li>
+					<li><a target="_blank" href="">软件下载</a></li>
 				</ol>
 			</dd>
 		</dl>
@@ -909,9 +903,9 @@
 			<dt><i></i>关于商城</dt>
 			<dd>
 				<ol>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-934.html">公司介绍</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/faq-939.html">华为商城简介</a></li>
-					<li><a target="_blank" href="http://www.vmall.com/help/index.html">联系客服</a></li>
+					<li><a target="_blank" href="">公司介绍</a></li>
+					<li><a target="_blank" href="">华为商城简介</a></li>
+					<li><a target="_blank" href="">联系客服</a></li>
 				</ol>
 			</dd>
 		</dl>
@@ -919,10 +913,10 @@
 			<dt><i></i>关注我们</dt>
 			<dd>
 				<ol>
-					<li><a class="sina" rel="nofollow" href="http://weibo.com/shophuawei" target="_blank">新浪微博</a></li>
-					<li><a class="qq" rel="nofollow" href="http://t.qq.com/shophuawei" target="_blank">腾讯微博</a></li>
-					<li><a class="huafen" href="http://club.huawei.com/" target="_blank">花粉社区</a></li>
-					<li><a href="http://www.vmall.com/appdownload" target="_blank">商城手机版</a></li>
+					<li><a class="sina" rel="nofollow" href="" target="_blank">新浪微博</a></li>
+					<li><a class="qq" rel="nofollow" href="" target="_blank">腾讯微博</a></li>
+					<li><a class="huafen" href="" target="_blank">花粉社区</a></li>
+					<li><a href="" target="_blank">商城手机版</a></li>
 				</ol>
 			</dd>
 		</dl>
@@ -930,7 +924,7 @@
 
 
 
-<div id="globleParameter" class="hide" context="" stylepath="http://res8.vmallres.com/20160612/css" scriptpath="http://res9.vmallres.com/20160612/js" imagepath="http://res.vmallres.com/20160612/images" mediapath="http://res.vmallres.com/pimages/"></div>
+
 <!--底部 -->
 
 <footer class="footer">
@@ -945,7 +939,7 @@
                 </p>
                 <p style="text-align:left;"><span style="line-height:1.5;"></span></p>
 	</div>
-	<div class="footer-warrant-area"><p><a textvalue="隐私政策" title="隐私政策" target="_blank" href="http://www.vmall.com/help/faq-2635.html">隐私政策</a>  <a title="服务协议" target="_blank" href="http://www.vmall.com/help/faq-778.html">服务协议</a>        Copyright © 2012-2016  VMALL.COM   版权所有  保留一切权利</p><p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011402010009"><img style="width:20px;height:20px;float:none;" src="{{url('/images/home/20160226162651249.png')}}" title="公安备案" border="0" height="20" hspace="0" vspace="0" width="20"><span style="font-size:15px;font-family:宋体"><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 苏公网安备</span><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 32011402010009号</span></span></a> | 苏ICP备09062682号-9 | 增值电信业务经营许可证：苏B2-20130048 | <a target="_blank" href="http://res.vmallres.com/certificate/wwwz.jpg">网络文化经营许可证：苏网文[2012]0401-019号</a></p><p><br><a target="_blank" href="http://res.vmallres.com/certificate/wwwz.jpg"></a></p><p><a target="_blank" href="http://www.jsgsj.gov.cn:60103/businessCheck/verifKey.do?serial=320100913201147770231720001001-SAIC_SHOW_32000020160129102316602&amp;signData=MEUCIQDjstcg6fPylz+uES4LNTcBpBVlZujS8l5erIgXiDGw1QIgfHZFK11kZ1vB2enLCwvaslyfE1fztpB19AEK4hlwibo="><img src="{{url('/images/home/20160226162415360.png')}}" style="float:none;width:90px;height:32px;" title="电子营业执照" border="0" height="32" hspace="0" vspace="0" width="90"></a>   <a target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e13010932010038497pwz6000000&amp;trustKey=dn&amp;trustValue=vmall.com"><img style="width:90px;height:32px;float:none;" src="{{url('/images/home/20160226162521265.png')}}" title="可信网站" border="0" height="32" hspace="0" vspace="0" width="90"></a>   <a target="_blank" href="https://search.szfw.org/cert/l/CX20121017001773002082"><img style="width:90px;height:32px;float:none;" src="{{url('/images/home/20160226162531395.png')}}" title="诚信网站" border="0" height="32" hspace="0" vspace="0" width="90"></a></p></div><!--授权结束 -->
+	<div class="footer-warrant-area"><p><a textvalue="隐私政策" title="隐私政策" target="_blank" href="">隐私政策</a>  <a title="服务协议" target="_blank" href="">服务协议</a>        Copyright © 2012-2016  VMALL.COM   版权所有  保留一切权利</p><p><a target="_blank" href=""><img style="width:20px;height:20px;float:none;" src="{{url('/images/home/20160226162651249.png')}}" title="公安备案" border="0" height="20" hspace="0" vspace="0" width="20"><span style="font-size:15px;font-family:宋体"><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 苏公网安备</span><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 32011402010009号</span></span></a> | 苏ICP备09062682号-9 | 增值电信业务经营许可证：苏B2-20130048 | <a target="_blank" href="">网络文化经营许可证：苏网文[2012]0401-019号</a></p><p><br><a target="_blank" href=""></a></p><p><a target="_blank" href=""><img src="{{url('/images/home/20160226162415360.png')}}" style="float:none;width:90px;height:32px;" title="电子营业执照" border="0" height="32" hspace="0" vspace="0" width="90"></a>   <a target="_blank" href=""><img style="width:90px;height:32px;float:none;" src="{{url('/images/home/20160226162521265.png')}}" title="可信网站" border="0" height="32" hspace="0" vspace="0" width="90"></a>   <a target="_blank" href=""><img style="width:90px;height:32px;float:none;" src="{{url('/images/home/20160226162531395.png')}}" title="诚信网站" border="0" height="32" hspace="0" vspace="0" width="90"></a></p></div><!--授权结束 -->
 </footer>
 
 
