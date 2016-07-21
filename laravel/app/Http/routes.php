@@ -28,12 +28,14 @@ Route::post("/home/userinfo/tx","home\UserController@tx");
 //购物车
 Route::get("/home/shopcar/order","Home\ShopcarController@order");
 Route::resource("/home/shopcar","Home\ShopcarController");
+Route::post("/home/shopcar/orders","Home\ShopcarController@orders");
 Route::get("/home/shopcar/delete/{key}", "Home\ShopcarController@destroy");
+
 
 
 //用户个人中心
 Route::get("/Home/member/Myorder","Home\UserController@order");
-// Route::get("/Home/member/orderDetail","Home\UserController@order");
+Route::get("/Home/member/orderDetail","Home\UserController@orders");
 Route::get("/Home/member/Myaddres","Home\UserController@site");
 Route::post("/Home/member/Myaddres","Home\UserController@address");
 Route::get("/Home/member/delete/{id}","Home\UserController@delete");
@@ -41,6 +43,7 @@ Route::get("/Home/member/edit/{id}","Home\UserController@alter");
 Route::post("/Home/member/edit/{id}","Home\UserController@editaddr");
 Route::resource("/Home/member","Home\UserController");
 Route::get("/Home/member","Home\UserController@member");
+Route::post("/Home/member/Myadd","Home\UserController@add");
 
 
 

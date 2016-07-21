@@ -124,6 +124,7 @@
 							<dd>
 							 <span class="stock-area">
 
+
 						     <a href="." class="icon-minus-2 vam" title="-"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
 
    						     </span>
