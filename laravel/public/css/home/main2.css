@@ -27,40 +27,36 @@
     clear: both;
 }
 .pro-delete-area .h s, .pro-delete-area .h b, .pro-delete-area .h i, .order-paid-faq-area .h a, .order-paid-faq-area dd .arrow, .progress-area div, .order-confirm .f s, .order-confirm .f b, .order-confirm .f i, .order-gift-area s, .order-gift-list i, .order-address-list .address-mark i, .order-payment-define-area .payment-wechat-tips i, .order-payment-define-area .payment-alipay-tips i {
-    background: transparent url("../../images/echannel/sprites/sprites6.png") no-repeat scroll 0 0;
+
+    background: transparent url("../../images/home/sprites6.png") no-repeat scroll 0 0;
 }
 .pro-scroller-area .pro-scroller-back, .pro-scroller-area .pro-scroller-back-disabled, .pro-scroller-area .pro-scroller-forward, .pro-scroller-area .pro-scroller-forward-disabled {
-    background: transparent url("../../images/echannel/icon/icon34.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/icon34.png") no-repeat scroll 0 0;
 }
 .order-form-tips s, .order-form-tips b, .bank-event-tips s, .pro-delete-area .f i {
-    background: transparent url("../../images/echannel/sprites/sprites16.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/sprites16.png") no-repeat scroll 0 0;
 }
 .order-pe-faq-area .b dt {
-    background: transparent url("../../images/echannel/icon/icon12.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/icon12.png") no-repeat scroll 0 0;
 }
 .order-pe-faq-area .b dd {
-    background: transparent url("../../images/echannel/icon/icon13.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/icon13.png") no-repeat scroll 0 0;
 }
 .order-pay-error-area .h .cartoon {
-    background: transparent url("../../images/echannel/bg/bg24.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/bg24.png") no-repeat scroll 0 0;
 }
 .button-go-shopping, .button-go-shopping-2, .button-go-checkout, .button-action-ok, .button-action-cancel, .button-paid, .button-return, .button-action-define-2, .button-paid-2, .button-go-payhelp, .button-change-pay {
-    background: transparent url("../../images/echannel/btn/btn5.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/btn5.png") no-repeat scroll 0 0;
 }
 .button-action-ok-3 {
-    background: transparent url("../../images/echannel/btn/btn11.png") no-repeat scroll 0 0;
+    background: transparent url("../../images/home/btn11.png") no-repeat scroll 0 0;
+
 }
 .icon-minus-3, .icon-plus-3 {
     background: transparent url("../../images/home/icon31.png") no-repeat scroll 0 0;
 }
 .icon-sc-del, .wb-tips-area i, .order-sp-tips i, .order-sp-tips s, .bank-tips s, .order-address-list .address-del, .tips-area i, .tips-area b, .tips-area s, .tips-area u {
-    background: transparent url("../../images/echannel/icon/icon33.png") no-repeat scroll 0 0;
-}
-.icon-success-7 {
-    background: transparent url("../../images/echannel/icon/icon30.png") no-repeat scroll 0 0;
-}
-.order-address .address-expand i {
-    background: transparent url("../../images/echannel/icon/icon1.png") no-repeat scroll 0 0;
+
 }
 .icon-success-7 {
     background-position: 0 0;

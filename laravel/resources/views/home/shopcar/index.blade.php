@@ -58,6 +58,7 @@
                 </div>
                 <div class="s-main">
                     <ul>
+
                             @if(empty(Session::get("userDatas")))
 				<li style="display: none;" class="s-login" id="unlogin_status">
 						<a href="{{url('/login')}}" rel="nofollow">登录</a>
@@ -84,9 +85,11 @@
 							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
+
                                        
 				</li>
                                  @endif
+
                         <li class="s-myOrders">
                             <a href="{{url('/Home/member/Myorder')}}" rel="nofollow" timetype="timestamp">我的订单</a>
                         </li>
