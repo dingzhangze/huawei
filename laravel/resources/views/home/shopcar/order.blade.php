@@ -57,16 +57,16 @@
 						</div>
 					</div>	
 					
-				</li><li class="s-club"><a href="http://club.huawei.com/" target="_blank">花粉俱乐部</a></li>
+				</li><li class="s-club"><a href="" target="_blank">花粉俱乐部</a></li>
 				<li class="s-sr"><a href="javascript:;" onclick="showSelectRegion()">Select Region</a></li>
 			</ul>
 		</div>
 		<div class="s-main">
-			<ul>
+			 <ul>
                             @if(empty(Session::get("userDatas")))
 				<li style="display: none;" class="s-login" id="unlogin_status">
-						<a href="" rel="nofollow">登录</a>
-						&nbsp;&nbsp;&nbsp;<a href="" rel="nofollow">注册</a>
+						<a href="{{url('/login')}}" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="{{url('/register')}}" rel="nofollow">注册</a>
 				</li>
                                     @else
 				<li style="display: list-item;" class="s-user hide" id="login_status">
@@ -86,14 +86,14 @@
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="https://hwid1.vmall.com/oauth2/userCenter/hwAccount?reqClientType=26&amp;loginChannel=26000000&amp;themeName=cloudTheme" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
+							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
 						</div>
 					</div>
                                        
 				</li>
                                  @endif
 				<li class="s-myOrders">
-					<a href="" timetype="timestamp">我的订单</a>
+					<a href="{{url('/Home/member/Myorder')}}" timetype="timestamp">我的订单</a>
 				</li>
 				<li class="s-promo"><a href="" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>

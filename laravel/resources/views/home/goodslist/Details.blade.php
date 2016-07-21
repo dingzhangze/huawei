@@ -202,19 +202,7 @@
     </div>
 </div>
 
-<!--弹出层-提示信息 -->
-<!--<div id="popup-tips" class="pro-popup-area hide">
-    <div class="h">
-	<a href="." class="pro-popup-close" title="关闭" onclick=""><span>关闭</span></a>
-    </div>
 
-    <div class="b">
-		<div class="pro-add-error">
-			<div class="pro-add-error-msg" id="popup-tips-msg">非常抱歉！该商品不能单独销售！</div>
-			<div class="pro-add-error-button"><a class="button-style-1 button-par-define" href="." onclick="$('#popup-tips').hide()" title="知道了">知道了</a></div>
-		</div>
-    </div>
-</div>-->
 
 <!-- 20130913-弹出层-购买延保-start -->
 <div id="popup-extend" class="pro-popup-area hide">

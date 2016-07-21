@@ -156,7 +156,7 @@
             @endif
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
-								<li><a href="#" rel="nofollow" timetype="timestamp">我的订单</a></li>
+								<li><a href="{{url('/Home/member/Myorder')}}" rel="nofollow" timetype="timestamp">我的订单</a></li>
 								<li><a href="#" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
 								<li><a href="#" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
 								<li><a href="#" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
@@ -173,7 +173,7 @@
 			<div class="header-toolbar-item" id="header-toolbar-minicart">
 				<!-- 21030909-迷你购物车-start -->
 				<div class="minicart">
-					<div class="h" id="header-toolbar-minicart-h"><a href="http://cart.vmall.com/cart/cart.html?t=14677062410991467706535894" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">1</em><b></b></span></a><i></i><s></s><u></u></div>
+					<div class="h" id="header-toolbar-minicart-h"><a href="{{url('/home/shopcar')}}" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">1</em><b></b></span></a><i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-minicart-content">
 						<div style="display: none;" class="minicart-pro-empty" id="minicart-pro-empty">
 							<span class="icon-minicart">您的购物车是空的，赶紧选购吧！</span>

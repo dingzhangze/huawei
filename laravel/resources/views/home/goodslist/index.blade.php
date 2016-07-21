@@ -91,7 +91,7 @@
 							<table colspan="0" rowspan="0" border="0">
 								<tbody>
 									<tr>
-										<td><a href="javascript:;" onclick="ec.product.arrival(762843846)" class="p-button-an"><span>加入购物车</span></a></td>
+										<td><a href="{{url('/Home/goodslist/'.$good->gid)}}" class="p-button-an"><span>查看详情</span></a></td>
 										<td><label class="p-button-score"><span>0人评价</span></label></td>
 									</tr>
 								</tbody>

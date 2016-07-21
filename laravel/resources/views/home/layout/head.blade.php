@@ -43,19 +43,19 @@ $.ajaxSetup({
     <div class="layout">
 		<div class="s-sub">
 			<ul>
-				<li class="s-hw"><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
-				<li class="s-honor"><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
+				<li class="s-hw"><a href="" target="_blank">华为官网</a></li>
+				<li class="s-honor"><a href="" target="_blank">荣耀官网</a></li>
 				<li class="s-appsoft">
 					<div class="s-dropdown">
 						<div class="h">
-							<a href="http://emui.huawei.com/appsoft/" target="_blank">软件应用</a>
+							<a href="" target="_blank">软件应用</a>
 							<s></s>
 						</div>
 						<div class="b">
-							<p><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></p>
-							<p><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></p>
-							<p><a href="http://cloud.huawei.com/" target="_blank">云服务</a></p>
-							<p><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></p>
+							<p><a href="" target="_blank">EMUI</a></p>
+							<p><a href="" target="_blank">应用市场</a></p>
+							<p><a href="" target="_blank">云服务</a></p>
+							<p><a href="" target="_blank">开发者联盟</a></p>
 						</div>
 					</div>
 
@@ -92,7 +92,7 @@ $.ajaxSetup({
         @endif
 
 				<li class="s-myOrders">
-					<a href="http://www.vmall.com/member/order?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的订单</a>
+					<a href="{{url('/Home/member/Myorder')}}" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>
 				<li class="s-promo"><a href="http://www.vmall.com/priority" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>
@@ -176,11 +176,11 @@ $.ajaxSetup({
 						</div>
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
-								<li><a href="http://www.vmall.com/member/order?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的订单</a></li>
-								<li><a href="http://www.vmall.com/member/order?t=14683240080851468324177815&amp;tab=unpaid" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/order?t=14683240080851468324177815&amp;tab=nocomment" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/coupon?t=14683240080851468324177815" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
-								<li><a href="http://www.vmall.com/member/msg?t=14683240080851468324177815" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
+								<li><a href="" rel="nofollow" timetype="timestamp">我的订单</a></li>
+								<li><a href="" timetype="timestamp">待支付</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
+								<li><a href="" timetype="timestamp">待评论</a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
+								<li><a href="" timetype="timestamp">优惠券</a><span id="toolbar-couponCount" class="hide">0</span></li>
+								<li><a href="" timetype="timestamp">站内信</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
 							</ul>
 						</div>
 						<!-- 页头会员专享信息 -->
@@ -193,7 +193,7 @@ $.ajaxSetup({
 			<div class="header-toolbar-item" id="header-toolbar-minicart">
 				<!-- 21030909-迷你购物车-start -->
 				<div class="minicart">
-					<div class="h" id="header-toolbar-minicart-h"><a href="http://cart.vmall.com/cart/cart.html?t=14683240080851468324177815" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">0</em><b></b></span></a><i></i><s></s><u></u></div>
+					<div class="h" id="header-toolbar-minicart-h"><a href="{{url('/home/shopcar')}}" rel="nofollow" timetype="timestamp">我的购物车<span><em id="header-cart-total">0</em><b></b></span></a><i></i><s></s><u></u></div>
 					<div class="b" id="header-toolbar-minicart-content">
 						<div class="minicart-pro-empty" id="minicart-pro-empty">
 							<span class="icon-minicart">您的购物车是空的，赶紧选购吧！</span>
@@ -217,12 +217,12 @@ $.ajaxSetup({
 			<div style="width: 91px; height: 96px;" class="ec-slider" id="ec-erweima">
 				<ul style="width: 91px; height: 96px;" class="ec-slider-list">
 					<li style="width: 91px; height: 96px; position: absolute; display: list-item;" class="ec-slider-item">
-						<p><a href="http://www.vmall.com/appdownload" target="blank" title="专享周三荣耀专场"><img src="{{url('/images/home/qrcode_vmall_app01.png')}}" alt="华为商城官方客户端"></a></p>
-						<p><a href="http://www.vmall.com/appdownload" target="blank"><span>专享周三荣耀专场</span></a></p>
+						<p><a href="" target="blank" title="专享周三荣耀专场"><img src="{{url('/images/home/qrcode_vmall_app01.png')}}" alt="华为商城官方客户端"></a></p>
+						<p><a href="" target="blank"><span>专享周三荣耀专场</span></a></p>
 					</li>
 					<li style="width: 91px; height: 96px; position: absolute; display: none;" class="ec-slider-item">
-						<p><a href="http://www.vmall.com/appdownload" target="blank" title="微信扫码关注我们"><img src="{{url('/images/qrcode_vmall_wechat01.jpg')}}" alt="华为商城官方微信"></a></p>
-						<p><a href="http://www.vmall.com/appdownload" target="blank"><span>微信扫码关注我们</span></a></p>
+						<p><a href="" target="blank" title="微信扫码关注我们"><img src="{{url('/images/qrcode_vmall_wechat01.jpg')}}" alt="华为商城官方微信"></a></p>
+						<p><a href="" target="blank"><span>微信扫码关注我们</span></a></p>
 					</li>
 				</ul>
 			<div class="ec-slider-nav"><span class="current"></span><span class=""></span></div><a style="display: none;" class="button-slider-prev" href="javascript:;"></a><a style="display: none;" class="button-slider-next" href="javascript:;"></a></div>
@@ -323,13 +323,13 @@ $.ajaxSetup({
 		<li><a href="javascript:;"><span>精彩频道</span><i></i></a>
 			<ol>
 					<li id="honor">
-                 <a href="http://www.vmall.com/honor/remind" onclick="_paq.push(['trackLink','点击首页活动导航第8位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">开售提醒</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第8位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">开售提醒</a></li>
 					<li id="smrz">
-                 <a href="http://www.vmall.com/notice-657" onclick="_paq.push(['trackLink','点击首页活动导航第9位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">实名认证</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第9位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">实名认证</a></li>
 					<li id="honor">
-                 <a href="http://www.vmall.com/recycle?url=%3Fpid%3D1032" onclick="_paq.push(['trackLink','点击首页活动导航第10位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">以旧换新</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第10位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">以旧换新</a></li>
 					<li id="hyj">
-                 <a href="http://www.vmall.com/list-38" onclick="_paq.push(['trackLink','点击首页活动导航第11位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">合约机</a></li>
+                 <a href="" onclick="_paq.push(['trackLink','点击首页活动导航第11位', 'link', '']);ec.code.addAnalytics({hicloud:true});" target="_blank">合约机</a></li>
 			</ol>
 		</li>
 </ul>
@@ -374,48 +374,6 @@ $.ajaxSetup({
 
 }());
 
-/**
-*功能：给鼠标移动到category-list li上面的时候，记得给他多添加一个hover类样式
-*目的是兼容ie6,以及调整二级分类的弹出框的位置。
-*@author 李峰
-*/
-/**
-$(function(){
-	$(".category-item").hover(function(){
-		$(this).addClass("hover");
-		//1.二级分类的top值
-		var childrenTop = $(this).offset().top;
-		//2.一级分类的top值
-		var parentTop = $(".category-list").offset().top;
-		//3.二级分类到一级分类顶部的距离
-		var top = childrenTop - parentTop;
-		//4.二级分类的弹出层的高度
-		var childrenHeight = $(this).find(".category-panels").innerHeight();
-		//5.一级分类容器的总高度
-		var totalHeight = $(".category-list").height();
-		alert("childrenTop:"+childrenTop+";parentTop:"+parentTop+";top:"+top+";childrenHeight:"+childrenHeight+";totalHeight:"+totalHeight) ;
-
-		//6.如果二级分类.category-panels的内容高度大于总容量totalHeight,那么.category-panels置顶，然后多余的自动往下延续
-		//如果二级分类childrenHeight内容高度(childrenHeight + top )大于totalHeight,那么.category-panels往上移动childrenHeight + top -totalHeight
-		if((top + childrenHeight) > totalHeight)
-		{
-			if(childrenHeight > totalHeight)
-			{
-				$(this).find(".category-panels").css("top",-top);
-			}else{
-				//上移动
-				var topX = (childrenHeight+top) - totalHeight;
-				$(this).find(".category-panels").css("top",-topX);
-
-			}
-
-		}
-
-	},function(){
-		$(this).removeClass("hover");
-	});
-});
- */
 </script>
 <div class="hr-10"></div>
 

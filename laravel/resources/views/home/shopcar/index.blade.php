@@ -58,32 +58,37 @@
                 </div>
                 <div class="s-main">
                     <ul>
-                        <li style="display: none;" class="s-login" id="unlogin_status">
-                            <a href="" rel="nofollow">登录</a>
-                            &nbsp;&nbsp;&nbsp;<a href="" rel="nofollow">注册</a>
-                        </li>
-                        <li style="display: list-item;" class="s-user hide" id="login_status">
-                            <!--
-                                    ie6下鼠标悬停追加ClassName： hover
-                                    示例：[ s-dropdown hover ]
-                            -->
-                            <div class="s-dropdown">
-                                <div class="h">
-                                    <a href="" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">huafans011...</a>
-                                    <em class="vip-state" id="vip-info">
-                                        <a style="display: none;" class="link-noAct" href="" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
-                                        <a href="" title="VMALL V0会员" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
-                                        <a title="实名认证" id="authentication" href=""><i class="icon-authentication icon-authentication-not"></i>&nbsp;</a>
-                                    </em>
-                                    <s></s>
-                                </div>
-                                <div class="b">
-                                    <p><a href="" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.vmall.com/account/logout">退出</a></p>
-                                </div>
-                            </div>
-                        </li>
+                            @if(empty(Session::get("userDatas")))
+				<li style="display: none;" class="s-login" id="unlogin_status">
+						<a href="{{url('/login')}}" rel="nofollow">登录</a>
+						&nbsp;&nbsp;&nbsp;<a href="{{url('/register')}}" rel="nofollow">注册</a>
+				</li>
+                                    @else
+				<li style="display: list-item;" class="s-user hide" id="login_status">
+					<!--
+						ie6下鼠标悬停追加ClassName： hover
+						示例：[ s-dropdown hover ]
+					-->
+                                    
+					<div class="s-dropdown">
+						<div class="h">
+							<a href="" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">{{Session::get("userDatas")->uname}}.</a>
+							 <em class="vip-state" id="vip-info">
+								<a style="display: none;" class="link-noAct" href="" id="vip-inActive" title="请完善个人信息，即刻享受会员特权">去激活</a>
+								<a href="" title="VMALL V0会员" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
+								<a title="实名认证" id="authentication" href=""><i class="icon-authentication icon-authentication-not"></i>&nbsp;</a>
+							</em>
+							<s></s>
+						</div>
+						<div class="b">
+							<p><a href="{{url('/home/userinfo')}}" target="_blank" id="user-center">我的华为帐号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{{url('/logout')}}">退出</a></p>
+						</div>
+					</div>
+                                       
+				</li>
+                                 @endif
                         <li class="s-myOrders">
-                            <a href="" rel="nofollow" timetype="timestamp">我的订单</a>
+                            <a href="{{url('/Home/member/Myorder')}}" rel="nofollow" timetype="timestamp">我的订单</a>
                         </li>
                         <li class="s-promo"><a href="" rel="nofollow">V码(优购码)</a></li>
                         <li class="s-hwep hide" id="preferential"></li>

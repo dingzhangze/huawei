@@ -35,7 +35,7 @@ Route::get("/home/shopcar/delete/{key}", "Home\ShopcarController@destroy");
 
 //用户个人中心
 Route::get("/Home/member/Myorder","Home\UserController@order");
-Route::get("/Home/member/orderDetail","Home\UserController@orders");
+Route::get("/Home/member/orderDetail/{id}","Home\UserController@orders");
 Route::get("/Home/member/Myaddres","Home\UserController@site");
 Route::post("/Home/member/Myaddres","Home\UserController@address");
 Route::get("/Home/member/delete/{id}","Home\UserController@delete");
