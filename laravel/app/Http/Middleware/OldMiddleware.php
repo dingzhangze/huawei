@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Session;
 
 class OldMiddleware
 {
@@ -15,13 +16,14 @@ class OldMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (preg_match("/^\/Admin/", $_SERVER['REQUEST_URI']) && !preg_match("/^\/Admin\/login/", $_SERVER['REQUEST_URI']) && !Session::has("userDatas")) {
+        if (preg_match("/^\/Home/", $_SERVER['REQUEST_URI']) && !preg_match("/^\/Home\/goodslist/", $_SERVER['REQUEST_URI']) && !Session::has("userDatas")) {
             return redirect("/login");
         } else {
                     
            
         
-        return $next($request);
+        
         }
+        return $next($request);
     }
 }

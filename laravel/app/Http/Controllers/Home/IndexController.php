@@ -69,6 +69,7 @@ class IndexController extends Controller
      */
     public function store(Request $request)
     {
+        if(!empty(Session::get("userDatas"))){
        // dd($request->all());
         //获取商品信息
        $goods  = $request->except("_token");
@@ -94,7 +95,10 @@ class IndexController extends Controller
 //      dd(Session::get("cart"));
        //跳转到购物车显示页
        return redirect("/home/shopcar");
-      
+        }else{
+            
+            return redirect("/login");
+        }
        
         
         
