@@ -34,6 +34,7 @@ class IndexController extends Controller
 //          dd($subclass);
         //友情链接
         $chaining=DB::table("home_chaining")->get();
+        
 
        //首页商品类别
          $phs = DB::table("admin_goods")->where("cid","=","46")->take(4)->get();
@@ -107,12 +108,13 @@ class IndexController extends Controller
     {
          $goodslist = DB::table("admin_goods_details")->where("gid",$id)->first();
          $comment=DB::table("admin_goods_comment")->where("gid",$id)->get();
-         
+         $count=DB::table("admin_goods_comment")->where("gid",$id)->count();
+//         dd("$comments");
         $ppp = DB::table("admin_goods")->take(10)->get();
       //  dd($ppp);
          //dd($goodslist);
         
-          return view("home.goodslist.Details",["goodslist"=>$goodslist,"ppp"=>$ppp,"comment"=>$comment]); 
+          return view("home.goodslist.Details",["goodslist"=>$goodslist,"ppp"=>$ppp,"comment"=>$comment,"count"=>$count]); 
     }
 
     /**

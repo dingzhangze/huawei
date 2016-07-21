@@ -123,11 +123,9 @@
 							<dt>购买数量：</dt>
 							<dd>
 							 <span class="stock-area">
-<<<<<<< HEAD
+
 						     <a href="." class="icon-minus-2 vam" title="-"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="." class="icon-plus-2 vam" title="加"><span>+</span></a>
-=======
-						     <a href="" class="icon-minus-2 vam" title="减"><span>-</span></a><input style="ime-mode: disabled;" id="pro-quantity" class="vam text" value="1" autocomplete="off" type="text"><a href="" class="icon-plus-2 vam" title="加"><span>+</span></a>
->>>>>>> e8238a9f7ef1351cb1a2aa5b19016b5e101047f2
+
    						     </span>
 							</dd>
 						</dl>
@@ -631,7 +629,7 @@
                                     @foreach($comment as $comments)
 					<div class="pro-inquire-item clearfix">
 						<div class="pro-inquire-user">
-							<label>@if(!empty($comments->name)) {{$comments->name}} @endif</label><span></span><s><i class="icon-vip-level-0"></i></s><em>@if(!empty($comment->cdatetime)) {{$comments->cdatetime}} @endif</em>
+							<label>@if(!empty($comments->name)) {{$comments->name}} @endif</label><span></span><s><i class="icon-vip-level-0"></i></s><em>@if(!empty($comments->cdatetime)) {{$comments->cdatetime}} @endif</em>
 						</div>
 						<div class="pro-inquire-question">
 							<label>咨询内容：</label><span>@if(!empty($comments->comment)) {{$comments->comment}} @endif</span>
@@ -644,7 +642,7 @@
                                     @endforeach
 				</div>
 				<div class="pro-inquire-page clearfix">
-					<div class="pro-inquire-record">共<em>4057</em>条</div>
+					<div class="pro-inquire-record">共<em>{{$count}}</em>条</div>
 					<!-- 20131220-分页-start -->
 					</div>
 			</div><!-- 20140624-商品详情-全部咨询-end -->
@@ -734,6 +732,7 @@
                                             <form method="post" action="/Home/goodslist/comment">
                                                 <input type="hidden" name="_token" value="{{csrf_token()}}" />
                                                 <input type="hidden" name="gid" value="{{$goodslist->gid}}" />
+                                                <input type="hidden" name="gname" value="{{$goodslist->name}}" />
 <input type="hidden" name="name" value="@if(!empty(Session::get('userDatas'))) {{Session::get("userDatas")->uname}}@else 游客{{rand(1000,9999)}}：  @endif" />
 							<div class="form-edit-table">
                                                             <p><textarea placeholder=""  class="textarea" name="comment" id="counseltextid" maxlength="100"></textarea></p>
