@@ -76,7 +76,7 @@
 
 <!--左边菜单 -->
 <div class="mc-menu-area">
-	<div class="h"><a href="http://www.vmall.com/member?t=1467805370645" class="button-go-mc" title="我的商城"><span>我的商城</span></a></div>
+	<div class="h"><a href="{{('/home/member')}}" class="button-go-mc" title="我的商城"><span>我的商城</span></a></div>
     <div class="b">
         <ul>
         	<li>
@@ -84,7 +84,7 @@
         			<span>订单中心</span>
         		</h3>
             	<ol>
-                	<li id="li-order"><a href="http://www.vmall.com/member/order?t=1467805370645" title="我的订单"><span>我的订单<em>1</em></span></a></li>
+                	<li id="li-order"><a href="{{url('/Home/member/Myorder')}}" title="我的订单"><span>我的订单<em>1</em></span></a></li>
                     <li id="li-exchange"><a href="http://www.vmall.com/member/exchange?t=1467805370645" title="我的退换货"><span>我的退换货</span></a></li>
 					<li id="li-groupBuyRecord"><a href="http://www.vmall.com/member/groupBuyRecord?t=1467805370645" title="我的团购"><span>我的团购</span></a></li>
 					<li id="li-recover"><a href="http://www.vmall.com/member/recycle/index?t=1467805370645" title="我的回收单"><span>我的回收单</span></a></li>
@@ -112,8 +112,8 @@
             		<span>社区中心</span>
             	</h3>
             	<ol>
-                	<li id="li-prdRemark"><a href="http://www.vmall.com/member/prdRemarkView?t=1467805370645" title="商品评价"><span>商品评价</span></a></li>
-                    <li id="li-msg"><a href="http://www.vmall.com/member/msg?t=1467805370645" title="站内信"><span>站内信</span></a></li>
+                	<li id="li-prdRemark"><a href="#" title="商品评价"><span>商品评价</span></a></li>
+                    <li id="li-msg"><a href="#" title="站内信"><span>站内信</span></a></li>
                 </ol>
             </li>
         </ul>

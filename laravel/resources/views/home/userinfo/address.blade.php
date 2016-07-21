@@ -144,10 +144,10 @@
         			<span>订单中心</span>
         		</h3>
             	<ol>
-                	<li id="li-order"><a href="http://www.vmall.com/member/order?t=1467805409931" title="我的订单"><span>我的订单<em>1</em></span></a></li>
-                    <li id="li-exchange"><a href="http://www.vmall.com/member/exchange?t=1467805409931" title="我的退换货"><span>我的退换货</span></a></li>
-					<li id="li-groupBuyRecord"><a href="http://www.vmall.com/member/groupBuyRecord?t=1467805409931" title="我的团购"><span>我的团购</span></a></li>
-					<li id="li-recover"><a href="http://www.vmall.com/member/recycle/index?t=1467805409931" title="我的回收单"><span>我的回收单</span></a></li>
+                	<li id="li-order"><a href="{{url('/Home/member/Myorder')}}" title="我的订单"><span>我的订单<em>1</em></span></a></li>
+                    <li id="li-exchange"><a href="#" title="我的退换货"><span>我的退换货</span></a></li>
+					<li id="li-groupBuyRecord"><a href="#" title="我的团购"><span>我的团购</span></a></li>
+					<li id="li-recover"><a href="#" title="我的回收单"><span>我的回收单</span></a></li>
                 </ol>
             </li>
             <li>
@@ -155,18 +155,16 @@
             		<span>个人中心</span>
             	</h3>
             	<ol>
-            		<li id="li-myAppointment"><a href="http://www.vmall.com/member/myAppointment?t=1467805409931" title="我的预约"><span>我的预约</span></a></li>
-                    <li id="li-notification"><a href="http://www.vmall.com/member/notification?t=1467805409931" title="到货通知"><span>到货通知</span></a></li>
-                    <li id="li-point"><a href="http://www.vmall.com/member/point?t=1467805409931" title="等级与特权"><span>等级与特权</span></a></li>
-                    <li id="li-authentication"><a href="http://www.vmall.com/authmember/accesstoken?t=1467805409931" title="实名认证"><span>实名认证</span></a></li>
-                    <li id="li-balance"><a href="http://www.vmall.com/member/balance?t=1467805409931" title="代金券"><span>代金券</span></a></li>
-					<li id="li-petal"><a href="http://www.vmall.com/member/petal?t=1467805409931" title="我的花瓣"><span>我的花瓣</span></a></li>
-                    <li id="li-coupon"><a href="http://www.vmall.com/member/coupon?t=1467805409931" title="我的优惠劵"><span>我的优惠劵</span></a></li>
+            		<li id="li-myAppointment"><a href="#" title="我的预约"><span>我的预约</span></a></li>
+                    <li id="li-notification"><a href="#" title="到货通知"><span>到货通知</span></a></li>
+                    <li id="li-point"><a href="#" title="等级与特权"><span>等级与特权</span></a></li>
+                    <li id="li-authentication"><a href="#" title="实名认证"><span>实名认证</span></a></li>
+                    <li id="li-balance"><a href="#" title="代金券"><span>代金券</span></a></li>
+					<li id="li-petal"><a href="#" title="我的花瓣"><span>我的花瓣</span></a></li>
+                    <li id="li-coupon"><a href="#" title="我的优惠劵"><span>我的优惠劵</span></a></li>
                     <li id="li-enterprise" class="hide"></li>
-                    <li class="current" id="li-myAddress"><a href="http://www.vmall.com/member/myAddress?t=1467805409931" title="收货地址管理"><span>收货地址管理</span></a></li>
-                    <!--  
-                    <li id="li-zp"><a href="/member/invoiceQualifications/view?t=1467805409931" title="专票资质"><span>专票资质</span></a></li>
-                	-->
+                    <li class="current" id="li-myAddress"><a href="{{url('/Home/member/Myaddres')}}" title="收货地址管理"><span>收货地址管理</span></a></li>
+                   
                 </ol>
             </li>
             <li>
@@ -174,8 +172,8 @@
             		<span>社区中心</span>
             	</h3>
             	<ol>
-                	<li id="li-prdRemark"><a href="http://www.vmall.com/member/prdRemarkView?t=1467805409931" title="商品评价"><span>商品评价</span></a></li>
-                    <li id="li-msg"><a href="http://www.vmall.com/member/msg?t=1467805409931" title="站内信"><span>站内信</span></a></li>
+                	<li id="li-prdRemark"><a href="" title="商品评价"><span>商品评价</span></a></li>
+                    <li id="li-msg"><a href="" title="站内信"><span>站内信</span></a></li>
                 </ol>
             </li>
         </ul>

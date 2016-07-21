@@ -3,43 +3,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Language" content="zh-cn">
 <script>
-var domainMain = 'http://www.vmall.com';
-var domainWap = 'http://m.vmall.com';
-var domainCart = 'http://cart.vmall.com';
-var domainRemark = 'http://remark.vmall.com';
-var domainShoppingConfig = 'http://addr.vmall.com';
-var imagePath = 'http://res.vmallres.com/20160612/images';
-var domainAccount = 'http://www.vmall.com';
-var isUseAccount = 'false';
-var upBindPhoneAddr = 'http://hwid1.vmall.com:8080/oauth2/userCenter/bindAccount/bindMobileAccount_1.jsp?lang=zh-cn&amp;themeName=cloudTheme&amp;reqClientType=26';
-</script>
-<script>
-(function(){
-	try
-	{
-		cookieGet=function(a){var f=null;if(document.cookie&&document.cookie!=""){var d=document.cookie.split(";");for(var c=0;c<d.length;c++){var b=(d[c]||"").replace(/^(\s|\u00A0)+|(\s|\u00A0)+$/g,"");if(b.substring(0,a.length+1)==(a+"=")){var e=function(i){i=i.replace(/\+/g," ");var h='()<>@,;:\\"/[]?={}';for(var g=0;g<h.length;g++){if(i.indexOf(h.charAt(g))!=-1){if(i.startWith('"')){i=i.substring(1)}if(i.endWith('"')){i=i.substring(0,i.length-1)}break}}return decodeURIComponent(i)};f=e(b.substring(a.length+1));break}}}return f};
-		var uri = location.href;
-		//增加产品详情页判断
-		var prodReg=/\/\d+\.html/;
-		var isProDetail =prodReg.test(uri);
-		if(uri == domainMain || uri == (domainMain + "/index.html") || uri == (domainMain + "/")||isProDetail) {
-			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-				var redirectWap = cookieGet("redirectWap");
-
-				if(!redirectWap == "1" && !isProDetail) {
-					window.location.href = domainWap;
-				}else if(!redirectWap == "1" && isProDetail)
-				{
-					var wapUri =domainWap+uri.substring(uri.indexOf("/product"));
-					window.location.href=wapUri;
-				}
-			}
-		}
-	}
-	catch (err){}
-})();
-</script>
-<script>
 $.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -82,12 +45,6 @@ $.ajaxSetup({
 			<ul>
 				<li class="s-hw"><a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a></li>
 				<li class="s-honor"><a href="http://www.honor.cn/" target="_blank">荣耀官网</a></li>
-				<!--
-				<li class="s-emui"><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></li>
-				<li class="s-appstore"><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></li>
-				<li class="s-cloud"><a href="http://cloud.huawei.com/cn/contact" target="_blank">云服务</a></li>
-				<li class="s-developer"><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></li>
-				-->
 				<li class="s-appsoft">
 					<div class="s-dropdown">
 						<div class="h">
@@ -119,7 +76,7 @@ $.ajaxSetup({
 
 					<div class="s-dropdown">
 						<div class="h">
-              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
+              <a href="{{url('/home/userinfo')}}" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
@@ -161,101 +118,13 @@ $.ajaxSetup({
 </div>
 
 
-<script>
-ec.load("ec.box" , {loadType : "lazy"});
-/**
-*功能：给鼠标移动到s-dropdown上面的时候，记得给他多添加一个hover类样式
-*目的是兼容ie6
-*@author 李峰
-*/
-$(function(){
-	$(".s-dropdown").hover(function(){
-		$(this).addClass("hover");
-	},function(){
-		$(this).removeClass("hover");
-	});
-	var maxcolor=$('.top-banner-max').find('p').children('a').css("background-color");
-	var mincolor=$('.top-banner-min').find('p').children('a').css("background-color");
 
-	$('.top-banner-max').css({"background-color":maxcolor,overflow:"hidden"});
-	$('.top-banner-min').css({"background-color":mincolor,overflow:"hidden"});
-});
-
-//显示全球导航选择层
-function showSelectRegion()
-{
-    var box = new ec.box($("#selectRegion-tips").val(),{
-			boxid : "region-select-box",
-			boxclass : "ol_box_4",
-			title : "Please select your country or region.",
-			width : 940,
-			showButton : false,
-			autoPosition:false,
-			onopen: function(box){
-			},
-			onok : function(box){
-			},
-			oncancel : function(box){
-				box.close();
-				$(".ol_box_mask").remove();
-			},
-			onclose : function(box){
-				$(".ol_box_mask").remove();
-			}
-		});
-
-		box.open();
-
-				$(".box-title").css("font-size","28px").css("font-weight","normal");
-				$("#region-select-box").css("height","auto");
-				$(".ol_box_mask").click(function(){box.close();});
-
-				$(".box-header").unbind("mousemove");
-				$(".box-header").unbind("mousedown");
-
-				var divTop=document.getElementById("region-select-box").offsetTop;
-				$("#region-select-box").mousedown(function (e) {
-					var e=e||window.event;
-					var region = document.getElementById("region-select-box");
-
-					var leftX = e.clientX - region.offsetLeft;
-					var topY = e.clientY - region.offsetTop;
-					$("#region-select-box").mousemove(function (event) {
-					 var e=event||window.event;
-					  var left=	e.clientX - leftX;
-					  var top=e.clientY - topY;
-
-					  if(e.clientX - leftX<20-region.offsetWidth){
-					  left=20-region.offsetWidth;
-					  }
-					  if(e.clientY - topY<20-region.offsetHeight){
-					  top=20-region.offsetHeight;
-					  }
-
-					 if(e.clientY - topY+20>=$(window).height()){
-					  top=$(window).height() - 20;
-					  }
-					  if(e.clientX - leftX+20>=$(window).width()){
-					  left=$(window).width() - 20;
-					  }
-					  $("#region-select-box").css({"left": left, "top": top});
-					  divTop=top;
-
-					});
-				});
-				$("#region-select-box").mouseup(function () {
-				$("#region-select-box").unbind("mousemove");
-				});
-            $(window).scroll(function () {
-                $("#region-select-box").offset({ top: divTop });
-            });
-}
-
-</script>
 <header class="header">
 	<div class="layout">
 		<!-- 21030909-logo-start -->
-		<div class="logo logo-index"><a href="/" title="Vmall.com - 华为商城"><img src="{{url('/images/home/newLogo.png')}}" alt="Vmall.com - 华为商城"></a></div><!-- 21030909-logo-start -->
+
+		<div class="logo logo-index"><a href="{{url('/')}}" title="Vmall.com - 华为商城"><img src="{{url('/images/home/newLogo.png')}}" alt="Vmall.com - 华为商城"></a></div><!-- 21030909-logo-start -->
+
 		<!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
@@ -275,6 +144,7 @@ function showSelectRegion()
 				<div class="searchBar-key">
 	<b>热门搜索：</b>
 
+
 		<a href="javascript:;" target="_blank">V8</a>
 
 
@@ -291,6 +161,7 @@ function showSelectRegion()
 
 
 		<a href="javascript:;" target="_blank">快充移动电源</a>
+
 
 </div>
 
@@ -415,7 +286,9 @@ function showSelectRegion()
 		<!-- 20130909-导航-start -->
 		<nav class="naver">
 				<ul id="naver-list">
-			<li class="" id="index"><a href="javascript:;" onclick="_paq.push(['trackLink','点击首页活动导航第1位', 'link', '']);ec.code.addAnalytics({hicloud:true});" class="current">
+
+			<li class="" id="index"><a href="{{url('/')}}" onclick="_paq.push(['trackLink','点击首页活动导航第1位', 'link', '']);ec.code.addAnalytics({hicloud:true});" class="current">
+
 
              <span>首 页
 

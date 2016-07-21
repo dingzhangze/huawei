@@ -54,7 +54,7 @@
 
 					<div class="s-dropdown">
 						<div class="h">
-              <a href="#" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
+              <a href="{{url('/home/userinfo')}}" id="customer_name" rel="nofollow" timetype="timestamp" class="link-user">您好, <strong>{{Session::get("userDatas")->uname}}</strong></a>
 							 <em class="vip-state" id="vip-info">
 								<a href="#" title="V0" id="vip-Active"><i class="icon-vip-level-0"></i>&nbsp;</a>
 								<a title="实名认证" id="authentication" href="#"></a>
@@ -69,7 +69,7 @@
 				</li>
         @endif
 				<li class="s-myOrders">
-					<a href="#" rel="nofollow" timetype="timestamp">我的订单</a>
+					<a href="{{url('/Home/member/Myorder')}}" rel="nofollow" timetype="timestamp">我的订单</a>
 				</li>
 				<li class="s-promo"><a href="#" rel="nofollow">V码(优购码)</a></li>
 				<li class="s-hwep hide" id="preferential"></li>
@@ -101,7 +101,7 @@
 <header class="header">
 	<div class="layout">
 		<!-- 21030909-logo-start -->
-		<div class="logo logo-index"><a href="http://www.vmall.com/index.html" title="Vmall.com - 华为商城"><img src="{{url('/images/home/newLogo.png')}}" alt="Vmall.com - 华为商城"></a></div><!-- 21030909-logo-start -->
+		<div class="logo logo-index"><a href="{{url('/')}}" title="Vmall.com - 华为商城"><img src="{{url('/images/home/newLogo.png')}}" alt="Vmall.com - 华为商城"></a></div><!-- 21030909-logo-start -->
 		<!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
 		<div class="searchBar">
 			<!-- 页头热门搜索 -->
@@ -259,7 +259,7 @@
 		<!-- 20130909-导航-start -->
 		<nav class="naver">
 				<ul id="naver-list">
-			<li id="index"><a href="http://www.vmall.com/index.html" onclick="_paq.push(['trackLink','点击首页活动导航第1位', 'link', '']);ec.code.addAnalytics({hicloud:true});" class="current">
+			<li id="index"><a href="{{url('/')}}" onclick="_paq.push(['trackLink','点击首页活动导航第1位', 'link', '']);ec.code.addAnalytics({hicloud:true});" class="current">
 
              <span>首 页
 
@@ -552,7 +552,7 @@
 								<div class="p-name">
 								<a href="{{url('/Home/goodslist/'.$phone->gid)}}" title="{{$phone->name}}" target="_blank">
 								{{$phone->name}}
-									<span class="p-slogan">1</span>
+									
 
 								</a></div>
 								<div class="p-price"><em>¥</em><span>{{$phone->price}}</span></div>
@@ -613,7 +613,7 @@
 								<div class="p-name">
 								<a href="{{url('/Home/goodslist/'.$pd->gid)}}" title="{{$pd->name}}" target="_blank">
 								{{$pd->name}}
-									<span class="p-slogan">22</span>
+									<span class="p-slogan"></span>
 
 								</a></div>
 								<div class="p-price"><em>¥</em><span>{{$pd->price}}</span></div>

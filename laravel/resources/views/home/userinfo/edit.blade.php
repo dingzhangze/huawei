@@ -181,8 +181,8 @@ $.ajaxSetup({
 	<div class="wp ft">
 		<p>
 
-				<a href="https://hwid1.vmall.com/CAS/portal/agreements/userPrivacyPolicy/zh-cn_userPrivacyPolicy.html?siteID=1" class="rule" target="_blank">华为帐号隐私声明</a>
-				<a href="https://hwid1.vmall.com/CAS/portal/agreements/EULA/zh-cn_EULA.html?siteID=1" class="rule" target="_blank">最终用户许可协议</a>
+				<a href="#" class="rule" target="_blank">华为帐号隐私声明</a>
+				<a href="#" class="rule" target="_blank">最终用户许可协议</a>
 
 
 
@@ -190,7 +190,7 @@ $.ajaxSetup({
 
 
 
-			<a href="https://hwid1.vmall.com/CAS/portal/faq/faq.html" class="ifaq" target="_blank">常见问题</a>
+			<a href="#" class="ifaq" target="_blank">常见问题</a>
 		</p>
 
 

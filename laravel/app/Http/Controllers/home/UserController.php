@@ -222,6 +222,12 @@ class UserController extends Controller
         return view("home.userinfo.Myorder");
     }
 
+    //订单详情
+    public function orders()
+    {
+        return view("home.userinfo.orderDetail");
+
+    }
     
         //收货地址入库
     public function add(Request $request)
@@ -256,6 +262,7 @@ class UserController extends Controller
             return back();
         }
         
+
     }
 
 }
