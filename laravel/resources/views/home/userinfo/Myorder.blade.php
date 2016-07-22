@@ -54,19 +54,29 @@
 		</table>
 	</div>
 	<div class="list-group" id="list-group">
-				<div class="list-group-item">
+				   
+                                             @if(!empty($order))
+                                            @foreach($order as $ord)
+                                         <div class="list-group-item">
 					<div class="o-info">
 							<div class="col-info">
-							<span class="o-date">{{$order[0]->ordertime}}</span>
-							<span class="o-no">订单号：<a href="" >HW00{{$order[0]->number}}</a></span>
+							<span class="o-date">{{$ord->ordertime}}</span>
+							<span class="o-no">订单号：<a href="" >HW00{{$ord->number}}</a></span>
 							</div>
 							<div class="col-state">
-									已取消
+									@if(($ord->state)==1)
+                                                                        待付款
+                                                                        @endif
+                                                                        @if(($ord->state)==2)
+                                                                        已付款
+                                                                        @endif
+                                                                        @if(($ord->state)==3)
+                                                                        已完成
+                                                                        @endif
 							</div>
 					</div>
 					<div class="o-pro">
-                                            @if(!empty($order))
-                                            @foreach($order as $ord)
+                                           
 						<table border="0" cellpadding="0" cellspacing="0">
 		        			<tbody>
 		                        <!-- 组合套餐列表 -->
@@ -75,14 +85,14 @@
 				        					<td class="col-pro-img">
 				    							<p class="p-img">
 				    								
-			                                    		<img alt="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" src="{{$ord->thum}}">
+			                                    		<img src="{{$ord->thum}}">
 			                                    
 				    							</p>
 				        					</td>
 				        					<td class="col-pro-info">
 												<p class="p-name">
 													
-													<a title="荣耀7i 双卡双待 全网通DM版 3GB内存+32GB存储（日耀金）" target="_blank" href="http://www.vmall.com/product/2324.html#8155">{{$gname->name}}</a>
+													<a target="_blank" href="">{{$gname->name}}</a>
 												</p>
 				        					</td>
 				        					<td class="col-price"><em>¥</em><span>
@@ -104,10 +114,11 @@
 	                        	<!-- 普通商品列表 end -->
 		        			</tbody>
 		        		</table>
-                                            @endforeach
-                                            @endif
+                                           
 					</div>
 				</div>
+                                             @endforeach
+                                            @endif
 	</div>
 	<!-- 20141222-我的订单-列表-订单合并-start -->
 	<div class="myOrder-control " id="myOrder-control-bottom">

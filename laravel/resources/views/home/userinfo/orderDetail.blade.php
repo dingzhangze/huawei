@@ -108,7 +108,16 @@
 				        					<td class="col-pay" rowspan="1"><em>¥</em><span>
 				        							{{$ord->total}}
 				        					</span></td>
-				        					<td class="col-state">--</td>
+				        					<td class="col-state">
+                                                                                    @if(($ord->state)==1)
+                                                                                    待付款
+                                                                                    @endif
+                                                                                    @if(($ord->state)==2)
+                                                                                    已付款
+                                                                                    @endif
+                                                                                    @if(($ord->state)==3)
+                                                                                    已完成
+                                                                                    @endif</td>
 				        				</tr>
 			        			</tbody>
 			        		</table>
