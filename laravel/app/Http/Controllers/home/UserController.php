@@ -128,7 +128,10 @@ class UserController extends Controller
     //用户中心
     public function member()
     {
-        return view("home.userinfo.usermall");
+        $id=Session::get("userDatas")->id;
+        $orders = DB::table("home_orders")->where("uid",$id)->get();
+       // dd($orders);
+        return view("home.userinfo.usermall",compact("orders"));
     }
 
 
@@ -221,11 +224,12 @@ class UserController extends Controller
     {
          $id=Session::get("userDatas")->id;
          $order=DB::table("home_orders")->where("uid",$id)->get();
+       //  dd($order);
          $gid=$order[0]->gid;
         $gname=DB::table("admin_goods")->where("gid",$gid)->first();
         return view("home.userinfo.Myorder",  ["order"=>$order,"gname"=>$gname]);
     }
-
+    
     //订单详情
     public function orders(Request $request,$id)
     {
@@ -245,7 +249,7 @@ class UserController extends Controller
         $data = $request->except("_token");
 //        $data["address"]=$data["s_province"]."-".$data["s_city"]."-".$data["s_county"]."-".$data["add_detail"];
 //       unset($data["s_province"],$data["s_city"],$data["s_county"],$data["add_detail"]);
-        
+      //  dd($data);
          //数据有效性验证
             $this->validate($request,[
             "name"=>"required",

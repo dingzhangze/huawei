@@ -47,27 +47,38 @@
 <div class="myHome-unpay-record">
 	<div class="myHome-order-title">
 		<div class="fl">
-			<h3>待支付订单（<a href="#" id="unpaidNum">1</a>）</h3>
+			<h3>待支付订单</h3>
 		</div>
 		<div class="fr">
 			<a href="#" class="more">更多<em>&gt;</em></a>
 		</div>
 	</div>
-	<div class="list-group" id="unpay-list-group"><div class="list-group-item"><div class="o-pro"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="col-pro-img"><p class="p-img"><a href="http://www.vmall.com/product/2172.html#6146"><img src="./images/100_100_0.jpg" alt="荣耀7 双卡双待双通 移动4G增强版 32GB存储（冰河银）"></a></p></td><td class="col-pro-info"><p class="p-name">订单号：2390112920</p></td><td class="col-price"><em>¥</em><span>1599</span></td><td class="col-link"><a href="http://www.vmall.com/member/order-2390112920">订单详情</a></td><td class="col-operate"><p class="p-button"><a class="button-operate-pay" href="http://www.vmall.com/payment/order-2390112920" target="_blank"><span>立即支付</span></a></p></td></tr></tbody></table></div></div></div>
+	@if(!empty($orders))
+    <div class="list-group" id="unpay-list-group">
+        <div class="list-group-item"><div class="o-pro">
+                <table border="0" cellpadding="0" cellspacing="0"><tbody>
+                        @foreach($orders as $order)
+                        @if(($order->state) == 1)
+                        <tr>
+                            <td class="col-pro-img"><p class="p-img">
+                                    <a href="">
+                                        <img src="{{$order->thum}}" alt=""></a>
+                                </p></td><td class="col-pro-info"><p class="p-name">订单号：HW00{{$order->number}}</p></td>
+                            <td class="col-price"><em>¥</em><span>{{$order->price}}</span></td><td class="col-link"><a href="{{url('/Home/member/orderDetail/'.$order->number)}}">订单详情</a></td>
+                            <td class="col-operate"><p class="p-button"><a class="button-operate-pay" href="" target="_blank">
+                                        <span>立即支付</span></a></p></td></tr>
+                        @endif
+                        @endforeach
+                    </tbody>
+                </table></div></div></div>
+       @else
+	<div class="list-group" id="uneval-list-group"><div class="list-group-empty">您暂时没有待付款订单。<a href="{{url('/')}}">挑选喜欢的商品去&gt;&gt;</a></div></div>
+      @endif
 </div>
 <!-- 20141227-我的商城-未支付列表-end -->    	
 <!-- 20141227-我的商城-待评价列表-end -->
-<div class="myHome-uneval-record">
-	<div class="myHome-order-title">
-		<div class="fl">
-			<h3>待评价列表（<a href="#" id="member-notRemarkCount">0</a>）</h3>
-		</div>
-		<div class="fr">
-			<a href="#" class="more">更多<em>&gt;</em></a>
-		</div>
-	</div>
-	<div class="list-group" id="uneval-list-group"><div class="list-group-empty">您暂时没有待评价订单。<a href="{{url('/')}}">挑选喜欢的商品去&gt;&gt;</a></div></div>
-</div>
+
+	
 <!-- 20141227-我的商城-待评价列表-end -->    	
 
 </div>

@@ -53,6 +53,7 @@
 			</thead>
 		</table>
 	</div>
+                @if(!empty($order[0]))
 	<div class="list-group" id="list-group">
 				<div class="list-group-item">
 					<div class="o-info">
@@ -64,6 +65,7 @@
 									已取消
 							</div>
 					</div>
+                                    @endif
 					<div class="o-pro">
                                             @if(!empty($order))
                                             @foreach($order as $ord)

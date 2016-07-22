@@ -44,7 +44,7 @@ class ShopcarController extends Controller
     {
         $uid=Session::get("userDatas")->id;
         $site=DB::table("home_address")->where("uid",$uid)->get();
-//        dd($site);
+//       dd($site);
         $id = Session::get("userDatas")->uname;
         
         $goods = Session::get("cart")["$id"];
@@ -133,6 +133,7 @@ class ShopcarController extends Controller
     public function orders(Request $request) 
     {
        $data = $request->except("_token");
+       if(!empty($data['address']["phone"]['name'])) {
        $data["number"] = rand(100000,999999);
        $data["ordertime"] = date("Y-m-d H:i:s");
        $name =Session::get("userDatas")->uname;
@@ -146,7 +147,13 @@ class ShopcarController extends Controller
        $goodss =  DB::table("home_orders")->where("number",$data["number"])->first();
      // dd($goodss);
      return view("/home/shopcar/pay",compact("goodss"));
-        
+       }else
+       {
+           
+           
+           return redirect("/tips")->with(["info" => "请填写个人信息", "url" => "/home/shopcar/order"]);
+       }   
        
-    }
+    
+}
 }
