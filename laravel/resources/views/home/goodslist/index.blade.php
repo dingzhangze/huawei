@@ -1,7 +1,7 @@
 @include("home.layout.head")
 <link type="text/css" rel="stylesheet" href="{{asset('/css/home/page.css')}}" />
 <div class="breadcrumb-area fcn">
-		<a href="http://www.vmall.com/index.html" title="首页">首页</a>&nbsp;&gt;&nbsp;
+		<a href="{{url('/')}}" title="首页">首页</a>&nbsp;&gt;&nbsp;
 
 	<span>手机</span>
 </div>
@@ -13,7 +13,7 @@
 			<div class="p-title">分类：</div>
 			<div class="p-default">
 				<ul>
-                    <li id="first-category" class="selected"><a href="http://www.vmall.com/list-36">全部</a></li>
+                    <li id="first-category" class="selected"><a href="">全部</a></li>
 					<!--<li class="selected"><a href="javascript:;">全部</a></li>-->
 				</ul>
 			</div>
@@ -27,11 +27,11 @@
 				<!-- 一行的高度为30px,显示n行，p-expand的高度为nx30 -->
 				<div class="p-expand">
 					<ul class="clearfix">
-	                    <li><a href="http://www.vmall.com/list-75">荣耀</a></li>
-	                    <li><a href="http://www.vmall.com/list-77">荣耀畅玩</a></li>
-	                    <li><a href="http://www.vmall.com/list-76">华为 Mate/P系列</a></li>
-	                    <li><a href="http://www.vmall.com/list-81">华为 G/Y系列</a></li>
-	                    <li><a href="http://www.vmall.com/list-38">运营商合约</a></li>
+	                    <li><a href="">荣耀</a></li>
+	                    <li><a href="">荣耀畅玩</a></li>
+	                    <li><a href="">华为 Mate/P系列</a></li>
+	                    <li><a href="">华为 G/Y系列</a></li>
+	                    <li><a href="">运营商合约</a></li>
 					</ul>
 				</div>
 			</div>

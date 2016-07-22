@@ -3,7 +3,7 @@
 <div class="hr-10"></div>
 <div class="g">
 	<!--面包屑 -->
-<div class="breadcrumb-area"><a href="http://www.vmall.com/" title="首页">首页</a>&nbsp;&nbsp;\&nbsp;&nbsp;<em id="personCenter"><a href="http://www.vmall.com/member/" title="我的商城">我的商城</a></em><em id="pathPoint">&nbsp;&nbsp;\&nbsp;&nbsp;</em><span id="pathTitle">我的订单</span></div>	
+<div class="breadcrumb-area"><a href="{{url('/')}}" title="首页">首页</a>&nbsp;&nbsp;\&nbsp;&nbsp;<em id="personCenter"><a href="{{url('/Home/member/Myorder')}}" title="我的商城">我的商城</a></em><em id="pathPoint">&nbsp;&nbsp;\&nbsp;&nbsp;</em><span id="pathTitle">我的订单</span></div>	
 </div>
 <div class="hr-10"></div>
 
@@ -53,6 +53,7 @@
 			</thead>
 		</table>
 	</div>
+                @if(!empty($order[0]))
 	<div class="list-group" id="list-group">
 				   
                                              @if(!empty($order))
@@ -75,6 +76,7 @@
                                                                         @endif
 							</div>
 					</div>
+                                    @endif
 					<div class="o-pro">
                                            
 						<table border="0" cellpadding="0" cellspacing="0">
@@ -92,7 +94,11 @@
 				        					<td class="col-pro-info">
 												<p class="p-name">
 													
-													<a target="_blank" href="">{{$gname->name}}</a>
+
+													
+
+													<a title="" target="_blank" href="">{{$gname->name}}</a>
+
 												</p>
 				        					</td>
 				        					<td class="col-price"><em>¥</em><span>

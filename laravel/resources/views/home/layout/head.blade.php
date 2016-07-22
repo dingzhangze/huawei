@@ -59,7 +59,7 @@ $.ajaxSetup({
 						</div>
 					</div>
 
-				</li><li class="s-club"><a href="http://club.huawei.com/" target="_blank">花粉俱乐部</a></li>
+				</li><li class="s-club"><a href="" target="_blank">花粉俱乐部</a></li>
 				<li class="s-sr"><a href="javascript:;" onclick="showSelectRegion()">Select Region</a></li>
 			</ul>
 		</div>
@@ -175,10 +175,16 @@ $.ajaxSetup({
 				<div class="i-mall">
 					<div class="h"><a href="{{url('Home/member')}}" rel="nofollow" timetype="timestamp">我的商城</a>
 					<i></i><s></s><u></u></div>
-					<div style="display: none;" class="b" id="header-toolbar-imall-content">
+					<div class="b" id="header-toolbar-imall-content">
+              @if(empty(Session::get("userDatas")))
 						<div class="i-mall-prompt" id="cart_unlogin_info">
-							<p>你好，请&nbsp;&nbsp;<script>document.write('<a href="/account/login?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script><a href="http://www.vmall.com/account/login?url=%2Flist-36" rel="nofollow">登录</a> | <a href="http://www.vmall.com/account/register" rel="nofollow">注册</a></p>
+
+							<p>你好，请&nbsp;&nbsp;
+                <a href="{{url('/login')}}" rel="nofollow">登录</a> | <a href="{{url('/register')}}" rel="nofollow">注册</a></p>
 						</div>
+            @else
+            您好, <strong>{{Session::get("userDatas")->uname}}</strong>
+            @endif
 						<div class="i-mall-uc " id="cart_login_info">
 							<ul>
 
